@@ -1,0 +1,22 @@
+logo_image:
+menuitems:
+  - title: Wir über uns
+    link:  /ueber-uns/
+  - title: Impressum
+    link:  /impressum/
+  - title: Datenschutz
+    link:  /datenschutz/
+socials:
+  - title: Facebook
+    link: https://facebook.com
+    logo_image: /img/facebook.svg
+  - title: Twitter
+    link: https://twitter.com
+    logo_image: /img/twitter.svg      
+  - title: Mastodon
+    link: https://joinmastodon.org
+    logo_image: /img/mastodon.svg      
+  - title: Instagram
+    link: https://instagram.com
+    logo_image: /img/instagram.svg
+footer_text: Ⓒ <script>document.write(/\d{4}/.exec(Date())[0])</script> Kumpel und Huette Service UG | Alle Rechte vorbehalten.

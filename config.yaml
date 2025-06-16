@@ -1,0 +1,35 @@
+baseURL: https://kumpelundhuette.de
+title: Kumpel und Hütte
+theme: hugobricks
+defaultContentLanguage: de
+assetDir: static
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+    extensions:
+      extras:
+        insert:
+          enable: true
+        mark:
+          enable: true
+        subscript:
+          enable: true
+        superscript:
+          enable: true
+
+languages:
+  de:
+    languageName: Deutsch
+    contentDir: content/de
+    weight: 1
+    disabled: false
+    permalinks:
+      page:
+        posts: /unser-zuhause/:slug
+        services: /neuigkeiten/:slug
+      section:
+        posts: /unser-zuhause/
+        services: /neuigkeiten/
+    

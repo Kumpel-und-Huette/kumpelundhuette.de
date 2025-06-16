@@ -1,0 +1,29 @@
+logo_image:
+logo_subtitle: GEMEINSAM STATT EINSAM
+dark_header: false
+mobile_view_width: 1100
+menuitems:
+  - title: Organisation
+    link: /ueber-uns/
+    items:
+    - title: Wer wir sind 
+      link: /ueber-uns/
+    - title: Unser Konzept
+      link: /unser-konzept/
+  - title: Die Hütte
+    link: /unser-zuhause/
+    items:
+    - title: Unser Zuhause
+      link: /unser-zuhause/
+    - title: Einziehen bei uns
+      link: /einziehen-bei-uns/
+  - title: Einblicke
+    link: /einblicke/
+  - title: Neuigkeiten
+    link: /neuigkeiten/
+  
+cta:
+  active: true
+  title: Besuch vereinbaren
+  link: /besuch-vereinbaren/
+preheader: geöffnet Mo-Fr von 9-5

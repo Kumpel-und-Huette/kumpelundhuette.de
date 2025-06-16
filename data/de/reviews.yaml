@@ -1,0 +1,17 @@
+- name: Maria Schuster
+  function: Bewohnerin
+  image: /uploads/photos/avatars/6.jpeg
+  description: Bei Kumpel und Hütte habe ich ein neues Zuhause gefunden. Ich fühle mich sicher, habe nette Gesellschaft und kann trotzdem selbstbestimmt leben. Genau das, was ich mir fürs Alter gewünscht habe!
+  stars: 5
+
+- name: Peter Wagner
+  function: Sohn einer Bewohnerin
+  image: /uploads/photos/avatars/2.jpeg
+  description: Meine Mutter blüht bei Kumpel und Hütte richtig auf. Die Gemeinschaft ist herzlich, die Betreuung zuverlässig und das Team immer ansprechbar. Wir sind sehr dankbar!
+  stars: 5
+
+- name: Helga Baumann
+  function: Bewohnerin
+  image: /uploads/photos/avatars/7.jpeg
+  description: Es ist schön, den Alltag gemeinsam zu gestalten und trotzdem meine Freiheiten zu behalten. Hier wird wirklich auf die Menschen geachtet. Ich kann Kumpel und Hütte nur empfehlen!
+  stars: 5

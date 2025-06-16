@@ -4,6 +4,10 @@ theme: hugobricks
 defaultContentLanguage: de
 assetDir: static
 
+caches:
+  images:
+    dir: :cacheDir/images
+
 markup:
   goldmark:
     renderer:

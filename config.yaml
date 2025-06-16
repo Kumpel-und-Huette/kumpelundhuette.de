@@ -1,4 +1,4 @@
-baseURL: https://kumpelundhuette.de
+baseURL: "https://kumpelundhuette.de/"
 title: Kumpel und Hütte
 theme: hugobricks
 defaultContentLanguage: de

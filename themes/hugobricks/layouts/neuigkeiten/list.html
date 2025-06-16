@@ -1,0 +1,12 @@
+{{ define "main" }}
+  <section class="posts">
+    {{ partial "breadcrumbs.html" . }}
+    <h1>{{ .Title }}</h1>
+
+    {{ .Content }}
+
+    {{ range .Pages }}
+      {{ partial "post-item.html" . }}
+    {{ end }}
+  </section>
+{{ end }}

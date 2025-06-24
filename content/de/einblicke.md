@@ -7,7 +7,7 @@ title: Einblicke
 
 Kumpel und Hütte steht für ein Leben in Gemeinschaft, Sicherheit und Herzlichkeit im Alter. Unsere liebevoll gestalteten Wohngemeinschaften bieten Senior:innen ein echtes Zuhause mit Freiraum und Unterstützung nach Wunsch. Entdecken Sie hier, wie wir Alltag und Miteinander gestalten.
 
-{{< button "Jetzt Kontakt aufnehmen" "/besuch-vereinbaren/" >}}
+{{< button "Jetzt Kontakt aufnehmen" "/kontakt/" >}}
 
 ![](/uploads/gallery/05.jpg)
 

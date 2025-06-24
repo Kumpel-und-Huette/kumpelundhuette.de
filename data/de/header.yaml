@@ -23,6 +23,8 @@ menuitems:
     link: /einblicke/
   - title: Neuigkeiten
     link: /neuigkeiten/
+  - title: Karrieren
+    link: /karrieren/
   
 cta:
   active: true

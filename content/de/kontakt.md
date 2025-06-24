@@ -16,7 +16,10 @@ Deutchland
 
 Email: info@kumpelundhuette.de </br>
 Handynummer: <a href="tel:+4916090889269"> +49 160 90889269</a>
-
 {{< socialbuttons >}}
+
+{{< contactform >}}
+
+
 
 {{< /brick_contact >}}

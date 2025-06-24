@@ -7,15 +7,14 @@
     {{- end -}}
 {{- end -}}
 <section class="contact">
-    <div class="container small">
-        <div class="text">
-            {{- markdownify $inner -}}
-        </div>
-        {{/*  <div>
+    <div class="container twocols">
+        <div>
             <div class="box">
                 {{- partial "form.html" (index page.Site.Data page.Site.Language.Lang).contactform -}}
             </div>
-        </div>  */}}
-        
+        </div>
+        <div class="text">
+            {{- markdownify $inner -}}
+        </div>
     </div>
 </section>

@@ -22,6 +22,10 @@ Die neue Einrichtung liegt in direkter Nähe zum Phönixsee und bietet neben ruh
 
 ## Interesse an einem Platz?
 
+{{< youtube id="dQw4w9WgXcQ" image="uploads/photos/lego.jpg" >}} 
+
+
+
 Einige Zimmer sind aktuell noch verfügbar. Kontaktieren Sie uns gern für eine Besichtigung oder ein unverbindliches Gespräch.
 
 ---

@@ -10,6 +10,8 @@ menuitems:
       link: /ueber-uns/
     - title: Unser Konzept
       link: /unser-konzept/
+    - title: Unsere Motivation
+      link: /motivation/
   - title: Die Hütte
     link: /unser-zuhause/
     items:
@@ -24,6 +26,6 @@ menuitems:
   
 cta:
   active: true
-  title: Besuch vereinbaren
-  link: /besuch-vereinbaren/
+  title: Kontakt
+  link: /kontakt/
 preheader: geöffnet Mo-Fr von 9-5

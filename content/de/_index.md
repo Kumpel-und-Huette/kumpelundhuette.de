@@ -33,7 +33,7 @@ Bei Kumpel und Hütte schaffen wir ein Zuhause für Menschen, die trotz Pflegegr
 
 ![](/uploads/illustrations/cuate/home/4.jpg)
 
-Bei Kumpel und Hütte möchten wir älteren Menschen ein erfülltes und selbstbestimmtes Leben ermöglichen. Unsere Werte prägen den Alltag in unseren Wohngemeinschaften und schaffen ein Umfeld, in dem man sich wohl und gut aufgehoben fühlt.
+Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und selbstbestimmtes Leben ermöglichen. Unsere Werte prägen den Alltag in unseren Wohngemeinschaften und schaffen ein Umfeld, in dem man sich wohl und gut aufgehoben fühlt.
 
 - **Vertrauen** - Bewohner und Familien können sich auf uns verlassen — transparent, verantwortungsbewusst und zuverlässig.
 
@@ -43,7 +43,7 @@ Bei Kumpel und Hütte möchten wir älteren Menschen ein erfülltes und selbstbe
 
 - **Würde** - Jeder Bewohner wird mit Respekt, Selbstbestimmung und individueller Zuwendung behandelt.
 
-- **Erschwinglichkeit** - Unser Angebot bleibt bezahlbar — für ein gutes Leben im Alter ohne hohe Kosten.
+- **Erschwinglichkeit** - Unser Modell ist fair kalkuliert, entlastet Bewohner und Angehörige und wird durch Pflegeleistungen umfassend unterstützt.
 
 
 {{< /brick_image >}}

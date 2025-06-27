@@ -52,7 +52,7 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 
 ## Unsere Einrichtungen auf einen Blick
 
-**Kumpel und Hütte** bietet Ihnen alles, was für ein sicheres, komfortables und gemeinschaftliches Leben im Alter wichtig ist. Unsere liebevoll gestalteten Häuser schaffen Lebensqualität und Geborgenheit.
+**Kumpel und Hütte** bietet Ihnen alles, was für ein sicheres, komfortables und gemeinschaftliches Leben im Alter wichtig ist. Unsere liebevoll gestalteten Häuser und Wohnungen schaffen Lebensqualität und Geborgenheit.
 
 ---
 

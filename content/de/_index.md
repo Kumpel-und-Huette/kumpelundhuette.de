@@ -3,7 +3,7 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Warm und Menschlich!
+# Nicht Heim. Nicht allein. Einfach Zuhause!
 
 Kumpel und Hütte ist ein Zuhause! Kein Heim. Kein Hotel. Keine anonyme WG. Es ist ein richtiges Zuhause - für Menschen, die im Alter gemeinsam leben möchten, mit Würde, Humor und Alltagshilfe. 
 

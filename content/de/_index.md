@@ -5,7 +5,7 @@ title: Home
 
 # Warm und Menschlich!
 
-Kumpel und Hütte ist kein Heim. Kein Hotel. Keine anonyme WG. Es ist ein Zuhause - für Menschen, die im Alter gemeinsam leben möchten, mit Würde, Humor und Alltagshilfe. 
+Kumpel und Hütte ist ein Zuhause! Kein Heim. Kein Hotel. Keine anonyme WG. Es ist ein richtiges Zuhause - für Menschen, die im Alter gemeinsam leben möchten, mit Würde, Humor und Alltagshilfe. 
 
 ![](/uploads/illustrations/cuate/home/1.jpg)
 

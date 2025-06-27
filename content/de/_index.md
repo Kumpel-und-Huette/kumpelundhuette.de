@@ -5,7 +5,7 @@ title: Home
 
 # Nicht Heim. Nicht allein. Einfach Zuhause!
 
-Kumpel und Hütte ist ein Zuhause! Kein Heim. Kein Hotel. Keine anonyme WG. Es ist ein richtiges Zuhause - für Menschen, die im Alter gemeinsam leben möchten, mit Würde, Humor und Alltagshilfe. 
+Kumpel & Hütte ist mehr als ein Ort zum Wohnen - es ist ein echtes Zuhause. Kein Heim. Kein Hotel. Keine anonyme WG. Sondern ein vertrautes Miteinander für Menschen, die im Alter nicht allein, sondern in Gemeinschaft leben möchten - mit Würde, Humor und alltagstauglicher Unterstützung.
 
 ![](/uploads/illustrations/cuate/home/1.jpg)
 

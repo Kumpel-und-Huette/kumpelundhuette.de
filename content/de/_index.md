@@ -52,14 +52,18 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 
 ## Unsere Einrichtungen auf einen Blick
 
-**Kumpel und Hütte** bietet Ihnen alles, was für ein sicheres, komfortables und gemeinschaftliches Leben im Alter wichtig ist. Unsere liebevoll gestalteten Häuser und Wohnungen schaffen Lebensqualität und Geborgenheit.
+**Kumpel und Hütte** bietet Ihnen alles, was ein sicheres, selbstbestimmtes und geborgenes Leben trotz Pflegebedarf ausmacht. Unsere Hausgemeinschaften sind liebevoll gestaltet und verbinden Komfort mit echter Nähe - für Menschen, die im Alltag nicht allein sein wollen.
 
 ---
 
 ![](/img/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg)
-### Vielfältige Gemeinschaftsräume
+### Vielfältige Räume für Begegnung & Rückzug
 
-Unsere Häuser verfügen über großzügige Gemeinschaftsbereiche: Wohnküchen, gemütliche Wohnzimmer und Gärten laden zu Begegnungen und Aktivitäten ein.
+Unsere Wohnungen verbinden Privatsphäre und Gemeinschaft auf ideale Weise.
+Jedes Zuhause bietet großzügige private Rückzugsräume sowie einladende Gemeinschaftsbereiche:
+Wohnküchen, gemütliche Wohnzimmer, ein Lese- oder Spielezimmer und grüne Außenflächen laden zu Begegnung, Austausch und Aktivität ein.
+
+➡️ Die konkrete Ausstattung unserer Hausgemeinschaften finden Sie in den jeweiligen Wohnangeboten.
 
 ---
 

@@ -5,7 +5,7 @@ title: Home
 
 # Warm und Menschlich!
 
-Kumpel und Hütte schafft gemeinschaftliche Wohnformen für Senioren-sicher, bezahlbar und in guter Gesellschaft. Wir fördern Selbstbestimmung, bieten alltagsnahe Unterstützung und stärken soziale Verbindungen. Gemeinsam gestalten wir das Älterwerden menschlicher und lebenswerter.
+Kumpel und Hütte ist kein Heim. Kein Hotel. Keine anonyme WG. Es ist ein Zuhause - für Menschen, die im Alter gemeinsam leben möchten, mit Würde, Humor und Alltagshilfe. 
 
 ![](/uploads/illustrations/cuate/home/1.jpg)
 

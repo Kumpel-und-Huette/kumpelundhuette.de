@@ -16,8 +16,9 @@ Kumpel & Hütte ist mehr als ein Ort zum Wohnen - es ist ein echtes Zuhause. Kei
 
 ![](/uploads/illustrations/cuate/home/3.jpg)
 
-Bei Kumpel und Hütte schaffen wir ein Zuhause für Senioren, die sicher, selbstbestimmt und in guter Gesellschaft leben möchten. Wir unterstützen im Alltag, ohne die Eigenständigkeit unserer Bewohner einzuschränken.
+Bei Kumpel und Hütte schaffen wir ein Zuhause für Menschen, die trotz Pflegegrad weiterhin selbstbestimmt leben möchten - in sicherer, liebevoller Gemeinschaft. Unser Konzept richtet sich an Menschen mit Pflegegrad 2 oder höher, die im Alltag Unterstützung brauchen, aber kein klassisches Pflegeheim wünschen.
 
+# Unser Versprechen
 - Gemeinschaftliches Wohnen in herzlicher Atmosphäre
 - Alltagsnahe Unterstützung und individuelle Hilfe
 - Förderung von Selbstbestimmung, Aktivität und Lebensfreude

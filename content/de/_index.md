@@ -3,7 +3,7 @@ title: Home
 ---
 {{< brick_intro >}}
 
-# Zuhause in der Ferne!
+# Warm und Menschlich!
 
 Kumpel und Hütte schafft gemeinschaftliche Wohnformen für Senioren-sicher, bezahlbar und in guter Gesellschaft. Wir fördern Selbstbestimmung, bieten alltagsnahe Unterstützung und stärken soziale Verbindungen. Gemeinsam gestalten wir das Älterwerden menschlicher und lebenswerter.
 

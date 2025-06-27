@@ -68,9 +68,11 @@ Wohnküchen, gemütliche Wohnzimmer, ein Lese- oder Spielezimmer und grüne Auß
 ---
 
 ![](/img/icons/material-symbols/200/rounded/performance_max.svg)
-### Barrierefreie und sichere Ausstattung
+### Sichere und durchdachte Ausstattung
 
-Alle Wohnungen und Gemeinschaftsflächen sind barrierefrei gestaltet und bieten höchste Sicherheitsstandards — für ein selbstbestimmtes und sorgenfreies Leben.
+Unsere Wohnungen sind nicht vollständig barrierefrei, aber alltagstauglich und mit viel Sorgfalt eingerichtet.
+Bodentiefe Dusche, Handläufe und gut durchdachte Beleuchtung sorgen für Orientierung, Komfort und Sicherheit.
+So bleibt ein selbstbestimmtes Leben möglich – mit einer Ausstattung, die unterstützt, ohne einzuengen.
 
 ---
 

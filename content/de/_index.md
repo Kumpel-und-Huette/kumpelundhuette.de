@@ -79,28 +79,30 @@ So bleibt ein selbstbestimmtes Leben möglich – mit einer Ausstattung, die unt
 ![](/img/icons/material-symbols/200/rounded/design_services.svg)
 ### Individuell gestaltbare Zimmer
 
-Jedes Zimmer kann nach den eigenen Wünschen eingerichtet werden. So entsteht ein persönliches Zuhause, das Geborgenheit vermittelt.
+Jedes Zimmer kann nach den eigenen Wünschen eingerichtet werden - möbliert oder mit vertrauten persönlichen Gegenständen. So entsteht ein persönliches Rückzugsort, der sich wirklich wie "zuhause" anfühlt.
 
 ---
 
 ![](/img/icons/material-symbols/200/rounded/devices.svg)
 ### Moderne Kommunikation & Technik
 
-Unsere Einrichtungen sind technisch gut ausgestattet: WLAN, Notrufsysteme und moderne Infrastruktur erleichtern den Alltag.
+WLAN, Hausnotrufsysteme und eine gute digitale Grundausstattung sorgen für Verbindung und Sicherheit.
+Viele Lösungen sind individuell anpassbar – für mehr Komfort im Alltag.
 
 ---
 
 ![](/img/icons/material-symbols/200/rounded/timer.svg)
 ### Flexible Unterstützung und Services
 
-Ob hauswirtschaftliche Hilfe, Begleitung im Alltag oder Pflegekoordination — wir bieten Unterstützung genau dort, wo sie gebraucht wird.
+Ob hauswirtschaftliche Hilfe, Begleitung, Betreuung oder Pflegekoordination — wir bieten Unterstützung genau dort, wo sie gebraucht wird.
 
 ---
 
 ![](/img/icons/material-symbols/200/rounded/auto_fix.svg)
-### Vielfältiges Freizeit- und Kulturangebot
+### Gemeinschaft, Kultur & Lebensfreude
 
-Regelmäßige Feste, kulturelle Ausflüge, Kinoabende, gemeinsames Kochen und vieles mehr: bei uns wird der Alltag lebendig und abwechslungsreich gestaltet.
+Ob gemeinsame Mahlzeiten, Ausflüge, Lesekreise oder Musik:
+Unser Alltag bleibt lebendig – jeder kann mitmachen, niemand muss.
 
 {{< /brick_features >}}
 

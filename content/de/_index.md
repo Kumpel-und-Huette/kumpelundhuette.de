@@ -20,9 +20,9 @@ Bei Kumpel und Hütte schaffen wir ein Zuhause für Senioren, die sicher, selbst
 
 - Gemeinschaftliches Wohnen in herzlicher Atmosphäre
 - Alltagsnahe Unterstützung und individuelle Hilfe
-- Förderung von Selbstbestimmung und Lebensqualität
+- Förderung von Selbstbestimmung, Aktivität und Lebensfreude
 - Nachhaltige und bezahlbare Wohnangebote
-- Vertrauensvolle, empathische Begleitung durch unser Team
+- Vertrauensvolle, empathische Begleitung durch unser qualifiziertes Team
 
 
 {{< /brick_image2 >}}

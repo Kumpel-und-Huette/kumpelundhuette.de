@@ -30,7 +30,9 @@ Unsere Wohnangebote verbinden komfortable Einzelzimmer mit großzügigen Gemeins
 
 ![](/uploads/photos/hike/hike3.jpg)
 
-Jede Wohngemeinschaft schafft eine warme Atmosphäre, in der sich Senior:innen sicher, gesehen und wertgeschätzt fühlen. Unsere Teams unterstützen da, wo Hilfe gebraucht wird – unaufdringlich und menschlich. Der Fokus liegt auf Teilhabe, Austausch und dem Gefühl, dazuzugehören.
+Jede unserer Hausgemeinschaften schafft eine warme, vertraute Atmosphäre, in der sich Menschen mit Unterstützungsbedarf sicher, gesehen und willkommen fühlen. Unsere Betreuungsteams sind da, wenn Hilfe gebraucht wird - unaufdringlich, menschlich und verlässlich. 
+Im Mittelpunkt steht nicht die Pflege, sondern das Leben: 
+Teilhabe, Austausch und das gute Gefühl, dazuzugehören.
 
 {{< /brick_image2 >}}
 {{< brick_image >}}

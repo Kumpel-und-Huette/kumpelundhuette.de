@@ -47,7 +47,7 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 
 
 {{< /brick_image >}}
-{{< brick_reviews >}}{{< /brick_reviews >}}
+<!-- {{< brick_reviews >}}{{< /brick_reviews >}} -->
 {{< brick_features >}}
 
 ## Unsere Einrichtungen auf einen Blick
@@ -112,7 +112,7 @@ Unser Alltag bleibt lebendig – jeder kann mitmachen, niemand muss.
 
 {{</ brick_title >}}
 {{< brick_wide >}}
-
 {{< faq >}}
+
 
 {{< /brick_wide >}}

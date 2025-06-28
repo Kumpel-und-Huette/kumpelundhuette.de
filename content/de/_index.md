@@ -63,7 +63,7 @@ Unsere Wohnungen verbinden Privatsphäre und Gemeinschaft auf ideale Weise.
 Jedes Zuhause bietet großzügige private Rückzugsräume sowie einladende Gemeinschaftsbereiche:
 Wohnküchen, gemütliche Wohnzimmer, ein Lese- oder Spielezimmer und grüne Außenflächen laden zu Begegnung, Austausch und Aktivität ein.
 
-➡️ Die konkrete Ausstattung unserer Hausgemeinschaften finden Sie in den jeweiligen Wohnangeboten.
+Die konkrete Ausstattung unserer Hausgemeinschaften finden Sie in den jeweiligen Wohnangeboten.
 
 ---
 

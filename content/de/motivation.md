@@ -19,15 +19,15 @@ Diese Realität war für uns der Antrieb, anders zu denken. Gemeinsam statt eins
 
 ## Unser Konzept
 
-**Kumpel und Hütte** steht für eine neue Form des Wohnens im Alter: gemeinschaftlich, bezahlbar und menschlich. Unsere Wohngemeinschaften bieten Raum für Privatsphäre, aber auch für Begegnung. Jede*r Bewohner*in hat sein/ihr eigenes Zimmer mit persönlichem Rückzugsort, aber das Leben spielt sich auch in der Gemeinschaftsküche, auf dem Sofa im Wohnzimmer oder bei einer Tasse Tee im Garten ab.
+**Kumpel und Hütte** steht für eine neue Form des Wohnens: gemeinschaftlich, bezahlbar und menschlich. Unsere Wohngemeinschaften bieten Raum für Privatsphäre, aber auch für Begegnung. Jede*r Bewohner*in hat sein/ihr eigenes Zimmer mit persönlichem Rückzugsort. Doch das Leben spielt sich auch dort ab, wo Gemeinschaft entsteht: Inder Wohnküche, im Wohn-, Lese- oder Spielezimmer oder bei einer Tasse Tee im Garten ab.
 
-Wir unterstützen im Alltag, wo es gebraucht wird – sei es bei der Medikamenteneinnahme, beim Kochen oder bei Arztbesuchen. Doch wir glauben auch daran, dass Selbstbestimmung erhalten bleiben muss. Niemand wird bevormundet, niemand "betreut" im klassischen Sinn. Vielmehr entsteht ein Netzwerk gegenseitiger Hilfe.
+Wir unterstützen im Alltag, wo es gebraucht wird – sei es bei der Abstimmung mit dem Pflegedienst, beim Kochen oder bei Arztbesuchen. Doch wir glauben auch daran, dass Selbstbestimmung erhalten bleiben muss. Niemand wird bevormundet - und Betreuung heißt bei uns nicht Kontrolle, sondern Verlässlichkeit.So entsteht ein Netzwerk gegenseitiger Unterstützung, das Sicherheit gibt - ohne die Eigenständigkeit zu nehmen.
 
 ## Begegnung schafft Sinn
 
 Was unsere Motivation immer wieder bestätigt: die Begegnungen, das Lachen, die Geschichten. Wenn ein Nachmittag mit gemeinsamem Kuchenbacken plötzlich zum Highlight der Woche wird, wenn ein Spaziergang zu zweit das Gefühl von Zugehörigkeit stiftet, dann wissen wir: Genau dafür machen wir das.
 
-Alter ist keine Phase des Stillstands, sondern des Wandels. Und Wandel braucht Menschen, die zuhören, die mren, die m\uiterleben, die da sind. Diese Menschen möchten wir sein – als Kumpel, als Hütte, als Zuhause.
+Alter ist keine Phase des Stillstands, sondern des Wandels. Und Wandel braucht Menschen, die zuhören, die sich kümmern, die miterleben, die da sind. Diese Menschen möchten wir sein – als Kumpel, als Hütte, als Zuhause.
 
 ## Bezahlbarkeit und Würde
 
@@ -43,6 +43,6 @@ Wir arbeiten daran, digitale Unterstützung einzubinden, ohne zu überfordern. W
 
 Am Ende steht für uns nicht ein System, sondern der Mensch. Jeder Mensch möchte gesehen, gehört und gebraucht werden. Diese Grundbedürfnisse enden nicht mit dem Renteneintritt. Unsere Motivation ist es, diesen Bedürfnissen Raum zu geben – mit offenen Herzen, offenen Armen und einem offenen Ohr.
 
-**Kumpel und Hütte** ist mehr als ein Wohnkonzept. Es ist eine Haltung. Ein Versprechen. Und ein Zuhause für die zweite Lebenshälfte.
+**Kumpel und Hütte** ist mehr als ein Wohnkonzept. Es ist eine Haltung. Ein Versprechen. Und ein Zuhause für den nächsten Lebensabschnitt.
 
 {{< /brick_wide >}}

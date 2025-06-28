@@ -57,6 +57,7 @@ Um bei uns einzuziehen, solltest du
 3. **Antrag & Unterlagen** – Anmeldebogen und Atteste einreichen.  
 4. **Kostenklärung** – Pflegekasse / Sozialamt + Zusatzleistungen abstimmen.  
 5. **Einzug & Willkommens­woche** – Ankommen, Kennenlernen, Start in den neuen Alltag.
+
 WIR HELFEN GERNE BEI ALLEN SCHRITTEN!
 ---
 ## Benoetigte Unterlagen

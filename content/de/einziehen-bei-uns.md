@@ -15,10 +15,10 @@ Hier erfährst du, wie das Wohnen in unseren gemeinschaftlichen Häusern aussieh
 
 Gemeinsam statt einsam – bei uns erwartet dich  
 
-- **Privatsphäre & Gemeinschaft:** Eigenes barrierefreies Zimmer plus großzügige Wohnküche, Garten und Gemeinschaftsräume.  
+- **Privatsphäre & Gemeinschaft:** Eigenes komfortables Zimmer plus großzügige Wohnküche, Garten und Gemeinschaftsraum.  
 - **Alltag mit Herz:** Gemeinsame Mahlzeiten, Aktivitäten, Feste und kulturelle Ausflüge – alles kann, nichts muss.  
 - **Individuelle Unterstützung:** Unser Team hilft dort, wo es gebraucht wird – von hauswirtschaftlicher Hilfe bis zur Pflegekoordination.  
-- **Sicherheit & Technik:** 24/7-Notrufsystem, WLAN und seniorengerechte Ausstattung für ein sorgenfreies Leben.  
+- **Sicherheit & Technik:** 24/7-Notrufsystem nach Absprache, WLAN und seniorengerechte Ausstattung für ein sorgenfreies Leben.  
 - **Transparente Kosten:** Klare Preisstrukturen ohne versteckte Gebühren; Finanzierungshilfen durch Pflege- und Sozialkassen möglich.
 
 ## Voraussetzungen & Aufnahme
@@ -26,10 +26,9 @@ Gemeinsam statt einsam – bei uns erwartet dich
 Um bei uns einzuziehen, solltest du  
 
 - mindestens **60 Jahre** alt sein (Ausnahmen nach Absprache möglich),  
-- tagsüber eigenständig oder mit leichter Unterstützung zurechtkommen,  
+- Eigenständig oder mit leichter Unterstützung tagsüber zurechtkommen,  
 - Offenheit für das Leben in einer Wohngemeinschaft mitbringen,  
-- bei Pflegegrad (PG 1-5) eine gültige Einstufung der Pflegekasse besitzen,  
-- ärztliche Bescheinigung über die Wohn­fähigkeit in einer WG vorlegen.
+- bei Pflegegrad (PG 2-5) eine gültige Einstufung der Pflegekasse besitzen,
 
 ### Kosten & Finanzierung
 

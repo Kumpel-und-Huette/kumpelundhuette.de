@@ -25,7 +25,7 @@ Gemeinsam statt einsam – bei uns erwartet dich
 
 Um bei uns einzuziehen, solltest du  
 
-- mindestens **60 Jahre** alt sein (Ausnahmen nach Absprache möglich),  
+- mindestens **Pflegegrad 2** bekommen (Ausnahmen nach Absprache möglich),  
 - Eigenständig oder mit leichter Unterstützung tagsüber zurechtkommen,  
 - Offenheit für das Leben in einer Wohngemeinschaft mitbringen,  
 - bei Pflegegrad (PG 2-5) eine gültige Einstufung der Pflegekasse besitzen,
@@ -34,7 +34,7 @@ Um bei uns einzuziehen, solltest du
 
 | Leistungspaket        | Enthaltene Services                                     | Eigenanteil          |
 |-----------------------|---------------------------------------------------------|-----------------------|
-| **Basis**             | Zimmer + Gemeinschaftsflächen, Grundversorgung          | ab 0 €/Monat (PG/Sozialhilfe) |
+| **Basis**             | Zimmer + Gemeinschaftsflächen, Grundversorgung          | ab 0 €/Monat (Pflegekasse/Sozialhilfe) |
 | **Komfort**           | Basis + hauswirtschaftliche Hilfe, Freizeitprogramm     | ab 25 €/Monat         |
 | **Rundum sorglos**    | Komfort + individuelle Pflegekoordination  | ab 75 €/Monat         |
 
@@ -57,7 +57,7 @@ Um bei uns einzuziehen, solltest du
 3. **Antrag & Unterlagen** – Anmeldebogen und Atteste einreichen.  
 4. **Kostenklärung** – Pflegekasse / Sozialamt + Zusatzleistungen abstimmen.  
 5. **Einzug & Willkommens­woche** – Ankommen, Kennenlernen, Start in den neuen Alltag.
-
+WIR HELFEN GERNE BEI ALLEN SCHRITTEN!
 ---
 ## Benoetigte Unterlagen
 

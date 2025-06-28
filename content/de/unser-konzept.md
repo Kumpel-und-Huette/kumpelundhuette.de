@@ -49,7 +49,7 @@ Bei Kumpel und Hütte entstehen Orte, an denen Beziehungen wachsen. Mit kulturel
 ![](/uploads/photos/hike/hike1.jpg)
 
 ## "Hier fühle ich mich wieder wie zu Hause – aber nie allein."
-— Eine Bewohnerin
+— So soll es sein!
 
 {{< /brick_quote >}}
 

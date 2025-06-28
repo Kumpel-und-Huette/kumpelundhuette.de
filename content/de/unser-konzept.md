@@ -21,7 +21,7 @@ Kumpel und Hütte steht für ein neues Wohnkonzept im Alter: Gemeinschaftlich le
 
 ![](/uploads/photos/hike/hike2.jpg)
 
-Unsere Häuser bieten barrierefreie Einzelzimmer kombiniert mit großzügigen Gemeinschaftsflächen. Ob beim Frühstück in der Wohnküche, beim Gärtnern oder beim Spieleabend – der Alltag wird gemeinsam gestaltet. Dabei steht die Selbstbestimmung jeder Bewohnerin und jedes Bewohners im Mittelpunkt.
+Unsere Wohnangebote verbinden komfortable Einzelzimmer mit großzügigen Gemeinschaftsflächen. Ob beim Frühstück in der Wohnküche, beim Gärtnern oder beim Spieleabend – der Alltag wird gemeinsam und lebendig gestaltet. Dabei steht die Selbstbestimmung jeder Bewohnerin und jedes Bewohners stets im Mittelpunkt.
 
 {{< /brick_image >}}
 {{< brick_image2 >}}

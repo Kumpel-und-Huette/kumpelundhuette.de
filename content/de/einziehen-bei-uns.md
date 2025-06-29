@@ -63,7 +63,7 @@ Um bei uns einzuziehen, solltest du
 
 WIR HELFEN GERNE BEI ALLEN SCHRITTEN!
 ---
-## Benoetigte Unterlagen
+## Benötigte Unterlagen
 
 - Vollständig ausgefüllter **Anmeldebogen**  
 - Ärztliche **Wohnfähigkeits­bescheinigung**  

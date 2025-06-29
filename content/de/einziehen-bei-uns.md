@@ -32,13 +32,16 @@ Um bei uns einzuziehen, solltest du
 
 ### Kosten & Finanzierung
 
-| Leistungspaket        | Enthaltene Services                                     | Eigenanteil          |
-|-----------------------|---------------------------------------------------------|-----------------------|
-| **Basis**             | Zimmer + Gemeinschaftsflächen, Grundversorgung          | ab 0 €/Monat (Pflegekasse/Sozialhilfe) |
-| **Komfort**           | Basis + hauswirtschaftliche Hilfe, Freizeitprogramm     | ab 25 €/Monat         |
-| **Rundum sorglos**    | Komfort + individuelle Pflegekoordination  | ab 75 €/Monat         |
 
-\* Eigenanteile variieren je nach Pflegegrad, Zuschüssen und Wahlleistungen.
+|Posten|Enthaltene Leistungen |Preis|Unterstützung |Eigenanteil|
+|--|--|--|--|--|
+| Miete | Zimmermiete, Nebenkosten, Strom, Heizung, Internet, GEZ  |570€|Je nach Rente möglich|**0€ - 570€**
+| Hauswirtschaft |wöch. **Reinigung** aller Zimmer, wöch. **Einkaufen**, wöch. **Wäscheservice**, tägl. **Frühstück**, tägl. **warme Mahlzeit**  |200€ |Plegekasse (ab PG2)|**0€ - 200€**
+| Betreuung | **aktivierende Betreuung**, allg.- und indiv. **Organisation**, **Gespräche**, **Kontakt zu Angehörigen** uvm. |200€|Pflegekasse (ab PG 2)|**0€ - 200€**
+| **GESAMT** |**ALL IN**  |970€|Nach Absprache und Pflegegrad komplett|**0€ - 970€**
+
+
+
 
 ### Bewerbungsunterlagen
 

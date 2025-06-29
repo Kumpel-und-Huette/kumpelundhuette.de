@@ -53,8 +53,8 @@ Gemeinsam mit unserem engagierten Team schaffen wir ein Zuhause, in dem man sich
 
 ![](/uploads/gallery/05.jpg)
 
-{{< /brick_quote >}}
-{{< brick_small >}} -->
+{{< /brick_quote >}} -->
+{{< brick_small >}}
 
 {{< /brick_small >}}
 {{< brick_map >}}{{< /brick_map >}}

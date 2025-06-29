@@ -57,7 +57,7 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 ---
 
 ![](/img/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg)
-### Vielfältige Räume für Begegnung & Rückzug
+### Räume für Begegnung & Rückzug
 
 Unsere Wohnungen verbinden Privatsphäre und Gemeinschaft auf ideale Weise.
 Jedes Zuhause bietet großzügige private Rückzugsräume sowie einladende Gemeinschaftsbereiche:

@@ -33,7 +33,7 @@ Um bei uns einzuziehen, solltest du
 ### Kosten & Finanzierung
 
 
-|Posten|Enthaltene Leistungen |Preis|Unterstützung |Eigenanteil|
+|Posten|Enthaltene Leistungen |Preis|Unterstützung |   Eigenanteil|
 |--|--|--|--|--|
 | Miete | Zimmermiete, Nebenkosten, Strom, Heizung, Internet, GEZ  |570€|Je nach Rente möglich|**0€ - 570€**
 | Hauswirtschaft |wöch. **Reinigung** aller Zimmer, wöch. **Einkaufen**, wöch. **Wäscheservice**, tägl. **Frühstück**, tägl. **warme Mahlzeit**  |200€ |Plegekasse (ab PG2)|**0€ - 200€**
@@ -73,7 +73,7 @@ WIR HELFEN GERNE BEI ALLEN SCHRITTEN!
 - **Kontaktdaten** von Angehörigen oder gesetzlichen Betreuern
 
 ---
-## Haeufige Fragen (FAQ)
+## Häufige Fragen (FAQ)
 
 {{< faq >}}
 

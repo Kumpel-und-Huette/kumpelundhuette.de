@@ -1,0 +1,52 @@
+{{- $inner := . -}}
+{{- if or (eq $inner "") (eq $inner nil) -}}
+    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/jobs.md' file." -}}
+    {{- with page.Site.GetPage "bricks/jobs.md" -}}
+        {{- $inner = .RawContent -}}
+    {{- end -}}
+{{- end -}}
+{{- $parts := split $inner "---" -}}
+<section class="jobs">
+    <div class="container">
+        <div class="jobs-grid">
+            {{- range (index page.Site.Data page.Site.Language.Lang).jobs -}}
+            <div class="job-box">
+                <h3>
+                    {{- .title -}}
+                </h3>
+                
+                <div class="job-details">
+                    <div class="job-detail-item">
+                        <span class="job-detail-label">Standort</span>
+                        <span class="job-detail-value">{{- .location -}}</span>
+                    </div>
+                    <div class="job-detail-item">
+                        <span class="job-detail-label">Typ</span>
+                        <span class="job-detail-value">{{- .type -}}</span>
+                    </div>
+                    <div class="job-detail-item">
+                        <span class="job-detail-label">Abteilung</span>
+                        <span class="job-detail-value">{{- .department -}}</span>
+                    </div>
+                </div>
+                
+                <p><strong>Beschreibung:</strong> {{- .description -}}</p>
+                
+                <p><strong>Anforderungen:</strong></p>
+                <ul>
+                    {{- range .requirements -}}<li>{{- . -}}</li>{{- end -}}
+                </ul>
+                
+                <p><strong>Vorteile:</strong></p>
+                <ul>
+                    {{- range .benefits -}}<li>{{- . -}}</li>{{- end -}}
+                </ul>
+                
+                <div class="job-apply">
+                    <a href="mailto:jobs@kumpellundhuette.de?subject=For Job: {{- .title -}}" class="button primary">Jetzt bewerben</a>
+                </div>
+            </div>
+            {{- end -}}
+        </div>
+    </div>
+</section>

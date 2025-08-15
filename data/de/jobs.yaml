@@ -111,3 +111,22 @@
     - "Homeoffice-Optionen"
     - "Technische Weiterbildung"
     - "Überdurchschnittliche Vergütung"
+
+- title: Singer
+  location: Köln, NRW
+  type: Vollzeit
+  department: IT-Infrastruktur
+  experience: 4+ Jahre
+  description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
+  requirements:
+    - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
+    - "Kenntnisse in Docker, Kubernetes und CI/CD"
+    - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
+    - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
+    - "Linux-Administration und Scripting (Bash, Python)"
+  benefits:
+    - "Moderne Cloud-Technologien"
+    - "Zertifizierungsmöglichkeiten"
+    - "Homeoffice-Optionen"
+    - "Technische Weiterbildung"
+    - "Überdurchschnittliche Vergütung"

@@ -1,5 +1,5 @@
 ---
-title: Vorstellung der ersten Senioren-WG beim runden Tisch des Seniorenbüros LüDo
+title: Premiere: Vorstellung unserer ersten Senioren-WG in Lütgendortmund
 image: /uploads/gallery/Runder Tisch Senioren WG.jpg
 date: 2025-04-04 00:00:00
 ---

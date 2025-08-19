@@ -1,5 +1,5 @@
 ---
-title: Kumpel & Hütte - Gesellschaftervertrag ist unterzeichnet!
+title: Ein großer Schritt für uns – die Kumpel & Hütte UG (haftungsbeschränkt) ist gegründet!
 image: /uploads/photos/06.jpg
 date: 2025-05-06 00:00:00
 

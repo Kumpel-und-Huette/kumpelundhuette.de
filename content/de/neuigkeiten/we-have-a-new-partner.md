@@ -1,13 +1,17 @@
 ---
-title: We have a new Partner
+title: Kumpel & Hütte - Gesellschaftervertrag ist unterzeichnet!
 image: /uploads/photos/06.jpg
-date: 2022-09-30 00:00:00
+date: 2025-05-06 00:00:00
 
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus cursus egestas arcu, in vestibulum tortor pellentesque vitae. Curabitur dapibus tempor libero id vulputate. Proin sodales, nisi quis laoreet commodo, sapien quam consectetur lorem, ut molestie augue eros in enim. Nam tincidunt lobortis sapien, et molestie urna viverra sollicitudin. In hac habitasse platea dictumst. Donec placerat vestibulum luctus. Sed vel convallis nisi.
+Am 06. Mai 2025 haben wir den Gesellschaftervertrag unserer Kumpel & Hütte UG (haftungsbeschränkt) unterschrieben – ein Moment, den wir mit Stolz und Freude feiern.
 
-Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Nulla porta faucibus diam, vitae accumsan odio posuere rhoncus. Nunc pellentesque felis id sapien posuere, et commodo nisi pharetra. Cras pulvinar, urna iaculis pretium facilisis, odio dolor dictum leo, et fringilla libero ante eget elit. Vestibulum quis volutpat ligula. Fusce porta et mi luctus convallis. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Nulla id turpis tempor, euismod quam in, sollicitudin nisi. Vivamus a enim bibendum, posuere orci ac, lacinia erat. Morbi varius sapien efficitur, pellentesque elit in, feugiat risus. Vivamus in scelerisque nulla. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+„Kumpel & Hütte“ ist für uns mehr als nur ein Name. Es steht für Zusammenhalt, ehrliche Arbeit, Freundschaft und einen Ort, an dem Ideen geboren und Wirklichkeit werden. Genau diese Werte wollen wir in unser Unternehmen tragen.
+
+Mit der Gründung haben wir jetzt das Fundament geschaffen, um unsere Projekte mit voller Kraft anzugehen. Für uns heißt das: Ärmel hochkrempeln, gemeinsam anpacken und mit Herzblut etwas Neues aufbauen.
+
+Wir freuen uns auf das, was kommt – und darauf, diesen Weg mit euch zu teilen. 🚀🍻
 
 {{< tabs >}}
 

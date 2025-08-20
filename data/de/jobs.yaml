@@ -17,116 +17,116 @@
     - "Moderne Arbeitsumgebung"
     - "Attraktive Vergütung"
 
-- title: Marketing Manager
-  location: Köln, NRW
-  type: Vollzeit
-  department: Marketing
-  experience: 3+ Jahre
-  description: Als Marketing Manager entwickeln Sie strategische Marketing-Kampagnen und verantworten die digitale Präsenz unseres Unternehmens. Sie arbeiten eng mit unserem kreativen Team zusammen.
-  requirements:
-    - "Studium im Bereich Marketing, Kommunikation oder verwandten Fächern"
-    - "Erfahrung im digitalen Marketing und Social Media"
-    - "Kenntnisse in Google Analytics und Marketing-Tools"
-    - "Kreative Denkweise und analytische Fähigkeiten"
-    - "Erfahrung im B2B-Marketing von Vorteil"
-  benefits:
-    - "Kreative Freiheit"
-    - "Moderne Marketing-Tools"
-    - "Karriereentwicklungsmöglichkeiten"
-    - "Vergünstigte Firmenprodukte"
-    - "Jährliche Teamevents"
+# - title: Marketing Manager
+#   location: Köln, NRW
+#   type: Vollzeit
+#   department: Marketing
+#   experience: 3+ Jahre
+#   description: Als Marketing Manager entwickeln Sie strategische Marketing-Kampagnen und verantworten die digitale Präsenz unseres Unternehmens. Sie arbeiten eng mit unserem kreativen Team zusammen.
+#   requirements:
+#     - "Studium im Bereich Marketing, Kommunikation oder verwandten Fächern"
+#     - "Erfahrung im digitalen Marketing und Social Media"
+#     - "Kenntnisse in Google Analytics und Marketing-Tools"
+#     - "Kreative Denkweise und analytische Fähigkeiten"
+#     - "Erfahrung im B2B-Marketing von Vorteil"
+#   benefits:
+#     - "Kreative Freiheit"
+#     - "Moderne Marketing-Tools"
+#     - "Karriereentwicklungsmöglichkeiten"
+#     - "Vergünstigte Firmenprodukte"
+#     - "Jährliche Teamevents"
 
-- title: Customer Success Specialist
-  location: Remote / Hybrid
-  type: Vollzeit
-  department: Kundenservice
-  experience: 2+ Jahre
-  description: Unterstützen Sie unsere Kunden bei der optimalen Nutzung unserer Produkte und Services. Sie sind der erste Ansprechpartner für Fragen und sorgen für eine hohe Kundenzufriedenheit.
-  requirements:
-    - "Ausgeprägte Kundenorientierung und Servicegedanke"
-    - "Gute Kommunikationsfähigkeiten in Deutsch und Englisch"
-    - "Technisches Verständnis und Lernbereitschaft"
-    - "Erfahrung im Kundenservice oder Support"
-    - "Selbstständige Arbeitsweise"
-  benefits:
-    - "Vollständig remote möglich"
-    - "Flexible Arbeitszeiten"
-    - "Umfassende Einarbeitung"
-    - "Kontinuierliche Weiterbildung"
-    - "Faire Vergütung"
+# - title: Customer Success Specialist
+#   location: Remote / Hybrid
+#   type: Vollzeit
+#   department: Kundenservice
+#   experience: 2+ Jahre
+#   description: Unterstützen Sie unsere Kunden bei der optimalen Nutzung unserer Produkte und Services. Sie sind der erste Ansprechpartner für Fragen und sorgen für eine hohe Kundenzufriedenheit.
+#   requirements:
+#     - "Ausgeprägte Kundenorientierung und Servicegedanke"
+#     - "Gute Kommunikationsfähigkeiten in Deutsch und Englisch"
+#     - "Technisches Verständnis und Lernbereitschaft"
+#     - "Erfahrung im Kundenservice oder Support"
+#     - "Selbstständige Arbeitsweise"
+#   benefits:
+#     - "Vollständig remote möglich"
+#     - "Flexible Arbeitszeiten"
+#     - "Umfassende Einarbeitung"
+#     - "Kontinuierliche Weiterbildung"
+#     - "Faire Vergütung"
 
-- title: UX/UI Designer
-  location: Dortmund, NRW
-  type: Vollzeit
-  department: Design
-  experience: 3+ Jahre
-  description: Gestalten Sie intuitive und ansprechende Benutzeroberflächen für unsere digitalen Produkte. Sie arbeiten eng mit Entwicklern und Produktmanagern zusammen.
-  requirements:
-    - "Portfolio mit UX/UI-Projekten"
-    - "Erfahrung mit Design-Tools (Figma, Sketch, Adobe XD)"
-    - "Verständnis für User Research und Usability"
-    - "Kenntnisse in Design-Systemen und Prototyping"
-    - "Kreativität und analytisches Denken"
-  benefits:
-    - "Moderne Design-Tools"
-    - "Kreative Arbeitsumgebung"
-    - "Teilnahme an Design-Konferenzen"
-    - "Entwicklungsperspektiven"
-    - "Attraktive Vergütung"
+# - title: UX/UI Designer
+#   location: Dortmund, NRW
+#   type: Vollzeit
+#   department: Design
+#   experience: 3+ Jahre
+#   description: Gestalten Sie intuitive und ansprechende Benutzeroberflächen für unsere digitalen Produkte. Sie arbeiten eng mit Entwicklern und Produktmanagern zusammen.
+#   requirements:
+#     - "Portfolio mit UX/UI-Projekten"
+#     - "Erfahrung mit Design-Tools (Figma, Sketch, Adobe XD)"
+#     - "Verständnis für User Research und Usability"
+#     - "Kenntnisse in Design-Systemen und Prototyping"
+#     - "Kreativität und analytisches Denken"
+#   benefits:
+#     - "Moderne Design-Tools"
+#     - "Kreative Arbeitsumgebung"
+#     - "Teilnahme an Design-Konferenzen"
+#     - "Entwicklungsperspektiven"
+#     - "Attraktive Vergütung"
 
-- title: DevOps Engineer
-  location: Köln, NRW
-  type: Vollzeit
-  department: IT-Infrastruktur
-  experience: 4+ Jahre
-  description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
-  requirements:
-    - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
-    - "Kenntnisse in Docker, Kubernetes und CI/CD"
-    - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
-    - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
-    - "Linux-Administration und Scripting (Bash, Python)"
-  benefits:
-    - "Moderne Cloud-Technologien"
-    - "Zertifizierungsmöglichkeiten"
-    - "Homeoffice-Optionen"
-    - "Technische Weiterbildung"
-    - "Überdurchschnittliche Vergütung"
+# - title: DevOps Engineer
+#   location: Köln, NRW
+#   type: Vollzeit
+#   department: IT-Infrastruktur
+#   experience: 4+ Jahre
+#   description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
+#   requirements:
+#     - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
+#     - "Kenntnisse in Docker, Kubernetes und CI/CD"
+#     - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
+#     - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
+#     - "Linux-Administration und Scripting (Bash, Python)"
+#   benefits:
+#     - "Moderne Cloud-Technologien"
+#     - "Zertifizierungsmöglichkeiten"
+#     - "Homeoffice-Optionen"
+#     - "Technische Weiterbildung"
+#     - "Überdurchschnittliche Vergütung"
 
-- title: DevOps Engineer II
-  location: Köln, NRW
-  type: Vollzeit
-  department: IT-Infrastruktur
-  experience: 4+ Jahre
-  description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
-  requirements:
-    - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
-    - "Kenntnisse in Docker, Kubernetes und CI/CD"
-    - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
-    - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
-    - "Linux-Administration und Scripting (Bash, Python)"
-  benefits:
-    - "Moderne Cloud-Technologien"
-    - "Zertifizierungsmöglichkeiten"
-    - "Homeoffice-Optionen"
-    - "Technische Weiterbildung"
-    - "Überdurchschnittliche Vergütung"
+# - title: DevOps Engineer II
+#   location: Köln, NRW
+#   type: Vollzeit
+#   department: IT-Infrastruktur
+#   experience: 4+ Jahre
+#   description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
+#   requirements:
+#     - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
+#     - "Kenntnisse in Docker, Kubernetes und CI/CD"
+#     - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
+#     - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
+#     - "Linux-Administration und Scripting (Bash, Python)"
+#   benefits:
+#     - "Moderne Cloud-Technologien"
+#     - "Zertifizierungsmöglichkeiten"
+#     - "Homeoffice-Optionen"
+#     - "Technische Weiterbildung"
+#     - "Überdurchschnittliche Vergütung"
 
-- title: Singer
-  location: Köln, NRW
-  type: Vollzeit
-  department: IT-Infrastruktur
-  experience: 4+ Jahre
-  description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
-  requirements:
-    - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
-    - "Kenntnisse in Docker, Kubernetes und CI/CD"
-    - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
-    - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
-    - "Linux-Administration und Scripting (Bash, Python)"
-  benefits:
-    - "Moderne Cloud-Technologien"
-    - "Zertifizierungsmöglichkeiten"
-    - "Homeoffice-Optionen"
-    - "Technische Weiterbildung"
-    - "Überdurchschnittliche Vergütung"
+# - title: Singer
+#   location: Köln, NRW
+#   type: Vollzeit
+#   department: IT-Infrastruktur
+#   experience: 4+ Jahre
+#   description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
+#   requirements:
+#     - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
+#     - "Kenntnisse in Docker, Kubernetes und CI/CD"
+#     - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
+#     - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
+#     - "Linux-Administration und Scripting (Bash, Python)"
+#   benefits:
+#     - "Moderne Cloud-Technologien"
+#     - "Zertifizierungsmöglichkeiten"
+#     - "Homeoffice-Optionen"
+#     - "Technische Weiterbildung"
+#     - "Überdurchschnittliche Vergütung"

@@ -59,9 +59,8 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 ![](/img/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg)
 ### Räume für Begegnung & Rückzug
 
-Unsere Wohnungen verbinden Privatsphäre und Gemeinschaft auf ideale Weise.
-Jedes Zuhause bietet großzügige private Rückzugsräume sowie einladende Gemeinschaftsbereiche:
-Wohnküchen, gemütliche Wohnzimmer, ein Lese- oder Spielezimmer und grüne Außenflächen laden zu Begegnung, Austausch und Aktivität ein. Die konkrete Ausstattung unserer Hausgemeinschaften finden Sie in den jeweiligen Wohnangeboten.
+Bei uns treffen Rückzug und Gemeinschaft aufeinander.
+Jedes Zuhause bietet Platz für persönliche Geborgenheit und zugleich Räume zum Zusammensein: Wohnküche, gemütliches Wohnzimmer, Spiele- oder Leseecke und ein grüner Garten laden zum Austausch ein. Welche Ausstattung dich erwartet, erfährst du in unseren Angeboten.
 
 
 

@@ -6,7 +6,7 @@ title: map
 
 [Google Maps](https://maps.app.goo.gl/Tado4PkLB8r99nMU8)
 
-## Contact us
+## Kontakt
 
 Kumpel und Huette
 Im Heidewinkel 30 

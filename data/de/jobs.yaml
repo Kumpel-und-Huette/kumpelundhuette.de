@@ -1,18 +1,21 @@
 - title: Initiativbewerbung
-  Ort: Dortmund, NRW
-  Anstellung: Individuell ((Vollzeit, Teilzeit, Minijob)
-  Bereich: Hauswirtschaft, Betreuung, Organisation, etc.
-  Beschreibung: Auch wenn wir aktuell keine konkrete Stelle ausgeschrieben haben, freuen wir uns jederzeit über Initiativbewerbungen.
-   Bei Kumpel & Hütte geht es nicht nur ums Arbeiten, sondern ums Gestalten eines Zuhauses für Menschen, die Gemeinschaft und Selbstständigkeit im Alter suchen.
-   Wenn du Freude daran hast, andere Menschen zu unterstützen, eine positive Atmosphäre zu schaffen und Teil eines engagierten, wachsenden Teams zu sein, dann bist du bei uns richtig.
-  Was wir uns wünschen: Freude am Umgang mit Menschen
-   Empathie, Geduld und Zuverlässigkeit
-   Eigeninitiative und Verantwortungsbewusstsein
-  Vorteile:
-   Sinnstiftende Arbeit mit direktem Mehrwert für unsere Bewohner:innen
-   Flexible Arbeitszeiten und Möglichkeiten zur individuellen Gestaltung
-   Offene und wertschätzende Unternehmenskultur
-   Ein kleines, herzliches Team, das an einer großen Vision arbeitet
+  location: Dortmund, NRW
+  type: Individuell
+  department: Hauswirtschaft, Betreuung, Organisation, etc.
+  experience: Keine Vorerfahrung nötig
+  description: Auch wenn wir aktuell keine konkrete Stelle ausgeschrieben haben, freuen wir uns jederzeit über Initiativbewerbungen. Bei Kumpel & Hütte geht es nicht nur ums Arbeiten, sondern ums Gestalten eines Zuhauses für Menschen, die Gemeinschaft und Selbstständigkeit im Alter suchen. Wenn du Freude daran hast, andere Menschen zu unterstützen, eine positive Atmosphäre zu schaffen und Teil eines engagierten, wachsenden Teams zu sein, dann bist du bei uns richtig.
+  requirements:
+    - "Freude im Umgang mit Menschen"
+    - "Empathie, Geduld und Zuverlässigkeit"
+    - "Eigeninitiative und Verantwortungsbewusstsein"
+    - "Erfahrung in Hauswirtschaft, Betreuung oder Organisation ist ein Plus, aber keine Voraussetzung"
+    - "Teamplayer mit ausgeprägten Kommunikationsfähigkeiten"
+  benefits:
+    - "Sinnstiftende Arbeit mit direktem Mehrwert für unsere Bewohner:innen"
+    - "Flexible Arbeitszeiten und Möglichkeiten zur individuellen Gestaltung"
+    - "Weiterbildungsbudget"
+    - "Offene und wertschätzende Unternehmenskultur"
+    - "Ein kleines, herzliches Team, das an einer großen Vision arbeitet"
 
 # - title: Marketing Manager
 #   location: Köln, NRW

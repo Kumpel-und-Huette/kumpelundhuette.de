@@ -8,8 +8,8 @@ title: map
 
 ## Kontakt
 
-Kumpel und Huette
-Im Heidewinkel 30 
+Kumpel & HÜtte
+Im Heidewinkel 30
 44267 Dortmund  
 Deutchland
 

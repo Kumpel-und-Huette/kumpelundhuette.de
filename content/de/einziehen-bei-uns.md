@@ -45,7 +45,7 @@ Um bei uns einzuziehen, solltest du
 
 ### Bewerbungsunterlagen
 
-1. **Anmeldebogen** (erhältlich auf Anfrage oder [download](/uploads/Anmenldumg.docx))  
+1. **Anmeldebogen** (erhältlich auf Anfrage oder [download](https://github.com/Kumpel-und-Huette/kumpelundhuette.de/raw/refs/heads/main/static/uploads/Anmeldung.docx))  
 2. Ärztliches Attest bzw. Pflegegradbescheid  
 3. Kopie des Personalausweises  
 4. Kontakt­daten naher Angehöriger / Betreuer  

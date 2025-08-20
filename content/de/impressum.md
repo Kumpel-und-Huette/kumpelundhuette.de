@@ -5,9 +5,9 @@ title: Impressum
 
 {{< brick_wide >}}
 
-**Kumpel und Hütte GmbH**  
-Musterstraße 12  
-12345 Musterstadt  
+**Kumpel und Hütte Service UG (haftungsbeschränkt)**  
+Im Heidewinkel 30         
+44267 Dortmund  
 Deutschland
 
 Vertreten durch:  
@@ -22,8 +22,8 @@ Website: www.kumpelundhuette.de
 ### Registereintrag
 
 Eintragung im Handelsregister.  
-Registergericht: Amtsgericht Musterstadt  
-Registernummer: HRB 123456
+Registergericht: Amtsgericht Dortmund  
+Registernummer: HRB 37362
 
 ### Umsatzsteuer-ID
 
@@ -32,9 +32,9 @@ DE123456789
 
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 
-Max Mustermann  
-Musterstraße 12  
-12345 Musterstadt
+Robin Grunwald    
+Im Heidewinkel 30  
+44267 Dortmund
 
 ### Haftungsausschluss
 
@@ -48,5 +48,5 @@ Unser Angebot enthält Links zu externen Websites Dritter, auf deren Inhalte wir
 Die durch die Seitenbetreiber erstellten Inhalte und Werke auf diesen Seiten unterliegen dem deutschen Urheberrecht. Beiträge Dritter sind als solche gekennzeichnet.
 
 
-*Letzte Aktualisierung: Juni 2025*
+*Letzte Aktualisierung: August 2025*
 {{< /brick_wide >}}

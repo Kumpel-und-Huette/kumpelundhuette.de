@@ -79,7 +79,7 @@ So bleibt ein selbstbestimmtes Leben möglich – mit einer Ausstattung, die unt
 ![](/img/icons/material-symbols/200/rounded/design_services.svg)
 ### Individuell gestaltbare Zimmer
 
-Jedes Zimmer kann nach den eigenen Wünschen eingerichtet werden - möbliert oder mit vertrauten persönlichen Gegenständen. So entsteht ein persönliches Rückzugsort, der sich wirklich wie "zuhause" anfühlt.
+Jedes Zimmer kann nach den eigenen Wünschen und mit vertrauten persönlichen Gegenständen eingerichtet, oder nach Absprache von uns möbliert werden. So entsteht ein persönlicher Rückzugsort, der sich wirklich wie "zuhause" anfühlt.
 
 ---
 

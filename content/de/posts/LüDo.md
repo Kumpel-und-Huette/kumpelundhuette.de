@@ -1,7 +1,7 @@
 ---
 title: 'Dortmund-Lütgendortmund'
 image: /uploads/gallery/Werbebild Küche.png
-date: 2025-04-15 00:00:00
+date: 2025-07-01 00:00:00
 tags:
   - dortmund
 ---

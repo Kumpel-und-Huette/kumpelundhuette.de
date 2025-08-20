@@ -1,6 +1,6 @@
 ---
-title: 'Neuer Standort in Dortmund-Lütgendortmund jetzt geöffnet'
-image: /uploads/gallery/04.jpg
+title: 'Dortmund-Lütgendortmund'
+image: /uploads/gallery/Küche.jpg
 date: 2025-04-15 00:00:00
 tags:
   - dortmund
@@ -15,7 +15,7 @@ Unsere Wohngemeinschaft in Lütgendortmund verbindet selbstbestimmtes Leben mit 
 ## Highlights des neuen Standorts:
 
 - Ruhige Lage mit guter Anbindung  
-- Helle Einzelzimmer mit eigenem Bad  
+- Helle Einzelzimmer mit zwei modernen Duschbädern  
 - Gemeinschaftsbereiche mit Wohnküche  
 - Vielfältige Freizeitangebote  
 - Betreuung durch unser engagiertes Team vor Ort

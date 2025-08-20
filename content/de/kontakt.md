@@ -10,8 +10,8 @@ title: Kontact
 Sie haben Fragen oder möchten mehr über unsere Wohngemeinschaften erfahren? Kontaktieren Sie uns gern – wir freuen uns auf Ihre Nachricht und sind jederzeit für Sie da.
 
 Kumpel und Huette </br>
-AlbertStr 7  
-324632 Dortmund  
+Im Heidewinkel 30  
+44267 Dortmund  
 Deutchland
 
 Email: info@kumpelundhuette.de </br>

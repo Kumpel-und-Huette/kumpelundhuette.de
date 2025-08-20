@@ -86,7 +86,7 @@ Jedes Zimmer kann nach den eigenen Wünschen und mit vertrauten persönlichen Ge
 ![](/img/icons/material-symbols/200/rounded/devices.svg)
 ### Moderne Kommunikation & Technik
 
-WLAN, Hausnotrufsysteme und eine gute digitale Grundausstattung sorgen für Verbindung und Sicherheit.
+WLAN, Hausnotrufsysteme nach Absprache und eine gute digitale Grundausstattung sorgen für Verbindung und Sicherheit.
 Viele Lösungen sind individuell anpassbar – für mehr Komfort im Alltag.
 
 ---

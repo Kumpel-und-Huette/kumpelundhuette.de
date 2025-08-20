@@ -1,7 +1,7 @@
 ---
-title: Premiere: Vorstellung unserer ersten Senioren-WG in Lütgendortmund
+title: Premiere - Vorstellung unserer ersten Senioren-WG in Lütgendortmund
 image: /uploads/gallery/Runder Tisch Senioren WG.jpg
-date: 2025-04-04 00:00:00
+date: 2025-06-04 00:00:00
 ---
 
 Am 04. Juni 2025 durfte ich beim Runden Tisch des Seniorenbüros Lütgendortmund unsere erste Senioren-WG vorstellen.

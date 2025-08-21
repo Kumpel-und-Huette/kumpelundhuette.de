@@ -45,11 +45,8 @@ Um bei uns einzuziehen, solltest du
 
 ### Bewerbungsunterlagen
 
-1. **Anmeldebogen** (erhältlich auf Anfrage oder [download]())  
-2. Ärztliches Attest bzw. Pflegegradbescheid  
-3. Kopie des Personalausweises  
-4. Kontakt­daten naher Angehöriger / Betreuer  
-5. Ggf. Bescheide zur Kostenübernahme (Pflegekasse, Sozialamt)
+1. **Anmeldebogen** (erhältlich auf Anfrage oder [download](uploads/photos/Anmeldung.docx))  
+2. Weitere Unterlagen nach Absprache und Besichtigung 
 
 {{< tabs >}}
 

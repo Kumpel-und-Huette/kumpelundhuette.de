@@ -15,7 +15,7 @@ Hier erfährst du, wie das Wohnen in unseren gemeinschaftlichen Häusern aussieh
 
 Gemeinsam statt einsam – bei uns erwartet dich  
 
-- **Privatsphäre & Gemeinschaft:** Eigenes komfortables Zimmer plus großzügige Wohnküche, Garten und Gemeinschaftsraum.  
+- **Privatsphäre & Gemeinschaft:** Eigenes komfortables Zimmer plus großzügige Wohnküche, modernes Bad, Garten oder Balkon und Gemeinschaftsraum.  
 - **Alltag mit Herz:** Gemeinsame Mahlzeiten, Aktivitäten, Feste und kulturelle Ausflüge – alles kann, nichts muss.  
 - **Individuelle Unterstützung:** Unser Team hilft dort, wo es gebraucht wird – von hauswirtschaftlicher Hilfe bis zur Pflegekoordination.  
 - **Sicherheit & Technik:** 24/7-Notrufsystem nach Absprache, WLAN und seniorengerechte Ausstattung für ein sorgenfreies Leben.  

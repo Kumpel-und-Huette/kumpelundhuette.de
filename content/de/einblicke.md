@@ -16,7 +16,7 @@ Kumpel und Hütte steht für ein Leben in Gemeinschaft, Sicherheit und Herzlichk
 
 ## Was erwartet Sie bei uns?
 
-![](/uploads/gallery/02.jpg)
+![](/uploads/gallery/Tee.png)
 
 Bei uns finden Sie mehr als nur ein Zimmer – wir schaffen ein lebendiges Miteinander, das auf Vertrauen, Selbstbestimmung und Fürsorge basiert.
 

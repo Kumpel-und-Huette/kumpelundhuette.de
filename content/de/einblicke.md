@@ -40,7 +40,7 @@ Bei Kumpel und Hütte steht der Mensch im Mittelpunkt. Unsere Werte – Vertraue
 
 ## Ein Ort, der verbindet
 
-![](/uploads/gallery/05.jpg)
+![](/uploads/gallery/Tee.png)
 
 Gemeinsam mit unserem engagierten Team schaffen wir ein Zuhause, in dem man sich wohlfühlen und das Leben genießen kann. Ob allein oder mit Familie – hier finden Senior:innen nicht nur Betreuung, sondern echte Lebensqualität.
 

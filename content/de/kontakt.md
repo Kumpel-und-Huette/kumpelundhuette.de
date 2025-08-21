@@ -1,8 +1,8 @@
 ---
-title: Kontact
+title: Kontakt
 ---
 {{< brick_small >}}
-# Kontact
+# Kontakt
 {{< breadcrumbs >}}
 
 {{< /brick_small >}}

@@ -19,7 +19,7 @@ Diese Realität war für uns der Antrieb, anders zu denken. Gemeinsam statt eins
 
 ## Die Idee
 
-**Kumpel und Hütte** steht für eine neue Form des Wohnens: gemeinschaftlich, bezahlbar und menschlich. Unsere Wohngemeinschaften bieten Raum für Privatsphäre, aber auch für Begegnung. Jede*r Bewohner*in hat sein/ihr eigenes Zimmer mit persönlichem Rückzugsort. Doch das Leben spielt sich auch dort ab, wo Gemeinschaft entsteht: In der Wohnküche, im Wohn-, Lese- oder Spielezimmer oder bei einer Tasse Tee im Garten ab.
+**Kumpel und Hütte** steht für eine neue Form des Wohnens: gemeinschaftlich, bezahlbar und menschlich. Unsere Wohngemeinschaften bieten Raum für Privatsphäre, aber auch für Begegnung. Jede*r Bewohner*in hat sein/ihr eigenes Zimmer als persönlichen Rückzugsort. Doch das Leben spielt sich auch dort ab, wo Gemeinschaft entsteht: In der Wohnküche, im Wohn-, Lese- oder Spielezimmer oder bei einer Tasse Tee im Garten ab.
 
 Wir unterstützen im Alltag, wo es gebraucht wird – sei es bei der Abstimmung mit dem Pflegedienst, beim Kochen oder bei Arztbesuchen. Doch wir glauben auch daran, dass Selbstbestimmung erhalten bleiben muss. Niemand wird bevormundet - und Betreuung heißt bei uns nicht Kontrolle, sondern Verlässlichkeit. So entsteht ein Netzwerk gegenseitiger Unterstützung, das Sicherheit gibt - ohne die Eigenständigkeit zu nehmen.
 

@@ -45,7 +45,7 @@ Um bei uns einzuziehen, solltest du
 
 ### Bewerbungsunterlagen
 
-1. **Anmeldebogen** (erhältlich auf Anfrage oder [download](https://github.com/Kumpel-und-Huette/kumpelundhuette.de/raw/refs/heads/main/static/uploads/Anmeldung.docx))  
+1. **Anmeldebogen** (erhältlich auf Anfrage oder [download]())  
 2. Ärztliches Attest bzw. Pflegegradbescheid  
 3. Kopie des Personalausweises  
 4. Kontakt­daten naher Angehöriger / Betreuer  
@@ -75,32 +75,7 @@ WIR HELFEN GERNE BEI ALLEN SCHRITTEN!
 ---
 ## Häufige Fragen (FAQ)
 
-{{< faqs:
-    - question: Für wen ist Kumpel und Hütte geeignet?
-      answer: "Unsere Wohngemeinschaften richten sich an Menschen mit Pflegegrad 2, die sicher, bezahlbar und in Gesellschaft leben möchten — mit so viel Unterstützung wie nötig und so viel Selbstbestimmung wie möglich."
-    - question: Wie viel Eigenständigkeit bleibt den Bewohnern?
-      answer: "Selbstbestimmung ist einer unserer Kernwerte. Unsere Bewohner gestalten ihren Alltag selbst und entscheiden, wo und wann sie Unterstützung wünschen."
-    - question: Welche Aktivitäten werden angeboten?
-      answer: "Wir organisieren übers Jahr kleine Feste und Ausflüge: Grillabende, Geburtstagsfeiern, Kino- und Theaterbesuche sowie kulturelle Veranstaltungen — für mehr Lebensfreude und Gemeinschaft."
-
-- title: Kosten und Leistungen
-  faqs:
-    - question: Ist das Wohnen bei Kumpel und Hütte bezahlbar?
-      answer: "Ja, wir legen großen Wert auf erschwingliche Wohnangebote. Unser Ziel ist es, qualitativ hochwertiges und sicheres Wohnen für möglichst viele Menschen zugänglich zu machen."
-    - question: Welche Leistungen sind im Angebot enthalten?
-      answer: "Neben dem Wohnraum bieten wir alltagsnahe Unterstützung, Hauswirtschaftshilfe, Betreuung, Organisation von Aktivitäten, Begleitung bei Bedarf und ein herzliches, stabiles Umfeld."
-    - question: Gibt es langfristige Wohnmöglichkeiten?
-      answer: "Ja, wir bieten stabile und langfristige Wohnlösungen — Kumpel und Hütte ist kein kurzfristiges Angebot, sondern ein echtes Zuhause."
-
-- title: Sicherheit und Vertrauen
-  faqs:
-    - question: Wie wird für die Sicherheit der Bewohner gesorgt?
-      answer: "Unsere Wohnungen sind so gestaltet, dass sich die Bewohner sicher und geborgen fühlen. Unser Team steht unterstützend zur Seite und achtet auf ein vertrauensvolles Miteinander."
-    - question: Können Familienmitglieder sich einbringen?
-      answer: "Sehr gerne. Wir fördern aktiv den Austausch und die Einbindung von Angehörigen und arbeiten eng mit Familien zusammen, um die bestmögliche Betreuung sicherzustellen."
-    - question: Wie transparent ist die Betreuung?
-      answer: "Transparenz und Vertrauen sind für uns selbstverständlich. Angehörige und Bewohner erhalten stets klare Informationen über alle Leistungen und Abläufe."
- >}}
+{{< faq >}}
 
 {{< /tabs >}}
 

@@ -31,7 +31,7 @@ Bei uns finden Sie mehr als nur ein Zimmer – wir schaffen ein lebendiges Mitei
 
 ## Was macht uns besonders?
 
-![](/uploads/photos/06.jpg)
+![](/uploads/gallery/Hands.jpg)
 
 Bei Kumpel und Hütte steht der Mensch im Mittelpunkt. Unsere Werte – Vertrauen, Herzlichkeit und Verantwortung – prägen den Alltag. Wir fördern Gemeinschaft und bieten die Hilfe, die wirklich zählt. Und dabei darf auch der Spaß nicht fehlen: vom Grillfest bis zum Theaterausflug ist für Abwechslung gesorgt!
 

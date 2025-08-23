@@ -2,7 +2,7 @@
 title: map
 ---
 
-![](/uploads/map.png)
+![](/uploads/gallery/U.jpg)
 
 [Google Maps](https://maps.app.goo.gl/Tado4PkLB8r99nMU8)
 

@@ -36,4 +36,15 @@ languages:
       section:
         posts: /unser-zuhause/
         services: /neuigkeiten/
-    
+  en:
+    languageName: English
+    contentDir: content/en
+    weight: 2
+    disabled: false
+    permalinks:
+      page:
+        posts: /our-home/:slug
+        neuigkeiten: /news/:slug
+      section:
+        posts: /our-home/
+        neuigkeiten: /news/

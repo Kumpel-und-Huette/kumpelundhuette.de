@@ -1,0 +1,17 @@
+- name: Robin Grunwald
+  function: Founder
+  image: /uploads/photos/avatars/6.jpeg
+  description: "Kumpel & Hütte offers what I would want for myself later: not alone, not put aside, but in good company — with respect, everyday help and a smile in between. That I may help create such a place for others today is a fulfilled dream for me"
+  stars: 5
+
+- name: Peter Wagner
+  function: Son of a resident
+  image: /uploads/photos/avatars/2.jpeg
+  description: My mother is really thriving at Kumpel und Hütte. The community is warm, the care is reliable and the team is always approachable. We are very grateful!
+  stars: 5
+
+- name: Helga Baumann
+  function: Resident
+  image: /uploads/photos/avatars/7.jpeg
+  description: It is lovely to shape everyday life together and still keep my freedoms. People are truly looked after here. I can only recommend Kumpel und Hütte!
+  stars: 5

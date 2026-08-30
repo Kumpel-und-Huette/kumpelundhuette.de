@@ -1,0 +1,33 @@
+logo_image:
+logo_subtitle: TOGETHER INSTEAD OF ALONE
+dark_header: false
+mobile_view_width: 1100
+menuitems:
+  - title: Organisation
+    link: /en/about-us/
+    items:
+    - title: Who we are
+      link: /en/about-us/
+    - title: Our concept
+      link: /en/our-concept/
+    - title: Our motivation
+      link: /en/motivation/
+  - title: The home
+    link: /en/our-home/
+    items:
+    - title: Our home
+      link: /en/our-home/
+    - title: Moving in with us
+      link: /en/moving-in/
+  - title: Insights
+    link: /en/insights/
+  - title: News
+    link: /en/news/
+  - title: Careers
+    link: /en/careers/
+  
+cta:
+  active: true
+  title: Contact
+  link: /en/contact/
+preheader: open Mon–Fri 10–17

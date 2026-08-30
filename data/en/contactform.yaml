@@ -1,0 +1,23 @@
+action: https://formspree.io/f/xyzjbyav
+placeholders: false
+fields: 
+- name: title
+  input_type: html
+  label: <h3>Submit your query</h3>
+  required: true
+- name: name
+  input_type: text
+  label: Name
+  required: true
+- name: email
+  input_type: email
+  label: Email address
+  required: true
+- name: message
+  input_type: textarea
+  label: Message
+  required: false
+- name: submit
+  input_type: submit
+  label: Submit form
+  required: true

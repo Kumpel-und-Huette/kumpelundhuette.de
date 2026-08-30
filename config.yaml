@@ -32,10 +32,9 @@ languages:
     permalinks:
       page:
         posts: /unser-zuhause/:slug
-        services: /neuigkeiten/:slug
+        services: /neuigkeiten/:contentbasename
       section:
         posts: /unser-zuhause/
-        services: /neuigkeiten/
   en:
     label: English
     contentDir: content/en
@@ -44,7 +43,6 @@ languages:
     permalinks:
       page:
         posts: /our-home/:slug
-        neuigkeiten: /news/:slug
+        services: /news/:slug
       section:
         posts: /our-home/
-        neuigkeiten: /news/

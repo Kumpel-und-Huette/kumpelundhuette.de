@@ -25,7 +25,7 @@ markup:
 
 languages:
   de:
-    languageName: Deutsch
+    label: Deutsch
     contentDir: content/de
     weight: 1
     disabled: false
@@ -37,7 +37,7 @@ languages:
         posts: /unser-zuhause/
         services: /neuigkeiten/
   en:
-    languageName: English
+    label: English
     contentDir: content/en
     weight: 2
     disabled: false

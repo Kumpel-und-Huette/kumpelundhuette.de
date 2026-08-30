@@ -11,7 +11,7 @@
         {{- markdownify $inner -}}
     </div>{{ end }}
     <div class="container">
-        <ul class="contentitems grid posts" data-pagesize="{{ if page.Site.Data.settings.show_all_services }}99{{ else }}{{ page.Site.Data.settings.page_size }}{{ end }}">
+        <ul class="contentitems grid posts" data-pagesize="{{ if hugo.Data.settings.show_all_services }}99{{ else }}{{ hugo.Data.settings.page_size }}{{ end }}">
             {{ range $index,$service := $neuigkeiten }}                
                 <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
                         {{- if (resources.GetMatch .Params.image) -}}

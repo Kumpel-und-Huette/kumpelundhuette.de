@@ -1,6 +1,6 @@
 {{- $parent_title := "" -}}
 {{- $parent_link := "" -}}
-{{- range (index .Site.Data $.Site.Language.Lang).header.menuitems -}}
+{{- range (index hugo.Data page.Language.Name).header.menuitems -}}
     {{- $title := .title -}}
     {{- $link := .link -}}
     {{- if eq .link $.Page.RelPermalink -}}

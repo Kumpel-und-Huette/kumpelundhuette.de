@@ -9,7 +9,7 @@
 <section class="jobs">
     <div class="container">
         <div class="jobs-grid">
-            {{- range (index page.Site.Data page.Site.Language.Lang).jobs -}}
+            {{- range (index hugo.Data page.Language.Name).jobs -}}
             <div class="job-box">
                 <h3>
                     {{- .title -}}

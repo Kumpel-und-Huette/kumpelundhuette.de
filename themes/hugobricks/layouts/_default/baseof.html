@@ -69,11 +69,15 @@
           <div class="navnav languages">
             <ul>
               <li class="haschildren">
-                <a href="/{{ .Site.Language.Lang }}/">{{ .Site.Language.Lang | upper }}</a>
+                <a href="{{ .RelPermalink }}">{{ .Site.Language.Lang | upper }}</a>
                 <ul>
-					{{ range .Site.Languages }}
-					{{ if ne .Lang $.Site.Language.Lang }}<li><a href="/{{ .Lang }}/">{{ .LanguageName }}</a></li>{{ end }}
-					{{ end }}
+					{{- range .Translations -}}
+					<li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a></li>
+					{{- else -}}
+					{{- range .Site.Languages -}}
+					{{- if ne .Lang $.Site.Language.Lang -}}<li><a href="{{ .Lang | relLangURL }}">{{ .LanguageName }}</a></li>{{- end -}}
+					{{- end -}}
+					{{- end -}}
                 </ul>
               </li>
             </ul>
@@ -134,7 +138,16 @@
 		      <div>{{ markdownify (index .Site.Data .Language.Lang).footer.footer_text }}</div>
           {{- if gt (len .Site.Languages) 1 -}}
           <div>
-            <select aria-label="Change language" onchange="if(this.value) document.location.href = '/'+this.value+'/';"><option>Change language</option>{{ range .Site.Languages }}<option value="{{ .Lang }}" {{ if eq page.Language.Lang .Lang }}disabled{{ end }}>{{ .LanguageName }}</option>{{ end }}</select></div>
+            <select aria-label="Change language" onchange="if(this.value) document.location.href = this.value;">
+              <option>Change language</option>
+              {{- range .AllTranslations -}}
+              <option value="{{ .RelPermalink }}" {{ if eq .Lang $.Language.Lang }}disabled{{ end }}>{{ .Language.LanguageName }}</option>
+              {{- else -}}
+              {{- range .Site.Languages -}}
+              <option value="{{ .Lang | relLangURL }}" {{ if eq $.Language.Lang .Lang }}disabled{{ end }}>{{ .LanguageName }}</option>
+              {{- end -}}
+              {{- end -}}
+            </select>
           </div>
           {{- end -}}
 		    </div>

@@ -70,7 +70,7 @@
           <div class="navnav languages">
             <ul>
               <li class="haschildren">
-                <a href="{{ $.RelPermalink }}">{{ $.Language.Name | upper }}</a>
+                <a href="{{ $.RelPermalink }}" onclick="navClick(event, this);">{{ $.Language.Name | upper }}</a>
                 <ul>
 					{{- range . -}}
 					{{- if ne .Language.Name $.Language.Name -}}
@@ -93,6 +93,12 @@
             var li = el.parentElement;
             if(document.body.classList.contains('mobilemenu')) {
               if (li.classList.contains('haschildren')) {
+                if (el.closest('.languages')) {
+                  event.preventDefault();
+                  event.stopPropagation();
+                  li.classList.toggle('open');
+                  return;
+                }
                 var ul = li.querySelector('ul');
                 if(ul) {
                   if(window.getComputedStyle(ul).maxHeight == '0px') {
@@ -110,6 +116,11 @@
               }
             }
           }
+          document.addEventListener('click', function() {
+            document.querySelectorAll('.languages li.open').forEach(function(li) {
+              li.classList.remove('open');
+            });
+          });
         </script>
     </header>
 

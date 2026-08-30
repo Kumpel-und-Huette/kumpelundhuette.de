@@ -129,15 +129,46 @@ body.transparent_header header + section.bgimage .container {padding-top: 13.5re
 body:not(.transparent_header) header + section.bgimage .container {padding-top: 11.5rem!important;}
 body:not(.transparent_header) header + section.bgimage .container h1:first-child {padding-top: 1.5rem;}
 header .languages {display: inline-block;}
-body.mobilemenu header .navnav {display: flex; flex-direction: column; justify-content: space-between;}
-body.mobilemenu header .navnav.languages {display: none;}
+body.mobilemenu header .nav .navnav {display: flex; flex-direction: column; justify-content: space-between;}
+body.mobilemenu header .navnav.languages {display: inline-block; position: relative; z-index: 3;}
+body.mobilemenu header .navnav.languages > ul {margin: 0; gap: 0;}
+body.mobilemenu header .navnav.languages > ul > li > a {padding: 0.80rem 0 0.65rem 0; font-size: 0.9rem;}
+body.mobilemenu header .navnav.languages > ul > li > ul {
+    position: absolute;
+    right: 0;
+    left: auto;
+    margin-left: 0;
+    max-height: none;
+    height: auto;
+    overflow: visible;
+    opacity: 0;
+    pointer-events: none;
+    box-shadow: 0px 0px 1.5rem rgba(0,0,0,0.15);
+    background: white;
+    border-radius: 0.4rem;
+    padding: 0.75rem 0 0.85rem;
+}
+body.mobilemenu header .navnav.languages > ul > li.open > ul,
+body.mobilemenu header .navnav.languages > ul > li:hover > ul {
+    opacity: 1;
+    pointer-events: all;
+    transform: translateY(0);
+}
+body.mobilemenu header .navnav.languages > ul > li > ul li a {
+    padding: 0.3rem 2rem 0.3rem 1rem;
+    font-size: 0.95rem;
+    color: var(--textMedium);
+}
+body.mobilemenu header .navnav.languages > ul > li.haschildren > a::after {border-color: var(--textDarker);}
+body.transparent_header:not(.menushown) header:not(.sticky) .navnav.languages > ul > li.haschildren > a::after,
+header.dark .navnav.languages > ul > li.haschildren > a::after {border-color: white;}
 
 header.dark {background: var(--textDarker);}
 body.transparent_header header:not(.sticky) {background: transparent;}
 header.dark a.logo, body.transparent_header header:not(.sticky) a.logo,
 header.dark .navnav > ul > li > a, body.transparent_header header:not(.sticky) .navnav > ul > li > a {color: white;}
 header.dark .navnav > ul > li::after, body.transparent_header header:not(.sticky) .navnav > ul > li::after {background: white;}
-body.mobilemenu header .navnav > ul > li.haschildren > a::after,
+body.mobilemenu header .nav .navnav > ul > li.haschildren > a::after,
 header.dark .navnav > ul > li.haschildren > a::after, 
 body.transparent_header header:not(.sticky) .navnav > ul > li.haschildren > a::after {border-color: white;}
 header.dark #togglemenu span,
@@ -227,10 +258,10 @@ body.mobilemenu header > div.container > div.nav {
     overflow-y: auto;
 }
 body.mobilemenu header > div.container > div:nth-child(3) {grid-area: cta; padding-right: 3rem;}
-body.mobilemenu header .navnav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 2.5rem 0 4rem 0;}
-body.mobilemenu.menushown header .navnav > ul:nth-child(2) {margin-bottom: 2rem; display: block;}
-body.mobilemenu header .navnav > ul > li::after {content: none;}
-body.mobilemenu header .navnav > ul > li > ul {
+body.mobilemenu header .nav .navnav > ul {flex-direction: column; gap: 0rem; text-align: left; margin: 2.5rem 0 4rem 0;}
+body.mobilemenu.menushown header .nav .navnav > ul:nth-child(2) {margin-bottom: 2rem; display: block;}
+body.mobilemenu header .nav .navnav > ul > li::after {content: none;}
+body.mobilemenu header .nav .navnav > ul > li > ul {
     position: relative; 
     box-shadow: none; 
     margin: 0; 
@@ -242,14 +273,14 @@ body.mobilemenu header .navnav > ul > li > ul {
     background: transparent;
     border-radius: 0;
 }
-body.mobilemenu header .navnav > ul li.active > a {color: var(--accent)!important; font-weight: bold; font-size: 1.25rem;}
-body.mobilemenu header .navnav > ul > li.active.haschildren > a::after {border-color: var(--accent);}
-body.mobilemenu header .navnav > ul > li a {padding: 0.45rem 2.5rem 0.45rem 3rem; font-size: 1.15rem;;}
-body.mobilemenu header .navnav > ul > li > ul > li:last-child {margin-bottom: 0.5rem;}
-body.mobilemenu header .navnav > ul > li > ul {max-height: 0px; height: 0; overflow: hidden; transition: max-height 0.5s ease-in;}
-body.mobilemenu header .navnav > ul > li.active ul,
-body.mobilemenu header .navnav > ul > li:has(.active) ul {max-height: 700px; height: auto;}
-body.mobilemenu header .navnav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem;}
+body.mobilemenu header .nav .navnav > ul li.active > a {color: var(--accent)!important; font-weight: bold; font-size: 1.25rem;}
+body.mobilemenu header .nav .navnav > ul > li.active.haschildren > a::after {border-color: var(--accent);}
+body.mobilemenu header .nav .navnav > ul > li a {padding: 0.45rem 2.5rem 0.45rem 3rem; font-size: 1.15rem;;}
+body.mobilemenu header .nav .navnav > ul > li > ul > li:last-child {margin-bottom: 0.5rem;}
+body.mobilemenu header .nav .navnav > ul > li > ul {max-height: 0px; height: 0; overflow: hidden; transition: max-height 0.5s ease-in;}
+body.mobilemenu header .nav .navnav > ul > li.active ul,
+body.mobilemenu header .nav .navnav > ul > li:has(.active) ul {max-height: 700px; height: auto;}
+body.mobilemenu header .nav .navnav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 5rem;}
 
 /*------------------------*/
 /* menu shown
@@ -257,7 +288,7 @@ body.mobilemenu header .navnav > ul > li > ul li a {padding: 0.5rem 2rem 0.5rem 
 
 body.mobilemenu.menushown header > div.container > div.nav {transform: translateX(0%); box-shadow: 0 0 0.5rem rgba(0,0,0,0.3);}
 body.mobilemenu.menushown header > div.container::before {content: ""; position: fixed; left: 0; top: 0; width: 100%; height: 100%; z-index: 2;}
-body.mobilemenu.menushown header .navnav > ul > li a {color: white;}
+body.mobilemenu.menushown header .nav .navnav > ul > li a {color: white;}
 
 @media (max-width: 450px) {
     header .button {display: none;}

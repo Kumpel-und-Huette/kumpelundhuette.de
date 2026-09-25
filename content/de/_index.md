@@ -91,9 +91,9 @@ Viele Lösungen sind individuell anpassbar – für mehr Komfort im Alltag.
 ---
 
 ![](/img/icons/material-symbols/200/rounded/timer.svg)
-### Flexible Unterstützung und Services
+### Pflege und Alltagshilfe aus unserem Team
 
-Ob hauswirtschaftliche Hilfe, Begleitung, Betreuung oder Pflegekoordination — wir bieten Unterstützung genau dort, wo sie gebraucht wird.
+Hauswirtschaft, Begleitung, Betreuung und die Pflege erbringt unser Team selbst.
 
 ---
 

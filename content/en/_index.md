@@ -91,9 +91,9 @@ Many solutions can be tailored individually — for more comfort in everyday lif
 ---
 
 ![](/img/icons/material-symbols/200/rounded/timer.svg)
-### Flexible support and services
+### Nursing and everyday help from our team
 
-Whether household help, accompaniment, care or nursing coordination — we offer support exactly where it is needed.
+Our own team provides household help, accompaniment, support, and the nursing care.
 
 ---
 

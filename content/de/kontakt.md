@@ -12,7 +12,7 @@ Sie haben Fragen oder möchten mehr über unsere Wohngemeinschaften erfahren? Ko
 Kumpel und Huette </br>
 Im Heidewinkel 30  
 44267 Dortmund  
-Deutchland
+Deutschland
 
 Email: info@kumpelundhuette.de </br>
 Handynummer: <a href="tel:+4916090889269"> +49 160 90889269</a>

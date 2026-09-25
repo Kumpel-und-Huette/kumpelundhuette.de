@@ -3,7 +3,7 @@ placeholders: false
 fields: 
 - name: title
   input_type: html
-  label: <h3>Submit your query</h3>
+  label: <h3>Schreiben Sie uns</h3>
   required: true
 - name: name
   input_type: text
@@ -11,13 +11,13 @@ fields:
   required: true
 - name: email
   input_type: email
-  label: Email address
+  label: E-Mail-Adresse
   required: true
 - name: message
   input_type: textarea
-  label: Message
-  required: false
+  label: Nachricht
+  required: true
 - name: submit
   input_type: submit
-  label: Submit form
+  label: Nachricht senden
   required: true

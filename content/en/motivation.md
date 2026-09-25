@@ -22,7 +22,7 @@ That reality drove us to think differently. Together instead of alone should not
 
 **Kumpel und Hütte** stands for a new form of living: communal, affordable and human. Our shared homes offer space for privacy and for encounter. Every resident has their own room as a personal retreat. But life also happens where community grows: in the living kitchen, the living, reading or games room, or over a cup of tea in the garden.
 
-We support everyday life where it is needed — whether coordinating with the care service, cooking or doctor visits. We also believe self-determination must be preserved. Nobody is patronised — and care for us does not mean control, but reliability. That creates a network of mutual support that gives safety without taking away independence.
+We support everyday life where it is needed — with the nursing care we provide ourselves, with cooking, or on doctor visits. We also believe self-determination must be preserved. Nobody is patronised — and care for us does not mean control, but reliability. That creates a network of mutual support that gives safety without taking away independence.
 
 ## Encounter creates meaning
 

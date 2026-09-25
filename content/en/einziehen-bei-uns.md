@@ -18,7 +18,7 @@ Together instead of alone — with us you can expect
 
 - **Privacy & community:** Your own comfortable room plus a generous living kitchen, modern bathroom, garden or balcony and shared living space.
 - **Everyday life with heart:** Shared meals, activities, celebrations and cultural outings — everything is possible, nothing is mandatory.
-- **Individual support:** Our team helps where it is needed — from household help to care coordination.
+- **Individual support:** Our team helps where it is needed — from household help through to the nursing care we provide ourselves.
 - **Safety & technology:** 24/7 emergency call system by arrangement, Wi-Fi and senior-friendly furnishings for a carefree life.
 - **Transparent costs:** Clear pricing with no hidden fees; financing support through care and social funds may be possible.
 
@@ -26,27 +26,27 @@ Together instead of alone — with us you can expect
 
 To move in with us, you should
 
-- have at least **care grade 2** (exceptions possible by arrangement),
+- have **care grade 2 or higher** (exceptions possible by arrangement),
 - manage during the day independently or with light support,
 - be open to living in a shared home,
-- hold a valid care-fund classification for care grades (PG 2–5),
+- hold a valid care-fund classification when a care grade is in place,
 
 ### Costs & financing
 
 
 |Item|Included services |Price|Support |   Own contribution|
 |--|--|--|--|--|
-| Rent | Room rent, utilities, electricity, heating, internet, broadcasting fee  |€570|Possible depending on pension|**€0 – €570**
-| Household | weekly **cleaning** of all rooms, weekly **shopping**, weekly **laundry service**, daily **breakfast**, daily **hot meal**  |€200 |Care fund (from PG2)|**€0 – €200**
-| Care | **activating care**, general and individual **organisation**, **conversations**, **contact with relatives** and more |€200|Care fund (from PG 2)|**€0 – €200**
-| **TOTAL** |**ALL IN**  |€970|Fully covered by arrangement and care grade|**€0 – €970**
+| Rent | Room rent, utilities, electricity, heating, internet, broadcasting fee | €570 | Possible depending on pension | **€0–570** |
+| Household | Weekly cleaning of all rooms, weekly shopping, weekly laundry service, daily breakfast, daily hot meal | €200 | Care fund (from care grade 2) | **€0–200** |
+| Personal support | Activating support, general and individual organisation, conversations, contact with relatives, and more | €200 | Care fund (from care grade 2) | **€0–200** |
+| **Total** | Everything included | €970 | Fully covered by arrangement and care grade | **€0–970** |
 
 
 
 
 ### Application documents
 
-1. **Registration form** (available on request or [download](uploads/photos/Anmeldung.docx))
+1. **Registration form** — on request via the [contact page](/en/contact/).
 2. Further documents by arrangement after viewing
 
 {{< tabs >}}
@@ -59,7 +59,7 @@ To move in with us, you should
 4. **Cost clarification** — Align care fund / social office + additional services.
 5. **Move-in & welcome week** — Arrive, get to know each other, start the new everyday life.
 
-WE ARE HAPPY TO HELP WITH EVERY STEP!
+We are happy to help with every step.
 ---
 ## Required documents
 

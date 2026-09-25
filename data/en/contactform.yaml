@@ -3,7 +3,7 @@ placeholders: false
 fields: 
 - name: title
   input_type: html
-  label: <h3>Submit your query</h3>
+  label: <h3>Send a message</h3>
   required: true
 - name: name
   input_type: text
@@ -16,8 +16,8 @@ fields:
 - name: message
   input_type: textarea
   label: Message
-  required: false
+  required: true
 - name: submit
   input_type: submit
-  label: Submit form
+  label: Send message
   required: true

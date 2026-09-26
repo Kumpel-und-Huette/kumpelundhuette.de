@@ -28,7 +28,10 @@
 {{- with resources.Get "plates/hero-photo.png" }}
 <meta property="og:image" content="{{ (.Fill "1200x630 jpg q80 Center").Permalink }}">
 {{- end }}
+<link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="48x48">
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+<link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
+<link rel="manifest" href="{{ "site.webmanifest" | relURL }}">
 
 {{- $vollkorn := resources.Get "fonts/vollkorn-latin-var.woff2" | fingerprint -}}
 {{- $atkinson := resources.Get "fonts/atkinson-next-latin-var.woff2" | fingerprint -}}

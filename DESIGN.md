@@ -17,6 +17,7 @@ colors:
   ink: "#2b221c"
   ink-soft: "#5a4a3e"
   coal: "#231c17"
+  gold: "#b48c47"
 typography:
   display:
     fontFamily: "Vollkorn, Vollkorn Fallback, Georgia, serif"
@@ -222,6 +223,9 @@ A small household palette on warm paper: one colour to act, one to warm, one to 
 - **Soft Ink** (ink-soft): Secondary text: ledes, captions, answers, meta, field hints (7:1 on linen and card).
 - **Coal** (coal): The footer ground and the tint of the hero-caption tab; behind the photo on wide screens.
 
+### Brand
+- **Hearth Gold** (gold): The logo colour and nothing else. The house-and-heart mark in the header and footer, and the favicon on a coal tile. Over the home photo the mark turns paper, like the wordmark beside it.
+
 ### Named Rules
 **The One Job Rule.** Each strong colour has one job: brick means act, ochre means warmth and emphasis, moss means trust. Don't use brick for decoration or moss for a button.
 
@@ -239,7 +243,7 @@ A small household palette on warm paper: one colour to act, one to warm, one to 
 - **Headline** (700, `--step-3`, 1.15): Section `h2`, home-card titles, the moss-band quote (600, 1.3), the price total figure.
 - **Title** (700, `--step-2`, 1.25): `h3`, news titles, person names, door verbs ("Anrufen", "Schreiben", "Besuchen"), and navigation links in the mobile panel (600).
 - **Subtitle** (700, `--step-1`, 1.3): `h4`, ledger row titles, FAQ group titles, facts titles.
-- **Wordmark** (600, 500 at 80em and up): "Kumpel & Hütte" in Vollkorn, no logo image.
+- **Wordmark** (600, 500 at 80em and up): "Kumpel & Hütte" in Vollkorn, led by the house-and-heart mark (`partials/logo.html`, stroked in `currentColor`, about 1.35× the wordmark's size). Below 25em both scale with the viewport so the pair clears the "Menü" button.
 - **Hero place-card headline** (700): Deliberately modest, `clamp(1.6rem, …, 1.75rem)` on phones and `1.32em` of the card's own fluid size on desktop, set on one line from 80em. The photo carries the scale, not the type.
 - **Body** (400, 18–21px root, 1.6): All running text, with lining figures. Keep text columns at `--measure` (36rem).
 - **Lede** (400, `--step-1`, Soft Ink): The paragraph under a page title or section head.
@@ -317,7 +321,7 @@ Warm and solid, like a painted door: one strong colour, a firm edge, no gloss.
 
 ### Navigation
 - **Wide screens (80em and up):** One calm row of Vollkorn links (500, min 18px) separated by centred middle dots (`·`, 70% opacity, hidden from screen readers). The current section gets a 3px ochre underline offset 0.35em; hover draws a 2px underline. Items with children open a paper dropdown with sans sublinks (600), where hover fills with linen. The language switch is a two-letter "EN"/"DE". A mail icon button and the brick "Anrufen" button close the row.
-- **Small screens:** The wordmark, a mail icon from 40em, and an outlined "Menü" button (2px `currentColor` border, 48px tall). The menu opens a full linen panel under the header with large Vollkorn links (`--step-2`), group names as quiet sans labels, and the phone, email and office hours at the bottom. Escape closes it and returns focus.
+- **Small screens:** The mark and wordmark, a mail icon from 40em, and an outlined "Menü" button (2px `currentColor` border, 48px tall). The menu opens a full linen panel under the header with large Vollkorn links (`--step-2`), group names as quiet sans labels, and the phone, email and office hours at the bottom. Escape closes it and returns focus.
 - **Over the home photo:** The header is transparent with paper text until the page scrolls, then becomes linen with the lifted shadow.
 - **Focus (global):** A 3px ink outline offset 3px with a 6px linen halo; on photo, brick and coal grounds the outline turns paper and the halo takes the ground colour. Current page, open answers and focus are always drawn, never implied by colour alone.
 

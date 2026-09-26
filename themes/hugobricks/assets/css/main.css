@@ -444,8 +444,7 @@ ul.social-links > li { margin: 0; }
 .site-footer a:hover { color: #f2c46d; text-decoration: underline; }
 .site-footer :focus-visible { outline-color: var(--paper); box-shadow: 0 0 0 6px var(--coal); }
 .site-footer__grid { display: grid; gap: 2.5rem; }
-.brand--footer { margin: 0; }
-.brand--footer .brand__name { font-size: var(--step-3); }
+.brand--footer { margin: 0; font-size: var(--step-3); }
 .site-footer__tagline { margin-top: 0.75rem; font-family: var(--serif); font-size: var(--step-1); color: #f2c46d; }
 .site-footer__address { margin-top: 1.25rem; line-height: 1.6; }
 .site-footer__heading { font-family: var(--sans); font-size: var(--step--1); font-weight: 700; color: #cbbfae; margin-bottom: 0.75rem; }

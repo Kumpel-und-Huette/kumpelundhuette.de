@@ -4,6 +4,7 @@
   <div class="wrap site-footer__grid">
     <div class="site-footer__brand">
       <a class="brand brand--footer" href="{{ relLangURL "/" }}">
+        {{ partial "logo.html" "brand__mark" }}
         <span class="brand__name">{{ $d.header.logo_title | default "Kumpel & Hütte" }}</span>
       </a>
       <p class="site-footer__tagline">{{ i18n "footer_tagline" }}</p>

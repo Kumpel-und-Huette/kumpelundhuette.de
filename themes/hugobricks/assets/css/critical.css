@@ -47,6 +47,7 @@
   --oak: #d8be97;
   --line: #d6c7b0;
   --card: #f7e8d4;
+  --gold: #b48c47;
 
   --serif: "Vollkorn", "Vollkorn Fallback", Georgia, serif;
   --sans: "Atkinson Next", "Atkinson Fallback", Arial, sans-serif;
@@ -226,19 +227,31 @@ a:hover { color: var(--brick); text-decoration-thickness: 0.14em; }
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
+  gap: 0.3em;
   margin-right: auto;
+  font-size: clamp(1.45rem, 1.1rem + 1.2vw, 1.8rem);
   color: inherit;
   text-decoration: none;
+}
+.brand__mark {
+  flex: none;
+  width: auto;
+  height: 0.82em;
+  translate: 0 -0.06em;
+  color: var(--gold);
+  overflow: visible;
 }
 .brand__name {
   font-family: var(--serif);
   font-weight: 600;
-  font-size: clamp(1.45rem, 1.1rem + 1.2vw, 1.8rem);
   line-height: 1;
   letter-spacing: -0.01em;
   white-space: nowrap;
 }
 .brand:hover { color: inherit; }
+@media (max-width: 25em) {
+  .site-header .brand { font-size: clamp(1.15rem, 6vw, 1.45rem); }
+}
 
 .site-header__actions { display: flex; align-items: center; gap: 0.5rem; }
 .icon-button {
@@ -388,9 +401,11 @@ html:not(.js) .nav { display: block; position: static; }
 /* Header over the home photo */
 .site-header--over:not(.is-scrolled) { background: transparent; color: var(--paper); }
 .site-header--over:not(.is-scrolled) .brand__name { text-shadow: 0 1px 12px rgb(20 12 6 / 0.45); }
+.site-header--over:not(.is-scrolled) .brand__mark { color: var(--paper); filter: drop-shadow(0 1px 6px rgb(20 12 6 / 0.5)); }
 .site-header--over:not(.is-scrolled) .nav__link { text-shadow: 0 1px 10px rgb(20 12 6 / 0.55); }
 .menu-open .site-header--over { background: var(--linen); color: var(--ink); }
 .menu-open .site-header--over .brand__name, .menu-open .site-header--over .nav__link { text-shadow: none; }
+.menu-open .site-header--over .brand__mark { color: var(--gold); filter: none; }
 .site-header--over:not(.is-scrolled) :focus-visible { outline-color: var(--paper); box-shadow: 0 0 0 6px rgb(20 12 6 / 0.6); }
 
 /* Home hero: the photo is the room, the card is set on the table */

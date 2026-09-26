@@ -1,15 +1,15 @@
-{{ $dir := string (.Get "dir") }}
-<ul class="image-gallery">
-{{ range (readDir (print "/static" $dir)) }}
-  {{- $image := resources.Get (printf "%s/%s" $dir .Name) -}}
-  {{- $imageurl := printf "%s/%s" $dir .Name -}}
-  {{- $imagetitle := index (split .Name ".") 0 -}}
-  {{- if eq $image.ResourceType "image" -}}
-  <li>
-    <a href="{{ ($image.Fit "1600x1600 Center q50").Permalink }}">
-      <img src="{{ ($image.Fill "300x300 Center q50").Permalink }}" alt="Image {{ $imagetitle }}" />
+{{- /* Usage: {{< gallery dir="/uploads/gallery/" >}} */ -}}
+{{- $dir := strings.TrimSuffix "/" (.Get "dir") -}}
+<ul class="gallery" role="list">
+  {{- range readDir (print "/static" $dir) }}
+  {{- $name := .Name -}}
+  {{- $path := printf "%s/%s" $dir .Name -}}
+  {{- with resources.Get (strings.TrimPrefix "/" $path) }}{{ if eq .ResourceType "image" }}
+  <li class="gallery__item">
+    <a class="photo__frame" href="{{ (.Fit "1600x1600 webp q76").RelPermalink }}">
+      {{- partial "img.html" (dict "src" $path "alt" (index (split $name ".") 0) "ratio" "1:1" "sizes" "(min-width: 60em) 18rem, 45vw" "widths" (slice 320 480 640)) -}}
     </a>
   </li>
-  {{- end -}}
-{{ end }}
+  {{- end }}{{ end }}
+  {{- end }}
 </ul>

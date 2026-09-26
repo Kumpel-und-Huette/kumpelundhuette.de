@@ -1,25 +1,20 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/features.md' file." -}}
-    {{- with page.Site.GetPage "bricks/features.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-{{- $parts := split $inner "---" -}}
-<section class="features">
-    <div class="container small">
-        {{- markdownify (index $parts 0) -}}
+{{- if not $inner -}}{{- with site.GetPage "bricks/features.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $parts := split $inner "\n---" -}}
+<section class="brick brick--features">
+  <div class="wrap">
+    <div class="section-head flow">
+      {{ partial "md.html" (index $parts 0) | replaceRE `<(/?)h1` "<${1}h2" | safeHTML }}
     </div>
-    <div class="container">
-        <ul class="grid features">
-            {{ range after 1 $parts }}
-                <li class="has_icon">
-                    {{- replace (markdownify .) `<p><img` `<p class="image"><img class="black_2_accent"` | safeHTML -}}
-                </li>
-            {{ end }}
-        </ul>
-    </div>
+    <ul class="ledger" role="list">
+      {{- range after 1 $parts }}
+      {{- $s := partial "brick/split.html" . -}}
+      {{- if strings.TrimSpace $s.body }}
+      <li class="ledger__row flow">
+        {{ partial "md.html" $s.body | replaceRE `<(/?)h[1-2]` "<${1}h3" | safeHTML }}
+      </li>
+      {{- end }}
+      {{- end }}
+    </ul>
+  </div>
 </section>
-
-

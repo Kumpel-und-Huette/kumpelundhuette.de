@@ -1,0 +1,5 @@
+{{- $c := partial "contact-data.html" . -}}
+<div class="callbar" role="region" aria-label="{{ i18n "call_us" }}">
+  <a class="callbar__link callbar__link--call" href="{{ $c.tel }}">{{ partial "icon.html" "phone" }}<span>{{ i18n "call" }}</span></a>
+  <a class="callbar__link" href="mailto:{{ $c.email }}">{{ partial "icon.html" "mail" }}<span>{{ i18n "write" }}</span></a>
+</div>

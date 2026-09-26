@@ -1,24 +1,27 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/map.md' file." -}}
-    {{- with page.Site.GetPage "bricks/map.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
+{{- if not $inner -}}{{- with site.GetPage "bricks/map.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $s := partial "brick/split.html" $inner -}}
+{{- $c := partial "contact-data.html" . -}}
+{{- $body := $s.body -}}
+{{- $href := $c.maps -}}
+{{- with findRESubmatch `\[[^\]]*\]\((https?://[^)]+)\)` $body 1 -}}
+  {{- $href = index (index . 0) 1 -}}
+  {{- $body = replace $body (index (index . 0) 0) "" 1 -}}
 {{- end -}}
-{{- $imagesrc := substr (index (split (index (findRE `!\[[^\]]*?]\(([^\)]*?)\)` $inner 1) 0) "](") 1) 0 -1 -}}
-{{- $inner = markdownify $inner -}}
-{{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
-{{- $link := index (findRE `(?s)<a.*?>` $inner 1) 0 -}}
-{{- $inner = replace $inner $image "" 1 -}}
-{{- $link := index (findRE `(?s)<p><a.*?p>` $inner 1) 0 -}}
-{{- $inner = replace $inner $link "" 1 -}}
-{{- $href := index (split $link `"`) 1 -}}
-<section class="map hasbackgroundcolor stickstofooter">
-    <div class="map" style="background-image: url({{ $imagesrc }});">
-        <div class="overlay" onclick="window.open('{{ $href }}');" style="cursor: pointer;"></div>
-        <div class="container">
-            <div>{{- markdownify $inner -}}</div>
-        </div>
+<section class="brick brick--map">
+  <div class="wrap map">
+    {{- with $s.src }}
+    <a class="map__image" href="{{ $href }}" rel="noopener" aria-label="{{ i18n "open_map" }}">
+      {{- partial "img.html" (dict "src" . "alt" (i18n "map_alt") "sizes" "(min-width: 72em) 72rem, 100vw" "widths" (slice 640 960 1280 1600 2000)) -}}
+      <span class="map__pin">{{ partial "icon.html" "pin" }}</span>
+    </a>
+    {{- end }}
+    {{- $heading := index (findRE `(?s)<h[1-3][^>]*>.*?</h[1-3]>` (partial "md.html" $body) 1) 0 | replaceRE `<(/?)h[13]` "<${1}h2" -}}
+    <div class="map__card flow">
+      {{ $heading | safeHTML }}
+      <address>{{ (index hugo.Data site.Language.Lang).general.title }}<br>{{ $c.street }}<br>{{ $c.city }}</address>
+      {{ partial "contactbuttons.html" . }}
+      <p><a class="link-arrow" href="{{ $href }}" rel="noopener"><span>{{ i18n "open_map" }}</span>{{ partial "icon.html" "arrow" }}</a></p>
     </div>
+  </div>
 </section>

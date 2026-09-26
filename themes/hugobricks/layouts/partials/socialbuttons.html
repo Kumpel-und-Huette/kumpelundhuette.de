@@ -1,5 +1,7 @@
-<ul class="buttons social">
-    {{- range (index hugo.Data page.Language.Name).footer.socials -}}
-    <li><a href="{{ .link | safeURL }}" class="button icon"><img src="{{ .logo_image }}" alt="{{ .title }}" /></a></li>
-    {{- end -}}
+{{- with (index hugo.Data site.Language.Lang).footer.socials -}}
+<ul class="social-links" role="list">
+  {{- range . }}
+  <li><a href="{{ .link | safeURL }}" rel="noopener">{{ .title }}</a></li>
+  {{- end }}
 </ul>
+{{- end -}}

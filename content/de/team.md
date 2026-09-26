@@ -1,4 +1,7 @@
 ---
+build:
+  render: never
+  list: never
 title: Our team
 ---
 {{< brick_team >}}

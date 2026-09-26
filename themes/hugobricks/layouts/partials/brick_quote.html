@@ -1,31 +1,15 @@
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/quote.md' file." -}}
-    {{- with page.Site.GetPage "bricks/quote.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-{{- $imagesrc := substr (index (split (index (findRE `!\[[^\]]*?]\(([^\)]*?)\)` $inner 1) 0) "](") 1) 0 -1 -}}
-{{- $raw := (markdownify $inner | chomp) -}}
-{{- $block := findRE "(?is)^<(?:address|article|aside|blockquote|canvas|dd|div|dl|dt|fieldset|figcaption|figure|footer|form|h(?:1|2|3|4|5|6)|header|hgroup|hr|li|main|nav|noscript|ol|output|p|pre|section|table|tfoot|ul|video)\\b" $raw 1 -}}
-{{- if or $block (not $raw) -}}{{- $inner = $raw -}}{{- else -}}{{- $inner = print `<p>` $raw `</p>` -}}{{- end -}}
-{{- $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 -}}
-{{- $inner = replace $inner $image "" 1 -}}
-{{ $empty := false }}
-{{- if lt (len $inner) 3 }}{{ $empty = true }}{{ end }}
-{{- if $imagesrc -}}
-<section class="title quote bgimage hasbackgroundcolor">
-    <div class="bgimage" style="background: url('{{ ((resources.GetMatch $imagesrc).Fill `3000x1000 webp Center q50`).RelPermalink }}') center center / cover no-repeat;">
-        {{ if $empty }}{{ else }}<div class="overlay"></div>{{ end }}
-        <div class="container small">
-            {{ $inner | safeHTML }}
-        </div>
-    </div>
+{{- if not $inner -}}{{- with site.GetPage "bricks/quote.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $s := partial "brick/split.html" $inner -}}
+{{- $html := partial "md.html" $s.body -}}
+{{- $q := index (findRESubmatch `(?s)<h[1-3][^>]*>(.*?)</h[1-3]>` $html 1) 0 -}}
+{{- $quote := "" -}}{{- $rest := $html -}}
+{{- with $q -}}{{- $quote = index . 1 -}}{{- $rest = replace $html (index . 0) "" 1 -}}{{- end -}}
+{{- $quote = replaceRE `^\s*(&quot;|&ldquo;|"|“|„)(.*?)(&quot;|&rdquo;|"|”|“)\s*$` "$2" $quote -}}
+{{- $rest = replaceRE `^\s*<p>\s*(—|&mdash;|–)\s*(&nbsp;)?\s*` "<p>" (strings.TrimSpace $rest) -}}
+<section class="brick brick--quote">
+  <figure class="quote wrap wrap--narrow">
+    <blockquote class="quote__text"><p>{{ if eq site.Language.Lang "de" }}„{{ else }}“{{ end }}{{ $quote | safeHTML }}{{ if eq site.Language.Lang "de" }}“{{ else }}”{{ end }}</p></blockquote>
+    {{- with strings.TrimSpace (plainify $rest) }}<figcaption class="quote__by">{{ . }}</figcaption>{{ end }}
+  </figure>
 </section>
-{{- else -}}
-<section class="title quote">
-    <div class="container small">
-        {{- markdownify $inner -}}
-    </div>
-</section>
-{{- end -}}

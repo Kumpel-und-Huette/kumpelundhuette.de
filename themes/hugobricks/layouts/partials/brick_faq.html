@@ -1,21 +1,16 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/faq.md' file." -}}
-    {{- with page.Site.GetPage "bricks/faq.md" -}}
-        {{- $inner = .RawContent -}}
+{{- if not $inner -}}{{- with site.GetPage "bricks/faq.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+<section class="brick brick--wide">
+  <div class="prose faq">
+    {{- range split $inner "\n---" -}}
+      {{- $html := partial "md.html" . -}}
+      {{- $title := index (findRE `(?s)<h2.*?>.*?</h2>` $html 1) 0 -}}
+      {{- if $title }}
+      <details class="faq__item">
+        <summary>{{ $title | plainify }}</summary>
+        <div class="faq__answer flow">{{ replace $html $title "" | safeHTML }}</div>
+      </details>
+      {{- end -}}
     {{- end -}}
-{{- end -}}
-{{- $parts := split $inner "---" -}}
-<section class="wide faq">
-    <div class="container">
-        {{- range $parts -}}
-            {{- $title := index (findRE `(?s)<h2.*?>.*?</h2>` (markdownify .) 1) 0 -}}
-            {{- $titleplain := replace (index (split $title ">") 1) `</h2` `` -}}
-            <details>
-                <summary>{{- $titleplain | markdownify -}}</summary>
-                <div><div>{{- (replace (markdownify .) $title "") | safeHTML -}}</div></div>
-            </details>
-        {{- end -}}
-    </div>
+  </div>
 </section>

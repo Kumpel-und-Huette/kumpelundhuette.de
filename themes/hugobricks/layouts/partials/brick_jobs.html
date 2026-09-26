@@ -1,52 +1,42 @@
-{{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/jobs.md' file." -}}
-    {{- with page.Site.GetPage "bricks/jobs.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-{{- $parts := split $inner "---" -}}
-<section class="jobs">
-    <div class="container">
-        <div class="jobs-grid">
-            {{- range (index hugo.Data page.Language.Name).jobs -}}
-            <div class="job-box">
-                <h3>
-                    {{- .title -}}
-                </h3>
-                
-                <div class="job-details">
-                    <div class="job-detail-item">
-                        <span class="job-detail-label">Standort</span>
-                        <span class="job-detail-value">{{- .location -}}</span>
-                    </div>
-                    <div class="job-detail-item">
-                        <span class="job-detail-label">Typ</span>
-                        <span class="job-detail-value">{{- .type -}}</span>
-                    </div>
-                    <div class="job-detail-item">
-                        <span class="job-detail-label">Abteilung</span>
-                        <span class="job-detail-value">{{- .department -}}</span>
-                    </div>
-                </div>
-                
-                <p><strong>Beschreibung:</strong> {{- .description -}}</p>
-                
-                <p><strong>Anforderungen:</strong></p>
-                <ul>
-                    {{- range .requirements -}}<li>{{- . -}}</li>{{- end -}}
-                </ul>
-                
-                <p><strong>Vorteile:</strong></p>
-                <ul>
-                    {{- range .benefits -}}<li>{{- . -}}</li>{{- end -}}
-                </ul>
-                
-                <div class="job-apply">
-                    <a href="mailto:jobs@kumpellundhuette.de?subject=For Job: {{- .title -}}" class="button primary">Jetzt bewerben</a>
-                </div>
-            </div>
-            {{- end -}}
+{{- $c := partial "contact-data.html" . -}}
+<section class="brick brick--jobs">
+  <div class="wrap jobs">
+    {{- range (index hugo.Data site.Language.Lang).jobs }}
+    <article class="job">
+      <header class="job__head">
+        <h2 class="job__title">{{ .title }}</h2>
+        <dl class="job__facts">
+          {{- with .location }}<div><dt>{{ i18n "job_location" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .type }}<div><dt>{{ i18n "job_type" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .department }}<div><dt>{{ i18n "job_department" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+          {{- with .experience }}<div><dt>{{ i18n "job_experience" }}</dt><dd>{{ . }}</dd></div>{{ end }}
+        </dl>
+      </header>
+      <div class="job__body">
+        {{- with .description }}
+        <div class="job__part flow">
+          <h3>{{ i18n "job_description" }}</h3>
+          <p>{{ . }}</p>
         </div>
-    </div>
+        {{- end }}
+        {{- with .requirements }}
+        <div class="job__part flow">
+          <h3>{{ i18n "job_requirements" }}</h3>
+          <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+        {{- end }}
+        {{- with .benefits }}
+        <div class="job__part flow">
+          <h3>{{ i18n "job_benefits" }}</h3>
+          <ul>{{ range . }}<li>{{ . }}</li>{{ end }}</ul>
+        </div>
+        {{- end }}
+      </div>
+      <footer class="job__apply">
+        <a class="button" href="mailto:{{ $c.email }}?subject={{ printf "%s: %s" (i18n "job_apply") .title | urlquery }}">{{ partial "icon.html" "mail" }}<span>{{ i18n "job_apply" }}</span></a>
+        <p class="job__note">{{ i18n "job_note" }}</p>
+      </footer>
+    </article>
+    {{- end }}
+  </div>
 </section>

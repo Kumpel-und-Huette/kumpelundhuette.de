@@ -1,0 +1,127 @@
+{
+  "title": "Kumpel und Hütte: choose the visual world",
+  "question": "Your brief pins the world (Nordic winter room, red-brick Zechensiedlung, colliery warmth, oak kitchen table). The roll decides its structure. Keep the Haushaltsbuch, take the kitchen-table pick, or re-roll.",
+  "options": [
+    {
+      "id": "assigned",
+      "label": "Das Haushaltsbuch",
+      "kicker": "THE ROLL",
+      "lineage": "The ruled household ledger Ruhrgebiet families kept in the kitchen drawer",
+      "thesis": "A home that keeps honest books: calm linen pages, every promise written as a ruled entry, totals underlined twice.",
+      "palette": ["#F4EDE2", "#2A2320", "#A8432F", "#D99A2B", "#4F6B3A", "#E6DAC6"],
+      "materials": ["linen paper with faint ruled lines", "oak", "brick-red door", "miner's-lamp ochre", "moss green"],
+      "viewport": "Big Vollkorn headline 'Nicht Heim. Nicht allein. Einfach Zuhause!', a real kitchen photo in a pale-oak frame, and a brick-red call button with the phone number spelled out.",
+      "risk": "Ledger ruling can turn bureaucratic if used everywhere; it must stay on the numbers and the steps.",
+      "raised": [
+        {"from": "memory-quilt", "raise": "Every photo is seamed to an honest caption saying what it really shows (our kitchen, Conny fitting handrails), never a stock mood."},
+        {"from": "gameboy-four-shade", "raise": "Palette discipline: exactly four named colors on linen and oat, each with one job (red door = act, ochre = warmth/numbers, moss = garden/trust, coal = text)."},
+        {"from": "particle-detector", "raise": "Numbers set in tabular lining figures so 570 + 200 + 200 = 970 lines up like a sum on paper."},
+        {"from": "one-bit-desktop", "raise": "Explicit state vocabulary: current page, open FAQ, and focus are always drawn, never implied by color alone."}
+      ],
+      "comp": ".impeccable/mocks/decision/assigned.webp"
+    },
+    {
+      "id": "model-pick",
+      "label": "Der gedeckte Küchentisch",
+      "kicker": "IMPECCABLE’S PICK",
+      "lineage": "The lit kitchen table with coffee already on",
+      "thesis": "Every page is a table set for one more guest: oak surfaces, lamp-glow ochre, warm photography leading.",
+      "palette": ["#EFE6D8", "#2B221C", "#B04A34", "#E0A33A", "#56703F"],
+      "materials": ["pale oak", "wool", "candle glow", "enamel coffee pot"],
+      "viewport": "Full-width warm photo of the real kitchen with the headline on a linen card like a place setting.",
+      "risk": "This is the brief's literal reading and the look most runs in this category land on; it depends on photos the site does not have many of.",
+      "comp": ".impeccable/mocks/decision/model-pick.webp"
+    },
+    {
+      "id": "memory-quilt",
+      "label": "Memory quilt atlas",
+      "verdict": "declined",
+      "lineage": "Hand-pieced quilt of worn garments",
+      "thesis": "Each resident's history as a stitched block.",
+      "palette": ["#6F86A6", "#1E1B1A", "#C23B2E", "#5B3A29"],
+      "materials": ["chambray", "stitch rule"],
+      "viewport": "A quilt grid of patches.",
+      "case": "Needs resident stories the site must not invent; loses on product clarity and truth.",
+      "risk": "Invented biography.",
+      "kept": "Honest captions seamed to every photo."
+    },
+    {
+      "id": "brine-calendar",
+      "label": "Pickling brine calendar",
+      "verdict": "declined",
+      "lineage": "Seasonal jar shelf",
+      "thesis": "Life as seasonal jars maturing.",
+      "palette": ["#E9EFE6", "#E2725B", "#9B2335", "#6B8E4E"],
+      "materials": ["jar glass", "kraft labels"],
+      "viewport": "A shelf of labelled jars.",
+      "case": "Charming but seniors and relatives do not identify with fermentation; loses both axes.",
+      "risk": "Whimsy over trust.",
+      "kept": "Kraft-label warmth is already in the oat neutrals; nothing further borrowed."
+    },
+    {
+      "id": "spy-dossier",
+      "label": "Spy dossier title sequence",
+      "verdict": "declined",
+      "lineage": "Sixties surveillance credits",
+      "thesis": "Case files and stamps.",
+      "palette": ["#D8C8A0", "#111111", "#C1121F"],
+      "materials": ["manila", "halftone"],
+      "viewport": "Reticle over frames.",
+      "case": "Surveillance is the opposite of dignity; loses both axes.",
+      "risk": "Alarming.",
+      "kept": "One orchestrated arrival per page instead of scattered motion."
+    },
+    {
+      "id": "gameboy-four-shade",
+      "label": "Four-shade handheld field",
+      "verdict": "declined",
+      "lineage": "Game Boy palette",
+      "thesis": "Four greens, tile grid.",
+      "palette": ["#9BBC0F", "#8BAC0F", "#306230", "#0F380F"],
+      "materials": ["dither", "pixel caps"],
+      "viewport": "Tile menu boxes.",
+      "case": "Tiny pixel type is hostile to older eyes; loses both axes.",
+      "risk": "Illegible.",
+      "kept": "Total palette discipline: four colors, each with one job."
+    },
+    {
+      "id": "particle-detector",
+      "label": "Collider event display",
+      "verdict": "declined",
+      "lineage": "Physics event display",
+      "thesis": "Tracks through detector rings.",
+      "palette": ["#05070A", "#5B7A99", "#F2D41F", "#D7263D"],
+      "materials": ["vacuum black", "signal tracks"],
+      "viewport": "Concentric ring section.",
+      "case": "Cold and technical; loses both axes.",
+      "risk": "Clinical.",
+      "kept": "Tabular figures so prices sum visibly."
+    },
+    {
+      "id": "one-bit-desktop",
+      "label": "One-bit desktop",
+      "verdict": "declined",
+      "lineage": "Early Macintosh",
+      "thesis": "Windows and dithers.",
+      "palette": ["#FFFFFF", "#000000", "#808080"],
+      "materials": ["dither", "window chrome"],
+      "viewport": "Overlapping windows.",
+      "case": "Computer nostalgia, not home; loses both axes.",
+      "risk": "Cold, tiny.",
+      "kept": "Explicit, always-drawn states for current page, open answers, and focus."
+    }
+  ],
+  "reroll": { "registers": ["safer", "bolder"] },
+  "buildPath": { "value": "comp", "toggle": true },
+  "canon": true,
+  "canonCard": {
+    "label": "The category standard",
+    "thesis": "A senior-living site as the category ships it: stock photo hero, trust badges, card grid, big CTA.",
+    "palette": ["#FFFFFF", "#1F2937", "#2F7D6D"],
+    "materials": ["clean grid", "stock photography"],
+    "viewport": "Smiling-seniors hero, three icon cards, contact band.",
+    "risk": "Indistinguishable from every Pflegeheim site, which is exactly what the brief refuses.",
+    "comp": ".impeccable/mocks/decision/canon.webp"
+  },
+  "steer": true
+}

@@ -1,50 +1,30 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- with page.Site.GetPage "bricks/posts.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-{{- $posts := where page.Site.RegularPages "Section" "posts" -}}
-<section class="posts">
-    {{ if $inner }}<div class="container small">
-        {{- markdownify $inner -}}
-    </div>{{ end }}
-    <div class="container">
-        <div class="filter">
-            <select id="filter" class="multiselecttags numbers_{{ hugo.Data.settings.filter_has_numbers }}" multiple autocomplete="off" title="{{ i18n "Filter tags" }}">
-                {{ range $name, $taxonomy := page.Site.Taxonomies.tags }}
-                    <option value="{{ $name }}">{{ $name }}</option>
-                {{ end }}
-            </select>
-        </div>
-        <ul class="contentitems grid posts" data-pagesize="{{ hugo.Data.settings.page_size }}">
-            {{ range $index,$post := $posts }}
-                <li class="item{{ range .Params.tags }} tag_{{ . }}{{ end }}">
-                        {{- if (resources.GetMatch .Params.image) -}}
-                            {{- $postimage := ((resources.GetMatch .Params.image).Fill `1200x600 jpg Smart q50`).RelPermalink -}}
-                            {{- if $postimage -}}<a href="{{ .RelPermalink }}"><div class="img"><img data-src="{{ $postimage }}" alt="{{ .Title }}" style="cursor: pointer;" onclick="document.location.href='{{ .RelPermalink }}';" /></div></a>{{- end -}}
-                        {{- end -}}
-                        <h3>{{ .Title | safeHTML }}</h3>
-                        {{ if .Params.date }}<div class="meta">
-                            <div>
-                                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
-                                {{ .Date | time.Format ":date_medium"}}
-                            </div>
-                        </div>
-                        {{ end }}
-                        <div class="summary">
-                            <p>{{ substr (.Summary | plainify) 0 190 | safeHTML }}...</p>
-                            <p><a href="{{ .RelPermalink }}" class="button ghost smaller">{{ i18n "Read more" }}</a></p>
-                        </div>
-                </li>
-            {{ end }}
-            <li class="placeholder"></li>
-            <li class="placeholder"></li>
-        </ul>
-        <a class="button secondary ghost smaller" id="loadmoreposts" onclick="loadMorePosts();">{{ i18n "Load more posts" }}...</a>
-        <script src="/js/filter.js" charset="utf-8"></script>
-    </div>
+{{- if not $inner -}}{{- with site.GetPage "bricks/posts.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $homes := where site.RegularPages "Section" "posts" -}}
+{{- with $inner -}}
+<section class="brick brick--small brick--page-head">
+  <div class="prose">{{ partial "md.html" . | safeHTML }}</div>
 </section>
-
-
+{{- end -}}
+<section class="brick brick--homes">
+  <div class="wrap">
+    <ul class="homes" role="list">
+      {{- range $homes }}
+      <li class="home-card">
+        <a class="home-card__link" href="{{ .RelPermalink }}">
+          {{- with .Params.image }}
+          <div class="home-card__photo photo"><div class="photo__frame">
+            {{- partial "img.html" (dict "src" . "alt" "" "ratio" "4:3" "sizes" "(min-width: 60em) 36rem, 100vw") -}}
+          </div></div>
+          {{- end }}
+          <div class="home-card__text flow">
+            <h2 class="home-card__title">{{ .Title | safeHTML }}</h2>
+            <p>{{ .Summary | plainify | htmlUnescape | truncate 220 }}</p>
+            <span class="link-arrow"><span>{{ i18n "read_more" }}</span>{{ partial "icon.html" "arrow" }}</span>
+          </div>
+        </a>
+      </li>
+      {{- end }}
+    </ul>
+  </div>
+</section>

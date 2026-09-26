@@ -4,12 +4,23 @@ theme: hugobricks
 defaultContentLanguage: de
 assetDir: static
 
+module:
+  mounts:
+    - source: static
+      target: assets
+    - source: assets/plates
+      target: assets/plates
+
 caches:
   images:
     dir: :cacheDir/images
 
 markup:
   goldmark:
+    parser:
+      wrapStandAloneImageWithinParagraph: false
+      attribute:
+        block: true
     renderer:
       unsafe: true
     extensions:

@@ -1,22 +1,13 @@
-{{- if .Get 0 -}}
-	{{- range (index (index hugo.Data page.Language.Name).faqs (sub (.Get 0) 1)).faqs -}}
-		<details>
-			<summary>{{- .question -}}</summary>
-			<div><div>{{- .answer | markdownify -}}</div></div>
-		</details>
-	{{- end -}}
-{{- else -}}
-	{{- range (index hugo.Data page.Language.Name).faqs -}}
-		{{- if .title -}}
-			<h3>{{- .title -}}</h3>
-			<div>
-				{{- range .faqs -}}
-					<details>
-						<summary>{{- .question -}}</summary>
-						<div><div>{{- .answer | markdownify -}}</div></div>
-					</details>
-				{{- end -}}
-			</div>
-		{{- end -}}    
-	{{- end -}}
-{{- end -}}
+{{- $groups := (index hugo.Data page.Language.Lang).faqs | default slice -}}
+{{- if .Get 0 -}}{{- $groups = slice (index $groups (sub (int (.Get 0)) 1)) -}}{{- end -}}
+<div class="faq">
+  {{- range $groups }}
+  {{- with .title }}<h3 class="faq__group">{{ . }}</h3>{{ end }}
+  {{- range .faqs }}
+  <details class="faq__item">
+    <summary>{{ .question }}</summary>
+    <div class="faq__answer flow">{{ .answer | markdownify }}</div>
+  </details>
+  {{- end }}
+  {{- end }}
+</div>

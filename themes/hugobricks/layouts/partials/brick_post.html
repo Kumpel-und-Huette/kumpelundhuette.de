@@ -1,38 +1,33 @@
-<section class="post">
-    <div class="container title">
-        {{ partial "breadcrumbs.html" . }}
-        <h1>{{ page.Title | safeHTML }}</h1>
-        {{ if or page.Params.date (index page.Params.tags 0) }}
-        <div class="meta">
-            {{ if page.Params.date }}<div>
-                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
-                {{ page.Date | time.Format ":date_medium"}}
-            </div>
-            {{ end }}
-            {{ if index page.Params.tags 0 }}
-            <div>
-                <img src="/img/icons/material-symbols/200/rounded/label-fill.svg"class="black_2_textDark" alt="" />
-                <ul>
-                    {{ range page.Params.tags }}
-                    <li><a href='{{ relLangURL "" }}blog/?tag={{ . }}'>{{ . }}</a>
-                    {{ end }}
-                </ul>
-            </div>
-            {{ end }}
-        </div>
-        {{ end }}
+{{- /* A single house. */ -}}
+{{- $p := page -}}
+{{- $c := partial "contact-data.html" . -}}
+<article class="house">
+  <header class="brick brick--small brick--page-head">
+    <div class="prose">
+      {{ partial "breadcrumbs.html" $p }}
+      <h1>{{ $p.Title | safeHTML }}</h1>
+      <p class="lede">{{ $c.street }}, {{ $c.city }}</p>
     </div>
-    <div class="container wide">
-        {{- $postimage := `/uploads/gallery/01.jpg` -}}
-        {{- if page.Params.image -}}
-            {{- $postimage = page.Params.image -}}
-        {{- end -}}
-        {{- if (resources.GetMatch $postimage) -}}
-            {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 jpg Smart q50`).RelPermalink -}}
-        {{- end -}}
-        <img src="{{ $postimage }}" alt="{{ .Title }}" class="featuredimage" />
+  </header>
+  <div class="wrap house__grid">
+    <div class="house__body prose prose--left">
+      {{ $p.Content }}
     </div>
-    <div class="container post">
-        {{ page.Content }}
-    </div>
-</section>
+    <aside class="house__aside" aria-labelledby="house-facts">
+      {{- with $p.Params.image }}
+      {{- partial "brick/figure.html" (dict "src" . "alt" $p.Title "sizes" "(min-width: 64em) 26rem, 100vw" "eager" true) -}}
+      {{- end }}
+      <div class="facts">
+        <h2 id="house-facts" class="facts__title">{{ i18n "house_facts" }}</h2>
+        <dl>
+          <div><dt>{{ i18n "house_address" }}</dt><dd>{{ $c.street }}<br>{{ $c.city }}</dd></div>
+          <div><dt>{{ i18n "house_for" }}</dt><dd>{{ i18n "house_for_value" }}</dd></div>
+          <div><dt>{{ i18n "house_cost" }}</dt><dd>{{ i18n "house_cost_value" }}</dd></div>
+          <div><dt>{{ i18n "house_care" }}</dt><dd>{{ i18n "house_care_value" }}</dd></div>
+        </dl>
+        <a class="button button--call" href="{{ $c.tel }}">{{ partial "icon.html" "phone" }}<span>{{ $c.phone }}</span></a>
+      </div>
+    </aside>
+  </div>
+</article>
+{{ partial "price-note.html" . }}

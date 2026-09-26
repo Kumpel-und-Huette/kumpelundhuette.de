@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-09-25T18:23:15+00:00",
+  "title": "Design System: Kumpel & Hütte",
+  "extensions": {
+    "colorMeta": {
+      "brick": {
+        "role": "primary",
+        "displayName": "Door Brick",
+        "canonical": "#a8432f",
+        "oklch": "oklch(51.6% 0.138 33.0)",
+        "tonalRamp": [
+          "oklch(15% 0.060 33.0)",
+          "oklch(25% 0.138 33.0)",
+          "oklch(35% 0.138 33.0)",
+          "oklch(45% 0.138 33.0)",
+          "oklch(55% 0.138 33.0)",
+          "oklch(65% 0.138 33.0)",
+          "oklch(80% 0.138 33.0)",
+          "oklch(95% 0.060 33.0)"
+        ]
+      },
+      "brick-deep": {
+        "role": "primary",
+        "displayName": "Fired Brick",
+        "canonical": "#8e3524",
+        "oklch": "oklch(45.2% 0.125 32.8)",
+        "tonalRamp": [
+          "oklch(15% 0.060 32.8)",
+          "oklch(25% 0.125 32.8)",
+          "oklch(35% 0.125 32.8)",
+          "oklch(45% 0.125 32.8)",
+          "oklch(55% 0.125 32.8)",
+          "oklch(65% 0.125 32.8)",
+          "oklch(80% 0.125 32.8)",
+          "oklch(95% 0.060 32.8)"
+        ]
+      },
+      "ochre": {
+        "role": "secondary",
+        "displayName": "Lamp Ochre",
+        "canonical": "#d99a2b",
+        "oklch": "oklch(73.0% 0.140 76.3)",
+        "tonalRamp": [
+          "oklch(15% 0.060 76.3)",
+          "oklch(25% 0.140 76.3)",
+          "oklch(35% 0.140 76.3)",
+          "oklch(45% 0.140 76.3)",
+          "oklch(55% 0.140 76.3)",
+          "oklch(65% 0.140 76.3)",
+          "oklch(80% 0.140 76.3)",
+          "oklch(95% 0.060 76.3)"
+        ]
+      },
+      "ochre-ink": {
+        "role": "secondary",
+        "displayName": "Lamp Ochre Ink",
+        "canonical": "#74501f",
+        "oklch": "oklch(46.1% 0.080 71.5)",
+        "tonalRamp": [
+          "oklch(15% 0.060 71.5)",
+          "oklch(25% 0.080 71.5)",
+          "oklch(35% 0.080 71.5)",
+          "oklch(45% 0.080 71.5)",
+          "oklch(55% 0.080 71.5)",
+          "oklch(65% 0.080 71.5)",
+          "oklch(80% 0.080 71.5)",
+          "oklch(95% 0.060 71.5)"
+        ]
+      },
+      "moss": {
+        "role": "tertiary",
+        "displayName": "Garden Moss",
+        "canonical": "#4f6b3a",
+        "oklch": "oklch(49.3% 0.080 132.9)",
+        "tonalRamp": [
+          "oklch(15% 0.060 132.9)",
+          "oklch(25% 0.080 132.9)",
+          "oklch(35% 0.080 132.9)",
+          "oklch(45% 0.080 132.9)",
+          "oklch(55% 0.080 132.9)",
+          "oklch(65% 0.080 132.9)",
+          "oklch(80% 0.080 132.9)",
+          "oklch(95% 0.060 132.9)"
+        ]
+      },
+      "moss-deep": {
+        "role": "tertiary",
+        "displayName": "Garden Moss Deep",
+        "canonical": "#3b5230",
+        "oklch": "oklch(41.0% 0.061 136.0)",
+        "tonalRamp": [
+          "oklch(15% 0.060 136.0)",
+          "oklch(25% 0.061 136.0)",
+          "oklch(35% 0.061 136.0)",
+          "oklch(45% 0.061 136.0)",
+          "oklch(55% 0.061 136.0)",
+          "oklch(65% 0.061 136.0)",
+          "oklch(80% 0.061 136.0)",
+          "oklch(95% 0.060 136.0)"
+        ]
+      },
+      "linen": {
+        "role": "neutral",
+        "displayName": "Linen",
+        "canonical": "#f3eadc",
+        "oklch": "oklch(94.0% 0.021 79.1)",
+        "tonalRamp": [
+          "oklch(15% 0.021 79.1)",
+          "oklch(25% 0.021 79.1)",
+          "oklch(35% 0.021 79.1)",
+          "oklch(45% 0.021 79.1)",
+          "oklch(55% 0.021 79.1)",
+          "oklch(65% 0.021 79.1)",
+          "oklch(80% 0.021 79.1)",
+          "oklch(95% 0.021 79.1)"
+        ]
+      },
+      "oat": {
+        "role": "neutral",
+        "displayName": "Oat",
+        "canonical": "#e7dbc8",
+        "oklch": "oklch(89.6% 0.029 79.5)",
+        "tonalRamp": [
+          "oklch(15% 0.029 79.5)",
+          "oklch(25% 0.029 79.5)",
+          "oklch(35% 0.029 79.5)",
+          "oklch(45% 0.029 79.5)",
+          "oklch(55% 0.029 79.5)",
+          "oklch(65% 0.029 79.5)",
+          "oklch(80% 0.029 79.5)",
+          "oklch(95% 0.029 79.5)"
+        ]
+      },
+      "paper": {
+        "role": "neutral",
+        "displayName": "Paper",
+        "canonical": "#fbf7f0",
+        "oklch": "oklch(97.7% 0.010 81.8)",
+        "tonalRamp": [
+          "oklch(15% 0.010 81.8)",
+          "oklch(25% 0.010 81.8)",
+          "oklch(35% 0.010 81.8)",
+          "oklch(45% 0.010 81.8)",
+          "oklch(55% 0.010 81.8)",
+          "oklch(65% 0.010 81.8)",
+          "oklch(80% 0.010 81.8)",
+          "oklch(95% 0.010 81.8)"
+        ]
+      },
+      "card": {
+        "role": "neutral",
+        "displayName": "Place-card",
+        "canonical": "#f7e8d4",
+        "oklch": "oklch(93.8% 0.031 75.2)",
+        "tonalRamp": [
+          "oklch(15% 0.031 75.2)",
+          "oklch(25% 0.031 75.2)",
+          "oklch(35% 0.031 75.2)",
+          "oklch(45% 0.031 75.2)",
+          "oklch(55% 0.031 75.2)",
+          "oklch(65% 0.031 75.2)",
+          "oklch(80% 0.031 75.2)",
+          "oklch(95% 0.031 75.2)"
+        ]
+      },
+      "oak": {
+        "role": "neutral",
+        "displayName": "Pale Oak",
+        "canonical": "#d8be97",
+        "oklch": "oklch(81.4% 0.060 77.8)",
+        "tonalRamp": [
+          "oklch(15% 0.060 77.8)",
+          "oklch(25% 0.060 77.8)",
+          "oklch(35% 0.060 77.8)",
+          "oklch(45% 0.060 77.8)",
+          "oklch(55% 0.060 77.8)",
+          "oklch(65% 0.060 77.8)",
+          "oklch(80% 0.060 77.8)",
+          "oklch(95% 0.060 77.8)"
+        ]
+      },
+      "line": {
+        "role": "neutral",
+        "displayName": "Pencil Line",
+        "canonical": "#d6c7b0",
+        "oklch": "oklch(83.6% 0.035 78.6)",
+        "tonalRamp": [
+          "oklch(15% 0.035 78.6)",
+          "oklch(25% 0.035 78.6)",
+          "oklch(35% 0.035 78.6)",
+          "oklch(45% 0.035 78.6)",
+          "oklch(55% 0.035 78.6)",
+          "oklch(65% 0.035 78.6)",
+          "oklch(80% 0.035 78.6)",
+          "oklch(95% 0.035 78.6)"
+        ]
+      },
+      "ink": {
+        "role": "neutral",
+        "displayName": "Hearth Ink",
+        "canonical": "#2b221c",
+        "oklch": "oklch(26.0% 0.018 55.5)",
+        "tonalRamp": [
+          "oklch(15% 0.018 55.5)",
+          "oklch(25% 0.018 55.5)",
+          "oklch(35% 0.018 55.5)",
+          "oklch(45% 0.018 55.5)",
+          "oklch(55% 0.018 55.5)",
+          "oklch(65% 0.018 55.5)",
+          "oklch(80% 0.018 55.5)",
+          "oklch(95% 0.018 55.5)"
+        ]
+      },
+      "ink-soft": {
+        "role": "neutral",
+        "displayName": "Soft Ink",
+        "canonical": "#5a4a3e",
+        "oklch": "oklch(42.2% 0.029 58.7)",
+        "tonalRamp": [
+          "oklch(15% 0.029 58.7)",
+          "oklch(25% 0.029 58.7)",
+          "oklch(35% 0.029 58.7)",
+          "oklch(45% 0.029 58.7)",
+          "oklch(55% 0.029 58.7)",
+          "oklch(65% 0.029 58.7)",
+          "oklch(80% 0.029 58.7)",
+          "oklch(95% 0.029 58.7)"
+        ]
+      },
+      "coal": {
+        "role": "neutral",
+        "displayName": "Coal",
+        "canonical": "#231c17",
+        "oklch": "oklch(23.3% 0.014 57.5)",
+        "tonalRamp": [
+          "oklch(15% 0.014 57.5)",
+          "oklch(25% 0.014 57.5)",
+          "oklch(35% 0.014 57.5)",
+          "oklch(45% 0.014 57.5)",
+          "oklch(55% 0.014 57.5)",
+          "oklch(65% 0.014 57.5)",
+          "oklch(80% 0.014 57.5)",
+          "oklch(95% 0.014 57.5)"
+        ]
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "Page titles, contact heading, the door heading."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section h2, home-card titles, the moss quote, the price total."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "h3, news titles, person names, door verbs, mobile nav links."
+      },
+      "subtitle": {
+        "displayName": "Subtitle",
+        "purpose": "h4, ledger rows, FAQ groups, facts titles."
+      },
+      "wordmark": {
+        "displayName": "Wordmark",
+        "purpose": "Kumpel & Hütte in the header and footer; no logo image."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "All running text; 18–21px root, 36rem measure."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Paragraph under page titles and section heads, in Soft Ink."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Breadcrumbs, meta, captions, footer headings; sentence case only."
+      },
+      "figures": {
+        "displayName": "Figures",
+        "purpose": "Prices, sums, phone numbers; tabular lining figures."
+      }
+    },
+    "shadows": [
+      {
+        "name": "place-card",
+        "value": "0 24px 50px -24px rgb(24 14 8 / 0.55), 0 2px 6px rgb(24 14 8 / 0.12)",
+        "purpose": "The home hero card on the photo."
+      },
+      {
+        "name": "pinned-note",
+        "value": "0 30px 50px -28px rgb(0 0 0 / 0.6), 0 2px 4px rgb(0 0 0 / 0.15)",
+        "purpose": "The price note on the moss band."
+      },
+      {
+        "name": "hung-frame",
+        "value": "0 22px 40px -26px rgb(43 34 28 / 0.55)",
+        "purpose": "Oak photo frames."
+      },
+      {
+        "name": "paper-ring",
+        "value": "0 0 0 1px var(--line)",
+        "purpose": "Flat paper surfaces: FAQ, cards, tables, facts, jobs."
+      },
+      {
+        "name": "header-lifted",
+        "value": "0 1px 0 var(--line), 0 8px 24px -16px rgb(43 34 28 / 0.35)",
+        "purpose": "Sticky header after scroll."
+      },
+      {
+        "name": "dropdown",
+        "value": "0 18px 40px -18px rgb(43 34 28 / 0.45), 0 0 0 1px var(--line)",
+        "purpose": "Desktop sub-navigation."
+      },
+      {
+        "name": "callbar",
+        "value": "0 -1px 0 var(--line), 0 -10px 24px -18px rgb(43 34 28 / 0.5)",
+        "purpose": "Mobile call bar."
+      },
+      {
+        "name": "door-sill",
+        "value": "inset 0 -6px 0 var(--oat)",
+        "purpose": "Step under each door arch; ochre on hover."
+      },
+      {
+        "name": "focus-halo",
+        "value": "outline: 3px solid var(--ink); outline-offset: 3px; box-shadow: 0 0 0 6px var(--linen)",
+        "purpose": "Global focus ring; outline turns paper on photo, brick and coal."
+      },
+      {
+        "name": "hero-scrim",
+        "value": "linear-gradient(to bottom, rgb(24 14 8 / 0.7) 0, rgb(24 14 8 / 0.5) var(--header-h), rgb(24 14 8 / 0.12) calc(var(--header-h) + 5rem), rgb(24 14 8 / 0) 34%)",
+        "purpose": "Keeps header text over the photo at 4.5:1 or better."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "Arrival and nudges: hero card settle, arrow slide, door lift."
+      },
+      {
+        "name": "settle",
+        "value": "0.9s ease-out 0.15s; from opacity 0, translateY(14px)",
+        "purpose": "Hero card arrival, only under prefers-reduced-motion: no-preference."
+      },
+      {
+        "name": "state",
+        "value": "0.2s ease",
+        "purpose": "Button colour changes and nav chevron rotation."
+      },
+      {
+        "name": "nudge",
+        "value": "0.25s ease-out; translateX(0.2em)",
+        "purpose": "Arrow links on hover; FAQ chevron rotation."
+      },
+      {
+        "name": "lift",
+        "value": "0.3s ease-out; translateY(-4px)",
+        "purpose": "Door ways on hover; removed under reduced motion."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "mail-icon",
+        "value": "40em"
+      },
+      {
+        "name": "hero-overlay",
+        "value": "48em"
+      },
+      {
+        "name": "two-column",
+        "value": "56em"
+      },
+      {
+        "name": "contact-split",
+        "value": "60em"
+      },
+      {
+        "name": "house-aside",
+        "value": "64em"
+      },
+      {
+        "name": "wide-nav",
+        "value": "80em"
+      },
+      {
+        "name": "short-landscape",
+        "value": "max-height: 30em"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Primary Button",
+      "kind": "button",
+      "refersTo": "button-primary",
+      "description": "Door Brick call-to-action; the call button spells out the number.",
+      "html": "<a class=\"ds-btn-primary\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6.6 3.5h2.6l1.4 4.1-2 1.4a12 12 0 0 0 6.4 6.4l1.4-2 4.1 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z\"/></svg><span>Anrufen: 0160 90889269</span></a>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-btn-primary{display:inline-flex;align-items:center;justify-content:center;gap:0.55em;min-height:3rem;padding:0.6em 1.25em;border:2px solid var(--brick);border-radius:var(--radius);background:var(--brick);color:var(--paper);font-family:var(--sans);font-size:18px;font-weight:700;line-height:1.2;text-decoration:none;transition:background-color .2s ease,border-color .2s ease;} .ds-btn-primary:hover{background:var(--brick-deep);border-color:var(--brick-deep);} .ds-btn-primary:focus-visible{outline:3px solid var(--ink,#2b221c);outline-offset:3px;box-shadow:0 0 0 6px var(--linen,#f3eadc);}"
+    },
+    {
+      "name": "Quiet Button",
+      "kind": "button",
+      "refersTo": "button-quiet",
+      "description": "Outlined secondary action that fills with ink on hover.",
+      "html": "<a class=\"ds-btn-quiet\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"5.5\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"m3.8 7 8.2 6 8.2-6\"/></svg><span>info@kumpelundhuette.de</span></a>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-btn-quiet{display:inline-flex;align-items:center;justify-content:center;gap:0.55em;min-height:3rem;padding:0.6em 1.25em;border:2px solid currentColor;border-radius:var(--radius);background:transparent;color:var(--ink);font-family:var(--sans);font-size:18px;font-weight:700;line-height:1.2;text-decoration:none;transition:background-color .2s ease,color .2s ease;} .ds-btn-quiet:hover{background:var(--ink);border-color:var(--ink);color:var(--paper);} .ds-btn-quiet:focus-visible{outline:3px solid var(--ink,#2b221c);outline-offset:3px;box-shadow:0 0 0 6px var(--linen,#f3eadc);}"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "button",
+      "refersTo": "link-arrow",
+      "description": "Ochre-ink text link with a sliding arrow.",
+      "html": "<a class=\"ds-link-arrow\" href=\"#\"><span>Besuch vereinbaren</span><svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h13\"/><path d=\"m13 6.5 5.5 5.5-5.5 5.5\"/></svg></a>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-link-arrow{display:inline-flex;align-items:center;gap:0.45em;min-height:2.75rem;color:var(--ochre-ink);font-family:var(--sans);font-size:18px;font-weight:700;text-decoration:underline;text-decoration-color:transparent;text-underline-offset:0.2em;} .ds-link-arrow svg{transition:transform .25s var(--ease-out);} .ds-link-arrow:hover{color:var(--ink);text-decoration-color:currentColor;} .ds-link-arrow:hover svg{transform:translateX(0.2em);} .ds-link-arrow:focus-visible{outline:3px solid var(--ink,#2b221c);outline-offset:3px;box-shadow:0 0 0 6px var(--linen,#f3eadc);}"
+    },
+    {
+      "name": "Text Field",
+      "kind": "input",
+      "refersTo": "field",
+      "description": "Labelled input with a warm-grey 2px border.",
+      "html": "<div class=\"ds-field\"><label for=\"ds-n\">Ihr Name <span class=\"ds-req\">(Pflichtfeld)</span></label><input id=\"ds-n\" type=\"text\" placeholder=\"Maria Beispiel\"></div>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-field{display:grid;gap:0.4rem;font-family:var(--sans);font-size:18px;color:var(--ink);max-width:24rem;} .ds-field label{font-weight:700;} .ds-req{font-weight:400;color:var(--ink-soft);font-size:0.9em;} .ds-field input{min-height:3rem;padding:0.7rem 0.9rem;border:2px solid #8f7d6b;border-radius:var(--radius);background:#fff;color:var(--ink);font:inherit;} .ds-field input:focus-visible{border-color:var(--ink);outline:3px solid var(--ink);outline-offset:3px;box-shadow:0 0 0 6px var(--linen);}"
+    },
+    {
+      "name": "Navigation Row",
+      "kind": "nav",
+      "refersTo": null,
+      "description": "Wide-screen Vollkorn row with middle-dot separators and an ochre current underline.",
+      "html": "<nav class=\"ds-nav\"><ul><li><a href=\"#\">Organisation</a></li><li><a href=\"#\" aria-current=\"page\">Die Hütte</a></li><li><a href=\"#\">Einblicke</a></li><li><a href=\"#\">Kontakt</a></li><li><a href=\"#\" class=\"ds-lang\">EN</a></li></ul></nav>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-nav{background:var(--linen);padding:1rem 1.25rem;} .ds-nav ul{--gap:1.5rem;list-style:none;margin:0;padding:0;display:flex;align-items:center;gap:0 var(--gap);} .ds-nav li{position:relative;} .ds-nav li+li::before{content:\"·\";position:absolute;left:calc(var(--gap)/-2);top:50%;transform:translate(-50%,-52%);font-weight:700;opacity:.7;color:var(--ink);} .ds-nav a{display:inline-flex;align-items:center;min-height:2.75rem;color:var(--ink);font-family:var(--serif);font-size:18px;font-weight:500;text-decoration:none;white-space:nowrap;} .ds-nav a:hover{text-decoration:underline;text-decoration-thickness:2px;text-underline-offset:0.35em;} .ds-nav a[aria-current]{text-decoration:underline;text-decoration-color:var(--ochre);text-decoration-thickness:3px;text-underline-offset:0.35em;} .ds-nav .ds-lang{font-family:var(--sans);font-size:15px;font-weight:700;letter-spacing:.04em;} .ds-nav a:focus-visible{outline:3px solid var(--ink,#2b221c);outline-offset:3px;box-shadow:0 0 0 6px var(--linen,#f3eadc);}"
+    },
+    {
+      "name": "Jumplist Chip",
+      "kind": "chip",
+      "refersTo": "jumplist-chip",
+      "description": "Oat pill for in-page jumps.",
+      "html": "<div class=\"ds-chips\"><a class=\"ds-chip\" href=\"#\">Aufnahme</a><a class=\"ds-chip\" href=\"#\">Kosten</a><a class=\"ds-chip\" href=\"#\">Einzug</a></div>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-chips{display:flex;flex-wrap:wrap;gap:0.5rem;} .ds-chip{display:inline-flex;align-items:center;min-height:2.75rem;padding:0.4rem 1rem;border-radius:999px;background:var(--oat);color:var(--ink);font-family:var(--sans);font-size:18px;font-weight:700;text-decoration:none;} .ds-chip:hover{background:var(--ink);color:var(--paper);} .ds-chip:focus-visible{outline:3px solid var(--ink,#2b221c);outline-offset:3px;box-shadow:0 0 0 6px var(--linen,#f3eadc);}"
+    },
+    {
+      "name": "Hero Place-card",
+      "kind": "card",
+      "refersTo": "hero-card",
+      "description": "The headline card set on the home photo, with the coal caption tab.",
+      "html": "<div class=\"ds-hero\"><div class=\"ds-hero-card\"><h1>Nicht Heim. Nicht allein. Einfach Zuhause!</h1><p>Eigenes Zimmer, echte Gesellschaft und Pflege von unserem eigenen Team.</p><p class=\"ds-hero-actions\"><a class=\"ds-hero-btn\" href=\"#\">Anrufen: 0160 90889269</a><a class=\"ds-hero-link\" href=\"#\">Besuch vereinbaren <svg width=\"18\" height=\"18\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M5 12h13\"/><path d=\"m13 6.5 5.5 5.5-5.5 5.5\"/></svg></a></p></div><p class=\"ds-hero-caption\">Die Küche in unserer Wohngemeinschaft</p></div>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-hero{position:relative;padding:4rem 1.25rem 3rem;background:linear-gradient(135deg,#8a5a32,#5e3d21);border-radius:8px;} .ds-hero-card{max-width:32rem;padding:1.2rem 1.45rem 1.3rem;background:var(--card);color:var(--ink);border-radius:var(--radius);box-shadow:0 24px 50px -24px rgb(24 14 8 / .55),0 2px 6px rgb(24 14 8 / .12);font-family:var(--sans);font-size:18px;} .ds-hero-card h1{margin:0;font-family:var(--serif);font-size:1.5rem;font-weight:700;line-height:1.2;letter-spacing:-0.012em;} .ds-hero-card p{margin:.5em 0 0;line-height:1.4;} .ds-hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:.7em;margin-top:1.1em!important;} .ds-hero-btn{display:inline-flex;align-items:center;min-height:2.75rem;padding:.35em 1.3em;background:var(--brick);color:var(--paper);border-radius:4px;font-weight:600;text-decoration:none;} .ds-hero-btn:hover{background:var(--brick-deep);} .ds-hero-link{display:inline-flex;align-items:center;gap:.4em;min-height:2.75rem;color:var(--ochre-ink);font-weight:500;text-decoration:none;} .ds-hero-link:hover{color:var(--ink);text-decoration:underline;} .ds-hero-caption{position:absolute;right:1.25rem;bottom:.75rem;margin:0;padding:.2em .6em;border-radius:4px;background:rgb(35 28 23 / .72);color:var(--paper);font-family:var(--sans);font-size:15px;} .ds-hero a:focus-visible{outline:3px solid var(--ink,#2b221c);outline-offset:3px;box-shadow:0 0 0 6px var(--linen,#f3eadc);}"
+    },
+    {
+      "name": "Price Note",
+      "kind": "custom",
+      "refersTo": "price-note",
+      "description": "The ruled fridge note on the moss band, with a double-ruled total.",
+      "html": "<div class=\"ds-price\"><div class=\"ds-note\"><table><tbody><tr><th>Miete<span>Zimmer, Nebenkosten, Strom, Internet</span></th><td>570 €</td></tr><tr><th>Hauswirtschaft</th><td>200 €</td></tr><tr><th>Betreuung</th><td>200 €</td></tr></tbody><tfoot><tr class=\"ds-total\"><th>Gesamt<span>im Monat</span></th><td><strong>970 €</strong></td></tr></tfoot></table><p class=\"ds-share\">Ihr Eigenanteil <strong>0 – 970 €</strong></p></div></div>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-price{background:var(--moss-deep);padding:2.5rem 1.25rem;} .ds-note{width:min(100%,30rem);margin:auto;padding:2.25rem 1.75rem 1.75rem;background:repeating-linear-gradient(to bottom,transparent 0,transparent calc(2.2rem - 1px),rgb(79 107 58 / .18) calc(2.2rem - 1px),rgb(79 107 58 / .18) 2.2rem) 0 1.15rem/100% 100% no-repeat,var(--paper);color:var(--ink);border-radius:3px;box-shadow:0 30px 50px -28px rgb(0 0 0 / .6),0 2px 4px rgb(0 0 0 / .15);transform:rotate(-1.2deg);font-family:var(--sans);font-size:18px;} .ds-note table{width:100%;border-collapse:collapse;font-variant-numeric:tabular-nums lining-nums;} .ds-note th{text-align:left;font-weight:700;padding:.55rem 1rem .55rem 0;vertical-align:top;} .ds-note th span{display:block;font-weight:400;color:var(--ink-soft);font-size:.9rem;} .ds-note td{text-align:right;white-space:nowrap;padding:.55rem 0;vertical-align:top;font-size:1.2rem;} .ds-total th,.ds-total td{padding-top:1rem;border-top:2px solid var(--ink);} .ds-total strong{font-family:var(--serif);font-size:2rem;line-height:1;border-bottom:5px double var(--brick);padding-bottom:.1em;} .ds-share{margin:1.25rem 0 0;padding:.9rem 1rem;background:rgb(217 154 43 / .16);border-radius:4px;} .ds-share strong{font-family:var(--serif);font-size:1.45rem;}"
+    },
+    {
+      "name": "FAQ Item",
+      "kind": "custom",
+      "refersTo": "faq-item",
+      "description": "Native details/summary on paper with a clip-path brick chevron.",
+      "html": "<details class=\"ds-faq\" open><summary>Wer kann bei uns einziehen?</summary><div class=\"ds-faq-a\">Menschen ab Pflegegrad 2, Ausnahmen nach Absprache.</div></details>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-faq{background:var(--paper);border-radius:var(--radius);box-shadow:0 0 0 1px var(--line);font-family:var(--sans);font-size:18px;color:var(--ink);max-width:36rem;} .ds-faq summary{display:flex;align-items:center;justify-content:space-between;gap:1rem;min-height:3.25rem;padding:.85rem 1.25rem;font-weight:700;cursor:pointer;list-style:none;border-radius:var(--radius);} .ds-faq summary::-webkit-details-marker{display:none;} .ds-faq summary::after{content:\"\";flex:none;width:.9rem;height:.55rem;background:var(--brick);clip-path:polygon(0 0,50% 58%,100% 0,100% 42%,50% 100%,0 42%);transition:transform .25s ease;} .ds-faq[open] summary::after{transform:rotate(180deg);} .ds-faq summary:hover{color:var(--brick-deep);} .ds-faq summary:focus-visible{outline:3px solid var(--ink,#2b221c);outline-offset:3px;box-shadow:0 0 0 6px var(--linen,#f3eadc);} .ds-faq-a{padding:0 1.25rem 1.25rem;color:var(--ink-soft);}"
+    },
+    {
+      "name": "Door Way",
+      "kind": "custom",
+      "refersTo": "door-way",
+      "description": "Arched linen doorway on the brick closing band, with an oat sill.",
+      "html": "<div class=\"ds-door\"><a class=\"ds-way\" href=\"#\"><svg width=\"32\" height=\"32\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M4 10.5 12 4l8 6.5\"/><path d=\"M6 9v10.5h12V9\"/><path d=\"M10 19.5v-5.5h4v5.5\"/></svg><span class=\"ds-verb\">Besuchen</span><span class=\"ds-detail\">Im Heidewinkel 30, Dortmund</span><span class=\"ds-wnote\">Termin vereinbaren</span></a></div>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-door{background:var(--brick);padding:2.5rem 1.25rem;} .ds-way{display:grid;justify-items:center;gap:.35rem;max-width:18rem;margin:auto;padding:2.75rem 1.5rem 1.5rem;background:var(--linen);color:var(--ink);border-radius:12rem 12rem var(--radius) var(--radius);text-align:center;text-decoration:none;font-family:var(--sans);font-size:18px;box-shadow:inset 0 -6px 0 var(--oat);transition:transform .3s var(--ease-out),box-shadow .3s ease;} .ds-way svg{color:var(--brick);margin-bottom:.4rem;} .ds-verb{font-family:var(--serif);font-size:1.45rem;font-weight:700;line-height:1.2;} .ds-detail{font-weight:700;font-variant-numeric:tabular-nums;} .ds-wnote{color:var(--ink-soft);font-size:.9rem;} .ds-way:hover{transform:translateY(-4px);box-shadow:inset 0 -6px 0 var(--ochre);} .ds-way:focus-visible{outline:3px solid var(--paper);outline-offset:3px;box-shadow:0 0 0 6px var(--brick-deep);} @media (prefers-reduced-motion:reduce){.ds-way:hover{transform:none;}}"
+    },
+    {
+      "name": "Mobile Callbar",
+      "kind": "custom",
+      "refersTo": "callbar-call",
+      "description": "Fixed bottom bar on phones: call and write, one tap away.",
+      "html": "<div class=\"ds-callbar\"><a class=\"ds-cb ds-cb--call\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M6.6 3.5h2.6l1.4 4.1-2 1.4a12 12 0 0 0 6.4 6.4l1.4-2 4.1 1.4v2.6a2 2 0 0 1-2.2 2A16.5 16.5 0 0 1 4.6 5.7a2 2 0 0 1 2-2.2Z\"/></svg><span>Anrufen</span></a><a class=\"ds-cb\" href=\"#\"><svg width=\"20\" height=\"20\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"2\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><rect x=\"3\" y=\"5.5\" width=\"18\" height=\"13\" rx=\"2\"/><path d=\"m3.8 7 8.2 6 8.2-6\"/></svg><span>Schreiben</span></a></div>",
+      "css": ":host{--linen:#f3eadc;--oat:#e7dbc8;--paper:#fbf7f0;--ink:#2b221c;--ink-soft:#5a4a3e;--brick:#a8432f;--brick-deep:#8e3524;--ochre:#d99a2b;--ochre-ink:#74501f;--moss:#4f6b3a;--moss-deep:#3b5230;--coal:#231c17;--oak:#d8be97;--line:#d6c7b0;--card:#f7e8d4;--serif:\"Vollkorn\",Georgia,serif;--sans:\"Atkinson Next\",Arial,sans-serif;--radius:6px;--radius-lg:18px;--ease-out:cubic-bezier(0.16,1,0.3,1);} .ds-callbar{display:grid;grid-template-columns:1.4fr 1fr;gap:.5rem;padding:.5rem 1.25rem;background:var(--paper);box-shadow:0 -1px 0 var(--line),0 -10px 24px -18px rgb(43 34 28 / .5);max-width:24rem;} .ds-cb{display:flex;align-items:center;justify-content:center;gap:.5rem;min-height:3rem;border-radius:var(--radius);border:2px solid var(--ink);color:var(--ink);font-family:var(--sans);font-size:18px;font-weight:700;text-decoration:none;} .ds-cb--call{background:var(--brick);border-color:var(--brick);color:var(--paper);} .ds-cb--call:hover{background:var(--brick-deep);} .ds-cb:focus-visible{outline:3px solid var(--ink,#2b221c);outline-offset:3px;box-shadow:0 0 0 6px var(--linen,#f3eadc);}"
+    }
+  ],
+  "narrative": {
+    "northStar": "Der gedeckte Küchentisch",
+    "overview": "Every page is a table set for one more guest. The ground is linen and oat, the surfaces are pale oak and paper, and the only strong colours are the ones a Ruhrgebiet kitchen already owns: a brick-red front door, the ochre of a miner's lamp, the moss of the garden outside. Photography of the real house leads; type and colour hold still around it. On the home page the photo is the room: the kitchen fills the first viewport edge to edge, the header sits over it, and the headline rests on a warm place-card set low on the table.\n\nDensity is low and deliberate. Body text starts at 18px and scales to 21px, lines stay near 36rem, and every control is at least 44px tall. The system is built for older eyes and for relatives reading on a phone, so legibility outranks ornament: the two faces are Vollkorn, a hearty book serif, and Atkinson Hyperlegible Next, a sans designed for low vision. Warmth comes from material metaphors carried in real CSS (an oak frame around photos, a ruled note for the price, an arched doorway for each way in), not from decoration layered on top.\n\nThe system refuses the category standard: no stock-smile hero, no trust badges, no three-icon card grid. Features are written as a ruled ledger. Proof is only shown when it is real: stock photos are captioned \"Symbolbild\", and unverified reviews never render.",
+    "keyCharacteristics": [
+      "Warm Scandinavian restraint on linen, grounded in Ruhrgebiet brick, ochre and moss.",
+      "The real kitchen photo is the first viewport; the headline sits on a place-card.",
+      "Every material metaphor is literal CSS: oak frames, a ruled price note, arched doors.",
+      "Large type and targets (18px+ body, 44px+ controls), with states always drawn.",
+      "Honest content: captions say what a photo shows, and only verified voices appear."
+    ],
+    "rules": [
+      {
+        "name": "The One Job Rule",
+        "body": "Each strong colour has one job: brick means act, ochre means warmth and emphasis, moss means trust. Don't use brick for decoration or moss for a button.",
+        "section": "colors"
+      },
+      {
+        "name": "The Ink-Variant Rule",
+        "body": "Ochre never carries text. When ochre-family text is needed, use ochre-ink on light grounds, or the pale lamp tint `#f2c46d` on moss and coal (5.3:1 on moss-deep).",
+        "section": "colors"
+      },
+      {
+        "name": "The Sentence Case Rule",
+        "body": "No uppercase labels, no tracked-out small caps, no kickers above headings. The only positive tracking in the system is 0.04em on the two-letter language switch (\"EN\").",
+        "section": "typography"
+      },
+      {
+        "name": "The Honest Sum Rule",
+        "body": "Anywhere money appears, set tabular lining figures so the lines add up like a sum on paper (570 + 200 + 200 = 970).",
+        "section": "typography"
+      },
+      {
+        "name": "The Set-Down Rule",
+        "body": "Only objects placed on a surface (the place-card, the price note, framed photos, the open dropdown) get a cast shadow. Everything else is flat paper with a hairline ring.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Scrim Rule",
+        "body": "Text over photography always sits under a scrim tuned to 4.5:1 or better: the hero photo carries a top gradient from `rgb(24 14 8 / 0.7)` under the header, fading to clear by 34%, and the header text adds a soft shadow while it floats over the photo.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "**Do** let the real photo lead: full-bleed on the home page, oak-framed everywhere else, with a caption that says what it shows (\"Symbolbild\" for stock).",
+      "**Do** keep body text at the 18px-plus root size, text columns near 36rem, and every tap target at least 44px (48px for primary controls).",
+      "**Do** use brick only for actions and the closing door, ochre for underlines and emphasis, moss-deep for the trust bands.",
+      "**Do** put text over photography under a scrim that reaches 4.5:1 or better.",
+      "**Do** set prices and phone numbers in tabular lining figures, and keep the price note as the one place the sum is shown.",
+      "**Do** draw every state: ochre underline for the current page, rotated chevron for an open answer, the ink-and-linen ring for focus.",
+      "**Do** wrap motion in `prefers-reduced-motion`; motion is one settle on arrival and small hover nudges, nothing else.",
+      "**Do** end every page with the door band and keep the mobile callbar on small screens."
+    ],
+    "donts": [
+      "**Don't** build the category standard: no stock-smile hero, no trust badges, no three-icon feature cards. Use the ledger.",
+      "**Don't** show testimonials, reviews or quotes that are not verified; the reviews section renders nothing without verified entries.",
+      "**Don't** add uppercase labels, tracked small caps or kickers above headings.",
+      "**Don't** set text in plain ochre; use ochre-ink or the pale lamp tint on dark grounds.",
+      "**Don't** cast shadows on flat content, or use hard offset drop shadows; paper surfaces get the 1px ring. The only zero-blur shadow is the inset door sill.",
+      "**Don't** use icon fonts or glyph icons; use the authored 2px line icons.",
+      "**Don't** load third-party scripts or fonts; both faces are self-hosted and the site ships one fingerprinted stylesheet."
+    ]
+  }
+}

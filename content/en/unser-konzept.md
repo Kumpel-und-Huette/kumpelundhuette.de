@@ -7,7 +7,7 @@ preheader_is_light: false
 ---
 {{< brick_title >}}
 
-![](/uploads/photos/hike/hike1.jpg)
+![The Dortmund U tower in the evening](/uploads/gallery/U.jpg "The Dortmund U – our city")
 
 # Our concept: Together instead of alone
 
@@ -20,7 +20,7 @@ Kumpel und Hütte stands for a new way of living in older age: living together, 
 
 ## Home starts here
 
-![](/uploads/photos/hike/hike2.jpg)
+![The kitchen in our shared home in Lütgendortmund](/uploads/gallery/Küche.jpg "The kitchen in Lütgendortmund")
 
 Our housing combines comfortable single rooms with generous shared spaces. Whether at breakfast in the living kitchen, gardening or a games evening — everyday life is shaped together and stays lively. The self-determination of every resident always comes first.
 
@@ -29,7 +29,7 @@ Our housing combines comfortable single rooms with generous shared spaces. Wheth
 
 ## Spaces that connect
 
-![](/uploads/photos/hike/hike3.jpg)
+![Round dining table in the shared living room of our home](/uploads/gallery/Runder Tisch.jpeg "Image from the presentation of our first shared home")
 
 Each of our house communities creates a warm, familiar atmosphere where people who need support feel safe, seen and welcome. Our care teams are there when help is needed — unobtrusively, humanely and reliably.
 At the centre is not nursing, but life:
@@ -40,14 +40,12 @@ participation, exchange and the good feeling of belonging.
 
 ## More than just housing
 
-![](/uploads/photos/hike/hike4.jpg)
+![A breakfast table set with rolls, fruit and flowers](/uploads/gallery/Frühstück.jpg "Illustrative image")
 
 At Kumpel und Hütte, places grow where relationships thrive. With cultural outings, small celebrations, shared hobbies and plenty of warmth, we encourage an active and fulfilling life. Our residents help shape things — and we accompany them with heart.
 
 {{< /brick_image >}}
 {{< brick_quote >}}
-
-![](/uploads/photos/hike/hike1.jpg)
 
 ## "Here I feel at home again — but never alone."
 — That’s how it should be!

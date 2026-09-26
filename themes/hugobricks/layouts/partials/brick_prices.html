@@ -1,28 +1,13 @@
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/prices.md' file." -}}
-    {{- with page.Site.GetPage "bricks/prices.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-{{- $parts := split $inner "---" -}}
-<section class="prices">
-    <div class="container small">
-        {{- markdownify (index $parts 0) -}}
-    </div>
-    <div class="container">
-        <ul class="grid prices">
-            {{ range $i,$p := (after 1 $parts) }}
-                <li class="">
-                    <div class="box"><div>
-                        {{- if eq $i 1 -}}
-                            {{- replace (markdownify .) `<a ` `<a class="button" ` | safeHTML -}}
-                        {{- else -}}
-                            {{- replace (markdownify .) `<a ` `<a class="button ghost" ` | safeHTML -}}
-                        {{- end -}}
-                    </div></div>
-                </li>
-            {{ end }}
-        </ul>
-    </div>
+{{- if not $inner -}}{{- with site.GetPage "bricks/prices.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $parts := split $inner "\n---" -}}
+<section class="brick brick--blocks">
+  <div class="wrap">
+    <div class="section-head flow">{{ partial "md.html" (index $parts 0) | safeHTML }}</div>
+    <ul class="blocks" role="list">
+      {{- range after 1 $parts }}
+      <li class="block flow">{{ partial "md.html" . | replaceRE `<a ` `<a class="button" ` | safeHTML }}</li>
+      {{- end }}
+    </ul>
+  </div>
 </section>

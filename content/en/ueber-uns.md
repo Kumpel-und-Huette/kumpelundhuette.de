@@ -13,7 +13,7 @@ Behind Kumpel und Hütte is a dedicated team of people who share one vision: mak
 We come from different fields — opera, ballet, management and investment — but what connects us is the wish to create meaningful housing concepts with genuine humanity.
 With experience, openness and a real ear for individual needs, we accompany our residents in everyday life — not as mere service providers, but as companions and support.
 
-![](/uploads/gallery/05.jpg)
+![](/uploads/gallery/05.jpg "Illustrative image")
 
 {{< /brick_title2 >}}
 

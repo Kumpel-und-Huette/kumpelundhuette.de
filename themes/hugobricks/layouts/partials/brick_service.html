@@ -1,38 +1,21 @@
-<section class="post">
-    <div class="container title">
-        {{ partial "breadcrumbs.html" . }}
-        <h1>{{ page.Title | safeHTML }}</h1>
-        {{ if or page.Params.date (index page.Params.tags 0) }}
-        <div class="meta">
-            {{ if page.Params.date }}<div>
-                <img src="/img/icons/material-symbols/200/rounded/calendar_month-fill.svg"class="black_2_textDark" alt="" />
-                {{ page.Date | time.Format ":date_medium"}}
-            </div>
-            {{ end }}
-            {{ if index page.Params.tags 0 }}
-            <div>
-                <img src="/img/icons/material-symbols/200/rounded/label-fill.svg"class="black_2_textDark" alt="" />
-                <ul>
-                    {{ range page.Params.tags }}
-                    <li><a href="/blog/?tag={{ . }}">{{ . }}</a>
-                    {{ end }}
-                </ul>
-            </div>
-            {{ end }}
-        </div>
-        {{ end }}
+{{- /* A single news article. */ -}}
+{{- $p := page -}}
+<article class="article">
+  <header class="brick brick--small brick--page-head">
+    <div class="prose">
+      {{ partial "breadcrumbs.html" $p }}
+      {{- if $p.Date }}<p class="meta">{{ partial "icon.html" "calendar" }}<time datetime="{{ $p.Date.Format "2006-01-02" }}">{{ $p.Date | time.Format ":date_long" }}</time></p>{{ end }}
+      <h1>{{ $p.Title | safeHTML }}</h1>
     </div>
-    <div class="container wide">
-        {{- $postimage := `/uploads/gallery/01.jpg` -}}
-        {{- if page.Params.image -}}
-            {{- $postimage = page.Params.image -}}
-        {{- end -}}
-        {{- if (resources.GetMatch $postimage) -}}
-            {{- $postimage = ((resources.GetMatch $postimage).Fill `1600x800 jpg Smart q50`).RelPermalink -}}
-        {{- end -}}
-        <img src="{{ $postimage }}" alt="{{ .Title }}" class="featuredimage" />
+  </header>
+  {{- with $p.Params.image }}
+  <div class="wrap wrap--medium article__photo">
+    {{- partial "brick/figure.html" (dict "src" . "alt" "" "sizes" "(min-width: 56em) 52rem, 100vw" "eager" true) -}}
+  </div>
+  {{- end }}
+  <div class="brick brick--wide">
+    <div class="prose">
+      {{ $p.Content }}
     </div>
-    <div class="container post">
-        {{ page.Content }}
-    </div>
-</section>
+  </div>
+</article>

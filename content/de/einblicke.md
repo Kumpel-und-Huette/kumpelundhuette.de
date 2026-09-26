@@ -9,18 +9,18 @@ Kumpel und Hütte steht für ein Leben in Gemeinschaft, Sicherheit und Herzlichk
 
 {{< button "Jetzt Kontakt aufnehmen" "/kontakt/" >}}
 
-![](/uploads/gallery/05.jpg)
+![](/uploads/gallery/05.jpg "Symbolbild")
 
 {{< /brick_title2 >}}
 {{< brick_image >}}
 
 ## Was erwartet Sie bei uns?
 
-![](/uploads/gallery/Frühstück.jpg)
+![](/uploads/gallery/Frühstück.jpg "Symbolbild")
 
 Bei uns finden Sie mehr als nur ein Zimmer – wir schaffen ein lebendiges Miteinander, das auf Vertrauen, Selbstbestimmung und Fürsorge basiert.
 
-- Barrierefreie, sichere Wohnräume
+- Sichere, alltagstaugliche Wohnräume mit bodengleicher Dusche, Handläufen und durchdachter Beleuchtung
 - Vielfältige Freizeit- und Kulturangebote
 - Unterstützung im Alltag – individuell und herzlich
 - Gemeinschaftsräume für Austausch und Aktivitäten
@@ -31,7 +31,7 @@ Bei uns finden Sie mehr als nur ein Zimmer – wir schaffen ein lebendiges Mitei
 
 ## Was macht uns besonders?
 
-![](/uploads/gallery/Hands.jpg)
+![](/uploads/gallery/Hands.jpg "Symbolbild")
 
 Bei Kumpel und Hütte steht der Mensch im Mittelpunkt. Unsere Werte – Vertrauen, Herzlichkeit und Verantwortung – prägen den Alltag. Wir fördern Gemeinschaft und bieten die Hilfe, die wirklich zählt. Und dabei darf auch der Spaß nicht fehlen: vom Grillfest bis zum Theaterausflug ist für Abwechslung gesorgt!
 
@@ -40,7 +40,7 @@ Bei Kumpel und Hütte steht der Mensch im Mittelpunkt. Unsere Werte – Vertraue
 
 ## Ein Ort, der verbindet
 
-![](/uploads/gallery/Tee.png)
+![](/uploads/gallery/Tee.png "Symbolbild")
 
 Gemeinsam mit unserem engagierten Team schaffen wir ein Zuhause, in dem man sich wohlfühlen und das Leben genießen kann. Ob allein oder mit Familie – hier finden Senior:innen nicht nur Betreuung, sondern echte Lebensqualität.
 
@@ -51,7 +51,7 @@ Gemeinsam mit unserem engagierten Team schaffen wir ein Zuhause, in dem man sich
 ## "Kumpel und Hütte fühlt sich an wie Familie."
 — &nbsp;Bewohnerstimme
 
-![](/uploads/gallery/05.jpg)
+![](/uploads/gallery/05.jpg "Symbolbild")
 
 {{< /brick_quote >}} -->
 {{< brick_small >}}

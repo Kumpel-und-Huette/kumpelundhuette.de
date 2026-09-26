@@ -10,18 +10,18 @@ Kumpel und Hütte stands for a life of community, safety and warmth in older age
 
 {{< button "Get in touch" "/en/contact/" >}}
 
-![](/uploads/gallery/05.jpg)
+![](/uploads/gallery/05.jpg "Illustrative image")
 
 {{< /brick_title2 >}}
 {{< brick_image >}}
 
 ## What can you expect with us?
 
-![](/uploads/gallery/Frühstück.jpg)
+![](/uploads/gallery/Frühstück.jpg "Illustrative image")
 
 With us you find more than just a room — we create a lively togetherness based on trust, self-determination and care.
 
-- Safe living spaces
+- Safe, practical living spaces with a level-access shower, handrails and thoughtful lighting
 - Varied leisure and cultural offers
 - Everyday support — individual and warm
 - Shared rooms for exchange and activities
@@ -32,7 +32,7 @@ With us you find more than just a room — we create a lively togetherness based
 
 ## What makes us special?
 
-![](/uploads/gallery/Hands.jpg)
+![](/uploads/gallery/Hands.jpg "Illustrative image")
 
 At Kumpel und Hütte the person comes first. Our values — trust, warmth and responsibility — shape everyday life. We foster community and offer the help that really counts. And fun has its place too: from barbecue evenings to theatre trips, there is plenty of variety!
 
@@ -41,7 +41,7 @@ At Kumpel und Hütte the person comes first. Our values — trust, warmth and re
 
 ## A place that connects
 
-![](/uploads/gallery/Tee.png)
+![](/uploads/gallery/Tee.png "Illustrative image")
 
 Together with our dedicated team we create a home where people can feel well and enjoy life. Whether alone or with family — seniors find not only care here, but real quality of life.
 
@@ -52,7 +52,7 @@ Together with our dedicated team we create a home where people can feel well and
 ## "Kumpel und Hütte feels like family."
 — &nbsp;Resident voice
 
-![](/uploads/gallery/05.jpg)
+![](/uploads/gallery/05.jpg "Illustrative image")
 
 {{< /brick_quote >}} -->
 {{< brick_small >}}

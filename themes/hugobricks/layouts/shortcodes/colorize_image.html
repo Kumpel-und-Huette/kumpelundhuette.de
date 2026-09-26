@@ -1,1 +1,2 @@
-<p><img src="{{ if (resources.GetMatch (.Get 1)) }}{{ ((resources.GetMatch (.Get 1)).Fit `1600x1600 jpg Smart q50`).RelPermalink }}{{ end }}" alt="{{ .Get 0 }}" class="colorize_image" /></p>
+{{- /* Usage: {{< colorize_image "Alt text" "/uploads/photos/01.jpg" >}} */ -}}
+{{- partial "brick/figure.html" (dict "src" (.Get 1) "alt" (.Get 0)) -}}

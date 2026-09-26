@@ -1,0 +1,48 @@
+{{- $d := index hugo.Data site.Language.Lang -}}
+{{- $siteTitle := $d.general.title | default site.Title -}}
+{{- $title := "" -}}
+{{- if .Params.seo.title -}}{{- $title = .Params.seo.title -}}
+{{- else if .IsHome -}}{{- $title = printf "%s · %s" $siteTitle (strings.FirstUpper (lower $d.header.logo_subtitle)) -}}
+{{- else -}}{{- $title = printf "%s · %s" .Title $siteTitle -}}{{- end -}}
+{{- $desc := "" -}}
+{{- if .Params.seo.description -}}{{- $desc = .Params.seo.description -}}
+{{- else if .Description -}}{{- $desc = .Description -}}
+{{- else if .IsHome -}}{{- $desc = $d.general.description -}}
+{{- else -}}{{- $desc = .Summary | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 158 -}}{{- end -}}
+{{- if not (strings.TrimSpace $desc) -}}{{- $desc = $d.general.description -}}{{- end -}}
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script>document.documentElement.classList.add("js")</script>
+<title>{{ $title }}</title>
+<meta name="description" content="{{ $desc }}">
+<link rel="canonical" href="{{ .Permalink }}">
+{{- range .AllTranslations }}
+<link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
+{{- end }}
+<meta name="theme-color" content="#F3EADC">
+<meta property="og:title" content="{{ $title }}">
+<meta property="og:description" content="{{ $desc }}">
+<meta property="og:url" content="{{ .Permalink }}">
+<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
+<meta property="og:locale" content="{{ if eq site.Language.Lang "de" }}de_DE{{ else }}en_GB{{ end }}">
+{{- with resources.Get "plates/hero-photo.png" }}
+<meta property="og:image" content="{{ (.Fill "1200x630 jpg q80 Center").Permalink }}">
+{{- end }}
+<link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
+
+{{- $vollkorn := resources.Get "fonts/vollkorn-latin-var.woff2" | fingerprint -}}
+{{- $atkinson := resources.Get "fonts/atkinson-next-latin-var.woff2" | fingerprint -}}
+
+{{- $fonts := dict "vollkorn" $vollkorn.RelPermalink "atkinson" $atkinson.RelPermalink -}}
+{{- $critical := resources.Get "css/critical.css" | resources.ExecuteAsTemplate "css/critical.css" $fonts | minify -}}
+{{- if .IsHome }}<style>{{ $critical.Content | safeCSS }}</style>{{ end }}
+{{- $rest := resources.Get "css/main.css" -}}
+{{- $css := slice $critical $rest | resources.Concat "css/site.css" | minify | fingerprint -}}
+{{- if .IsHome }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}" media="print" onload="this.media='all'">
+<noscript><link rel="stylesheet" href="{{ $css.RelPermalink }}"></noscript>
+{{- else }}
+<link rel="stylesheet" href="{{ $css.RelPermalink }}" integrity="{{ $css.Data.Integrity }}">
+{{- end }}
+<link rel="preload" href="{{ $atkinson.RelPermalink }}" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="{{ $vollkorn.RelPermalink }}" as="font" type="font/woff2" crossorigin>

@@ -28,7 +28,7 @@ Registernummer: HRB 37362
 ### Umsatzsteuer-ID
 
 Umsatzsteuer-Identifikationsnummer gemäß §27 a Umsatzsteuergesetz:  
-DE123456789
+**[wird nachgetragen]**
 
 ### Verantwortlich für den Inhalt nach § 55 Abs. 2 RStV
 

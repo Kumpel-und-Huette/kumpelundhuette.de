@@ -1,13 +1,16 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/wide.md' file." -}}
-    {{- with page.Site.GetPage "bricks/wide.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-<section class="wide">
-    <div class="container">
-        {{ if eq (substr (markdownify $inner) 0 1) "<" }}{{- markdownify $inner -}}{{ else }}<p>{{- markdownify $inner -}}</p>{{ end }}
-    </div>
+{{- if not $inner -}}{{- with site.GetPage "bricks/wide.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $html := partial "md.html" $inner -}}
+{{- $hasH1 := findRE `<h1[ >]` $html 1 -}}
+{{- $raw := strings.TrimSpace page.RawContent -}}
+{{- $needsTitle := and (hasPrefix $raw "{{< brick_wide") (not (findRE `(?m)^#\s` $raw 1)) -}}
+{{- if and $needsTitle (not (findRE `<h2[ >]` $html 1)) -}}{{- $html = $html | replaceRE `<(/?)h3([ >])` "<${1}h2${2}" | replaceRE `<(/?)h4([ >])` "<${1}h3${2}" -}}{{- end -}}
+<section class="brick brick--wide{{ if or $hasH1 $needsTitle }} brick--page{{ end }}">
+  <div class="prose">
+    {{- if $needsTitle }}
+    {{ partial "breadcrumbs.html" page }}
+    <h1>{{ page.Title }}</h1>
+    {{- end }}
+    {{ $html | safeHTML }}
+  </div>
 </section>

@@ -1,40 +1,29 @@
-{{- $inner := .Inner -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty shortcode found." -}}
+{{- /* Sections separated by --- inside {{< tabs >}}. Shown one after another so nothing hides behind a click; a jump list leads the way. */ -}}
+{{- $inner := .Inner | default "" -}}
+{{- $items := slice -}}
+{{- range $i, $part := split $inner "\n---" -}}
+  {{- $html := markdownify $part -}}
+  {{- $id := printf "abschnitt-%d" (add $i 1) -}}
+  {{- $title := "" -}}
+  {{- with index (findRESubmatch `(?s)<h2([^>]*)>(.*?)</h2>` $html 1) 0 -}}
+    {{- $title = index . 2 | plainify -}}
+    {{- with index (findRESubmatch `id="([^"]+)"` (index . 1) 1) 0 }}{{ $id = index . 1 }}{{ end -}}
+  {{- end -}}
+  {{- $items = $items | append (dict "id" $id "title" $title "html" $html) -}}
 {{- end -}}
-{{- $tabs := split $inner "---" -}}
-<ul class="tabs">
-{{- range $tabs -}}
-    {{- $title := index (findRE `(?s)<h2.*?>.*?</h2>` (markdownify .) 1) 0 -}}
-    {{- $id := index (split (index (findRE `(?s)id=".*?"` $title 1) 0) `"`) 1 -}}
-    {{- $titleplain := replace (index (split $title ">") 1) `</h2` `` -}}
-    <li><a href="#tab_{{- $id -}}" onclick="toggleTab(this); return false;">{{ $titleplain }}</a></li>
-{{- end -}}
-</ul>
-<div class="tabs_container">
-{{- range $tabs -}}
-    {{- $title := index (findRE `(?s)<h2.*?>.*?</h2>` (markdownify .) 1) 0 -}}
-    {{- $id := index (split (index (findRE `(?s)id=".*?"` $title 1) 0) `"`) 1 -}}
-    <div class="tab" id="tab_{{- $id -}}">
-        {{- markdownify . | safeHTML -}}
-    </div>
-{{- end -}}
+<div class="sections">
+  {{- if gt (len $items) 1 }}
+  <nav class="jumplist" aria-label="{{ i18n "steps_jump" }}">
+    <ul role="list">
+      {{- range $items }}{{ if .title }}
+      <li><a href="#{{ .id }}">{{ .title }}</a></li>
+      {{- end }}{{ end }}
+    </ul>
+  </nav>
+  {{- end }}
+  {{- range $items }}
+  <section class="sections__part flow">
+    {{ .html | safeHTML }}
+  </section>
+  {{- end }}
 </div>
-<script>
-    function toggleTab(el) {
-        var els = el.parentElement.parentElement.querySelectorAll('li');
-        els.forEach(function(el) {
-            el.classList.remove('selected');
-        });
-        var els = el.parentElement.parentElement.nextElementSibling.querySelectorAll('.tab');
-        els.forEach(function(tab) {
-            tab.style.display = 'none';
-        });
-        el.parentElement.classList.add('selected')
-        el.parentElement.parentElement.nextElementSibling.querySelector(el.getAttribute('href')).style.display = '';
-    }
-    var els = document.querySelectorAll('.tabs');
-    els.forEach(function(instance) {
-        instance.querySelector('li:first-child a').click();
-    });
-</script>

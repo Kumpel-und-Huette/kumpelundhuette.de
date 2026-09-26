@@ -1,0 +1,38 @@
+{{- $d := index hugo.Data site.Language.Lang -}}
+{{- $c := partial "contact-data.html" . -}}
+<footer class="site-footer">
+  <div class="wrap site-footer__grid">
+    <div class="site-footer__brand">
+      <a class="brand brand--footer" href="{{ relLangURL "/" }}">
+        <span class="brand__name">{{ $d.header.logo_title | default "Kumpel & Hütte" }}</span>
+      </a>
+      <p class="site-footer__tagline">{{ i18n "footer_tagline" }}</p>
+      <address class="site-footer__address">
+        {{ $d.general.title }}<br>
+        {{ $c.street }}<br>
+        {{ $c.city }}
+      </address>
+    </div>
+    <div class="site-footer__contact">
+      <h2 class="site-footer__heading">{{ i18n "call_us" }}</h2>
+      <ul class="contact-list">
+        <li><a href="{{ $c.tel }}">{{ partial "icon.html" "phone" }}<span>{{ $c.phone }}</span></a></li>
+        <li><a href="mailto:{{ $c.email }}">{{ partial "icon.html" "mail" }}<span>{{ $c.email }}</span></a></li>
+        {{- with $c.hours }}<li>{{ partial "icon.html" "clock" }}<span>{{ . }}</span></li>{{ end }}
+      </ul>
+    </div>
+    <nav class="site-footer__nav" aria-label="{{ i18n "nav_footer" }}">
+      <ul>
+        {{- range $d.footer.menuitems }}
+        <li><a href="{{ .link }}"{{ if eq $.RelPermalink .link }} aria-current="page"{{ end }}>{{ .title }}</a></li>
+        {{- end }}
+        {{- range .Translations }}
+        <li><a href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}">{{ partial "icon.html" "globe" }}<span>{{ .Language.Label }}</span></a></li>
+        {{- end }}
+      </ul>
+    </nav>
+  </div>
+  <div class="wrap site-footer__base">
+    <p>{{ replaceRE `(?s)<script.*?</script>` (string now.Year) $d.footer.footer_text | replaceRE `<[^>]+>` "" | safeHTML }}</p>
+  </div>
+</footer>

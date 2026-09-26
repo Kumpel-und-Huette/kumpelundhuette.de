@@ -1,0 +1,42 @@
+{{- /*
+  Responsive image from the asset tree (static/ is the asset dir).
+  dict: src, alt, sizes, widths, ratio ("4:3"), class, eager, anchor
+*/ -}}
+{{- $src := .src | default "" -}}
+{{- $alt := .alt | default "" -}}
+{{- $class := .class | default "" -}}
+{{- $sizes := .sizes | default "(min-width: 64em) 36rem, 100vw" -}}
+{{- $widths := .widths | default (slice 480 720 960 1280) -}}
+{{- $eager := .eager | default false -}}
+{{- $anchor := .anchor | default "Smart" -}}
+{{- $path := replaceRE `/+` "/" (strings.TrimPrefix "/" $src) -}}
+{{- $res := "" -}}
+{{- with $path -}}{{- $res = resources.Get . -}}{{- end -}}
+{{- if and $res (eq $res.ResourceType "image") (ne $res.MediaType.SubType "svg") -}}
+  {{- $rw := 0 -}}{{- $rh := 0 -}}
+  {{- with .ratio -}}
+    {{- $p := split . ":" -}}
+    {{- $rw = int (index $p 0) -}}{{- $rh = int (index $p 1) -}}
+  {{- end -}}
+  {{- $srcset := slice -}}
+  {{- $last := "" -}}
+  {{- range $widths -}}
+    {{- $w := . -}}
+    {{- if gt $w $res.Width -}}{{- $w = $res.Width -}}{{- end -}}
+    {{- $img := "" -}}
+    {{- if $rw -}}
+      {{- $h := div (mul $w $rh) $rw -}}
+      {{- if gt $h $res.Height -}}{{- $h = $res.Height -}}{{- $w = div (mul $h $rw) $rh -}}{{- end -}}
+      {{- $img = $res.Fill (printf "%dx%d webp q74 %s" $w $h $anchor) -}}
+    {{- else -}}
+      {{- $img = $res.Resize (printf "%dx webp q74" $w) -}}
+    {{- end -}}
+    {{- if or (not $last) (ne $img.Width $last.Width) -}}
+      {{- $srcset = $srcset | append (printf "%s %dw" $img.RelPermalink $img.Width) -}}
+      {{- $last = $img -}}
+    {{- end -}}
+  {{- end -}}
+  <img src="{{ $last.RelPermalink }}" srcset="{{ delimit $srcset ", " }}" sizes="{{ $sizes }}" width="{{ $last.Width }}" height="{{ $last.Height }}" alt="{{ $alt }}"{{ with $class }} class="{{ . }}"{{ end }}{{ if $eager }} fetchpriority="high" decoding="async"{{ else }} loading="lazy" decoding="async"{{ end }}>
+{{- else if $src -}}
+  <img src="{{ $src | safeURL }}" alt="{{ $alt }}"{{ with $class }} class="{{ . }}"{{ end }} loading="lazy" decoding="async">
+{{- end -}}

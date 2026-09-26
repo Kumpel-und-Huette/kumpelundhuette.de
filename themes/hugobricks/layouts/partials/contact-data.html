@@ -1,0 +1,17 @@
+{{- /* Returns the contact facts for the current language. */ -}}
+{{- $lang := site.Language.Lang -}}
+{{- $d := index hugo.Data $lang -}}
+{{- $phone := $d.general.contact.phone | default "" -}}
+{{- $tel := replaceRE `[^+0-9]` "" $phone -}}
+{{- $display := $phone -}}
+{{- if and (eq $lang "de") (hasPrefix $phone "+49 ") -}}{{- $display = print "0" (strings.TrimPrefix "+49 " $phone) -}}{{- end -}}
+{{- return (dict
+  "phone" $display
+  "tel" (print "tel:" $tel)
+  "email" ($d.general.contact.email | default "")
+  "hours" (strings.FirstUpper ($d.header.preheader | default ""))
+  "street" "Im Heidewinkel 30"
+  "city" "44267 Dortmund"
+  "maps" "https://maps.app.goo.gl/Tado4PkLB8r99nMU8"
+  "contact" (($d.header.cta.link | default "/kontakt/") | relURL)
+) -}}

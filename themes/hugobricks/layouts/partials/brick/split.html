@@ -1,0 +1,12 @@
+{{- /*
+  Splits raw brick markdown into its first image and the rest.
+  Returns dict: src, alt, caption, body (markdown without the image).
+*/ -}}
+{{- $raw := . | default "" -}}
+{{- $out := dict "src" "" "alt" "" "caption" "" "body" $raw -}}
+{{- $m := findRESubmatch `!\[([^\]]*)\]\(\s*([^)"]+?)\s*(?:"([^"]*)")?\s*\)` $raw 1 -}}
+{{- with $m -}}
+  {{- $hit := index . 0 -}}
+  {{- $out = dict "src" (index $hit 2) "alt" (index $hit 1) "caption" (index $hit 3) "body" (replace $raw (index $hit 0) "" 1) -}}
+{{- end -}}
+{{- return $out -}}

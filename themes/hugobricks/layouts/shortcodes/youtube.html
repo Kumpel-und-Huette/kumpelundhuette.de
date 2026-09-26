@@ -1,18 +1,9 @@
-<!-- 
-{{/* 
-    
-    Usage: 
-    {{< youtube "qtIqKaDlqXo" "/uploads/youtubeposter.jpg" >}} 
-    
-*/}}
--->
-{{- $id := "" -}}
-{{- $image := "" -}}
-{{- if .IsNamedParams -}}
-    {{- $id = .Get "id" -}}
-    {{- $image = .Get "image" -}}
-{{- else -}}
-    {{- $id = .Get 0 -}}
-    {{- $image = .Get 1 -}}
-{{- end -}}
-<p><a class="shortcode-youtube" href="https://www.youtube.com/watch?v={{ $id }}" title="Play Youtube video" target="_blank"><img src="{{ if (resources.GetMatch $image) }}{{ ((resources.GetMatch $image).Fill `1200x675 jpg Smart q50`).RelPermalink | safeURL }}{{ else }}{{ $image }}{{ end }}" alt="Youtube video {{ $id }}" /></a></p>
+{{- /* Usage: {{< youtube "qtIqKaDlqXo" "/uploads/youtubeposter.jpg" >}} Links out; no third-party script is loaded. */ -}}
+{{- $id := cond .IsNamedParams (.Get "id") (.Get 0) -}}
+{{- $image := cond .IsNamedParams (.Get "image") (.Get 1) -}}
+<figure class="video">
+  <a class="video__link photo__frame" href="https://www.youtube.com/watch?v={{ $id }}" rel="noopener">
+    {{- with $image }}{{ partial "img.html" (dict "src" . "alt" "" "ratio" "16:9") }}{{ end -}}
+    <span class="video__play">{{ i18n "video_play" }}</span>
+  </a>
+</figure>

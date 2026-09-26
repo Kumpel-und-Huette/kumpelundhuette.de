@@ -5,16 +5,23 @@ title: Home
 
 # Nicht Heim. Nicht allein. Einfach Zuhause!
 
-Kumpel & Hütte Service ist mehr als ein Ort zum Wohnen - es ist ein echtes Zuhause. Kein Heim. Kein Hotel. Keine anonyme WG. Sondern ein vertrautes Miteinander für Menschen, die im Alter nicht allein, sondern in Gemeinschaft leben möchten - mit Würde, Humor und alltagstauglicher Unterstützung.
+Eigenes Zimmer, echte Gesellschaft und Pflege von unserem eigenen Team – in Dortmund-Lütgendortmund.
 
-![](/uploads/illustrations/cuate/home/1.jpg)
+{{< button "Anrufen: 0160 90889269" "tel:+4916090889269" >}} {{< button2 "Besuch vereinbaren" "/kontakt/" >}}
+
+![Die Küche unserer Wohngemeinschaft in Lütgendortmund am Abend, in warmem Licht](/plates/hero-photo.png "Die Küche in unserer Wohngemeinschaft in Lütgendortmund")
 
 {{< /brick_intro >}}
+{{< brick_small >}}
+
+Kumpel & Hütte Service ist mehr als ein Ort zum Wohnen – es ist ein echtes Zuhause. Kein Heim. Kein Hotel. Keine anonyme WG. Sondern ein vertrautes Miteinander für Menschen, die im Alter nicht allein, sondern in Gemeinschaft leben möchten – mit Würde, Humor und alltagstauglicher Unterstützung.
+
+{{< /brick_small >}}
 {{< brick_image2 >}}
 
 ## Was wir bieten?
 
-![](/uploads/illustrations/cuate/home/3.jpg)
+![Runder Esstisch im Gemeinschaftsraum unserer Wohngemeinschaft](/uploads/gallery/Runder Tisch.jpeg "Bild aus der Vorstellung unserer ersten Wohngemeinschaft")
 
 Bei Kumpel und Hütte schaffen wir ein Zuhause für Menschen, die trotz Pflegegrad weiterhin selbstbestimmt leben möchten - in sicherer, liebevoller Gemeinschaft. Unser Konzept richtet sich an Menschen mit Pflegegrad 2 oder höher, die im Alltag Unterstützung brauchen, aber kein klassisches Pflegeheim wünschen.
 
@@ -31,7 +38,7 @@ Bei Kumpel und Hütte schaffen wir ein Zuhause für Menschen, die trotz Pflegegr
 
 ## Wofür wir stehen?
 
-![](/uploads/illustrations/cuate/home/4.jpg)
+![Zwei Hände, die sich halten](/uploads/gallery/Hands.jpg "Symbolbild")
 
 Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und selbstbestimmtes Leben ermöglichen. Unsere Werte prägen den Alltag in unseren Wohngemeinschaften und schaffen ein Umfeld, in dem man sich wohl und gut aufgehoben fühlt.
 
@@ -47,7 +54,6 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 
 
 {{< /brick_image >}}
-<!-- {{< brick_reviews >}}{{< /brick_reviews >}} -->
 {{< brick_features >}}
 
 ## Unsere Einrichtungen auf einen Blick
@@ -56,7 +62,6 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/auto_awesome_mosaic.svg)
 ### Räume für Begegnung & Rückzug
 
 Bei uns treffen Rückzug und Gemeinschaft aufeinander.
@@ -66,7 +71,6 @@ Jedes Zuhause bietet Platz für persönliche Geborgenheit und zugleich Räume zu
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/performance_max.svg)
 ### Sichere und durchdachte Ausstattung
 
 Unsere Wohnungen sind nicht vollständig barrierefrei, aber alltagstauglich und mit viel Sorgfalt eingerichtet.
@@ -75,14 +79,12 @@ So bleibt ein selbstbestimmtes Leben möglich – mit einer Ausstattung, die unt
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/design_services.svg)
 ### Individuell gestaltbare Zimmer
 
 Jedes Zimmer kann nach den eigenen Wünschen und mit vertrauten persönlichen Gegenständen eingerichtet, oder nach Absprache von uns möbliert werden. So entsteht ein persönlicher Rückzugsort, der sich wirklich wie "zuhause" anfühlt.
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/devices.svg)
 ### Moderne Kommunikation & Technik
 
 WLAN, Hausnotrufsysteme nach Absprache und eine gute digitale Grundausstattung sorgen für Verbindung und Sicherheit.
@@ -90,20 +92,19 @@ Viele Lösungen sind individuell anpassbar – für mehr Komfort im Alltag.
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/timer.svg)
 ### Pflege und Alltagshilfe aus unserem Team
 
 Hauswirtschaft, Begleitung, Betreuung und die Pflege erbringt unser Team selbst.
 
 ---
 
-![](/img/icons/material-symbols/200/rounded/auto_fix.svg)
 ### Gemeinschaft, Kultur & Lebensfreude
 
 Ob gemeinsame Mahlzeiten, Ausflüge, Lesekreise oder Musik:
 Unser Alltag bleibt lebendig – jeder kann mitmachen, niemand muss.
 
 {{< /brick_features >}}
+{{< pricenote >}}
 
 
 {{< brick_title >}}

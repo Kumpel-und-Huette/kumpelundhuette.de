@@ -1,30 +1,27 @@
-<img src="/form.php" style="position: absolute; opacity: 0; pointer-events: none;" />
-<form id="contactform" class="form" method="POST" action="{{ .action }}">
-    {{- range .fields -}}
-        {{- if eq .input_type `textarea` -}}
-            <div>
-                <label class="inborder{{ if eq $.placeholders true }} sr-only{{ end }}" for="{{ .name }}">{{ .label }}</label>
-                <textarea name="{{ .name }}" name="{{ .name }}" id="{{ .name }}" cols="30" rows="10" class="form-control" {{ if eq $.placeholders true }}placeholder="{{ .label }}"{{ end }} required></textarea>
-            </div>
-        {{- else if eq .input_type `radio` -}}
-            <div class="radio">
-                <label><input type="radio" name="{{ .name }}" value="{{ .label }}" required>{{ .label }}</label>
-            </div>
-        {{- else if eq .input_type `checkbox` -}}
-            <div class="checkbox">
-                <label><input type="checkbox" name="{{ .name }}" value="{{ .label }}" required>{{ .label | safeHTML }}</label>
-            </div>
-        {{- else if eq .input_type `html` -}}
-            {{ .label | safeHTML }}
-        {{- else if eq .input_type `submit` -}}
-            <div class="submit">
-                <div><input type="{{ .input_type }}" value="{{ .label }}" class="button" /></div>
-            </div>
-        {{- else -}}
-            <div>
-                <label class="inborder{{ if eq $.placeholders true }} sr-only{{ end }}" for="{{ .name }}">{{ .label }}</label>
-                <input type="{{ .input_type }}" name="{{ .name }}" id="{{ .name }}" class="form-control" {{ if eq $.placeholders true }}placeholder="{{ .label }}"{{ end }} required>
-            </div>
-        {{- end -}}
+{{- with . -}}
+{{- $auto := dict "name" "name" "email" "email" "phone" "tel" "tel" "tel" -}}
+<form class="form" method="POST" action="{{ .action }}" accept-charset="UTF-8">
+  {{- range .fields -}}
+    {{- $id := printf "f-%s" .name -}}
+    {{- if eq .input_type "html" -}}
+      <div class="form__title">{{ .label | replaceRE `<(/?)h[1-6]` "<${1}h2" | safeHTML }}</div>
+    {{- else if eq .input_type "submit" -}}
+      <div class="form__submit"><button class="button" type="submit">{{ .label }}</button></div>
+    {{- else if eq .input_type "textarea" -}}
+      <div class="field">
+        <label for="{{ $id }}">{{ .label }}{{ if .required }} <span class="field__req">({{ i18n "form_required" }})</span>{{ end }}</label>
+        <textarea name="{{ .name }}" id="{{ $id }}" rows="6"{{ if .required }} required{{ end }}></textarea>
+      </div>
+    {{- else if or (eq .input_type "radio") (eq .input_type "checkbox") -}}
+      <div class="field field--check">
+        <label><input type="{{ .input_type }}" name="{{ .name }}" value="{{ .label | plainify }}"{{ if .required }} required{{ end }}> <span>{{ .label | safeHTML }}</span></label>
+      </div>
+    {{- else -}}
+      <div class="field">
+        <label for="{{ $id }}">{{ .label | default .placeholder }}{{ if .required }} <span class="field__req">({{ i18n "form_required" }})</span>{{ end }}</label>
+        <input type="{{ .input_type }}" name="{{ .name }}" id="{{ $id }}"{{ with index $auto .name }} autocomplete="{{ . }}"{{ end }}{{ if .required }} required{{ end }}>
+      </div>
     {{- end -}}
+  {{- end -}}
 </form>
+{{- end -}}

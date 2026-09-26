@@ -1,182 +1,20 @@
 <!DOCTYPE html>
-<html lang="{{ .Language.Name }}">
+<html lang="{{ site.Language.Lang }}">
   <head>
-    <title>{{ if .Params.seo.title }}{{ .Params.seo.title }}{{ else }}{{ .Title }} | {{ (index hugo.Data .Language.Name).general.title }} {{ (index hugo.Data .Language.Name).header.logo_subtitle }}{{ end }}</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="{{ if .Params.seo.description }}{{ .Params.seo.description }}{{ else }}{{ .Summary }}{{ end }}">
-
-    <link rel="canonical" href="{{ .Permalink }}" />
-    <link rel="shortcut icon" href="{{ hugo.Data.settings.favicon_image }}">
-    
-    {{- $color := "style" -}}
-    {{- if .Params.color_name -}}{{- $color = .Params.color_name -}}{{- end -}}
-    {{- if hugo.Data.settings.color_name -}}{{- $color = hugo.Data.settings.color_name -}}{{- end -}}
-    <link href="/css/{{ $color }}.css?version={{ now }}" rel="stylesheet">
-
+    {{- partial "head.html" . -}}
   </head>
-  <body id="top" class="{{ if in (substr .Content  0 100) `transparent_header` }}transparent_header{{ end }} filename_{{ with .File }}{{ .BaseFileName }}{{ end }}">
-    <script>      
-      function updateSize() {
-        if(window.innerWidth<{{ (index hugo.Data .Language.Name).header.mobile_view_width }}) document.body.classList.add('mobilemenu');
-        else document.body.classList.remove('mobilemenu');
-      }
-      updateSize();
-      window.addEventListener("resize", updateSize);
-    </script>
-    <div class="innerbody">
-    {{- if hugo.Data.settings.preheader.active -}}
-    <div class="preheader {{ if .Params.preheader_is_light }}light{{ else }}{{ if and (ne .Params.preheader_is_light false) hugo.Data.settings.preheader.is_light }}light{{ end }}{{ end }}">
-      <div class="container">
-        <div class="icons">
-          {{- if (index hugo.Data .Language.Name).general.contact.phone -}}
-            <a href="tel:{{ replace (index hugo.Data .Language.Name).general.contact.phone ` ` `` }}" class="icon"><img src="/img/phone.svg" alt="Phone icon" class="black_2_textMedium" /> {{ (index hugo.Data .Language.Name).general.contact.phone }}</a>
-          {{- end -}}
-          {{- if (index hugo.Data .Language.Name).general.contact.email -}}
-            <a href="mailto:{{ (index hugo.Data .Language.Name).general.contact.email }}" class="icon"><img src="/img/email.svg" alt="Email icon" class="black_2_textMedium" /> {{ (index hugo.Data .Language.Name).general.contact.email }}</a>
-          {{- end -}}
-        </div>
-        <div>
-          {{- if (index hugo.Data .Language.Name).header.preheader -}}{{ (index hugo.Data .Language.Name).header.preheader }}{{- end -}}
-        </div>
-      </div>  
-    </div>
-    {{- end -}}
-    <header class="{{ if .Params.dark_header }}dark{{ else }}{{ if and (ne .Params.dark_header false) hugo.Data.settings.dark_header }}dark{{ end }}{{ end }}">
-      <div class="container {{ if (index hugo.Data .Language.Name).header.cta.active }}has_cta{{ end }}" onclick="document.body.classList.remove('menushown');">
-        <div>
-          {{ partial "logo.html" . }}
-        </div>
-        <div class="nav">
-          <nav class="navnav">
-            <ul>
-              {{ range (index hugo.Data .Language.Name).header.menuitems }}
-                <li class="{{ if eq .link `/` }}{{ if eq $.RelPermalink `/` }}active{{ end }}{{ else }}{{ if (hasPrefix $.RelPermalink .link) }}active{{ end }}{{ end }}{{ if (index .items 0).title }} haschildren{{ end }}"><a href="{{ .link }}" onclick="navClick(event, this);">{{ .title }}</a>
-                  {{ if (index .items 0).title }}
-                  <ul>
-                    {{ range .items }}
-                      <li class="{{ if hasPrefix $.Page.RelPermalink .link }}active{{ end }}"><a href="{{ .link }}">{{ .title }}</a></li>
-                    {{ end }}
-                  </ul>
-                  {{ end }}
-                </li>
-              {{ end }}
-            </ul>
-          </nav>
-        </div>
-        <div>
-          {{- with .Rotate "language" -}}
-          {{- if gt (len .) 1 -}}
-          <div class="navnav languages">
-            <ul>
-              <li class="haschildren">
-                <a href="{{ $.RelPermalink }}" onclick="navClick(event, this);">{{ $.Language.Name | upper }}</a>
-                <ul>
-					{{- range . -}}
-					{{- if ne .Language.Name $.Language.Name -}}
-					<li><a href="{{ .RelPermalink }}">{{ .Language.Label }}</a></li>
-					{{- end -}}
-					{{- end -}}
-                </ul>
-              </li>
-            </ul>
-          </div>
-          {{- end -}}
-          {{- end -}}
-          {{ if (index hugo.Data .Language.Name).header.cta.active }}
-          <a href="{{ (index hugo.Data .Language.Name).header.cta.link }}" class="button smaller">{{ (index hugo.Data .Language.Name).header.cta.title }}</a>
-		      {{ end }}
-        </div>
-        <button id="togglemenu" onclick="event.stopPropagation(); document.body.classList.add('menushown');"><span class="black_2_textDark">Toggle menu</span></button>
-        <script>
-          function navClick(event,el) {
-            var li = el.parentElement;
-            if(document.body.classList.contains('mobilemenu')) {
-              if (li.classList.contains('haschildren')) {
-                if (el.closest('.languages')) {
-                  event.preventDefault();
-                  event.stopPropagation();
-                  li.classList.toggle('open');
-                  return;
-                }
-                var ul = li.querySelector('ul');
-                if(ul) {
-                  if(window.getComputedStyle(ul).maxHeight == '0px') {
-                    var uls = document.querySelectorAll('nav ul ul');
-                    uls.forEach(function(u) {
-                      u.style.height = '0px';
-                      u.style.maxHeight = '0px';
-                    });
-                    ul.style.height = 'auto';
-                    ul.style.maxHeight = '700px';
-                    event.preventDefault();
-                    event.stopPropagation();
-                  }
-                }
-              }
-            }
-          }
-          document.addEventListener('click', function() {
-            document.querySelectorAll('.languages li.open').forEach(function(li) {
-              li.classList.remove('open');
-            });
-          });
-        </script>
-    </header>
-
-    {{- block "content" . -}}{{- end -}}
-
-    <footer class="{{ if .Params.dark_footer }}dark{{ else }}{{ if and (ne .Params.dark_footer false) hugo.Data.settings.dark_footer }}dark{{ end }}{{ end }}">
-      <div>
-        <div class="container">
-          <div>
-            {{ partial "footerlogo.html" . }}
-          </div>
-          <div>
-            <ul>
-              {{ range (index hugo.Data .Language.Name).footer.menuitems }}
-                <li><a href="{{ .link }}">{{ .title }}</a></li>
-              {{ end }}
-            </ul>  
-          </div>
-          <div>
-            {{ partial "socialbuttons.html" . }}
-          </div>
-        </div>
-      </div>
-      <div>
-        <div class="container">
-		      <div>{{ markdownify (index hugo.Data .Language.Name).footer.footer_text }}</div>
-          {{- with .Rotate "language" -}}
-          {{- if gt (len .) 1 -}}
-          <div>
-            <select aria-label="Change language" onchange="if(this.value) document.location.href = this.value;">
-              <option>Change language</option>
-              {{- range . -}}
-              <option value="{{ .RelPermalink }}" {{ if eq .Language.Name $.Language.Name }}disabled{{ end }}>{{ .Language.Label }}</option>
-              {{- end -}}
-            </select>
-          </div>
-          {{- end -}}
-          {{- end -}}
-		    </div>
-  		</div>
-		</footer>
-
-		{{ if hugo.Data.settings.sticky_header }}
-      <script type="text/javascript" src="/js/stickyheader.js"></script>
-    {{ end }}
-    <script type="text/javascript" src="/js/faq.js"></script>
-    <script type="text/javascript" src="/js/lightbox.js"></script>
-		<link rel="stylesheet" href="/css/lightbox.css">
-    {{ if hugo.Data.settings.customcursor }}
-      <script type="text/javascript" src="/js/customcursor.js"></script>
-      <link rel="stylesheet" href="/css/customcursor.css">
-    {{ end }}
-    {{ if hugo.Data.settings.intersectionobserver }}
-      <script type="text/javascript" src="/js/intersectionobserver.js"></script>
-      <link rel="stylesheet" href="/css/intersectionobserver.css">
-    {{ end }}
-      </div>
+  <body class="{{ if .IsHome }}is-home {{ end }}page-{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Kind }}{{ end }}">
+    <a class="skip-link" href="#main">{{ i18n "skip_to_content" }}</a>
+    <div id="top-sentinel" aria-hidden="true"></div>
+    {{- partial "header.html" . -}}
+    <main id="main" tabindex="-1">
+      {{- block "content" . -}}{{- end -}}
+      {{- $hasDoor := or (.HasShortcode "brick_cta") (.HasShortcode "brick_contact") (eq .Section "posts") (eq .Section "services") -}}
+      {{- if not $hasDoor -}}{{- partial "brick_cta.html" "" -}}{{- end -}}
+    </main>
+    {{- partial "footer.html" . -}}
+    {{- partial "callbar.html" . -}}
+    {{- $js := resources.Get "js/site.js" | js.Build (dict "minify" true "target" "es2018") | fingerprint -}}
+    <script src="{{ $js.RelPermalink }}" integrity="{{ $js.Data.Integrity }}" defer></script>
   </body>
 </html>

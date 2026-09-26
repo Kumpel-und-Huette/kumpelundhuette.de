@@ -1,0 +1,675 @@
+{
+  "tool": "comp-spec",
+  "version": 1,
+  "createdAt": "2026-09-25T17:00:40.613Z",
+  "comp": ".impeccable/mocks/comp-1.webp.png",
+  "warnings": [
+    "region hero-photo: \"bleed\": true set in the regions file (the clipped-artwork refusal is overridden: the page crops it there)",
+    "region place-card: \"container\": true set in the regions file (the region-size refusal is overridden: one undivided element)"
+  ],
+  "uncoveredInkCells": [],
+  "compSize": {
+    "width": 1280,
+    "height": 720
+  },
+  "aspect": 1.7778,
+  "orientation": "landscape",
+  "palette": [
+    {
+      "hex": "#5e3d21",
+      "coverage": 0.2636
+    },
+    {
+      "hex": "#ac7c51",
+      "coverage": 0.2302
+    },
+    {
+      "hex": "#b59880",
+      "coverage": 0.2002
+    },
+    {
+      "hex": "#f5e6d7",
+      "coverage": 0.1947
+    },
+    {
+      "hex": "#83582e",
+      "coverage": 0.1112
+    }
+  ],
+  "bands": [
+    {
+      "y": 0.0556,
+      "strength": 0.485
+    },
+    {
+      "y": 0.0833,
+      "strength": 0.3885
+    },
+    {
+      "y": 0.1111,
+      "strength": 0.2032
+    },
+    {
+      "y": 0.375,
+      "strength": 0.2333
+    },
+    {
+      "y": 0.5556,
+      "strength": 0.7267
+    },
+    {
+      "y": 0.6944,
+      "strength": 0.2824
+    },
+    {
+      "y": 0.7361,
+      "strength": 0.2255
+    },
+    {
+      "y": 0.7639,
+      "strength": 0.3296
+    },
+    {
+      "y": 0.7917,
+      "strength": 0.2275
+    },
+    {
+      "y": 0.8472,
+      "strength": 0.2441
+    },
+    {
+      "y": 0.9306,
+      "strength": 0.4516
+    }
+  ],
+  "regions": [
+    {
+      "id": "hero-photo",
+      "kind": "plate",
+      "note": "full-bleed warm photograph of the real Lütgendortmund kitchen: white cabinets, glass-front wall cabinets, pale wood worktop, window top left, warm evening light",
+      "grid": "A0:J9",
+      "bleed": true,
+      "box": {
+        "x": 0,
+        "y": 0,
+        "w": 1,
+        "h": 1
+      },
+      "px": {
+        "x": 0,
+        "y": 0,
+        "w": 1280,
+        "h": 720
+      },
+      "aspect": 1.7778,
+      "palette": [
+        {
+          "hex": "#5e3d21",
+          "coverage": 0.2636
+        },
+        {
+          "hex": "#ac7c51",
+          "coverage": 0.2302
+        },
+        {
+          "hex": "#b59880",
+          "coverage": 0.2002
+        },
+        {
+          "hex": "#f5e6d7",
+          "coverage": 0.1947
+        },
+        {
+          "hex": "#83582e",
+          "coverage": 0.1112
+        }
+      ],
+      "detail": {
+        "energy": 31.9833
+      },
+      "medium": "raster",
+      "plate": "assets/plates/hero-photo.png",
+      "text": null
+    },
+    {
+      "id": "logo",
+      "kind": "text",
+      "note": "wordmark Kumpel & Hütte in hearty cream serif letters",
+      "grid": null,
+      "box": {
+        "x": 0.024,
+        "y": 0.035,
+        "w": 0.217,
+        "h": 0.06
+      },
+      "px": {
+        "x": 31,
+        "y": 25,
+        "w": 278,
+        "h": 43
+      },
+      "aspect": 6.4651,
+      "palette": [
+        {
+          "hex": "#4e341e",
+          "coverage": 0.6914
+        },
+        {
+          "hex": "#f7f4e4",
+          "coverage": 0.1943
+        },
+        {
+          "hex": "#73624b",
+          "coverage": 0.0437
+        },
+        {
+          "hex": "#b8a797",
+          "coverage": 0.0393
+        },
+        {
+          "hex": "#291409",
+          "coverage": 0.0313
+        }
+      ],
+      "detail": {
+        "energy": 70.8505
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 10,
+          "capHeightPx": 31.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.7937,
+          "advTall": 0.8889,
+          "advX": 0.5397,
+          "gap": 0.0635,
+          "xRatio": 0.6667,
+          "stemW": 0.1478,
+          "contrast": 1.8286,
+          "serif": 0.7799,
+          "densTall": 0.4387,
+          "densX": 0.5218,
+          "weight": 0.4387
+        },
+        "widthClass": "condensed",
+        "weightClass": "regular",
+        "chosen": {
+          "family": "Annapurna SIL",
+          "weight": 400,
+          "fontSizePx": 47,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 12,
+            "capHeightPx": 31.5,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.6984,
+            "advTall": 0.8254,
+            "advX": 0.6349,
+            "gap": 0.0635,
+            "xRatio": 0.6984,
+            "stemW": 0.1278,
+            "contrast": 1.7744,
+            "serif": null,
+            "densTall": 0.4001,
+            "densX": 0.4386,
+            "weight": 0.4001
+          },
+          "stamp": "b161df6caf42"
+        }
+      }
+    },
+    {
+      "id": "nav",
+      "kind": "text",
+      "note": "cream serif navigation: Wer wir sind · Unser Zuhause · Einziehen · Einblicke · Kontakt",
+      "grid": null,
+      "box": {
+        "x": 0.4,
+        "y": 0.048,
+        "w": 0.445,
+        "h": 0.036
+      },
+      "px": {
+        "x": 512,
+        "y": 35,
+        "w": 570,
+        "h": 26
+      },
+      "aspect": 21.9231,
+      "palette": [
+        {
+          "hex": "#4e351d",
+          "coverage": 0.7281
+        },
+        {
+          "hex": "#f4f1e7",
+          "coverage": 0.1046
+        },
+        {
+          "hex": "#29180c",
+          "coverage": 0.0758
+        },
+        {
+          "hex": "#6c5d45",
+          "coverage": 0.0508
+        },
+        {
+          "hex": "#9a8b7d",
+          "coverage": 0.0407
+        }
+      ],
+      "detail": {
+        "energy": 77.193
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 42,
+          "capHeightPx": 15.5,
+          "inkIsDark": false,
+          "allCaps": false,
+          "advance": 0.6114,
+          "advTall": 0.6919,
+          "advX": 0.531,
+          "gap": 0.0644,
+          "xRatio": 0.668,
+          "stemW": 0.1689,
+          "contrast": 1.3874,
+          "serif": 0.5348,
+          "densTall": 0.4902,
+          "densX": 0.5807,
+          "weight": 0.4902
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium"
+      }
+    },
+    {
+      "id": "call-button",
+      "kind": "control",
+      "note": "brick-red rounded button Anrufen",
+      "grid": null,
+      "box": {
+        "x": 0.866,
+        "y": 0.035,
+        "w": 0.102,
+        "h": 0.064
+      },
+      "px": {
+        "x": 1108,
+        "y": 25,
+        "w": 131,
+        "h": 46
+      },
+      "aspect": 2.8478,
+      "palette": [
+        {
+          "hex": "#a84528",
+          "coverage": 0.8454
+        },
+        {
+          "hex": "#8e3f2c",
+          "coverage": 0.0737
+        },
+        {
+          "hex": "#f8e9de",
+          "coverage": 0.0361
+        },
+        {
+          "hex": "#e5aa99",
+          "coverage": 0.0231
+        },
+        {
+          "hex": "#f8cfbe",
+          "coverage": 0.0217
+        }
+      ],
+      "detail": {
+        "energy": 11.7714
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "place-card",
+      "kind": "chrome",
+      "note": "linen place-card with slightly rounded corners holding the hero text and actions",
+      "grid": null,
+      "container": true,
+      "box": {
+        "x": 0.024,
+        "y": 0.552,
+        "w": 0.44,
+        "h": 0.382
+      },
+      "px": {
+        "x": 31,
+        "y": 397,
+        "w": 563,
+        "h": 275
+      },
+      "aspect": 2.0473,
+      "palette": [
+        {
+          "hex": "#f8e9d8",
+          "coverage": 0.8167
+        },
+        {
+          "hex": "#a84528",
+          "coverage": 0.0627
+        },
+        {
+          "hex": "#1d110a",
+          "coverage": 0.0471
+        },
+        {
+          "hex": "#432c13",
+          "coverage": 0.0421
+        },
+        {
+          "hex": "#6a553b",
+          "coverage": 0.0314
+        }
+      ],
+      "detail": {
+        "energy": 36.6884
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "headline",
+      "kind": "text",
+      "note": "coal-brown hearty serif headline Nicht Heim. Nicht allein. Einfach Zuhause!",
+      "grid": null,
+      "box": {
+        "x": 0.046,
+        "y": 0.585,
+        "w": 0.404,
+        "h": 0.055
+      },
+      "px": {
+        "x": 59,
+        "y": 421,
+        "w": 517,
+        "h": 40
+      },
+      "aspect": 12.925,
+      "palette": [
+        {
+          "hex": "#f8e9d9",
+          "coverage": 0.7971
+        },
+        {
+          "hex": "#28160b",
+          "coverage": 0.1278
+        },
+        {
+          "hex": "#c1b2a3",
+          "coverage": 0.0326
+        },
+        {
+          "hex": "#887767",
+          "coverage": 0.0217
+        },
+        {
+          "hex": "#59483a",
+          "coverage": 0.0209
+        }
+      ],
+      "detail": {
+        "energy": 91.4466
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 1,
+          "glyphs": 35,
+          "capHeightPx": 22.2,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5184,
+          "advTall": 0.5635,
+          "advX": 0.5296,
+          "gap": 0.0676,
+          "xRatio": 0.6648,
+          "stemW": 0.1537,
+          "contrast": 1.5491,
+          "serif": 1.8301,
+          "densTall": 0.5023,
+          "densX": 0.5365,
+          "weight": 0.5023
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium",
+        "chosen": {
+          "family": "Martel",
+          "weight": 700,
+          "fontSizePx": 25,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 35,
+            "capHeightPx": 21.5,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.5803,
+            "advTall": 0.325,
+            "advX": 0.5803,
+            "gap": 0.0929,
+            "xRatio": 0.6174,
+            "stemW": 0.1539,
+            "contrast": 1.5998,
+            "serif": 1.6768,
+            "densTall": 0.5069,
+            "densX": 0.5445,
+            "weight": 0.5069
+          },
+          "stamp": "6bf4a46427b8"
+        }
+      }
+    },
+    {
+      "id": "lede",
+      "kind": "text",
+      "note": "two-line sans paragraph Eigenes Zimmer, echte Gesellschaft und Pflege von unserem eigenen Team",
+      "grid": null,
+      "box": {
+        "x": 0.046,
+        "y": 0.655,
+        "w": 0.36,
+        "h": 0.08
+      },
+      "px": {
+        "x": 59,
+        "y": 472,
+        "w": 461,
+        "h": 58
+      },
+      "aspect": 7.9483,
+      "palette": [
+        {
+          "hex": "#f7e9d9",
+          "coverage": 0.8203
+        },
+        {
+          "hex": "#100b09",
+          "coverage": 0.0807
+        },
+        {
+          "hex": "#beb5a9",
+          "coverage": 0.0517
+        },
+        {
+          "hex": "#6d6259",
+          "coverage": 0.0274
+        },
+        {
+          "hex": "#92867d",
+          "coverage": 0.0199
+        }
+      ],
+      "detail": {
+        "energy": 85.9835
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null,
+      "type": {
+        "comp": {
+          "lines": 2,
+          "glyphs": 82,
+          "capHeightPx": 16,
+          "inkIsDark": true,
+          "allCaps": false,
+          "advance": 0.5621,
+          "advTall": 0.5309,
+          "advX": 0.5629,
+          "gap": 0.0938,
+          "xRatio": 0.7082,
+          "stemW": 0.1435,
+          "contrast": 0.974,
+          "serif": 0.5095,
+          "densTall": 0.4909,
+          "densX": 0.5604,
+          "weight": 0.4909
+        },
+        "widthClass": "condensed",
+        "weightClass": "medium",
+        "chosen": {
+          "family": "Tuffy",
+          "weight": 400,
+          "fontSizePx": 22,
+          "source": "index",
+          "fp": {
+            "lines": 1,
+            "glyphs": 39,
+            "capHeightPx": 16.1,
+            "inkIsDark": true,
+            "allCaps": false,
+            "advance": 0.5597,
+            "advTall": 0.3576,
+            "advX": 0.5597,
+            "gap": 0.1244,
+            "xRatio": 0.7367,
+            "stemW": 0.1361,
+            "contrast": 1.0267,
+            "serif": 0.7944,
+            "densTall": 0.4899,
+            "densX": 0.5351,
+            "weight": 0.4899
+          },
+          "stamp": "2ad8f1db17ad"
+        }
+      }
+    },
+    {
+      "id": "cta-call",
+      "kind": "control",
+      "note": "brick-red button Anrufen: 0160 90889269",
+      "grid": null,
+      "box": {
+        "x": 0.046,
+        "y": 0.768,
+        "w": 0.207,
+        "h": 0.07
+      },
+      "px": {
+        "x": 59,
+        "y": 553,
+        "w": 265,
+        "h": 50
+      },
+      "aspect": 5.3,
+      "palette": [
+        {
+          "hex": "#a74528",
+          "coverage": 0.6899
+        },
+        {
+          "hex": "#f8e7d7",
+          "coverage": 0.1351
+        },
+        {
+          "hex": "#8a3a26",
+          "coverage": 0.1223
+        },
+        {
+          "hex": "#ae6e5a",
+          "coverage": 0.0284
+        },
+        {
+          "hex": "#f0c0a5",
+          "coverage": 0.0243
+        }
+      ],
+      "detail": {
+        "energy": 36.7309
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    },
+    {
+      "id": "visit-link",
+      "kind": "control",
+      "note": "ochre-brown text link Besuch vereinbaren with arrow",
+      "grid": null,
+      "box": {
+        "x": 0.046,
+        "y": 0.858,
+        "w": 0.155,
+        "h": 0.042
+      },
+      "px": {
+        "x": 59,
+        "y": 618,
+        "w": 198,
+        "h": 30
+      },
+      "aspect": 6.6,
+      "palette": [
+        {
+          "hex": "#f8e8d6",
+          "coverage": 0.8046
+        },
+        {
+          "hex": "#6d4721",
+          "coverage": 0.0885
+        },
+        {
+          "hex": "#ba9a78",
+          "coverage": 0.055
+        },
+        {
+          "hex": "#e0c29e",
+          "coverage": 0.0427
+        },
+        {
+          "hex": "#8b6845",
+          "coverage": 0.0092
+        }
+      ],
+      "detail": {
+        "energy": 39.529
+      },
+      "medium": "semantic",
+      "plate": null,
+      "text": null
+    }
+  ]
+}

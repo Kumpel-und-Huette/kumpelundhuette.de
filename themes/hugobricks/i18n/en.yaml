@@ -1,60 +1,73 @@
+skip_to_content: Skip to content
+home: Home
+nav_main: Main menu
+nav_footer: More pages
+breadcrumb: You are here
+menu_open: Menu
+menu_close: Close
+call: Call us
+call_us: Give us a call
+write: Write
+write_us: Write to us
+mail_label: Send an email
+visit: Visit
+visit_us: Come and visit
+visit_cta: Arrange a visit
+address_label: Address
+hours_label: Available
+language_switch: Language
+other_language: Deutsch
+footer_tagline: Together instead of alone
+read_more: Read more
+all_news: All news
+all_homes: Our home
+open_map: Open location in Google Maps
+map_alt: Map of Dortmund-Lütgendortmund showing Im Heidewinkel 30
+published: Published on
+services:
+  other: News
+posts:
+  other: Our home
 Read more:
   other: Read more
 Load more posts:
-  other: Load more posts
+  other: Show more
 Filter tags:
-  other: Filter tags
-services:
-  other: Services
-posts:
-  other: Blog
-products:
-  other: Shop
-First name:
-  other: First name
-Last name:
-  other: Last name
-Email address:
-  other: Email address
-Address:
-  other: Address
-Zipcode:
-  other: Zipcode
-City:
-  other: City
-Shipping:
-  other: Shipping
-Country:
-  other: Country
-Gift wrapping:
-  other: Gift wrapping
-Not gift wrapped:
-  other: Not gift wrapped
-Gift wrapped:
-  other: Gift wrapped
-Message:
-  other: Message
-back to cart:
-  other: back to cart
-Payment total:
-  other: Payment total
-Shopping cart:
-  other: Shopping cart
-Proceed to payment:
-  other: Proceed to payment
-Your shopping cart is currently empty:
-  other: Your shopping cart is currently empty
-Amount:
-  other: Amount
-Price:
-  other: Price
-Continue shopping:
-  other: Continue shopping
-Continue to checkout:
-  other: Continue to checkout
-Cart:
-  other: Cart
-Checkout:
-  other: Checkout
-Payment:
-  other: Payment
+  other: Filter
+price_title: What a place with us costs
+price_intro: Rent, housekeeping and support in one amount. Depending on pension and care grade, your personal share can go down to 0 €.
+price_rent: Rent
+price_rent_note: Room, utilities, electricity, heating, internet, TV licence
+price_house: Housekeeping
+price_house_note: Weekly cleaning, shopping and laundry; breakfast and a warm meal every day
+price_care: Support
+price_care_note: Activating support, organisation, conversations, contact with relatives
+price_total: All together
+price_month: per month
+price_share: Your personal share
+price_share_note: depending on pension and care grade
+price_admission: For people with care grade 2 or higher, exceptions by arrangement.
+price_link: How moving in works
+house_facts: At a glance
+house_address: Address
+house_for: Who it is for
+house_for_value: People with care grade 2 or higher, exceptions by arrangement
+house_cost: Cost
+house_cost_value: 970 € per month, personal share from 0 € possible
+house_care: Care
+house_care_value: by our own team
+job_location: Location
+job_type: Type
+job_department: Area
+job_experience: Experience
+job_description: What it is about
+job_requirements: What you bring
+job_benefits: What we offer
+job_apply: Apply now
+job_note: Clicking “Apply now” opens your email programme. Please send us your CV and a few lines about yourself.
+form_required: Required
+error_title: Sorry, this door leads nowhere.
+error_text: "This page does not exist or no longer exists. Here is a safe way on:"
+error_home: Back to the home page
+steps_jump: On this page
+video_play: Watch the video (opens external site)

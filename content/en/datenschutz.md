@@ -15,9 +15,9 @@ This privacy policy informs you about the nature, scope and purpose of the proce
 ### 2. Controller
 
 **Kumpel und Hütte**  
-[Insert address]  
-[Insert phone number]  
-[Insert email address]
+Im Heidewinkel 30, 44267 Dortmund, Germany  
+Phone: +49 160 90889269  
+Email: info@kumpelundhuette.de
 
 The controller is the natural or legal person who alone or jointly with others determines the purposes and means of the processing of personal data.
 

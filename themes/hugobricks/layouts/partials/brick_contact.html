@@ -1,20 +1,14 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/contact.md' file." -}}
-    {{- with page.Site.GetPage "bricks/contact.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-<section class="contact">
-    <div class="container twocols">
-        <div>
-            <div class="box">
-                {{- partial "form.html" (index hugo.Data page.Language.Name).contactform -}}
-            </div>
-        </div>
-        <div class="text">
-            {{- markdownify $inner -}}
-        </div>
+{{- if not $inner -}}{{- with site.GetPage "bricks/contact.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $html := partial "md.html" $inner -}}
+<section class="brick brick--contact">
+  <div class="wrap contact">
+    <div class="contact__text flow">
+      {{ $html | safeHTML }}
+      {{ partial "contactbuttons.html" . }}
     </div>
+    <div class="contact__form">
+      {{- partial "form.html" (index hugo.Data site.Language.Lang).contactform -}}
+    </div>
+  </div>
 </section>

@@ -1,0 +1,28 @@
+{{- /* The fridge note: the published price, plainly. Numbers from data/prices.yaml. */ -}}
+{{- $pr := hugo.Data.prices -}}
+{{- $move := site.GetPage "/einziehen-bei-uns" -}}
+<section class="brick brick--prices" aria-labelledby="price-title">
+  <div class="wrap price">
+    <div class="price__intro flow">
+      <h2 id="price-title">{{ i18n "price_title" }}</h2>
+      <p>{{ i18n "price_intro" }}</p>
+      <p class="price__admission">{{ i18n "price_admission" }}</p>
+      {{- with $move }}
+      <p><a class="link-arrow link-arrow--light" href="{{ .RelPermalink }}"><span>{{ i18n "price_link" }}</span>{{ partial "icon.html" "arrow" }}</a></p>
+      {{- end }}
+    </div>
+    <div class="note" role="group" aria-label="{{ i18n "price_title" }}">
+      <table class="note__sum">
+        <tbody>
+          <tr><th scope="row">{{ i18n "price_rent" }}<span>{{ i18n "price_rent_note" }}</span></th><td>{{ $pr.rent }} €</td></tr>
+          <tr><th scope="row">{{ i18n "price_house" }}<span>{{ i18n "price_house_note" }}</span></th><td>{{ $pr.housekeeping }} €</td></tr>
+          <tr><th scope="row">{{ i18n "price_care" }}<span>{{ i18n "price_care_note" }}</span></th><td>{{ $pr.support }} €</td></tr>
+        </tbody>
+        <tfoot>
+          <tr class="note__total"><th scope="row">{{ i18n "price_total" }}<span>{{ i18n "price_month" }}</span></th><td><strong>{{ $pr.total }} €</strong></td></tr>
+        </tfoot>
+      </table>
+      <p class="note__share"><span>{{ i18n "price_share" }}</span> <strong>{{ $pr.share_min }} – {{ $pr.share_max }} €</strong> <span class="note__share-note">{{ i18n "price_share_note" }}</span></p>
+    </div>
+  </div>
+</section>

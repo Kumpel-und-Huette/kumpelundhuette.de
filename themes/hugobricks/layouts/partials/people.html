@@ -1,26 +1,26 @@
-<ul class="grid people">
-    {{- range (index hugo.Data page.Language.Name).people -}}
-        <li>
-            <div class="box">
-            <img src="{{ .image }}" alt="{{ .name }}" class="avatar colorize_image" />
-            <h3>{{- .name -}}</h3>
-            <div class="function">{{- .function | safeHTML -}}</div>
-            <p>{{- .description | safeHTML -}}</p>
-            <ul class="buttons">
-                {{- if .phone -}}
-                    <li><a href="tel:{{ replace .phone ` ` `` }}" class="button icon"><img src="/img/phone.svg" alt="{{ .phone }}" /></a></li>
-                {{- end -}}
-                {{- if .email -}}
-                    <li><a href="mailto:{{ .email }}" class="button icon"><img src="/img/email.svg" alt="{{ .email }}" /></a></li>
-                {{- end -}}
-                {{- if .linkedin -}}
-                    <li><a href="{{ .linkedin }}" class="button icon" target="_blank"><img src="/img/linkedin.svg" alt="{{ .linkedin }}" /></a></li>
-                {{- end -}}
-                {{- if .website -}}
-                    <li><a href="{{ .website }}" class="button icon" target="_blank"><img src="/img/world.svg" alt="{{ .website }}" /></a></li>
-                {{- end -}}
-            </ul>
-            </div>
-        </li>
-    {{- end -}}
+{{- $h := printf "h%d" (.level | default 3) -}}
+<ul class="people" role="list">
+  {{- range (index hugo.Data site.Language.Lang).people }}
+  {{- $mail := .email | default .mail }}
+  <li class="person">
+    {{- with .image }}
+    <figure class="person__photo photo">
+      <div class="photo__frame">
+        {{- partial "img.html" (dict "src" . "alt" "" "ratio" "4:5" "sizes" "(min-width: 60em) 22rem, 90vw" "widths" (slice 360 540 720 900) "anchor" "Top") -}}
+      </div>
+    </figure>
+    {{- end }}
+    <div class="person__text flow">
+      {{ printf "<%s class=\"person__name\">" $h | safeHTML }}{{ strings.TrimSpace .name }}{{ printf "</%s>" $h | safeHTML }}
+      {{- with .function }}<p class="person__role">{{ . | safeHTML }}</p>{{ end }}
+      {{- with .description }}<p class="person__words">{{ . | safeHTML }}</p>{{ end }}
+      {{- if or $mail .phone }}
+      <p class="person__contact">
+        {{- with .phone }}<a href="tel:{{ replaceRE `[^+0-9]` "" . }}">{{ partial "icon.html" "phone" }}<span>{{ . }}</span></a>{{ end }}
+        {{- with $mail }}<a href="mailto:{{ . }}">{{ partial "icon.html" "mail" }}<span>{{ . }}</span></a>{{ end }}
+      </p>
+      {{- end }}
+    </div>
+  </li>
+  {{- end }}
 </ul>

@@ -1,23 +1,15 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/image.md' file." -}}
-    {{- with page.Site.GetPage "bricks/image.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-
-{{ $inner = markdownify $inner }}
-{{ $image := index (findRE `(?s)<p><img.*?p>` $inner 1) 0 }}
-{{ $inner = replace $inner $image "" 1 }}
-
-<section class="image">
-    <div class="container twocols">
-        <div class="text">
-            <div>{{ $inner | safeHTML }}</div>
-        </div>
-        <div class="image">
-            <div>{{- $image | safeHTML -}}</div>
-        </div>
+{{- if not $inner -}}{{- with site.GetPage "bricks/image.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $s := partial "brick/split.html" $inner -}}
+<section class="brick brick--image">
+  <div class="wrap split{{ if not $s.src }} split--text-only{{ end }}">
+    <div class="split__text flow">
+      {{ partial "md.html" $s.body | replaceRE `<(/?)h1` "<${1}h3" | safeHTML }}
     </div>
+    {{- with $s.src }}
+    <div class="split__media">
+      {{- partial "brick/figure.html" (dict "src" . "alt" $s.alt "caption" $s.caption "ratio" "4:5") -}}
+    </div>
+    {{- end }}
+  </div>
 </section>

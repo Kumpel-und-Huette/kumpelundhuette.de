@@ -1,0 +1,2 @@
+{{- /* Unwraps block-level shortcode output that Markdown put inside a paragraph. */ -}}
+{{- . | replaceRE `<p>\s*(<(?:section|div|figure|nav|ul|ol|aside|article|details|form|h[1-6])[\s>])` "$1" | replaceRE `(</(?:section|div|figure|nav|ul|ol|aside|article|details|form|h[1-6])>)\s*</p>` "$1" | replaceRE `<p>\s*</p>` "" | safeHTML -}}

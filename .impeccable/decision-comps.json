@@ -1,0 +1,10 @@
+{
+  "title": "Kumpel und Hütte homepage: pick the composition",
+  "question": "Three compositions of the kitchen-table world. Pick the one to build. One honesty note: the comps warm up your real kitchen photo and add a lamp, candle and table that are not in it. By default I will build from your real photo (upscaled, warm-graded) without invented objects, unless you say otherwise in the steer box.",
+  "options": [
+    {"id": "comp-1", "label": "Photo is the room", "kicker": "YOUR DECISION COMP", "thesis": "Full-bleed kitchen, headline on a linen place-card lower left.", "palette": ["#EFE6D8","#2B221C","#B04A34","#E0A33A","#56703F"], "materials": ["full-bleed photo","linen card"], "viewport": "Photo fills the viewport; header over it; linen card with headline and call button.", "risk": "Text over photo needs a scrim; the photo must carry the whole page.", "comp": ".impeccable/mocks/comp-1.webp"},
+    {"id": "comp-2", "label": "Split with fridge note", "thesis": "Headline column left, photo right, the 970 € note pinned across both, two doors below.", "palette": ["#EFE6D8","#2B221C","#B04A34","#E0A33A","#56703F"], "materials": ["split layout","paper note","moss band"], "viewport": "Big headline left, photo right, price note overlapping, 'Für Sie / Für Angehörige' doors peeking.", "risk": "Most content in the first viewport; the note must stay calm.", "comp": ".impeccable/mocks/comp-2.webp"},
+    {"id": "comp-3", "label": "Open door into the kitchen", "thesis": "Centered headline and actions, then a wide panoramic kitchen like looking through a doorway.", "palette": ["#EFE6D8","#2B221C","#B04A34","#E0A33A","#3F5A2E"], "materials": ["centered type","panorama photo","moss strip"], "viewport": "Moss contact strip, centered headline, two buttons, kitchen panorama below.", "risk": "Symmetry can feel formal; the photo sits lower on mobile.", "comp": ".impeccable/mocks/comp-3.webp"}
+  ],
+  "steer": true
+}

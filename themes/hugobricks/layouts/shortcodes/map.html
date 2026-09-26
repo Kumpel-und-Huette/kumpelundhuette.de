@@ -1,1 +1,5 @@
-<p class="map" style="cursor: pointer; background: url({{ .Get 0 }}) center calc(50% + 2rem)" onclick="window.open('{{ .Get 1 }}')"></p>
+{{- /* Usage: {{< map "/uploads/map.png" "https://maps.google.com/..." >}} */ -}}
+<a class="map__image" href="{{ .Get 1 }}" rel="noopener" aria-label="{{ i18n "open_map" }}">
+  {{- partial "img.html" (dict "src" (.Get 0) "alt" (i18n "map_alt") "sizes" "(min-width: 72em) 72rem, 100vw") -}}
+  <span class="map__pin">{{ partial "icon.html" "pin" }}</span>
+</a>

@@ -12,4 +12,4 @@
     {{- end -}}
   {{- end -}}
 {{- end -}}
-<a href="{{ $link | safeURL }}" class="button secondary" title="{{ .Get 0 }}"{{ if $isRemote }} target="_blank" rel="noopener"{{ end }}>{{ .Get 0 }}</a>
+<a href="{{ $link | safeURL }}" class="button button--quiet"{{ if $isRemote }} rel="noopener"{{ end }}>{{ if hasPrefix $link "tel:" }}{{ partial "icon.html" "phone" }}{{ else if hasPrefix $link "mailto:" }}{{ partial "icon.html" "mail" }}{{ end }}<span>{{ .Get 0 }}</span>{{ partial "icon.html" "arrow" }}</a>

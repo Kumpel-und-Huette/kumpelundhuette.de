@@ -1,13 +1,14 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/intro.md' file." -}}
-    {{- with page.Site.GetPage "bricks/intro.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-<section class="intro">
-    <div class="container small">
-        {{- markdownify $inner -}}
-    </div>
+{{- if not $inner -}}{{- with site.GetPage "bricks/intro.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
+{{- $s := partial "brick/split.html" $inner -}}
+<section class="hero" aria-labelledby="hero-title">
+  {{- with $s.src }}
+  <div class="hero__photo">
+    {{- partial "img.html" (dict "src" . "alt" $s.alt "sizes" "100vw" "widths" (slice 640 960 1280 1600 1920) "ratio" "16:9" "eager" true "class" "hero__img" "anchor" "Center") -}}
+  </div>
+  {{- end }}
+  <div class="hero__card">
+    {{ replace (partial "md.html" $s.body) "<h1 " `<h1 id="hero-title" ` 1 | replaceRE `<h1 id="hero-title" id="[^"]*"` `<h1 id="hero-title"` | safeHTML }}
+  </div>
+  {{- with $s.caption }}<p class="hero__caption">{{ . }}</p>{{ end }}
 </section>

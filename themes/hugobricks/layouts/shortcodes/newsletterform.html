@@ -1,9 +1,2 @@
-<!-- 
-{{/* 
-
-Usage:
-{{< newsletterform >}}
-    
-*/}}
--->
-{{- partial "form.html" (index hugo.Data page.Language.Name).newsletterform -}}
+{{- /* Usage: {{< newsletterform >}} Renders nothing when data/<lang>/newsletterform.yaml is missing. */ -}}
+{{- with (index hugo.Data page.Language.Lang).newsletterform }}{{ partial "form.html" . }}{{ end -}}

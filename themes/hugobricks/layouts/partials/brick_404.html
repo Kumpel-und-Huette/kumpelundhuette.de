@@ -1,12 +1,11 @@
-{{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "Empty brick found. Consider creating a 'content/bricks/404.md' file." -}}
-    {{- with page.Site.GetPage "bricks/404.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
-<section class="error404">
-    <div class="container small">
-        {{ markdownify $inner }}
-    </div>
+{{- $c := partial "contact-data.html" . -}}
+<section class="brick brick--error">
+  <div class="prose">
+    <h1>{{ i18n "error_title" }}</h1>
+    <p class="lede">{{ i18n "error_text" }}</p>
+    <ul class="contact-actions" role="list">
+      <li><a class="button" href="{{ relLangURL "/" }}">{{ partial "icon.html" "house" }}<span>{{ i18n "error_home" }}</span></a></li>
+      <li><a class="button button--quiet" href="{{ $c.tel }}">{{ partial "icon.html" "phone" }}<span>{{ $c.phone }}</span></a></li>
+    </ul>
+  </div>
 </section>

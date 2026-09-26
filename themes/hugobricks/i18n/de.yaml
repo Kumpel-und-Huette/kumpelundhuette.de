@@ -1,12 +1,73 @@
-Read more:
-  other: Erfahre mehr
-Load more posts:
-  other: Weitere Posts anzeigen
-Filter tags:
-  other: Filter-Tags
+skip_to_content: Zum Inhalt springen
+home: Startseite
+nav_main: Hauptmenü
+nav_footer: Weitere Seiten
+breadcrumb: Sie sind hier
+menu_open: Menü
+menu_close: Schließen
+call: Anrufen
+call_us: Rufen Sie uns an
+write: Schreiben
+write_us: Schreiben Sie uns
+mail_label: E-Mail schreiben
+visit: Besuchen
+visit_us: Kommen Sie vorbei
+visit_cta: Besuch vereinbaren
+address_label: Adresse
+hours_label: Erreichbar
+language_switch: Sprache
+other_language: English
+footer_tagline: Gemeinsam statt einsam
+read_more: Weiterlesen
+all_news: Alle Neuigkeiten
+all_homes: Unser Zuhause
+open_map: Lage in Google Maps öffnen
+map_alt: Kartenausschnitt Dortmund-Lütgendortmund mit dem Standort Im Heidewinkel 30
+published: Veröffentlicht am
 services:
-  other: Dienste
+  other: Neuigkeiten
 posts:
-  other: Blog
-products:
-  other: Shop
+  other: Unser Zuhause
+Read more:
+  other: Weiterlesen
+Load more posts:
+  other: Weitere anzeigen
+Filter tags:
+  other: Filter
+price_title: Was ein Platz bei uns kostet
+price_intro: Miete, Hauswirtschaft und Betreuung in einem Betrag. Je nach Rente und Pflegegrad kann Ihr Eigenanteil bis auf 0 € sinken.
+price_rent: Miete
+price_rent_note: Zimmer, Nebenkosten, Strom, Heizung, Internet, GEZ
+price_house: Hauswirtschaft
+price_house_note: Wöchentlich Reinigung, Einkauf und Wäsche; täglich Frühstück und eine warme Mahlzeit
+price_care: Betreuung
+price_care_note: Aktivierende Betreuung, Organisation, Gespräche, Kontakt zu Angehörigen
+price_total: Alles zusammen
+price_month: im Monat
+price_share: Ihr Eigenanteil
+price_share_note: je nach Rente und Pflegegrad
+price_admission: Für Menschen ab Pflegegrad 2, Ausnahmen nach Absprache.
+price_link: So läuft der Einzug
+house_facts: Auf einen Blick
+house_address: Adresse
+house_for: Für wen
+house_for_value: Menschen ab Pflegegrad 2, Ausnahmen nach Absprache
+house_cost: Kosten
+house_cost_value: 970 € im Monat, Eigenanteil ab 0 € möglich
+house_care: Pflege
+house_care_value: durch unser eigenes Team
+job_location: Standort
+job_type: Art
+job_department: Bereich
+job_experience: Erfahrung
+job_description: Worum es geht
+job_requirements: Was Sie mitbringen
+job_benefits: Was wir bieten
+job_apply: Jetzt bewerben
+job_note: Nach dem Klick auf „Jetzt bewerben“ öffnet sich Ihr E-Mail-Programm. Schicken Sie uns gern Ihren Lebenslauf und ein paar Sätze über sich.
+form_required: Pflichtfeld
+error_title: Diese Tür führt leider nirgendwohin.
+error_text: "Die Seite gibt es nicht oder nicht mehr. Hier geht es sicher weiter:"
+error_home: Zur Startseite
+steps_jump: Auf dieser Seite
+video_play: Video ansehen (öffnet externe Seite)

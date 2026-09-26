@@ -13,10 +13,10 @@ Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der V
 
 ### 2. Verantwortliche Stelle
 
-**Kumpel und Hütte**  
-[Adresse einfügen]  
-[Telefonnummer einfügen]  
-[E-Mail-Adresse einfügen]
+**Kumpel und Hütte Service UG (haftungsbeschränkt)**  
+Im Heidewinkel 30, 44267 Dortmund  
+Telefon: +49 160 90889269  
+E-Mail: info@kumpelundhuette.de
 
 Verantwortliche Stelle ist die natürliche oder juristische Person, die allein oder gemeinsam mit anderen über die Zwecke und Mittel der Verarbeitung von personenbezogenen Daten entscheidet.
 

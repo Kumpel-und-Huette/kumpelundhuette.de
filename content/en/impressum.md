@@ -29,7 +29,7 @@ Register number: HRB 37362
 ### VAT ID
 
 VAT identification number pursuant to §27 a of the German VAT Act:  
-DE123456789
+**[to follow]**
 
 ### Responsible for content pursuant to § 55 Abs. 2 RStV
 

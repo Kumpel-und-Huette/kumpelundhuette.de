@@ -1,10 +1,10 @@
-<div class="table-scroll">
+<div class="table-scroll" role="region" tabindex="0" aria-label="{{ with .THead }}{{ (index (index . 0) 0).Text | plainify }}{{ end }}">
   <table>
     <thead>
       {{- range .THead }}
         <tr>
           {{- range . }}
-            <th scope="col"{{ with .Alignment }} style="text-align: {{ . }}"{{ end }}>
+            <th scope="col"{{ with .Alignment }} class="align-{{ . }}"{{ end }}>
               {{- .Text | safeHTML -}}
             </th>
           {{- end }}
@@ -18,7 +18,7 @@
           {{- range $i, $cell := . }}
             {{- $label := "" -}}
             {{- with index $headers $i }}{{ $label = .Text | plainify }}{{ end -}}
-            <td data-label="{{ $label }}"{{ with $cell.Alignment }} style="text-align: {{ . }}"{{ end }}>
+            <td data-label="{{ $label }}"{{ with $cell.Alignment }} class="align-{{ . }}"{{ end }}>
               {{- $cell.Text | safeHTML -}}
             </td>
           {{- end }}

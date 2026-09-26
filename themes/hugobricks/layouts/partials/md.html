@@ -1,0 +1,4 @@
+{{- /* Markdown to block HTML: markdownify leaves a lone paragraph unwrapped. */ -}}
+{{- $html := markdownify (. | default "") -}}
+{{- if and (strings.TrimSpace $html) (not (hasPrefix (strings.TrimSpace $html) "<")) -}}{{- $html = printf "<p>%s</p>" $html -}}{{- end -}}
+{{- return $html -}}

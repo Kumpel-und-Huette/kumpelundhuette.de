@@ -1,8 +1,5 @@
-<ul class="buttons">
-    {{- if (index hugo.Data page.Language.Name).general.contact.phone -}}
-        <li><a href="tel:{{ replace (index hugo.Data page.Language.Name).general.contact.phone " " "" }}" class="button icon"><img src="/img/phone.svg" alt="{{ (index hugo.Data page.Language.Name).general.contact.phone }}" /></a></li>
-    {{- end -}}
-    {{- if (index hugo.Data page.Language.Name).general.contact.email -}}
-        <li><a href="mailto:{{ (index hugo.Data page.Language.Name).general.contact.email }}" class="button icon"><img src="/img/email.svg" alt="{{ (index hugo.Data page.Language.Name).general.contact.email }}" /></a></li>
-    {{- end -}}
+{{- $c := partial "contact-data.html" . -}}
+<ul class="contact-actions" role="list">
+  {{- with $c.phone }}<li><a class="button button--call" href="{{ $c.tel }}">{{ partial "icon.html" "phone" }}<span>{{ . }}</span></a></li>{{ end }}
+  {{- with $c.email }}<li><a class="button button--quiet" href="mailto:{{ . }}">{{ partial "icon.html" "mail" }}<span>{{ . }}</span></a></li>{{ end }}
 </ul>

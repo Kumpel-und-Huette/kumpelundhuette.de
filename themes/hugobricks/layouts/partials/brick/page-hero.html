@@ -1,0 +1,11 @@
+{{- /* Page opening: words on linen beside one framed photograph. dict: html, s (split result) */ -}}
+<section class="page-hero">
+  <div class="wrap page-hero__grid">
+    <div class="page-hero__text flow">
+      {{ .html | safeHTML }}
+    </div>
+    <div class="page-hero__media">
+      {{- partial "brick/figure.html" (dict "src" .s.src "alt" .s.alt "caption" .s.caption "ratio" "4:3" "eager" true "sizes" "(min-width: 56em) 46vw, calc(100vw - 3rem)") -}}
+    </div>
+  </div>
+</section>

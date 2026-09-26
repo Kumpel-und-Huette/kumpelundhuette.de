@@ -1,19 +1,12 @@
-
 {{- $inner := . -}}
-{{- if or (eq $inner "") (eq $inner nil) -}}
-    {{- $inner = "" -}}
-    {{- with page.Site.GetPage "bricks/team.md" -}}
-        {{- $inner = .RawContent -}}
-    {{- end -}}
-{{- end -}}
+{{- if not $inner -}}{{- with site.GetPage "bricks/team.md" -}}{{- $inner = .RawContent -}}{{- end -}}{{- end -}}
 {{- $inner = index (split $inner `<ul class="grid team">`) 0 -}}
-<section class="features">
-    <div class="container small">
-        {{- markdownify $inner -}}
-    </div>
-    <div class="container">
-        {{ partial "people.html" . }}
-    </div>
+{{- $html := partial "md.html" $inner -}}
+<section class="brick brick--team">
+  <div class="wrap">
+    {{- if strings.TrimSpace (plainify $html) }}
+    <div class="section-head flow">{{ $html | safeHTML }}</div>
+    {{- end }}
+    {{ partial "people.html" (dict "level" (cond (gt (len (strings.TrimSpace (plainify $html))) 0) 3 2)) }}
+  </div>
 </section>
-
-

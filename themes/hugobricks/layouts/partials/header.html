@@ -1,0 +1,61 @@
+{{- $d := index hugo.Data site.Language.Lang -}}
+{{- $c := partial "contact-data.html" . -}}
+{{- $here := .RelPermalink -}}
+<header class="site-header{{ if .IsHome }} site-header--over{{ end }}" data-header>
+  <div class="site-header__bar">
+    <a class="brand" href="{{ relLangURL "/" }}"{{ if .IsHome }} aria-current="page"{{ end }}>
+      <span class="brand__name">{{ $d.header.logo_title | default "Kumpel & Hütte" }}</span>
+      <span class="visually-hidden">, {{ i18n "home" }}</span>
+    </a>
+
+    <nav class="nav" id="site-nav" aria-label="{{ i18n "nav_main" }}">
+      <ul class="nav__list">
+        {{- range $i, $item := $d.header.menuitems -}}
+          {{- $children := where (.items | default slice) "title" "!=" nil -}}
+          {{- if $children -}}
+            {{- $current := false -}}
+            {{- range $children }}{{ if hasPrefix $here .link }}{{ $current = true }}{{ end }}{{ end -}}
+            <li class="nav__item nav__item--sub{{ if $current }} is-current{{ end }}">
+              <button class="nav__link nav__toggle" type="button" aria-expanded="false" aria-controls="nav-sub-{{ $i }}" data-sub-toggle>
+                <span>{{ .title }}</span>{{ partial "icon.html" "chevron" }}
+              </button>
+              <ul class="nav__sub" id="nav-sub-{{ $i }}">
+                {{- range $children -}}
+                <li><a class="nav__sublink" href="{{ .link }}"{{ if eq $here .link }} aria-current="page"{{ end }}>{{ .title }}</a></li>
+                {{- end -}}
+              </ul>
+            </li>
+          {{- else -}}
+            <li class="nav__item{{ if hasPrefix $here .link }} is-current{{ end }}">
+              <a class="nav__link" href="{{ .link }}"{{ if eq $here .link }} aria-current="page"{{ end }}>{{ .title }}</a>
+            </li>
+          {{- end -}}
+        {{- end -}}
+        {{- with $d.header.cta -}}{{- if .active -}}
+            <li class="nav__item{{ if hasPrefix $here .link }} is-current{{ end }}">
+              <a class="nav__link" href="{{ .link }}"{{ if eq $here .link }} aria-current="page"{{ end }}>{{ .title }}</a>
+            </li>
+        {{- end -}}{{- end -}}
+        {{- range .Translations -}}
+            <li class="nav__item nav__item--lang">
+              <a class="nav__link" href="{{ .RelPermalink }}" hreflang="{{ .Language.Lang }}" lang="{{ .Language.Lang }}"><span class="nav__lang-short" aria-hidden="true">{{ upper .Language.Lang }}</span><span class="nav__lang-long">{{ .Language.Label }}</span></a>
+            </li>
+        {{- end -}}
+      </ul>
+      <div class="nav__contact">
+        <a class="button button--call" href="{{ $c.tel }}">{{ partial "icon.html" "phone" }}<span>{{ $c.phone }}</span></a>
+        <a class="button button--quiet" href="mailto:{{ $c.email }}">{{ partial "icon.html" "mail" }}<span>{{ $c.email }}</span></a>
+        {{- with $c.hours }}<p class="nav__hours">{{ . }}</p>{{ end }}
+      </div>
+    </nav>
+
+    <div class="site-header__actions">
+      <a class="icon-button icon-button--mail" href="mailto:{{ $c.email }}" aria-label="{{ i18n "mail_label" }}: {{ $c.email }}" title="{{ $c.email }}">{{ partial "icon.html" "mail" }}</a>
+      <a class="button button--call button--header" href="{{ $c.tel }}" aria-label="{{ i18n "call" }}: {{ $c.phone }}">{{ partial "icon.html" "phone" }}<span>{{ i18n "call" }}</span></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav" data-menu-toggle>
+        <span class="menu-toggle__open">{{ partial "icon.html" "menu" }}<span>{{ i18n "menu_open" }}</span></span>
+        <span class="menu-toggle__close">{{ partial "icon.html" "close" }}<span>{{ i18n "menu_close" }}</span></span>
+      </button>
+    </div>
+  </div>
+</header>

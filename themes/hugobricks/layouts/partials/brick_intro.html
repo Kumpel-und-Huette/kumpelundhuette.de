@@ -10,5 +10,5 @@
   <div class="hero__card">
     {{ replace (partial "md.html" $s.body) "<h1 " `<h1 id="hero-title" ` 1 | replaceRE `<h1 id="hero-title" id="[^"]*"` `<h1 id="hero-title"` | safeHTML }}
   </div>
-  {{- with $s.caption }}<p class="hero__caption">{{ . }}</p>{{ end }}
+  {{- with and site.Params.showImageCaptions $s.caption }}<p class="hero__caption">{{ . }}</p>{{ end }}
 </section>

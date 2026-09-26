@@ -4,6 +4,6 @@
   <div class="photo__frame">
     {{- partial "img.html" (dict "src" . "alt" $.alt "sizes" ($.sizes | default "(min-width: 64em) 34rem, 100vw") "ratio" $.ratio "eager" $.eager "widths" (slice 480 640 800 1000 1200)) -}}
   </div>
-  {{- with $.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
+  {{- with and site.Params.showImageCaptions $.caption }}<figcaption>{{ . | markdownify }}</figcaption>{{ end -}}
 </figure>
 {{- end -}}

@@ -4,6 +4,9 @@ theme: hugobricks
 defaultContentLanguage: de
 assetDir: static
 
+params:
+  showImageCaptions: false
+
 module:
   mounts:
     - source: static

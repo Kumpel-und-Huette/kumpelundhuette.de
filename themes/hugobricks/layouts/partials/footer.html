@@ -20,6 +20,14 @@
         <li><a href="mailto:{{ $c.email }}">{{ partial "icon.html" "mail" }}<span>{{ $c.email }}</span></a></li>
         {{- with $c.hours }}<li>{{ partial "icon.html" "clock" }}<span>{{ . }}</span></li>{{ end }}
       </ul>
+      {{- with $d.footer.socials }}
+      <h2 class="site-footer__heading site-footer__heading--follow">{{ i18n "follow_us" }}</h2>
+      <ul class="contact-list">
+        {{- range . }}
+        <li><a href="{{ .link | safeURL }}" rel="me noopener">{{ with .icon }}{{ partial "icon.html" . }}{{ end }}<span>{{ .title }}</span></a></li>
+        {{- end }}
+      </ul>
+      {{- end }}
     </div>
     <nav class="site-footer__nav" aria-label="{{ i18n "nav_footer" }}">
       <ul>

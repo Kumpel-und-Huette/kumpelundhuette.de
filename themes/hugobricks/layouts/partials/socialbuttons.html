@@ -1,7 +1,10 @@
 {{- with (index hugo.Data site.Language.Lang).footer.socials -}}
-<ul class="social-links" role="list">
-  {{- range . }}
-  <li><a href="{{ .link | safeURL }}" rel="noopener">{{ .title }}</a></li>
-  {{- end }}
-</ul>
+<div class="social">
+  <p class="social__label">{{ i18n "follow_us" }}</p>
+  <ul class="social-links" role="list">
+    {{- range . }}
+    <li><a href="{{ .link | safeURL }}" rel="me noopener">{{ with .icon }}{{ partial "icon.html" . }}{{ end }}<span>{{ .title }}</span></a></li>
+    {{- end }}
+  </ul>
+</div>
 {{- end -}}

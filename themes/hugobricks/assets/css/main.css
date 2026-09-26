@@ -370,6 +370,13 @@ mark { background: rgb(217 154 43 / 0.35); color: inherit; padding: 0 0.15em; bo
 .contact-actions { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.75rem; margin-top: 1.5rem; }
 .contact-actions li { margin: 0; }
 .contact-actions .button { overflow-wrap: anywhere; }
+.contact__text > .social { margin-top: 2rem; }
+.social__label { font-size: var(--step--1); font-weight: 700; color: var(--ink-soft); }
+ul.social-links { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.25rem 1.75rem; margin-top: 0.35rem; }
+ul.social-links > li { margin: 0; }
+.social-links a { display: inline-flex; align-items: center; gap: 0.55em; min-height: 2.75rem; color: var(--ink); font-weight: 700; text-decoration: none; }
+.social-links a:hover { color: var(--brick-deep); text-decoration: underline; }
+.social-links .icon { width: 1.4em; height: 1.4em; color: var(--brick); }
 .contact__form { padding: clamp(1.5rem, 3vw, 2.5rem); background: var(--paper); border-radius: var(--radius); box-shadow: 0 0 0 1px var(--line), 0 24px 40px -30px rgb(43 34 28 / 0.4); }
 @media (min-width: 60em) {
   .contact { grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); }
@@ -445,6 +452,7 @@ mark { background: rgb(217 154 43 / 0.35); color: inherit; padding: 0 0.15em; bo
 .contact-list, .site-footer__nav ul { list-style: none; padding: 0; display: grid; gap: 0.15rem; }
 .contact-list li, .contact-list a, .site-footer__nav a { display: inline-flex; align-items: center; gap: 0.6em; min-height: 2.75rem; overflow-wrap: anywhere; }
 .contact-list .icon { color: #f2c46d; }
+.site-footer__heading--follow { margin-top: 1.75rem; }
 .site-footer__base { margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid rgb(255 255 255 / 0.14); color: #cbbfae; font-size: var(--step--1); }
 @media (min-width: 56em) {
   .site-footer__grid { grid-template-columns: 1.3fr 1fr 1fr; }

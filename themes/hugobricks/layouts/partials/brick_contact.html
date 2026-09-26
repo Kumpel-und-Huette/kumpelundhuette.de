@@ -6,6 +6,7 @@
     <div class="contact__text flow">
       {{ $html | safeHTML }}
       {{ partial "contactbuttons.html" . }}
+      {{ partial "socialbuttons.html" . }}
     </div>
     <div class="contact__form">
       {{- partial "form.html" (index hugo.Data site.Language.Lang).contactform -}}

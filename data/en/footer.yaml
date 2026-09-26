@@ -6,5 +6,11 @@ menuitems:
     link:  /en/imprint/
   - title: Privacy
     link:  /en/privacy/
-socials: []
+socials:
+  - title: Instagram
+    icon:  instagram
+    link:  https://www.instagram.com/kumpelundhuette/
+  - title: Facebook
+    icon:  facebook
+    link:  https://www.facebook.com/profile.php?id=61584077314572
 footer_text: Ⓒ <script>document.write(/\d{4}/.exec(Date())[0])</script> Kumpel und Huette Service UG | All rights reserved.

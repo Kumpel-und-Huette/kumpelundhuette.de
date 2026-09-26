@@ -487,6 +487,16 @@ ul.social-links > li { margin: 0; }
 .callbar__link--call { background: var(--brick); border-color: var(--brick); color: var(--paper); }
 .callbar__link:hover { color: inherit; }
 .callbar__link--call:hover { background: var(--brick-deep); color: var(--paper); }
+.js .callbar {
+  transform: translateY(100%);
+  visibility: hidden;
+  transition: transform 0.25s ease, visibility 0s linear 0.25s;
+}
+.js .callbar-on .callbar {
+  transform: none;
+  visibility: visible;
+  transition: transform 0.25s ease, visibility 0s;
+}
 body { padding-bottom: calc(4rem + env(safe-area-inset-bottom)); }
 .menu-open .callbar { display: none; }
 @media (min-width: 48em), (max-height: 30em) {

@@ -73,4 +73,20 @@
       header.classList.toggle("is-scrolled", !entry.isIntersecting);
     }).observe(sentinel);
   }
+
+  const callbar = document.querySelector(".callbar");
+  if (callbar) {
+    let ticking = false;
+    const update = () => {
+      ticking = false;
+      body.classList.toggle("callbar-on", window.scrollY > 200);
+    };
+    window.addEventListener("scroll", () => {
+      if (!ticking) {
+        ticking = true;
+        requestAnimationFrame(update);
+      }
+    }, { passive: true });
+    update();
+  }
 })();

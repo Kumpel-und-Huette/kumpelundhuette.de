@@ -17,6 +17,19 @@ Eigenes Zimmer, echte Gesellschaft und Pflege von unserem eigenen Team – in Do
 Kumpel & Hütte Service ist mehr als ein Ort zum Wohnen – es ist ein echtes Zuhause. Kein Heim. Kein Hotel. Keine anonyme WG. Sondern ein vertrautes Miteinander für Menschen, die im Alter nicht allein, sondern in Gemeinschaft leben möchten – mit Würde, Humor und alltagstauglicher Unterstützung.
 
 {{< /brick_small >}}
+{{< brick_carousel >}}
+
+## Ein Blick in unser Haus
+
+Echte Fotos, keine Symbolbilder: So wohnen und leben wir in Lütgendortmund.
+
+![Langer Holztisch im hellen Wohn- und Essbereich, große Fenster zum Grün, dahinter die offene Küche](/uploads/photos/zuhause/wohnzimmer.jpg "Wohnzimmer | Am großen Esstisch kommen alle zusammen – zum Frühstück, zum Kaffee, zum Erzählen.")
+![Helle Einbauküche mit Holzarbeitsplatte, Backofen und Glasvitrinen](/uploads/photos/zuhause/kueche.jpg "Küche | Hier entstehen die gemeinsamen Mahlzeiten.")
+![Helles, leeres Zimmer mit Holzdielen, großem Fenster und Heizkörper](/uploads/photos/zuhause/zimmer.jpg "Ihr Zimmer | Ein Zimmer vor dem Einzug: hell, mit Holzboden und Platz für die eigenen Möbel.")
+![Duschbad mit bodengleicher Glasdusche, Wand-WC und Waschtisch](/uploads/photos/zuhause/bad.jpg "Duschbad | Eines unserer zwei Duschbäder, mit bodengleicher Dusche.")
+![Ein älterer Herr und ein jüngerer Mann lachend mit einer Bügelsäge im Wald zwischen Tannenbäumen](/uploads/photos/zuhause/ausflug.jpg "Unterwegs | Gemeinsam zum Weihnachtsbaumschlagen – jeder kann mitmachen, niemand muss.")
+
+{{< /brick_carousel >}}
 {{< brick_image2 >}}
 
 ## Was wir bieten?

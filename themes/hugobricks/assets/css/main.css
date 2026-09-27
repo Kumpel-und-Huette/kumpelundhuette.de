@@ -424,6 +424,87 @@ ul.social-links > li { margin: 0; }
 .gallery__item .photo__frame { padding: 0.35rem; border-radius: 12px; }
 .gallery__item img { border-radius: 8px; aspect-ratio: 1; object-fit: cover; }
 
+/* Photo tour: one photo in a fixed oak frame, a paper label under it, named thumbnails to pick */
+.tour { display: grid; gap: clamp(1.25rem, 3vw, 2rem); grid-template-areas: "head" "stage" "tabs" "foot"; }
+.tour__head { grid-area: head; margin-bottom: 0; }
+.tour__stage {
+  --pad: clamp(0.4rem, 0.8vw, 0.65rem);
+  grid-area: stage;
+  min-width: 0;
+  padding: var(--pad);
+  background: var(--oak);
+  border-radius: var(--radius-lg);
+  box-shadow: 0 22px 40px -26px rgb(43 34 28 / 0.55);
+}
+.tour__track {
+  position: relative;
+  display: flex;
+  gap: var(--pad);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow-x: auto;
+  overscroll-behavior-x: contain;
+  scroll-snap-type: x mandatory;
+  border-radius: calc(var(--radius-lg) - 6px);
+  scrollbar-color: var(--ink-soft) transparent;
+}
+.js .tour__track { scrollbar-width: none; }
+.js .tour__track::-webkit-scrollbar { display: none; }
+.tour__track:focus-visible { outline-offset: 4px; }
+.tour__slide { flex: 0 0 100%; scroll-snap-align: start; scroll-snap-stop: always; }
+.tour__slide figure { display: flex; flex-direction: column; height: 100%; margin: 0; overflow: hidden; background: var(--paper); border-radius: calc(var(--radius-lg) - 6px); }
+.tour__slide img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--oat); }
+.tour__slide figcaption { flex: 1; padding: 0.85rem 1.1rem 1rem; line-height: 1.45; }
+.tour__label { display: block; font-family: var(--serif); font-size: var(--step-2); font-weight: 700; line-height: 1.25; }
+.tour__text { display: block; margin-top: 0.2rem; color: var(--ink-soft); font-size: var(--step-0); text-wrap: pretty; }
+.tour__text p { margin: 0; }
+
+.tour__tabs { grid-area: tabs; display: grid; grid-template-columns: repeat(5, minmax(0, 1fr)); gap: 0.5rem; margin: 0; padding: 0; list-style: none; }
+.tour__tabs[hidden] { display: none; }
+.tour__tab {
+  display: grid;
+  gap: 0.4rem;
+  justify-items: center;
+  width: 100%;
+  min-height: 2.75rem;
+  padding: 0.3rem;
+  border: 0;
+  border-radius: var(--radius);
+  background: transparent;
+  color: var(--ink);
+  font: inherit;
+  text-align: center;
+  cursor: pointer;
+  transition: background-color 0.2s ease;
+}
+.tour__thumb { display: block; width: 100%; overflow: hidden; border-radius: 4px; box-shadow: 0 0 0 1px var(--line); transition: box-shadow 0.2s ease; }
+.tour__thumb img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; background: var(--oat); }
+.tour__tab-label { font-size: var(--step--1); font-weight: 700; line-height: 1.25; text-decoration: underline 3px transparent; text-underline-offset: 0.3em; transition: text-decoration-color 0.2s ease; }
+.tour__tab:hover .tour__thumb { box-shadow: 0 0 0 2px var(--ink-soft); }
+.tour__tab:hover .tour__tab-label { text-decoration-color: rgb(217 154 43 / 0.5); }
+.tour__tab[aria-current="true"] .tour__thumb { box-shadow: 0 0 0 3px var(--ochre); }
+.tour__tab[aria-current="true"] .tour__tab-label { text-decoration-color: var(--ochre); }
+.tour__foot { grid-area: foot; margin: 0; }
+@media (max-width: 29.99em) {
+  .tour__tab-label { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+}
+@media (min-width: 56em) {
+  .tour {
+    grid-template-columns: minmax(0, 1.6fr) minmax(0, 1fr);
+    grid-template-rows: auto auto 1fr;
+    grid-template-areas: "head head" "stage tabs" "stage foot";
+    column-gap: clamp(2rem, 4vw, 3.5rem);
+    align-items: start;
+  }
+  .tour__stage { align-self: start; }
+  .tour__tabs { grid-template-columns: 1fr; gap: 0.3rem; }
+  .tour__tab { grid-template-columns: 5rem 1fr; justify-items: start; align-items: center; gap: 1rem; padding: 0.4rem; text-align: left; }
+  .tour__tab:hover { background: rgb(231 219 200 / 0.6); }
+  .tour__tab[aria-current="true"] { background: var(--paper); box-shadow: 0 0 0 1px var(--line); }
+  .tour__tab-label { font-family: var(--serif); font-size: var(--step-1); font-weight: 600; }
+}
+
 /* Video links */
 .video { margin-block: 1.5em; }
 .video__link { position: relative; display: block; color: var(--paper); text-decoration: none; }

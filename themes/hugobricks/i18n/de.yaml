@@ -72,3 +72,8 @@ error_text: "Die Seite gibt es nicht oder nicht mehr. Hier geht es sicher weiter
 error_home: Zur Startseite
 steps_jump: Auf dieser Seite
 video_play: Video ansehen (öffnet externe Seite)
+carousel_label: Fotostrecke
+carousel_slide: Foto
+carousel_position: "{{ .n }} von {{ .total }}"
+carousel_cta: Das Haus persönlich ansehen
+carousel_pick: Foto auswählen

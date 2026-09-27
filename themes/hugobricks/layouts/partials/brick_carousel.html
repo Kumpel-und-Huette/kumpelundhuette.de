@@ -1,0 +1,58 @@
+{{- /*
+  Photo tour: one framed photo at a time, with named thumbnails to pick from.
+  Inner markdown: heading and lede, then one image per line:
+  ![Alt text](/path.jpg "Room name | Caption")
+  Without JS the stage is a plain swipeable, snapping row and the thumbnails stay hidden.
+*/ -}}
+{{- $inner := . -}}
+{{- $imgRE := `(?m)^!\[([^\]]*)\]\(\s*(\S+?)(?:\s+"([^"]*)")?\s*\)\s*$` -}}
+{{- $found := findRESubmatch $imgRE $inner -}}
+{{- $headHTML := partial "md.html" (replaceRE $imgRE "" $inner) | replaceRE `<(/?)h1` "<${1}h2" -}}
+{{- $id := printf "tour-%s" (substr (md5 $inner) 0 6) -}}
+{{- $count := len $found -}}
+{{- $slides := slice -}}
+{{- range $found -}}
+  {{- $parts := split (index . 3) "|" -}}
+  {{- $label := strings.TrimSpace (index $parts 0) -}}
+  {{- $text := "" -}}
+  {{- if gt (len $parts) 1 }}{{ $text = strings.TrimSpace (delimit (after 1 $parts) "|") }}{{ end -}}
+  {{- $slides = $slides | append (dict "alt" (index . 1) "src" (index . 2) "label" $label "text" $text) -}}
+{{- end -}}
+{{- if $count -}}
+<section class="brick brick--tour" aria-roledescription="{{ i18n "carousel_label" }}" aria-labelledby="{{ $id }}-title">
+  <div class="wrap tour" data-tour>
+    <div class="tour__head section-head flow">
+      {{ $headHTML | replaceRE `<h2` (printf `<h2 id="%s-title"` $id) | safeHTML }}
+    </div>
+
+    <div class="tour__stage">
+      <ul class="tour__track" id="{{ $id }}-track" role="list" tabindex="0" aria-label="{{ i18n "carousel_label" }}">
+        {{- range $i, $s := $slides }}
+        <li class="tour__slide" id="{{ $id }}-{{ add $i 1 }}" aria-roledescription="{{ i18n "carousel_slide" }}" role="group" aria-label="{{ i18n "carousel_position" (dict "n" (add $i 1) "total" $count) }}{{ with $s.label }}: {{ . }}{{ end }}">
+          <figure>
+            {{- partial "img.html" (dict "src" $s.src "alt" $s.alt "ratio" "4:3" "sizes" "(min-width: 56em) 40rem, 100vw" "widths" (slice 480 720 960 1024) "quality" 80) -}}
+            <figcaption>
+              {{- with $s.label }}<span class="tour__label">{{ . }}</span>{{ end -}}
+              {{- with $s.text }}<span class="tour__text">{{ . | markdownify }}</span>{{ end -}}
+            </figcaption>
+          </figure>
+        </li>
+        {{- end }}
+      </ul>
+    </div>
+
+    <ol class="tour__tabs" role="list" aria-label="{{ i18n "carousel_pick" }}" data-tour-tabs hidden>
+      {{- range $i, $s := $slides }}
+      <li>
+        <button type="button" class="tour__tab" aria-controls="{{ $id }}-{{ add $i 1 }}"{{ if eq $i 0 }} aria-current="true"{{ end }}>
+          <span class="tour__thumb">{{ partial "img.html" (dict "src" $s.src "alt" "" "ratio" "4:3" "sizes" "6rem" "widths" (slice 160 240)) }}</span>
+          <span class="tour__tab-label">{{ $s.label | default (add $i 1) }}</span>
+        </button>
+      </li>
+      {{- end }}
+    </ol>
+
+    <p class="tour__foot"><a class="link-arrow" href="{{ with site.GetPage "/kontakt" }}{{ .RelPermalink }}{{ else }}/kontakt/{{ end }}"><span>{{ i18n "carousel_cta" }}</span>{{ partial "icon.html" "arrow" }}</a></p>
+  </div>
+</section>
+{{- end -}}

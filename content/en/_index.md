@@ -17,6 +17,19 @@ Your own room, real company and care from our own team – in Dortmund-Lütgendo
 Kumpel & Hütte Service is more than a place to live – it is a real home. Not a care home. Not a hotel. Not an anonymous shared flat. Instead, a familiar community for people who want to grow old together rather than alone – with dignity, humour and practical everyday support.
 
 {{< /brick_small >}}
+{{< brick_carousel >}}
+
+## A look inside our house
+
+Real photos, not stock images: this is how we live in Lütgendortmund.
+
+![Long wooden table in the bright living and dining area, large windows onto greenery, the open kitchen behind](/uploads/photos/zuhause/wohnzimmer.jpg "Living room | Everyone comes together at the big dining table – for breakfast, coffee and a good chat.")
+![Bright fitted kitchen with wooden worktop, oven and glass-front cabinets](/uploads/photos/zuhause/kueche.jpg "Kitchen | This is where our shared meals are made.")
+![Bright, empty room with wooden floorboards, a large window and a radiator](/uploads/photos/zuhause/zimmer.jpg "Your room | A room before move-in: bright, with a wooden floor and space for your own furniture.")
+![Shower room with a floor-level glass shower, wall-hung toilet and washbasin](/uploads/photos/zuhause/bad.jpg "Shower room | One of our two shower rooms, with a floor-level shower.")
+![An older man and a younger man laughing, holding a bow saw in a forest among fir trees](/uploads/photos/zuhause/ausflug.jpg "Out and about | Out together to cut a Christmas tree – everyone can join in, nobody has to.")
+
+{{< /brick_carousel >}}
 {{< brick_image2 >}}
 
 ## What we offer

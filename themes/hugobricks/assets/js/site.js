@@ -74,6 +74,65 @@
     }).observe(sentinel);
   }
 
+  const calm = window.matchMedia("(prefers-reduced-motion: reduce)");
+  document.querySelectorAll("[data-tour]").forEach((root) => {
+    const track = root.querySelector(".tour__track");
+    const tabList = root.querySelector("[data-tour-tabs]");
+    if (!track || !tabList) return;
+    const slides = [...track.children];
+    const tabs = [...tabList.querySelectorAll("button")];
+    let active = 0;
+    let ticking = false;
+
+    const mark = (i) => {
+      if (i === active) return;
+      active = i;
+      tabs.forEach((t, n) => {
+        if (n === i) t.setAttribute("aria-current", "true");
+        else t.removeAttribute("aria-current");
+      });
+    };
+
+    let target = -1;
+    let release = 0;
+    const show = (i) => {
+      target = i;
+      clearTimeout(release);
+      release = setTimeout(() => { target = -1; }, 900);
+      track.scrollTo({ left: slides[i].offsetLeft, behavior: calm.matches ? "auto" : "smooth" });
+      mark(i);
+    };
+
+    tabs.forEach((t, i) => t.addEventListener("click", () => show(i)));
+
+    tabList.addEventListener("keydown", (e) => {
+      const dir = { ArrowRight: 1, ArrowDown: 1, ArrowLeft: -1, ArrowUp: -1 }[e.key];
+      const from = tabs.indexOf(document.activeElement);
+      if (!dir || from < 0) return;
+      e.preventDefault();
+      const to = (from + dir + tabs.length) % tabs.length;
+      tabs[to].focus();
+      show(to);
+    });
+
+    track.addEventListener("scroll", () => {
+      if (ticking) return;
+      ticking = true;
+      requestAnimationFrame(() => {
+        ticking = false;
+        const step = slides[1] ? slides[1].offsetLeft - slides[0].offsetLeft : track.clientWidth;
+        const i = Math.min(slides.length - 1, Math.max(0, Math.round(track.scrollLeft / step)));
+        if (target >= 0) {
+          if (i !== target) return;
+          target = -1;
+        }
+        mark(i);
+      });
+    }, { passive: true });
+
+    tabList.hidden = false;
+  });
+
   const callbar = document.querySelector(".callbar");
   if (callbar) {
     let ticking = false;

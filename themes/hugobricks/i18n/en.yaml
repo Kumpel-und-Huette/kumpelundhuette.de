@@ -72,3 +72,8 @@ error_text: "This page does not exist or no longer exists. Here is a safe way on
 error_home: Back to the home page
 steps_jump: On this page
 video_play: Watch the video (opens external site)
+carousel_label: Photo series
+carousel_slide: Photo
+carousel_position: "{{ .n }} of {{ .total }}"
+carousel_cta: See the house in person
+carousel_pick: Choose a photo

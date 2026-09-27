@@ -9,7 +9,7 @@ Your own room, real company and care from our own team – in Dortmund-Lütgendo
 
 {{< button "Call: +49 160 90889269" "tel:+4916090889269" >}} {{< button2 "Arrange a visit" "/en/contact/" >}}
 
-![The kitchen of our shared home in Lütgendortmund in the evening, in warm light](/plates/hero-photo.png "The kitchen in our shared home in Lütgendortmund")
+![Robin and Juli smiling with two older people in the warmly lit kitchen of our shared home in Lütgendortmund](/plates/hero-people.jpg "Together in the kitchen of our shared home in Lütgendortmund")
 
 {{< /brick_intro >}}
 {{< brick_small >}}

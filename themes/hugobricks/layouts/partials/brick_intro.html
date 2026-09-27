@@ -4,7 +4,7 @@
 <section class="hero" aria-labelledby="hero-title">
   {{- with $s.src }}
   <div class="hero__photo">
-    {{- partial "img.html" (dict "src" . "alt" $s.alt "sizes" "100vw" "widths" (slice 640 960 1280 1600 1920) "ratio" "16:9" "eager" true "class" "hero__img" "anchor" "Center") -}}
+    {{- partial "img.html" (dict "src" . "alt" $s.alt "sizes" "100vw" "widths" (slice 640 960 1280 1600 1920 2560) "ratio" "16:9" "quality" 84 "eager" true "class" "hero__img" "anchor" "Center") -}}
   </div>
   {{- end }}
   <div class="hero__card">

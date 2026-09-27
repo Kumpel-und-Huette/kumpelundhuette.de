@@ -1,7 +1,8 @@
 {{- /*
   Responsive image from the asset tree (static/ is the asset dir).
-  dict: src, alt, sizes, widths, ratio ("4:3"), class, eager, anchor
+  dict: src, alt, sizes, widths, ratio ("4:3"), class, eager, anchor, quality
 */ -}}
+{{- $q := .quality | default 74 -}}
 {{- $src := .src | default "" -}}
 {{- $alt := .alt | default "" -}}
 {{- $class := .class | default "" -}}
@@ -27,9 +28,9 @@
     {{- if $rw -}}
       {{- $h := div (mul $w $rh) $rw -}}
       {{- if gt $h $res.Height -}}{{- $h = $res.Height -}}{{- $w = div (mul $h $rw) $rh -}}{{- end -}}
-      {{- $img = $res.Fill (printf "%dx%d webp q74 %s" $w $h $anchor) -}}
+      {{- $img = $res.Fill (printf "%dx%d webp q%d %s" $w $h $q $anchor) -}}
     {{- else -}}
-      {{- $img = $res.Resize (printf "%dx webp q74" $w) -}}
+      {{- $img = $res.Resize (printf "%dx webp q%d" $w $q) -}}
     {{- end -}}
     {{- if or (not $last) (ne $img.Width $last.Width) -}}
       {{- $srcset = $srcset | append (printf "%s %dw" $img.RelPermalink $img.Width) -}}

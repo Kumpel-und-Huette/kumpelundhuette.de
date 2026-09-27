@@ -414,15 +414,15 @@ html:not(.js) .nav { display: block; position: static; }
   margin-top: calc(-1 * var(--header-h));
   padding-bottom: 1rem;
 }
-.hero__photo { position: relative; height: min(68svh, 34rem); min-height: 20rem; overflow: hidden; }
+.hero__photo { position: relative; aspect-ratio: 6 / 5; min-height: 18rem; overflow: hidden; }
 .hero__photo::after {
   content: "";
   position: absolute;
   inset: 0;
-  background: linear-gradient(to bottom, rgb(24 14 8 / 0.7) 0, rgb(24 14 8 / 0.5) var(--header-h), rgb(24 14 8 / 0.12) calc(var(--header-h) + 5rem), rgb(24 14 8 / 0) 34%);
+  background: linear-gradient(to bottom, rgb(24 14 8 / 0.6) 0, rgb(24 14 8 / 0.25) calc(var(--header-h) * 0.8), rgb(24 14 8 / 0) calc(var(--header-h) + 1.5rem));
   pointer-events: none;
 }
-.hero__img { width: 100%; height: 100%; object-fit: cover; object-position: 50% 45%; }
+.hero__img { width: 100%; height: 100%; object-fit: cover; object-position: 49% 30%; }
 .hero__card {
   position: relative;
   z-index: 1;
@@ -474,7 +474,9 @@ html:not(.js) .nav { display: block; position: static; }
 
 @media (min-width: 48em) {
   .hero { background: var(--coal); padding-bottom: 0; }
-  .hero__photo { height: max(min(100svh, 56.25vw), 34rem); max-height: 60rem; min-height: 0; }
+  .hero__photo { aspect-ratio: auto; height: max(min(100svh, 56.25vw), 34rem); max-height: 60rem; min-height: 0; }
+  .hero__photo::after { background: linear-gradient(to bottom, rgb(24 14 8 / 0.7) 0, rgb(24 14 8 / 0.5) var(--header-h), rgb(24 14 8 / 0.12) calc(var(--header-h) + 5rem), rgb(24 14 8 / 0) 34%); }
+  .hero__img { object-position: 50% 45%; }
   .hero__card {
     position: absolute;
     left: var(--gutter);

@@ -9,7 +9,7 @@ Eigenes Zimmer, echte Gesellschaft und Pflege von unserem eigenen Team – in Do
 
 {{< button "Anrufen: 0160 90889269" "tel:+4916090889269" >}} {{< button2 "Besuch vereinbaren" "/kontakt/" >}}
 
-![Die Küche unserer Wohngemeinschaft in Lütgendortmund am Abend, in warmem Licht](/plates/hero-photo.png "Die Küche in unserer Wohngemeinschaft in Lütgendortmund")
+![Robin und Juli lächelnd mit zwei älteren Menschen in der warm beleuchteten Küche unserer Wohngemeinschaft in Lütgendortmund](/plates/hero-people.jpg "Gemeinsam in der Küche unserer Wohngemeinschaft in Lütgendortmund")
 
 {{< /brick_intro >}}
 {{< brick_small >}}

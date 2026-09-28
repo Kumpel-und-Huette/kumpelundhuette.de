@@ -199,21 +199,30 @@ mark { background: rgb(217 154 43 / 0.35); color: inherit; padding: 0 0.15em; bo
 .faq__item summary:hover { color: var(--brick-deep); }
 .faq__answer { padding: 0 1.25rem 1.25rem; color: var(--ink-soft); }
 
-/* Sections that used to be tabs */
+/* Tabbed sections */
 .sections { display: grid; gap: clamp(1.5rem, 3vw, 2.5rem); margin-block: 1.5em; }
-.jumplist ul { list-style: none; padding: 0; display: flex; flex-wrap: wrap; gap: 0.5rem; }
-.jumplist a {
+.sections.is-tabbed { gap: 1rem; }
+.tabs__list { display: flex; flex-wrap: wrap; align-items: center; gap: 0.5rem; }
+.tabs__list[hidden] { display: none; }
+.tabs__tab {
   display: inline-flex;
   align-items: center;
   min-height: 2.75rem;
+  margin: 0;
   padding: 0.4rem 1rem;
+  border: 0;
   border-radius: 999px;
   background: var(--oat);
   color: var(--ink);
+  font: inherit;
   font-weight: 700;
-  text-decoration: none;
+  line-height: 1.25;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease;
 }
-.jumplist a:hover { background: var(--ink); color: var(--paper); }
+.tabs__tab:hover { background: rgb(217 154 43 / 0.28); }
+.tabs__tab[aria-selected="true"] { background: var(--ink); color: var(--paper); }
+.sections__part[hidden] { display: none; }
 .sections__part {
   padding: clamp(1.25rem, 3vw, 2.25rem);
   background: var(--paper);

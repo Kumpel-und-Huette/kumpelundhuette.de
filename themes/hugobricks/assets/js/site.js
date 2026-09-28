@@ -133,6 +133,50 @@
     tabList.hidden = false;
   });
 
+  document.querySelectorAll("[data-tabs]").forEach((root) => {
+    const list = root.querySelector("[role=tablist]");
+    if (!list) return;
+    const tabs = [...list.querySelectorAll("[role=tab]")];
+    const panels = tabs.map((t) => document.getElementById(t.getAttribute("aria-controls")));
+
+    const select = (i, focus) => {
+      tabs.forEach((t, n) => {
+        const on = n === i;
+        t.setAttribute("aria-selected", String(on));
+        t.tabIndex = on ? 0 : -1;
+        panels[n].hidden = !on;
+      });
+      if (focus) tabs[i].focus();
+    };
+
+    tabs.forEach((t, i) => t.addEventListener("click", () => select(i)));
+
+    list.addEventListener("keydown", (e) => {
+      const from = tabs.indexOf(document.activeElement);
+      if (from < 0) return;
+      const to = { ArrowRight: from + 1, ArrowLeft: from - 1, Home: 0, End: tabs.length - 1 }[e.key];
+      if (to === undefined) return;
+      e.preventDefault();
+      select((to + tabs.length) % tabs.length, true);
+    });
+
+    const fromHash = () => {
+      let target = null;
+      try { target = location.hash && document.getElementById(decodeURIComponent(location.hash.slice(1))); } catch { target = null; }
+      const i = target ? panels.findIndex((p) => p.contains(target)) : -1;
+      if (i < 0) return false;
+      select(i);
+      target.scrollIntoView();
+      return true;
+    };
+
+    panels.forEach((p) => p.setAttribute("role", "tabpanel"));
+    root.classList.add("is-tabbed");
+    list.hidden = false;
+    if (!fromHash()) select(0);
+    window.addEventListener("hashchange", fromHash);
+  });
+
   const mores = [...document.querySelectorAll(".person__more")];
   if (mores.length) {
     const fit = () => {

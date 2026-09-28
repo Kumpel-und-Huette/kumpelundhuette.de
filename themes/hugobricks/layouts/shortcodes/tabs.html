@@ -1,4 +1,4 @@
-{{- /* Sections separated by --- inside {{< tabs >}}. Shown one after another so nothing hides behind a click; a jump list leads the way. */ -}}
+{{- /* Sections separated by --- inside {{< tabs >}}. Without JS every section is shown; with JS only the selected one is. */ -}}
 {{- $inner := .Inner | default "" -}}
 {{- $items := slice -}}
 {{- range $i, $part := split $inner "\n---" -}}
@@ -11,18 +11,16 @@
   {{- end -}}
   {{- $items = $items | append (dict "id" $id "title" $title "html" $html) -}}
 {{- end -}}
-<div class="sections">
+<div class="sections" data-tabs>
   {{- if gt (len $items) 1 }}
-  <nav class="jumplist" aria-label="{{ i18n "steps_jump" }}">
-    <ul role="list">
-      {{- range $items }}{{ if .title }}
-      <li><a href="#{{ .id }}">{{ .title }}</a></li>
-      {{- end }}{{ end }}
-    </ul>
-  </nav>
+  <div class="tabs__list" role="tablist" aria-label="{{ i18n "steps_jump" }}" hidden>
+    {{- range $i, $item := $items }}
+    <button type="button" class="tabs__tab" role="tab" id="tab-{{ .id }}" aria-controls="panel-{{ .id }}" aria-selected="{{ if eq $i 0 }}true{{ else }}false{{ end }}"{{ if ne $i 0 }} tabindex="-1"{{ end }}>{{ .title | default (printf "%d" (add $i 1)) }}</button>
+    {{- end }}
+  </div>
   {{- end }}
   {{- range $items }}
-  <section class="sections__part flow">
+  <section class="sections__part flow" id="panel-{{ .id }}" aria-labelledby="tab-{{ .id }}">
     {{ .html | safeHTML }}
   </section>
   {{- end }}

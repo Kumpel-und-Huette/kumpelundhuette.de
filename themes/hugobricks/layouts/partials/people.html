@@ -1,25 +1,30 @@
 {{- $h := printf "h%d" (.level | default 3) -}}
 <ul class="people" role="list">
-  {{- range (index hugo.Data site.Language.Lang).people }}
+  {{- range $i, $p := (index hugo.Data site.Language.Lang).people }}
   {{- $mail := .email | default .mail }}
   <li class="person">
     {{- with .image }}
     <figure class="person__photo photo">
       <div class="photo__frame">
-        {{- partial "img.html" (dict "src" . "alt" "" "ratio" "4:5" "sizes" "(min-width: 60em) 22rem, 90vw" "widths" (slice 360 540 720 900) "anchor" "Top") -}}
+        {{- partial "img.html" (dict "src" . "alt" "" "ratio" "4:5" "sizes" "(min-width: 64em) 23rem, (min-width: 40em) 45vw, 90vw" "widths" (slice 360 540 720 900) "anchor" "Top") -}}
       </div>
     </figure>
+    {{- else }}
+    <div class="person__photo" aria-hidden="true"></div>
     {{- end }}
-    <div class="person__text flow">
+    <div class="person__head">
       {{ printf "<%s class=\"person__name\">" $h | safeHTML }}{{ strings.TrimSpace .name }}{{ printf "</%s>" $h | safeHTML }}
       {{- with .function }}<p class="person__role">{{ . | safeHTML }}</p>{{ end }}
-      {{- with .description }}<p class="person__words">{{ . | safeHTML }}</p>{{ end }}
-      {{- if or $mail .phone }}
-      <p class="person__contact">
-        {{- with .phone }}<a href="tel:{{ replaceRE `[^+0-9]` "" . }}">{{ partial "icon.html" "phone" }}<span>{{ . }}</span></a>{{ end }}
-        {{- with $mail }}<a href="mailto:{{ . }}">{{ partial "icon.html" "mail" }}<span>{{ . }}</span></a>{{ end }}
-      </p>
+    </div>
+    <div class="person__intro">
+      {{- with .description }}
+      <p class="person__words" id="person-words-{{ $i }}">{{ . | safeHTML }}</p>
+      <button class="person__more" type="button" aria-expanded="false" aria-controls="person-words-{{ $i }}" data-more="{{ i18n "read_more" }}" data-less="{{ i18n "read_less" }}" hidden>{{ i18n "read_more" }}</button>
       {{- end }}
+    </div>
+    <div class="person__contact">
+      {{- with .phone }}<a href="tel:{{ replaceRE `[^+0-9]` "" . }}">{{ partial "icon.html" "phone" }}<span>{{ . }}</span></a>{{ end }}
+      {{- with $mail }}<a href="mailto:{{ . }}">{{ partial "icon.html" "mail" }}<span>{{ . }}</span></a>{{ end }}
     </div>
   </li>
   {{- end }}

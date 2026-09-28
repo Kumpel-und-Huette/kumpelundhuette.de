@@ -339,14 +339,41 @@ mark { background: rgb(217 154 43 / 0.35); color: inherit; padding: 0 0.15em; bo
 .article .brick--wide { padding-top: 0; }
 
 /* Team */
-.people { list-style: none; padding: 0; display: grid; gap: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem); grid-template-columns: repeat(auto-fill, minmax(min(100%, 17rem), 1fr)); }
-.person { display: grid; gap: 1.25rem; align-content: start; }
+/* Every card spans two tracks so a lone card in the last row can sit half a slot in, centred */
+.people { list-style: none; padding: 0; display: grid; gap: clamp(2.5rem, 5vw, 4rem) clamp(1.5rem, 4vw, 3rem); grid-template-columns: minmax(0, 1fr); max-width: 30rem; margin-inline: auto; }
+.person { display: grid; grid-template-rows: subgrid; grid-row: span 4; row-gap: 0; }
+.person__head { padding-top: 1.25rem; }
 .person__name { font-size: var(--step-2); }
-.person__role { color: var(--ochre-ink); font-weight: 700; }
-.person__text { --flow: 0.5em; }
+.person__role { color: var(--ochre-ink); font-weight: 700; margin-top: 0.35em; }
+.person__intro { display: flex; flex-direction: column; align-items: flex-start; padding-top: 0.85rem; }
 .person__words { color: var(--ink-soft); }
-.person__contact { display: grid; gap: 0.25rem; }
+.js .person__words:not(.is-open) { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 9; line-clamp: 9; overflow: hidden; }
+.person__more {
+  min-height: 2.75rem;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: var(--ochre-ink);
+  font-weight: 700;
+  text-decoration: underline;
+  text-decoration-color: transparent;
+  text-underline-offset: 0.2em;
+  transition: color 0.2s ease, text-decoration-color 0.2s ease;
+}
+.person__more:hover { color: var(--ink); text-decoration-color: currentColor; }
+.person__contact { display: grid; align-content: start; gap: 0.25rem; padding-top: 0.5rem; }
 .person__contact a { display: inline-flex; align-items: center; gap: 0.5em; min-height: 2.75rem; overflow-wrap: anywhere; }
+@media (min-width: 40em) {
+  .people { grid-template-columns: repeat(4, minmax(0, 1fr)); max-width: none; }
+  .person { grid-column: span 2; }
+  .person:last-child:nth-child(odd) { grid-column: 2 / span 2; }
+}
+@media (min-width: 64em) {
+  .people { grid-template-columns: repeat(6, minmax(0, 1fr)); }
+  .person:last-child:nth-child(odd) { grid-column: span 2; }
+  .person:last-child:nth-child(3n+1) { grid-column: 3 / span 2; }
+  .person:nth-last-child(2):nth-child(3n+1) { grid-column: 2 / span 2; }
+}
 
 /* Jobs */
 .jobs { display: grid; gap: 2.5rem; }

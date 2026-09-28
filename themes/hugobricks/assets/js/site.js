@@ -133,6 +133,29 @@
     tabList.hidden = false;
   });
 
+  const mores = [...document.querySelectorAll(".person__more")];
+  if (mores.length) {
+    const fit = () => {
+      mores.forEach((btn) => {
+        const words = document.getElementById(btn.getAttribute("aria-controls"));
+        if (!words || words.classList.contains("is-open")) return;
+        btn.hidden = words.scrollHeight <= words.clientHeight + 1;
+      });
+    };
+    mores.forEach((btn) => {
+      btn.addEventListener("click", () => {
+        const words = document.getElementById(btn.getAttribute("aria-controls"));
+        const open = btn.getAttribute("aria-expanded") !== "true";
+        words.classList.toggle("is-open", open);
+        btn.setAttribute("aria-expanded", String(open));
+        btn.textContent = open ? btn.dataset.less : btn.dataset.more;
+      });
+    });
+    fit();
+    if ("ResizeObserver" in window) new ResizeObserver(fit).observe(document.querySelector(".people"));
+    else window.addEventListener("resize", fit);
+  }
+
   const callbar = document.querySelector(".callbar");
   if (callbar) {
     let ticking = false;

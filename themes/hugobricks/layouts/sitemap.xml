@@ -1,0 +1,1 @@
+{{- /* Empty on purpose: Hugo skips empty output, so no /de/ or /en/ sitemap is written. Every URL is listed in /sitemap.xml (sitemapindex.xml). */ -}}

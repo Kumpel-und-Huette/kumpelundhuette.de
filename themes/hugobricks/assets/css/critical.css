@@ -56,6 +56,8 @@
   --measure: 36rem;
   --radius: 6px;
   --radius-lg: 18px;
+  --photo-shadow: 0 1px 2px rgb(43 34 28 / 0.08), 0 14px 32px -14px rgb(43 34 28 / 0.32);
+  --photo-edge: inset 0 0 0 1px rgb(43 34 28 / 0.08);
   --header-h: 4.25rem;
   --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 
@@ -534,14 +536,17 @@ html:not(.js) .nav { display: block; position: static; }
 
 .lede { font-size: var(--step-1); color: var(--ink-soft); }
 
-/* Photos sit in an oak frame, like pictures on the wall */
+/* Photos sit flush: one radius, a hairline edge, a soft warm shadow */
 .photo { margin: 0; }
 .photo__frame {
+  position: relative;
   display: block;
-  padding: clamp(0.4rem, 0.8vw, 0.65rem);
-  background: var(--oak);
+  overflow: hidden;
+  isolation: isolate;
+  background: var(--oat);
   border-radius: var(--radius-lg);
-  box-shadow: 0 22px 40px -26px rgb(43 34 28 / 0.55);
+  box-shadow: var(--photo-shadow);
 }
-.photo__frame img { width: 100%; border-radius: calc(var(--radius-lg) - 6px); background: var(--oat); }
+.photo__frame::after { content: ""; position: absolute; inset: 0; border-radius: inherit; box-shadow: var(--photo-edge); pointer-events: none; }
+.photo__frame img { display: block; width: 100%; background: var(--oat); }
 .photo figcaption { margin-top: 0.75rem; color: var(--ink-soft); font-size: var(--step--1); line-height: 1.45; max-width: 34em; }

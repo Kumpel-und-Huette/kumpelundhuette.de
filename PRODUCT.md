@@ -19,7 +19,7 @@ Job applicants are a secondary audience. The site has a careers page; hiring is 
 
 Kumpel und Hütte Service runs shared homes (Wohngemeinschaften) where older people live with privacy, company, everyday help, and nursing care. Success is a real home: self-determined, affordable, and not a Pflegeheim, hotel, or anonymous WG.
 
-The published house is in Dortmund-Lütgendortmund, Im Heidewinkel 30, 44267 Dortmund. Copy often speaks of more than one house; only this location is documented.
+The published address is Im Heidewinkel 30, 44267 Dortmund (district Holzen). Copy names the city only ("in Dortmund") and must not name another district; "Lütgendortmund" appears only as the event name "Seniorenbüro Lütgendortmund" in one news post. Only one house exists, so copy speaks of "unser Haus", not "unsere Häuser". Address, phone and coordinates live in `data/business.yaml`.
 
 ## Positioning
 
@@ -33,7 +33,7 @@ Published pages state that the Kumpel und Hütte team provides the nursing care.
 - Contact: info@kumpelundhuette.de, +49 160 90889269. Public site: https://kumpelundhuette.de/
 - Move-in path: contact, viewing, application form plus documents (including a Wohnfähigkeitsbescheinigung and Pflegegradbescheid when one exists), cost check with Pflegekasse or Sozialamt, then a welcome week.
 - Published line items: rent 570 € (room, utilities, power, heating, internet, GEZ), Hauswirtschaft 200 €, Betreuung 200 €. All-in 970 €. Personal share 0–970 € depending on pension and care grade.
-- Office hours are unresolved: the header says Mon–Fri 10:00–17:00; `data/de/openinghours.yaml` says 9:00–17:00.
+- Office hours are unresolved: the site and the structured data say Mon–Fri 10:00–17:00; the unused `data/de/openinghours.yaml` says 9:00–17:00.
 
 ## Capabilities and Constraints
 

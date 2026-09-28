@@ -1,16 +1,20 @@
 ---
 title: Wer wir sind
+seo:
+  title: "Wer wir sind: das Team hinter Kumpel & Hütte in Dortmund"
+  description: "Robin und Julianne Grunwald und ihr Team begleiten Seniorinnen und Senioren in Dortmund. Nicht als Dienstleister, sondern als Kumpel und Stütze im Alltag."
 ---
 
 
 {{< brick_title2 >}}
 
 
-# Wir über uns
+# Das Team hinter Kumpel & Hütte
 
-Hinter Kumpel und Hütte steht ein engagiertes Team aus Herzmenschen, die eine gemeinsame Vision teilen: das Leben im Alter schöner, sicherer und gemeinschaftlicher zu gestalten.
-Wir kommen aus unterschiedlichen Bereichen – Oper, Ballet, Management und Investment – doch was uns verbindet, ist der Wunsch, sinnvolle Wohnkonzepte mit echter Menschlichkeit zu schaffen.
-Mit viel Erfahrung, Offenheit und einem offenen Ohr für individuelle Bedürfnisse begleiten wir unsere Bewohner:innen im Alltag – nicht als Dienstleister, sondern als Kumpel und Stütze.
+Hinter Kumpel & Hütte steht ein kleines Team aus Herzmenschen mit einer gemeinsamen Vision: das Leben im Alter schöner, sicherer und gemeinschaftlicher zu machen.
+Wir kommen aus ganz unterschiedlichen Bereichen, aus Oper, Ballett, Management und Investment. Was uns verbindet, ist der Wunsch, ein Wohnkonzept mit echter Menschlichkeit zu schaffen.
+Mit Erfahrung, Offenheit und einem offenen Ohr für persönliche Bedürfnisse begleiten wir die Menschen in unserer Senioren-WG in Dortmund durch den Alltag. Nicht als Dienstleister, sondern als Kumpel und Stütze.
+Warum wir das machen, erzählen wir in [unserer Motivation](/motivation/). Wie das Zusammenleben funktioniert, lesen Sie in [unserem Konzept](/unser-konzept/).
 
 {{< /brick_title2 >}}
 
@@ -18,14 +22,11 @@ Mit viel Erfahrung, Offenheit und einem offenen Ohr für individuelle Bedürfnis
 
 {{< brick_title >}}
 
-## Lust, mitzumachen?
+## Sie möchten bei uns mitarbeiten?
 
-Du möchtest das Leben im Alter menschlicher und gemeinschaftlicher gestalten?
-Bei Kumpel und Hütte suchen wir immer nach engagierten, herzlichen Menschen, die unsere Vision teilen. Ob aus der Pflege, Sozialarbeit, Gestaltung – oder einfach mit viel Herz: Bei uns findest du deinen Platz.
+Sie möchten das Leben im Alter menschlicher und gemeinschaftlicher machen? Unser Team sucht immer engagierte, herzliche Menschen, die unsere Vision teilen. Ob aus der Pflege, der Hauswirtschaft, der Sozialarbeit oder einfach mit viel Herz: Bei uns finden Sie Ihren Platz. Wie es bei uns angefangen hat, lesen Sie in unseren [Neuigkeiten](/neuigkeiten/).
 
-Lass uns gemeinsam etwas bewegen.
-
-{{< button2 "Schreib uns an" "mailto:info@kumpelundhuette.de" >}}
+{{< button2 "Jobs bei Kumpel & Hütte ansehen" "/karrieren/" >}}
 
 &nbsp;
 

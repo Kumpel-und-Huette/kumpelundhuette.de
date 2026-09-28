@@ -1,132 +1,18 @@
 - title: Initiativbewerbung
   location: Dortmund, NRW
   type: Individuell
-  department: Hauswirtschaft, Betreuung, Organisation, etc.
+  department: Hauswirtschaft, Betreuung, Organisation
   experience: Keine Vorerfahrung nötig
-  description: Auch wenn wir aktuell keine konkrete Stelle ausgeschrieben haben, freuen wir uns jederzeit über Initiativbewerbungen. Bei Kumpel & Hütte geht es nicht nur ums Arbeiten, sondern ums Gestalten eines Zuhauses für Menschen, die Gemeinschaft und Selbstständigkeit im Alter suchen. Wenn du Freude daran hast, andere Menschen zu unterstützen, eine positive Atmosphäre zu schaffen und Teil eines engagierten, wachsenden Teams zu sein, dann bist du bei uns richtig.
+  description: Gerade ist keine feste Stelle ausgeschrieben, aber wir freuen uns jederzeit über deine Initiativbewerbung. Bei Kumpel & Hütte geht es nicht nur ums Arbeiten, sondern darum, ein Zuhause für Menschen zu gestalten, die im Alter Gemeinschaft und Selbstständigkeit suchen. Wenn du gern andere Menschen unterstützt, für eine gute Atmosphäre sorgst und Teil eines wachsenden Teams sein willst, bist du bei uns richtig.
   requirements:
-    - "Freude im Umgang mit Menschen"
+    - "Freude am Umgang mit Menschen"
     - "Empathie, Geduld und Zuverlässigkeit"
     - "Eigeninitiative und Verantwortungsbewusstsein"
     - "Erfahrung in Hauswirtschaft, Betreuung oder Organisation ist ein Plus, aber keine Voraussetzung"
-    - "Teamplayer mit ausgeprägten Kommunikationsfähigkeiten"
+    - "Teamgeist und Freude an guter Kommunikation"
   benefits:
-    - "Sinnstiftende Arbeit mit direktem Mehrwert für unsere Bewohner:innen"
-    - "Flexible Arbeitszeiten und Möglichkeiten zur individuellen Gestaltung"
-    - "Weiterbildungsbudget"
-    - "Offene und wertschätzende Unternehmenskultur"
-    - "Ein kleines, herzliches Team, das an einer großen Vision arbeitet"
-
-# - title: Marketing Manager
-#   location: Köln, NRW
-#   type: Vollzeit
-#   department: Marketing
-#   experience: 3+ Jahre
-#   description: Als Marketing Manager entwickeln Sie strategische Marketing-Kampagnen und verantworten die digitale Präsenz unseres Unternehmens. Sie arbeiten eng mit unserem kreativen Team zusammen.
-#   requirements:
-#     - "Studium im Bereich Marketing, Kommunikation oder verwandten Fächern"
-#     - "Erfahrung im digitalen Marketing und Social Media"
-#     - "Kenntnisse in Google Analytics und Marketing-Tools"
-#     - "Kreative Denkweise und analytische Fähigkeiten"
-#     - "Erfahrung im B2B-Marketing von Vorteil"
-#   benefits:
-#     - "Kreative Freiheit"
-#     - "Moderne Marketing-Tools"
-#     - "Karriereentwicklungsmöglichkeiten"
-#     - "Vergünstigte Firmenprodukte"
-#     - "Jährliche Teamevents"
-
-# - title: Customer Success Specialist
-#   location: Remote / Hybrid
-#   type: Vollzeit
-#   department: Kundenservice
-#   experience: 2+ Jahre
-#   description: Unterstützen Sie unsere Kunden bei der optimalen Nutzung unserer Produkte und Services. Sie sind der erste Ansprechpartner für Fragen und sorgen für eine hohe Kundenzufriedenheit.
-#   requirements:
-#     - "Ausgeprägte Kundenorientierung und Servicegedanke"
-#     - "Gute Kommunikationsfähigkeiten in Deutsch und Englisch"
-#     - "Technisches Verständnis und Lernbereitschaft"
-#     - "Erfahrung im Kundenservice oder Support"
-#     - "Selbstständige Arbeitsweise"
-#   benefits:
-#     - "Vollständig remote möglich"
-#     - "Flexible Arbeitszeiten"
-#     - "Umfassende Einarbeitung"
-#     - "Kontinuierliche Weiterbildung"
-#     - "Faire Vergütung"
-
-# - title: UX/UI Designer
-#   location: Dortmund, NRW
-#   type: Vollzeit
-#   department: Design
-#   experience: 3+ Jahre
-#   description: Gestalten Sie intuitive und ansprechende Benutzeroberflächen für unsere digitalen Produkte. Sie arbeiten eng mit Entwicklern und Produktmanagern zusammen.
-#   requirements:
-#     - "Portfolio mit UX/UI-Projekten"
-#     - "Erfahrung mit Design-Tools (Figma, Sketch, Adobe XD)"
-#     - "Verständnis für User Research und Usability"
-#     - "Kenntnisse in Design-Systemen und Prototyping"
-#     - "Kreativität und analytisches Denken"
-#   benefits:
-#     - "Moderne Design-Tools"
-#     - "Kreative Arbeitsumgebung"
-#     - "Teilnahme an Design-Konferenzen"
-#     - "Entwicklungsperspektiven"
-#     - "Attraktive Vergütung"
-
-# - title: DevOps Engineer
-#   location: Köln, NRW
-#   type: Vollzeit
-#   department: IT-Infrastruktur
-#   experience: 4+ Jahre
-#   description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
-#   requirements:
-#     - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
-#     - "Kenntnisse in Docker, Kubernetes und CI/CD"
-#     - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
-#     - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
-#     - "Linux-Administration und Scripting (Bash, Python)"
-#   benefits:
-#     - "Moderne Cloud-Technologien"
-#     - "Zertifizierungsmöglichkeiten"
-#     - "Homeoffice-Optionen"
-#     - "Technische Weiterbildung"
-#     - "Überdurchschnittliche Vergütung"
-
-# - title: DevOps Engineer II
-#   location: Köln, NRW
-#   type: Vollzeit
-#   department: IT-Infrastruktur
-#   experience: 4+ Jahre
-#   description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
-#   requirements:
-#     - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
-#     - "Kenntnisse in Docker, Kubernetes und CI/CD"
-#     - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
-#     - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
-#     - "Linux-Administration und Scripting (Bash, Python)"
-#   benefits:
-#     - "Moderne Cloud-Technologien"
-#     - "Zertifizierungsmöglichkeiten"
-#     - "Homeoffice-Optionen"
-#     - "Technische Weiterbildung"
-#     - "Überdurchschnittliche Vergütung"
-
-# - title: Singer
-#   location: Köln, NRW
-#   type: Vollzeit
-#   department: IT-Infrastruktur
-#   experience: 4+ Jahre
-#   description: Verantworten Sie unsere Cloud-Infrastruktur und automatisieren Sie Deployment-Prozesse. Sie sorgen für eine stabile und skalierbare IT-Umgebung.
-#   requirements:
-#     - "Erfahrung mit Cloud-Plattformen (AWS, Azure oder GCP)"
-#     - "Kenntnisse in Docker, Kubernetes und CI/CD"
-#     - "Erfahrung mit Infrastructure as Code (Terraform, CloudFormation)"
-#     - "Monitoring und Logging-Tools (Prometheus, ELK Stack)"
-#     - "Linux-Administration und Scripting (Bash, Python)"
-#   benefits:
-#     - "Moderne Cloud-Technologien"
-#     - "Zertifizierungsmöglichkeiten"
-#     - "Homeoffice-Optionen"
-#     - "Technische Weiterbildung"
-#     - "Überdurchschnittliche Vergütung"
+    - "Sinnstiftende Arbeit mit direktem Nutzen für unsere Bewohnerinnen und Bewohner"
+    - "Flexible Arbeitszeiten, die du mitgestalten kannst"
+    - "Budget für deine Weiterbildung"
+    - "Eine offene und wertschätzende Kultur"
+    - "Ein kleines, herzliches Team mit einer großen Vision"

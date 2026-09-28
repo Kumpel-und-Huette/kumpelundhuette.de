@@ -1,5 +1,8 @@
 ---
 title: Datenschutzerklärung
+seo:
+  title: "Datenschutzerklärung | Kumpel & Hütte Service"
+  description: "Wie Kumpel und Hütte Service mit Ihren Daten umgeht: Datenverarbeitung auf unserer Website, Kontaktformular, Cookies und Ihre Rechte nach der DSGVO."
 ---
 
 {{< brick_wide >}}

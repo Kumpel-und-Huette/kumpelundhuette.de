@@ -1,6 +1,9 @@
 ---
 title: Legal notice
 slug: imprint
+seo:
+  title: "Legal Notice (Impressum) | Kumpel & Hütte Service"
+  description: "Legal notice of Kumpel und Hütte Service UG (haftungsbeschränkt), Im Heidewinkel 30, 44267 Dortmund, Germany. Managing director: Robin Grunwald, HRB 37362."
 ---
 
 

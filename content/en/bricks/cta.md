@@ -1,10 +1,8 @@
 ---
 title: cta
 ---
-## Learn more about your new home!
+## Get to know us in person
 
-Kumpel und Hütte offers communal living for seniors — safe, affordable and with heart. In our caring shared homes, self-determination, community and joy of life take centre stage.
+Whether it is for yourself or for your mother or father: the best way to understand our senior shared home in Dortmund is to sit with us at the kitchen table. Call us or write to us. We take time for your questions, even if you are only just starting to look.
 
-{{< button2 "Contact us now" "mailto: info@kumpelundhuette.de" >}}
-
-![](/uploads/illustrations/cuate/contact.png)
+{{< button2 "Arrange a visit" "/en/contact/" >}}

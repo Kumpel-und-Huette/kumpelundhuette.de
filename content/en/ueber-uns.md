@@ -1,17 +1,21 @@
 ---
 title: Who we are
 slug: about-us
+seo:
+  title: "Who We Are: the Team Behind Kumpel & Hütte in Dortmund"
+  description: "Robin and Julianne Grunwald and their team support older people in Dortmund. Not as service providers, but as companions and support in everyday life."
 ---
 
 
 {{< brick_title2 >}}
 
 
-# About us
+# The team behind Kumpel & Hütte
 
-Behind Kumpel und Hütte is a dedicated team of people who share one vision: making life in older age more beautiful, safer and more communal.
-We come from different fields — opera, ballet, management and investment — but what connects us is the wish to create meaningful housing concepts with genuine humanity.
-With experience, openness and a real ear for individual needs, we accompany our residents in everyday life — not as mere service providers, but as companions and support.
+Behind Kumpel & Hütte is a small team of warm-hearted people who share one vision: making life in old age more beautiful, safer and more communal.
+We come from very different fields: opera, ballet, management and investment. What connects us is the wish to create a housing concept with genuine humanity.
+With experience, openness and a real ear for personal needs, we accompany the people in our senior shared home in Dortmund through everyday life. Not as service providers, but as companions and support.
+Why we do this is explained in [our motivation](/en/motivation/), and how living together works in [our concept](/en/our-concept/).
 
 {{< /brick_title2 >}}
 
@@ -19,14 +23,11 @@ With experience, openness and a real ear for individual needs, we accompany our 
 
 {{< brick_title >}}
 
-## Want to join us?
+## Would you like to work with us?
 
-Would you like to make life in older age more human and more communal?
-At Kumpel und Hütte we are always looking for dedicated, warm-hearted people who share our vision. Whether from care, social work, design — or simply with a lot of heart: there is a place for you with us.
+Would you like to make life in old age more human and more communal? Our team is always looking for dedicated, warm-hearted people who share our vision. Whether you come from nursing, housekeeping or social work, or simply have a lot of heart: there is a place for you with us. You can read how it all started in our [news](/en/news/).
 
-Let’s make a difference together.
-
-{{< button2 "Write to us" "mailto:info@kumpelundhuette.de" >}}
+{{< button2 "See jobs at Kumpel & Hütte" "/en/careers/" >}}
 
 &nbsp;
 

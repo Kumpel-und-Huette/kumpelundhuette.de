@@ -2,6 +2,6 @@
 title: quote
 ---
 
-## "Ready to build your next project with Hugobricks?"
+## "Here I feel at home again. And never alone."
 
-— Lorem ipsum dolor
+That is how it should be.

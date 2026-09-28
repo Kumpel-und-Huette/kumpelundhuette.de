@@ -3,6 +3,13 @@ title: Kumpel und Hütte
 theme: hugobricks
 defaultContentLanguage: de
 assetDir: static
+enableRobotsTXT: true
+disableKinds:
+  - taxonomy
+  - term
+outputs:
+  home: [html]
+  section: [html]
 
 params:
   showImageCaptions: false

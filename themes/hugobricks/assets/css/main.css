@@ -271,7 +271,6 @@ mark { background: rgb(217 154 43 / 0.35); color: inherit; padding: 0 0.15em; bo
 /* The door: every page ends by holding it open */
 .door { background: var(--brick); color: var(--paper); padding-block: clamp(3.5rem, 8vw, 7rem) clamp(3rem, 7vw, 6rem); }
 .door__inner { display: grid; gap: clamp(2rem, 4vw, 3.5rem); }
-.door__text { max-width: 40rem; }
 .door__text > * + * { margin-top: 0.75em; }
 .door__text h2 { color: var(--paper); font-size: var(--step-4); }
 .door__text p { font-size: var(--step-1); color: #f8e9dc; }
@@ -327,7 +326,8 @@ mark { background: rgb(217 154 43 / 0.35); color: inherit; padding: 0 0.15em; bo
 .news-item article { position: relative; }
 .news-item__title a:hover { text-decoration: underline; text-decoration-color: var(--ochre); text-decoration-thickness: 3px; }
 .news-item__text p { color: var(--ink-soft); }
-.news-item .link-arrow { position: relative; }
+.news-item article:hover .link-arrow { color: var(--ink); text-decoration-color: currentColor; }
+.news-item article:hover .link-arrow .icon { transform: translateX(0.2em); }
 .meta { display: inline-flex; align-items: center; gap: 0.5em; color: var(--ink-soft); font-size: var(--step--1); font-weight: 700; }
 @media (min-width: 48em) {
   .news-item article { grid-template-columns: minmax(0, 18rem) minmax(0, 1fr); gap: 2rem; align-items: start; }

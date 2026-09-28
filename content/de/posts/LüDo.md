@@ -23,5 +23,3 @@ Unsere Wohngemeinschaft in Lütgendortmund verbindet selbstbestimmtes Leben mit 
 ## Jetzt informieren
 
 Sie möchten mehr erfahren oder das Haus persönlich kennenlernen? Wir freuen uns auf Ihre Nachricht.
-
----

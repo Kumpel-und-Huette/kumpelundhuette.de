@@ -23,5 +23,3 @@ Our shared home in Lütgendortmund combines self-determined living with needs-ba
 ## Get informed
 
 Would you like to learn more or visit the house in person? We look forward to hearing from you.
-
----

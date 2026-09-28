@@ -24,7 +24,7 @@ read_less: Weniger anzeigen
 all_news: Alle Neuigkeiten
 all_homes: Unser Zuhause
 open_map: Lage in Google Maps öffnen
-map_alt: Kartenausschnitt Dortmund-Lütgendortmund mit dem Standort Im Heidewinkel 30
+map_alt: Kartenausschnitt Dortmund mit dem Standort Im Heidewinkel 30
 published: Veröffentlicht am
 services:
   other: Neuigkeiten
@@ -63,10 +63,10 @@ job_type: Art
 job_department: Bereich
 job_experience: Erfahrung
 job_description: Worum es geht
-job_requirements: Was Sie mitbringen
+job_requirements: Was du mitbringst
 job_benefits: Was wir bieten
 job_apply: Jetzt bewerben
-job_note: Nach dem Klick auf „Jetzt bewerben“ öffnet sich Ihr E-Mail-Programm. Schicken Sie uns gern Ihren Lebenslauf und ein paar Sätze über sich.
+job_note: Nach dem Klick auf „Jetzt bewerben“ öffnet sich dein E-Mail-Programm. Schick uns gern deinen Lebenslauf und ein paar Sätze über dich.
 form_required: Pflichtfeld
 error_title: Diese Tür führt leider nirgendwohin.
 error_text: "Die Seite gibt es nicht oder nicht mehr. Hier geht es sicher weiter:"
@@ -78,3 +78,7 @@ carousel_slide: Foto
 carousel_position: "{{ .n }} von {{ .total }}"
 carousel_cta: Das Haus persönlich ansehen
 carousel_pick: Foto auswählen
+photo_of: "Foto von {{ .name }}"
+og_image_alt: Helle Küche unserer Senioren-WG in Dortmund mit Holzarbeitsplatte und Glasvitrinen
+price_range: "{{ .total }} € im Monat"
+care_service: Pflege durch unser eigenes Team

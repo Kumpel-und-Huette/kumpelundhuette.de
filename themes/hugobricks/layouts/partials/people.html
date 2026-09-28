@@ -6,7 +6,7 @@
     {{- with .image }}
     <figure class="person__photo photo">
       <div class="photo__frame">
-        {{- partial "img.html" (dict "src" . "alt" "" "ratio" "4:5" "sizes" "(min-width: 64em) 23rem, (min-width: 40em) 45vw, 90vw" "widths" (slice 360 540 720 900) "anchor" "Top") -}}
+        {{- partial "img.html" (dict "src" . "alt" (i18n "photo_of" (dict "name" (strings.TrimSpace $p.name))) "ratio" "4:5" "sizes" "(min-width: 64em) 23rem, (min-width: 40em) 45vw, 90vw" "widths" (slice 360 540 720 900) "anchor" "Top") -}}
       </div>
     </figure>
     {{- else }}

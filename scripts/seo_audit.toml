@@ -1,0 +1,341 @@
+# Configuration for scripts/seo_audit.py.
+# Every indexable page should have an entry in [[pages]]; unconfigured pages are
+# scored as normal pages without a focus keyword and lose points for it.
+#
+# Terms: each entry in `focus` must appear (all of them). Alternatives are
+# separated by "|". Matching ignores case, hyphens and punctuation and also
+# matches word beginnings, so "Pflegeheim" matches "Pflegeheims" and "Job"
+# matches "Jobs". Keyword density is occurrences per 100 words.
+#
+# Profiles: money (default), listing, contact, news, legal. Legal pages skip the
+# keyword, depth and readability checks.
+
+[site]
+base_url = "https://kumpelundhuette.de/"
+languages = ["de", "en"]
+default_language = "de"
+brand = ["Kumpel & Hütte", "Kumpel und Hütte"]
+location = "Dortmund"
+taxonomy_prefixes = ["/tags/", "/categories/", "/en/tags/", "/en/categories/"]
+leak_files = ["bricks/index.xml", "en/bricks/index.xml"]
+
+[thresholds]
+page = 90
+site = 95
+page_share = 0.7
+title_min = 30
+title_max = 60
+description_min = 120
+description_max = 160
+max_density = 3.0
+min_words = { money = 300, listing = 120, contact = 120, news = 120 }
+
+[thresholds.readability.de]
+fre_good = 55
+fre_bad = 35
+asl_good = 14
+asl_bad = 22
+
+[thresholds.readability.en]
+fre_good = 60
+fre_bad = 40
+asl_good = 17
+asl_bad = 25
+
+[nap]
+name = "Kumpel & Hütte Service"
+street = "Im Heidewinkel 30"
+postal_code = "44267"
+city = "Dortmund"
+phone = "+4916090889269"
+
+[structured_data]
+always = ["LocalBusiness", "WebSite", "WebPage"]
+subpages = ["BreadcrumbList"]
+home_paths = ["/", "/en/"]
+local_business_types = ["LocalBusiness"]
+local_business_fields = [
+  "name", "url", "telephone", "image|logo", "priceRange", "openingHoursSpecification",
+  "address.streetAddress", "address.postalCode", "address.addressLocality", "address.addressCountry",
+  "geo.latitude", "geo.longitude",
+]
+allow_ratings = false
+
+[style]
+excluded_classes = ["breadcrumbs", "door", "callbar", "skip-link"]
+decorative_containers = ["news-item__photo", "home-card__photo", "tour__thumb"]
+placeholders = ["lorem ipsum", "dolor sit amet", "consectetur adipiscing", "hugobricks", "hpremium", "get started now"]
+breadcrumb_words = ["Startseite", "Sie sind hier", "You are here"]
+
+[style.generic_anchors]
+de = ["hier", "mehr", "weiter", "weiterlesen", "mehr erfahren", "jetzt mehr erfahren", "klicken sie hier", "hier klicken", "link"]
+en = ["here", "more", "read more", "learn more", "click here", "this page", "link"]
+
+[[style.forbidden]]
+term = "Lütgendortmund"
+allow = "Seniorenb[üu]ros? Lütgendortmund"
+reason = "The copy names the city only. The address is Im Heidewinkel 30, 44267 Dortmund (Holzen)."
+
+# --------------------------------------------------------------------------- German pages
+
+[[pages]]
+path = "/"
+focus = ["Senioren-WG"]
+secondary = ["Wohngemeinschaft", "Pflegegrad 2", "Pflegeheim", "Alternative zum Pflegeheim", "Pflege", "Eigenanteil",
+             "970 €", "betreutes Wohnen|betreutem Wohnen", "Altenheim", "Pflegekasse", "Besichtigung|Besuch"]
+schema = ["FAQPage"]
+
+[[pages]]
+path = "/einziehen-bei-uns/"
+focus = ["Senioren-WG", "Kosten|kostet"]
+secondary = ["Pflegekasse", "Eigenanteil", "Pflegegrad 2", "Sozialamt", "Grundsicherung", "Wohngruppenzuschlag",
+             "Entlastungsbetrag", "Besichtigung", "Unterlagen", "Anmeldebogen", "Dortmund"]
+
+[[pages]]
+path = "/unser-konzept/"
+focus = ["Alternative zum Pflegeheim"]
+secondary = ["Senioren-WG", "Pflegeheim", "Gemeinschaft", "Pflege", "eigenes Zimmer|eigenen Zimmer", "Eigenanteil",
+             "Selbstbestimmung|selbst", "Dortmund"]
+
+[[pages]]
+path = "/motivation/"
+focus = ["einsam", "im Alter"]
+local = false
+secondary = ["Einsamkeit", "allein", "Senioren", "Angehörige", "Pflegeheim|Altenheim", "Gemeinschaft", "Würde", "Rente",
+             "Senioren-WG"]
+
+[[pages]]
+path = "/unser-zuhause/"
+profile = "listing"
+focus = ["Wohnen im Alter"]
+secondary = ["Senioren-WG", "Pflegegrad 2", "Pflegeheim", "Pflege", "Zimmer"]
+
+[[pages]]
+path = "/unser-zuhause/dortmund-lütgendortmund/"
+focus = ["Pflege-WG|Senioren-WG mit Pflege|WG mit Pflege"]
+secondary = ["Senioren-WG", "Pflegegrad 2", "Einzelzimmer", "Duschbäder|Duschbad", "Garten", "Wohnküche", "Eigenanteil",
+             "Pflegekasse", "Grundsicherung", "Haustier", "Paare", "Besichtigung", "Dortmund"]
+
+[[pages]]
+path = "/ueber-uns/"
+focus = ["Team"]
+secondary = ["Kumpel & Hütte", "Senioren-WG", "Dortmund", "Gründer", "Betreuerin|Betreuung", "im Alter"]
+
+[[pages]]
+path = "/karrieren/"
+focus = ["Job|Stelle|Karriere", "Seniorenbetreuung|Betreuung"]
+secondary = ["Hauswirtschaft", "Initiativbewerbung", "Dortmund", "Senioren-WG", "Team", "Vorerfahrung|Erfahrung"]
+
+[[pages]]
+path = "/kontakt/"
+profile = "contact"
+focus = ["Besichtigung|Kontakt"]
+secondary = ["Senioren-WG", "Dortmund", "anrufen|rufen", "Im Heidewinkel 30", "Montag bis Freitag"]
+
+[[pages]]
+path = "/neuigkeiten/"
+profile = "listing"
+focus = ["Neuigkeiten"]
+secondary = ["Senioren-WG", "Dortmund", "Einzug", "Gründung|gegründet"]
+
+[[pages]]
+path = "/neuigkeiten/gründung-ug/"
+profile = "news"
+focus = ["gegründet|Gründung"]
+secondary = ["Kumpel & Hütte", "UG", "Senioren-WG", "Dortmund"]
+schema = ["BlogPosting"]
+
+[[pages]]
+path = "/neuigkeiten/letzte-vorbereitungen/"
+profile = "news"
+focus = ["Einzug"]
+secondary = ["Senioren-WG", "Handläufe", "Haus"]
+schema = ["BlogPosting"]
+
+[[pages]]
+path = "/neuigkeiten/vorstellung-1.-wg/"
+profile = "news"
+focus = ["Premiere|vorgestellt|Vorstellung"]
+secondary = ["Senioren-WG", "Seniorenbüro", "Runden Tisch", "Wohnen im Alter", "Selbstbestimmung"]
+schema = ["BlogPosting"]
+
+[[pages]]
+path = "/impressum/"
+profile = "legal"
+
+[[pages]]
+path = "/datenschutz/"
+profile = "legal"
+
+# --------------------------------------------------------------------------- English pages
+
+[[pages]]
+path = "/en/"
+focus = ["senior shared"]
+secondary = ["care home", "care grade 2", "shared home", "nursing care", "personal share", "€970", "assisted living",
+             "old-age home|old age home", "care insurance", "alternative to a care home", "visit"]
+schema = ["FAQPage"]
+
+[[pages]]
+path = "/en/moving-in/"
+focus = ["senior shared|shared home", "cost"]
+secondary = ["care insurance", "Pflegekasse", "personal share", "care grade 2", "social welfare", "Grundsicherung",
+             "§ 38a", "Wohngruppenzuschlag", "documents", "viewing|visit", "Dortmund"]
+
+[[pages]]
+path = "/en/our-concept/"
+focus = ["alternative to a care home"]
+secondary = ["senior shared home", "care home", "community", "nursing care", "own room", "personal share", "Dortmund",
+             "self"]
+
+[[pages]]
+path = "/en/motivation/"
+focus = ["lonel", "old age"]
+local = false
+secondary = ["loneliness", "alone", "relatives", "care home|old-age home", "community", "dignity", "pension",
+             "senior shared home"]
+
+[[pages]]
+path = "/en/our-home/"
+profile = "listing"
+focus = ["senior living"]
+secondary = ["care grade 2", "care home", "nursing care", "room", "Dortmund"]
+
+[[pages]]
+path = "/en/our-home/dortmund-lütgendortmund/"
+focus = ["shared home with care"]
+secondary = ["senior shared home", "care grade 2", "single rooms", "shower rooms", "garden", "living kitchen",
+             "personal share", "care insurance", "Grundsicherung", "pet", "couples", "visit", "Dortmund"]
+
+[[pages]]
+path = "/en/about-us/"
+focus = ["team"]
+secondary = ["Kumpel & Hütte", "senior shared home", "Dortmund", "founders", "carer|support", "old age"]
+
+[[pages]]
+path = "/en/careers/"
+focus = ["job|career|vacanc", "care"]
+secondary = ["elderly care", "housekeeping", "speculative application", "Dortmund", "team", "experience"]
+
+[[pages]]
+path = "/en/contact/"
+profile = "contact"
+focus = ["visit|contact"]
+secondary = ["senior shared home", "Dortmund", "call", "Im Heidewinkel 30", "Monday to Friday"]
+
+[[pages]]
+path = "/en/news/"
+profile = "listing"
+focus = ["news"]
+secondary = ["senior shared home", "Dortmund", "move-in|moves in", "founded|founding"]
+
+[[pages]]
+path = "/en/news/a-big-step-for-us-kumpel-hütte-ug-limited-liability-has-been-founded/"
+profile = "news"
+focus = ["founded|founding"]
+secondary = ["Kumpel & Hütte", "UG", "senior shared home", "Dortmund"]
+schema = ["BlogPosting"]
+
+[[pages]]
+path = "/en/news/almost-there-the-first-move-in-is-imminent/"
+profile = "news"
+focus = ["move-in|moves in|move in"]
+secondary = ["senior shared home", "handrails", "house"]
+schema = ["BlogPosting"]
+
+[[pages]]
+path = "/en/news/premiere-presenting-our-first-senior-shared-home-in-lütgendortmund/"
+profile = "news"
+focus = ["premiere|presenting|presented"]
+secondary = ["senior shared home", "Seniorenbüro", "round table", "communal living", "self-determination"]
+schema = ["BlogPosting"]
+
+[[pages]]
+path = "/en/imprint/"
+profile = "legal"
+
+[[pages]]
+path = "/en/privacy/"
+profile = "legal"
+
+# --------------------------------------------------------------------------- keyword coverage report
+
+[[keywords.de]]
+name = "Senioren-WG Dortmund"
+terms = ["Senioren-WG", "Dortmund"]
+
+[[keywords.de]]
+name = "Pflege-WG Dortmund"
+terms = ["Pflege-WG|WG mit Pflege", "Dortmund"]
+
+[[keywords.de]]
+name = "Wohngemeinschaft für Senioren"
+terms = ["Wohngemeinschaft", "Senior"]
+
+[[keywords.de]]
+name = "Alternative zum Pflegeheim"
+terms = ["Alternative zum Pflegeheim"]
+
+[[keywords.de]]
+name = "betreutes Wohnen Dortmund"
+terms = ["betreutes Wohnen|betreutem Wohnen", "Dortmund"]
+
+[[keywords.de]]
+name = "Altenheim / Pflegeheim Dortmund"
+terms = ["Altenheim|Pflegeheim", "Dortmund"]
+
+[[keywords.de]]
+name = "Seniorenbetreuung Dortmund"
+terms = ["Seniorenbetreuung", "Dortmund"]
+
+[[keywords.de]]
+name = "Wohnen im Alter Dortmund"
+terms = ["Wohnen im Alter", "Dortmund"]
+
+[[keywords.de]]
+name = "Senioren-WG Kosten"
+terms = ["Senioren-WG", "Kosten|kostet"]
+
+[[keywords.de]]
+name = "WG ab Pflegegrad 2"
+terms = ["Pflegegrad 2", "WG|Wohngemeinschaft"]
+
+[[keywords.de]]
+name = "Wohngruppenzuschlag Pflegekasse"
+terms = ["Wohngruppenzuschlag", "Pflegekasse"]
+
+[[keywords.de]]
+name = "Einsamkeit im Alter"
+terms = ["Einsamkeit", "im Alter"]
+
+[[keywords.en]]
+name = "senior shared living Dortmund"
+terms = ["senior shared", "Dortmund"]
+
+[[keywords.en]]
+name = "senior living Dortmund"
+terms = ["senior living", "Dortmund"]
+
+[[keywords.en]]
+name = "care home alternative"
+terms = ["alternative to a care home|care home alternative"]
+
+[[keywords.en]]
+name = "assisted living Dortmund"
+terms = ["assisted living", "Dortmund"]
+
+[[keywords.en]]
+name = "old-age home Dortmund"
+terms = ["old-age home|old age home", "Dortmund"]
+
+[[keywords.en]]
+name = "elderly care Dortmund"
+terms = ["elderly care", "Dortmund"]
+
+[[keywords.en]]
+name = "care grade 2 shared home"
+terms = ["care grade 2", "shared home"]
+
+[[keywords.en]]
+name = "loneliness in old age"
+terms = ["lonel", "old age"]

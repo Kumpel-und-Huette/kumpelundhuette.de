@@ -7,27 +7,49 @@
 {{- $desc := "" -}}
 {{- if .Params.seo.description -}}{{- $desc = .Params.seo.description -}}
 {{- else if .Description -}}{{- $desc = .Description -}}
-{{- else if .IsHome -}}{{- $desc = $d.general.description -}}
-{{- else -}}{{- $desc = .Summary | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 158 -}}{{- end -}}
+{{- else if in (slice "posts" "services") .Section -}}{{- $desc = .Summary | plainify | htmlUnescape | replaceRE `\s+` " " | truncate 158 -}}{{- end -}}
 {{- if not (strings.TrimSpace $desc) -}}{{- $desc = $d.general.description -}}{{- end -}}
+{{- $locales := dict "de" "de_DE" "en" "en_GB" -}}
+{{- $image := "" -}}
+{{- $imageAlt := i18n "og_image_alt" -}}
+{{- with .Params.image -}}
+  {{- with resources.Get (strings.TrimPrefix "/" .) -}}{{- $image = (.Fill "1200x630 jpg q80 Center").Permalink -}}{{- end -}}
+  {{- $imageAlt = $.Params.image_alt | default $.Title -}}
+{{- end -}}
+{{- if not $image -}}
+  {{- with resources.Get "plates/hero-photo.png" -}}{{- $image = (.Fill "1200x630 jpg q80 Center").Permalink -}}{{- end -}}
+  {{- $imageAlt = i18n "og_image_alt" -}}
+{{- end -}}
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script>document.documentElement.classList.add("js")</script>
 <title>{{ $title }}</title>
 <meta name="description" content="{{ $desc }}">
+{{- if or (eq .Kind "404") .Params.noindex }}
+<meta name="robots" content="noindex, follow">
+{{- end }}
 <link rel="canonical" href="{{ .Permalink }}">
 {{- range .AllTranslations }}
 <link rel="alternate" hreflang="{{ .Language.Lang }}" href="{{ .Permalink }}">
 {{- end }}
+{{- with index .AllTranslations 0 }}
+<link rel="alternate" hreflang="x-default" href="{{ .Permalink }}">
+{{- end }}
 <meta name="theme-color" content="#F3EADC">
+<meta property="og:site_name" content="{{ $siteTitle }}">
 <meta property="og:title" content="{{ $title }}">
 <meta property="og:description" content="{{ $desc }}">
 <meta property="og:url" content="{{ .Permalink }}">
-<meta property="og:type" content="{{ if .IsPage }}article{{ else }}website{{ end }}">
-<meta property="og:locale" content="{{ if eq site.Language.Lang "de" }}de_DE{{ else }}en_GB{{ end }}">
-{{- with resources.Get "plates/hero-photo.png" }}
-<meta property="og:image" content="{{ (.Fill "1200x630 jpg q80 Center").Permalink }}">
+<meta property="og:type" content="{{ if eq .Section "services" }}article{{ else }}website{{ end }}">
+<meta property="og:locale" content="{{ index $locales site.Language.Lang }}">
+{{- range .Translations }}
+<meta property="og:locale:alternate" content="{{ index $locales .Language.Lang }}">
 {{- end }}
+{{- with $image }}
+<meta property="og:image" content="{{ . }}">
+<meta property="og:image:alt" content="{{ $imageAlt }}">
+{{- end }}
+<meta name="twitter:card" content="summary_large_image">
 <link rel="icon" href="{{ "favicon.ico" | relURL }}" sizes="48x48">
 <link rel="icon" href="{{ "favicon.svg" | relURL }}" type="image/svg+xml">
 <link rel="apple-touch-icon" href="{{ "apple-touch-icon.png" | relURL }}">
@@ -49,3 +71,6 @@
 {{- end }}
 <link rel="preload" href="{{ $atkinson.RelPermalink }}" as="font" type="font/woff2" crossorigin>
 <link rel="preload" href="{{ $vollkorn.RelPermalink }}" as="font" type="font/woff2" crossorigin>
+{{- if ne .Kind "404" }}
+{{ partial "schema.html" (dict "page" . "title" $title "description" $desc "image" $image) }}
+{{- end }}

@@ -1,0 +1,120 @@
+{{- /* JSON-LD for one page. dict: page, title, description, image. Business facts come from data/business.yaml and data/prices.yaml. */ -}}
+{{- $p := .page -}}
+{{- $b := hugo.Data.business -}}
+{{- $pr := hugo.Data.prices -}}
+{{- $lang := site.Language.Lang -}}
+{{- $d := index hugo.Data $lang -}}
+{{- $root := print (strings.TrimSuffix "/" site.BaseURL) "/" -}}
+{{- $bizID := print $root "#business" -}}
+{{- $siteID := print site.Home.Permalink "#website" -}}
+{{- $pageID := print $p.Permalink "#webpage" -}}
+
+{{- $sameAs := slice -}}
+{{- range $d.footer.socials }}{{ $sameAs = $sameAs | append .link }}{{ end -}}
+{{- $founders := slice -}}
+{{- range $b.founders }}{{ $founders = $founders | append (dict "@type" "Person" "name" .) }}{{ end -}}
+{{- $bizImage := $root -}}
+{{- with resources.Get "plates/hero-people.jpg" }}{{ $bizImage = (.Fill "1200x900 jpg q80 Center").Permalink }}{{ end -}}
+{{- $offers := slice -}}
+{{- range slice (slice "price_rent" "price_rent_note" $pr.rent) (slice "price_house" "price_house_note" $pr.housekeeping) (slice "price_care" "price_care_note" $pr.support) -}}
+  {{- $offers = $offers | append (dict
+    "@type" "Offer"
+    "name" (i18n (index . 0))
+    "description" (i18n (index . 1))
+    "price" (index . 2)
+    "priceCurrency" "EUR"
+    "priceSpecification" (dict "@type" "UnitPriceSpecification" "price" (index . 2) "priceCurrency" "EUR" "unitCode" "MON" "unitText" (i18n "price_month"))
+  ) -}}
+{{- end -}}
+{{- $offers = $offers | append (dict "@type" "Offer" "itemOffered" (dict "@type" "Service" "name" (i18n "care_service"))) -}}
+
+{{- $business := dict
+  "@type" "LocalBusiness"
+  "@id" $bizID
+  "name" $b.name
+  "legalName" $b.legal_name
+  "alternateName" $b.alternate_names
+  "description" $d.general.description
+  "slogan" (i18n "footer_tagline")
+  "url" $root
+  "logo" (absURL $b.logo)
+  "image" $bizImage
+  "telephone" $b.phone
+  "email" $b.email
+  "priceRange" (i18n "price_range" (dict "total" $pr.total))
+  "address" (dict "@type" "PostalAddress" "streetAddress" $b.street "postalCode" $b.postal_code "addressLocality" $b.city "addressRegion" $b.region "addressCountry" $b.country)
+  "geo" (dict "@type" "GeoCoordinates" "latitude" $b.latitude "longitude" $b.longitude)
+  "hasMap" $b.maps
+  "openingHoursSpecification" (slice (dict "@type" "OpeningHoursSpecification" "dayOfWeek" $b.opening_hours.days "opens" $b.opening_hours.opens "closes" $b.opening_hours.closes))
+  "areaServed" (dict "@type" "City" "name" $b.area_served)
+  "founder" $founders
+  "foundingDate" $b.founding_date
+  "sameAs" $sameAs
+  "makesOffer" $offers
+-}}
+
+{{- $website := dict "@type" "WebSite" "@id" $siteID "url" site.Home.Permalink "name" $b.name "inLanguage" $lang "publisher" (dict "@id" $bizID) -}}
+
+{{- $fileBase := "" -}}{{- with $p.File }}{{ $fileBase = .ContentBaseName }}{{ end -}}
+{{- $type := "WebPage" -}}
+{{- if eq $fileBase "kontakt" }}{{ $type = "ContactPage" }}
+{{- else if eq $fileBase "ueber-uns" }}{{ $type = "AboutPage" }}
+{{- else if or ($p.HasShortcode "brick_posts") ($p.HasShortcode "brick_services") }}{{ $type = "CollectionPage" }}{{ end -}}
+{{- $faqs := $d.faqs -}}
+{{- if and $p.IsHome $faqs }}{{ $type = slice "WebPage" "FAQPage" }}{{ end -}}
+{{- $webpage := dict "@type" $type "@id" $pageID "url" $p.Permalink "name" .title "description" .description "inLanguage" $lang "isPartOf" (dict "@id" $siteID) "about" (dict "@id" $bizID) -}}
+{{- with .image }}{{ $webpage = merge $webpage (dict "primaryImageOfPage" (dict "@type" "ImageObject" "url" .)) }}{{ end -}}
+{{- if and $p.IsHome $faqs -}}
+  {{- $questions := slice -}}
+  {{- range $faqs }}{{ range .faqs -}}
+    {{- $questions = $questions | append (dict "@type" "Question" "name" .question "acceptedAnswer" (dict "@type" "Answer" "text" (.answer | markdownify | plainify | htmlUnescape))) -}}
+  {{- end }}{{ end -}}
+  {{- $webpage = merge $webpage (dict "mainEntity" $questions) -}}
+{{- end -}}
+
+{{- $graph := slice $business $website -}}
+{{- if not $p.IsHome -}}
+  {{- $trail := slice (dict "name" (i18n "home") "item" site.Home.Permalink) -}}
+  {{- if eq $p.Section "posts" -}}
+    {{- with site.GetPage "/unser-zuhause" }}{{ $trail = $trail | append (dict "name" .Title "item" .Permalink) }}{{ end -}}
+  {{- else if eq $p.Section "services" -}}
+    {{- with site.GetPage "/neuigkeiten" }}{{ $trail = $trail | append (dict "name" .Title "item" .Permalink) }}{{ end -}}
+  {{- else -}}
+    {{- $here := $p.RelPermalink -}}
+    {{- $found := false -}}
+    {{- range $d.header.menuitems -}}
+      {{- $group := . -}}
+      {{- range .items -}}
+        {{- if and (not $found) (eq .link $here) (ne $group.link $here) -}}
+          {{- $trail = $trail | append (dict "name" $group.title "item" (absURL $group.link)) -}}
+          {{- $found = true -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- $trail = $trail | append (dict "name" $p.Title "item" $p.Permalink) -}}
+  {{- $items := slice -}}
+  {{- range $i, $t := $trail }}{{ $items = $items | append (dict "@type" "ListItem" "position" (add $i 1) "name" $t.name "item" $t.item) }}{{ end -}}
+  {{- $breadcrumbID := print $p.Permalink "#breadcrumb" -}}
+  {{- $webpage = merge $webpage (dict "breadcrumb" (dict "@id" $breadcrumbID)) -}}
+  {{- $graph = $graph | append (dict "@type" "BreadcrumbList" "@id" $breadcrumbID "itemListElement" $items) -}}
+{{- end -}}
+{{- $graph = $graph | append $webpage -}}
+
+{{- if eq $p.Section "services" -}}
+  {{- $article := dict
+    "@type" "BlogPosting"
+    "@id" (print $p.Permalink "#article")
+    "headline" $p.Title
+    "description" .description
+    "datePublished" ($p.Date.Format "2006-01-02")
+    "dateModified" ($p.Lastmod.Format "2006-01-02")
+    "inLanguage" $lang
+    "mainEntityOfPage" (dict "@id" $pageID)
+    "author" (dict "@id" $bizID)
+    "publisher" (dict "@id" $bizID)
+  -}}
+  {{- with .image }}{{ $article = merge $article (dict "image" .) }}{{ end -}}
+  {{- $graph = $graph | append $article -}}
+{{- end -}}
+<script type="application/ld+json">{{ dict "@context" "https://schema.org" "@graph" $graph | jsonify | safeJS }}</script>

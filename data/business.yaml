@@ -1,0 +1,27 @@
+# Business facts shared by the contact blocks, the footer and the structured data (JSON-LD).
+# Name, address and phone must match the Impressum and the Google Business Profile exactly.
+name: Kumpel & Hütte Service
+legal_name: Kumpel und Hütte Service UG (haftungsbeschränkt)
+alternate_names:
+  - Kumpel und Hütte
+  - Kumpel & Hütte
+phone: +49 160 90889269
+email: info@kumpelundhuette.de
+street: Im Heidewinkel 30
+postal_code: "44267"
+city: Dortmund
+region: Nordrhein-Westfalen
+country: DE
+latitude: 51.4457353
+longitude: 7.5292762
+maps: https://maps.app.goo.gl/Tado4PkLB8r99nMU8
+opening_hours:
+  days: [Monday, Tuesday, Wednesday, Thursday, Friday]
+  opens: "10:00"
+  closes: "17:00"
+founding_date: "2025-05-06"
+founders:
+  - Robin Grunwald
+  - Julianne Grunwald
+area_served: Dortmund
+logo: icon-512.png

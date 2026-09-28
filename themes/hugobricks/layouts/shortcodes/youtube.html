@@ -1,9 +1,0 @@
-{{- /* Usage: {{< youtube "qtIqKaDlqXo" "/uploads/youtubeposter.jpg" >}} Links out; no third-party script is loaded. */ -}}
-{{- $id := cond .IsNamedParams (.Get "id") (.Get 0) -}}
-{{- $image := cond .IsNamedParams (.Get "image") (.Get 1) -}}
-<figure class="video">
-  <a class="video__link photo__frame" href="https://www.youtube.com/watch?v={{ $id }}" rel="noopener">
-    {{- with $image }}{{ partial "img.html" (dict "src" . "alt" "" "ratio" "16:9") }}{{ end -}}
-    <span class="video__play">{{ i18n "video_play" }}</span>
-  </a>
-</figure>

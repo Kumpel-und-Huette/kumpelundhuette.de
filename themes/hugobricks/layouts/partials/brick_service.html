@@ -10,7 +10,7 @@
   </header>
   {{- with $p.Params.image }}
   <div class="wrap wrap--medium article__photo">
-    {{- partial "brick/figure.html" (dict "src" . "alt" "" "sizes" "(min-width: 56em) 52rem, 100vw" "eager" true) -}}
+    {{- partial "brick/figure.html" (dict "src" . "alt" ($p.Params.image_alt | default "") "sizes" "(min-width: 56em) 52rem, 100vw" "eager" true) -}}
   </div>
   {{- end }}
   <div class="brick brick--wide">

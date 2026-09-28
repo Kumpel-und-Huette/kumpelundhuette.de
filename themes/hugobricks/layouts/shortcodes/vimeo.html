@@ -1,7 +1,0 @@
-{{- /* Usage: {{< vimeo id="727145223" image="/uploads/gallery/01.jpg" >}} Links out; no third-party script is loaded. */ -}}
-<figure class="video">
-  <a class="video__link photo__frame" href="https://vimeo.com/{{ .Get "id" }}" rel="noopener">
-    {{- with .Get "image" }}{{ partial "img.html" (dict "src" . "alt" "" "ratio" "16:9") }}{{ end -}}
-    <span class="video__play">{{ i18n "video_play" }}</span>
-  </a>
-</figure>

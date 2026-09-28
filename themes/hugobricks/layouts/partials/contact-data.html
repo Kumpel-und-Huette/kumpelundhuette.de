@@ -1,17 +1,18 @@
-{{- /* Returns the contact facts for the current language. */ -}}
+{{- /* Returns the contact facts for the current language. Address and phone come from data/business.yaml. */ -}}
 {{- $lang := site.Language.Lang -}}
 {{- $d := index hugo.Data $lang -}}
-{{- $phone := $d.general.contact.phone | default "" -}}
+{{- $b := hugo.Data.business -}}
+{{- $phone := $b.phone | default $d.general.contact.phone | default "" -}}
 {{- $tel := replaceRE `[^+0-9]` "" $phone -}}
 {{- $display := $phone -}}
 {{- if and (eq $lang "de") (hasPrefix $phone "+49 ") -}}{{- $display = print "0" (strings.TrimPrefix "+49 " $phone) -}}{{- end -}}
 {{- return (dict
   "phone" $display
-  "tel" (print "tel:" $tel)
-  "email" ($d.general.contact.email | default "")
+  "tel" (print "tel:" $tel | safeURL)
+  "email" ($b.email | default $d.general.contact.email | default "")
   "hours" (strings.FirstUpper ($d.header.preheader | default ""))
-  "street" "Im Heidewinkel 30"
-  "city" "44267 Dortmund"
-  "maps" "https://maps.app.goo.gl/Tado4PkLB8r99nMU8"
+  "street" $b.street
+  "city" (print $b.postal_code " " $b.city)
+  "maps" $b.maps
   "contact" (($d.header.cta.link | default "/kontakt/") | relURL)
 ) -}}

@@ -24,7 +24,7 @@ read_less: Show less
 all_news: All news
 all_homes: Our home
 open_map: Open location in Google Maps
-map_alt: Map of Dortmund-Lütgendortmund showing Im Heidewinkel 30
+map_alt: Map of Dortmund showing Im Heidewinkel 30
 published: Published on
 services:
   other: News
@@ -78,3 +78,7 @@ carousel_slide: Photo
 carousel_position: "{{ .n }} of {{ .total }}"
 carousel_cta: See the house in person
 carousel_pick: Choose a photo
+photo_of: "Photo of {{ .name }}"
+og_image_alt: Bright kitchen of our senior shared home in Dortmund with a wooden worktop and glass-front cabinets
+price_range: "€{{ .total }} per month"
+care_service: Nursing care from our own team

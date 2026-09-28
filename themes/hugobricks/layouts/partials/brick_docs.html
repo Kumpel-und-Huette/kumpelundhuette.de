@@ -1,8 +1,0 @@
-{{- $inner := . -}}
-<section class="brick brick--wide brick--page">
-  <div class="prose">
-    {{ partial "breadcrumbs.html" page }}
-    <h1>{{ page.Title }}</h1>
-    {{ partial "md.html" $inner | safeHTML }}
-  </div>
-</section>

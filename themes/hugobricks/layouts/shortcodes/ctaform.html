@@ -1,2 +1,0 @@
-{{- /* Usage: {{< ctaform >}} Renders nothing when data/<lang>/ctaform.yaml is missing. */ -}}
-{{- with (index hugo.Data page.Language.Lang).ctaform }}{{ partial "form.html" . }}{{ end -}}

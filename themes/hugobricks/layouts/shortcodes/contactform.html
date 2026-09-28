@@ -1,2 +1,0 @@
-{{- /* Usage: {{< contactform >}} Renders nothing when data/<lang>/contactform.yaml is missing. */ -}}
-{{- with (index hugo.Data page.Language.Lang).contactform }}{{ partial "form.html" . }}{{ end -}}

@@ -2,8 +2,8 @@
 title: Privacy policy
 slug: privacy
 seo:
-  title: "Privacy Policy | Kumpel & Hütte Service"
-  description: "How Kumpel und Hütte Service handles your data: processing on our website, the contact form, cookies and your rights under the GDPR."
+  title: "Privacy Policy | Kumpel & Hütte"
+  description: "How Kumpel und Hütte handles your data: processing on our website, the contact form, cookies and your rights under the GDPR."
 ---
 
 {{< brick_wide >}}

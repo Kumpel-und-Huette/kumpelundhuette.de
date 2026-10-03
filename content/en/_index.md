@@ -17,7 +17,7 @@ Senior shared living in Dortmund: your own room, real company and care from our 
 {{< /brick_intro >}}
 {{< brick_small >}}
 
-Kumpel & Hütte Service is more than a place to live. It is a real home. Not a care home. Not a hotel. Not an anonymous flat share. Instead, a close-knit community for people who want to grow old together rather than alone: with dignity, humour and practical everyday support.
+Kumpel & Hütte is more than a place to live. It is a real home. Not a care home. Not a hotel. Not an anonymous flat share. Instead, a close-knit community for people who want to grow old together rather than alone: with dignity, humour and practical everyday support.
 
 {{< /brick_small >}}
 {{< brick_carousel >}}

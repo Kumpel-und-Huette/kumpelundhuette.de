@@ -1,8 +1,8 @@
 ---
 title: Datenschutzerklärung
 seo:
-  title: "Datenschutzerklärung | Kumpel & Hütte Service"
-  description: "Wie Kumpel und Hütte Service mit Ihren Daten umgeht: Datenverarbeitung auf unserer Website, Kontaktformular, Cookies und Ihre Rechte nach der DSGVO."
+  title: "Datenschutzerklärung | Kumpel & Hütte"
+  description: "Wie Kumpel und Hütte mit Ihren Daten umgeht: Datenverarbeitung auf unserer Website, Kontaktformular, Cookies und Ihre Rechte nach der DSGVO."
 ---
 
 {{< brick_wide >}}
@@ -16,7 +16,7 @@ Diese Datenschutzerklärung klärt Sie über die Art, den Umfang und Zweck der V
 
 ### 2. Verantwortliche Stelle
 
-**Kumpel und Hütte Service UG (haftungsbeschränkt)**  
+**Kumpel und Hütte UG (haftungsbeschränkt)**  
 Im Heidewinkel 30, 44267 Dortmund  
 Telefon: +49 160 90889269  
 E-Mail: info@kumpelundhuette.de

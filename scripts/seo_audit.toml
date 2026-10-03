@@ -43,7 +43,7 @@ asl_good = 17
 asl_bad = 25
 
 [nap]
-name = "Kumpel & Hütte Service"
+name = "Kumpel & Hütte"
 street = "Im Heidewinkel 30"
 postal_code = "44267"
 city = "Dortmund"

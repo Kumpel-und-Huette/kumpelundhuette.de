@@ -23,7 +23,7 @@ If you would like to read up first: what a place costs and what the care insuran
 
 **Reachable by phone:** Monday to Friday, 10 am to 5 pm
 
-**Kumpel & Hütte Service**  
+**Kumpel & Hütte**  
 Im Heidewinkel 30  
 44267 Dortmund  
 Germany

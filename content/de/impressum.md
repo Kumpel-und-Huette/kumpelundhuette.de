@@ -1,14 +1,14 @@
 ---
 title: Impressum
 seo:
-  title: "Impressum | Kumpel & Hütte Service"
-  description: "Impressum der Kumpel und Hütte Service UG (haftungsbeschränkt), Im Heidewinkel 30, 44267 Dortmund. Geschäftsführer: Robin Grunwald."
+  title: "Impressum | Kumpel & Hütte"
+  description: "Impressum der Kumpel und Hütte UG (haftungsbeschränkt), Im Heidewinkel 30, 44267 Dortmund. Geschäftsführer: Robin Grunwald."
 ---
 
 
 {{< brick_wide >}}
 
-**Kumpel und Hütte Service UG (haftungsbeschränkt)**  
+**Kumpel und Hütte UG (haftungsbeschränkt)**  
 Im Heidewinkel 30         
 44267 Dortmund  
 Deutschland

@@ -1,7 +1,7 @@
 # Business facts shared by the contact blocks, the footer and the structured data (JSON-LD).
 # Name, address and phone must match the Impressum and the Google Business Profile exactly.
-name: Kumpel & Hütte Service
-legal_name: Kumpel und Hütte Service UG (haftungsbeschränkt)
+name: Kumpel & Hütte
+legal_name: Kumpel und Hütte UG (haftungsbeschränkt)
 alternate_names:
   - Kumpel und Hütte
   - Kumpel & Hütte

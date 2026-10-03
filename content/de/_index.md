@@ -17,7 +17,7 @@ Senioren-WG in Dortmund: eigenes Zimmer, echte Gesellschaft und Pflege von unser
 {{< /brick_intro >}}
 {{< brick_small >}}
 
-Kumpel & Hütte Service ist mehr als ein Ort zum Wohnen. Es ist ein echtes Zuhause. Kein Heim. Kein Hotel. Keine anonyme WG. Sondern ein vertrautes Miteinander für Menschen, die im Alter nicht allein, sondern in Gemeinschaft leben möchten: mit Würde, Humor und alltagstauglicher Unterstützung.
+Kumpel & Hütte ist mehr als ein Ort zum Wohnen. Es ist ein echtes Zuhause. Kein Heim. Kein Hotel. Keine anonyme WG. Sondern ein vertrautes Miteinander für Menschen, die im Alter nicht allein, sondern in Gemeinschaft leben möchten: mit Würde, Humor und alltagstauglicher Unterstützung.
 
 {{< /brick_small >}}
 {{< brick_carousel >}}

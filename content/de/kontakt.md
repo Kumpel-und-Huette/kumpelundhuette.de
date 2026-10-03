@@ -22,7 +22,7 @@ Wenn Sie sich vorher in Ruhe einlesen möchten: Was ein Platz kostet und was die
 
 **Telefonisch erreichbar:** Montag bis Freitag von 10 bis 17 Uhr
 
-**Kumpel & Hütte Service**  
+**Kumpel & Hütte**  
 Im Heidewinkel 30  
 44267 Dortmund  
 Deutschland

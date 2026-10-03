@@ -1,4 +1,4 @@
-import { gtm } from "@params";
+import { ga } from "@params";
 
 const KEY = "kumpel-consent";
 const VERSION = 1;
@@ -34,12 +34,13 @@ let loaded = false;
 
 const grant = () => {
   gtag("consent", "update", { analytics_storage: "granted" });
-  if (loaded || !gtm) return;
+  if (loaded || !ga) return;
   loaded = true;
-  window.dataLayer.push({ "gtm.start": Date.now(), event: "gtm.js" });
+  gtag("js", new Date());
+  gtag("config", ga);
   const s = document.createElement("script");
   s.async = true;
-  s.src = "https://www.googletagmanager.com/gtm.js?id=" + encodeURIComponent(gtm);
+  s.src = "https://www.googletagmanager.com/gtag/js?id=" + encodeURIComponent(ga);
   document.head.append(s);
 };
 
@@ -97,7 +98,7 @@ document.addEventListener("DOMContentLoaded", () => {
     } else {
       gtag("consent", "update", { analytics_storage: "denied" });
       clearCookies();
-      // Tag Manager cannot be unloaded from a running page.
+      // Google Analytics cannot be unloaded from a running page.
       if (loaded) {
         location.reload();
         return;

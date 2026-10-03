@@ -25,8 +25,8 @@
 <meta name="yandex-verification" content="fb66a8e29849494f">
 <meta name="msvalidate.01" content="D493034CDDFB641558586F22810E5949">
 <script>document.documentElement.classList.add("js")</script>
-{{- with site.Params.googleTagManager }}
-{{- $consent := resources.Get "js/consent.js" | js.Build (dict "minify" true "target" "es2018" "params" (dict "gtm" (cond hugo.IsProduction . ""))) }}
+{{- with site.Params.googleAnalytics }}
+{{- $consent := resources.Get "js/consent.js" | js.Build (dict "minify" true "target" "es2018" "params" (dict "ga" (cond hugo.IsProduction . ""))) }}
 <script>{{ $consent.Content | safeJS }}</script>
 {{- end }}
 <title>{{ $title }}</title>

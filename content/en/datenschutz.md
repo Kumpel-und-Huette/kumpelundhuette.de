@@ -43,21 +43,15 @@ If you send us enquiries via the contact form, your details from the form includ
 
 Our website itself does not set any cookies. We store your choice in the cookie notice in your browser's local storage so that we do not have to ask you again on every page. The entry contains only your choice and when you made it, is not sent to us and is strictly necessary for this purpose (Section 25(2) no. 2 TDDDG). After twelve months we ask you again.
 
-We only load Google Tag Manager and Google Analytics (sections 6 and 7) once you click “Accept” in the cookie notice. As long as you have not agreed, no data is transferred to Google.
+We only load Google Analytics (section 6) once you click “Accept” in the cookie notice. As long as you have not agreed, no data is transferred to Google.
 
 You can withdraw your consent at any time with effect for the future, via “Cookie settings” at the bottom of every page or directly here. Withdrawal does not affect the lawfulness of processing carried out before it.
 
 {{< cookiesettings >}}
 
-### 6. Google Tag Manager
+### 6. Google Analytics
 
-If you have given your consent, we use Google Tag Manager from Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (“Google”). With Tag Manager we embed services such as Google Analytics in our website and manage them in one place. Tag Manager itself does not set cookies or build user profiles. When it loads, however, your IP address is transmitted to Google, as with any request on the internet.
-
-We currently use Tag Manager only for Google Analytics (section 7). The legal basis is your consent (Art. 6(1)(a) GDPR, Section 25(1) TDDDG). For transfers of data to the USA, see section 7.
-
-### 7. Google Analytics
-
-If you have given your consent, we use Google Analytics 4, a web analytics service from Google. It shows us how our website is used, for example which pages are visited and for how long, so that we can improve it.
+If you have given your consent, we use Google Analytics 4, a web analytics service from Google Ireland Limited, Gordon House, Barrow Street, Dublin 4, Ireland (“Google”). It shows us how our website is used, for example which pages are visited and for how long, so that we can improve it.
 
 For this, Google Analytics sets two cookies whose names begin with “\_ga”. They contain a randomly generated identifier and are stored for up to two years after your last visit. Among other things, the pages visited and the times, the website you came from, your approximate location (country and city), browser, operating system, device type and screen size are processed. Google uses your IP address only to determine your approximate location; Google Analytics does not store it. We do not use the advertising features of Google Analytics. Data linked to the identifier is deleted after two months.
 
@@ -65,11 +59,11 @@ Google processes the data on our behalf; we have concluded a data processing agr
 
 The legal basis is your consent (Art. 6(1)(a) GDPR, Section 25(1) TDDDG), which you can withdraw at any time via “Cookie settings”. More in [Google's privacy policy](https://policies.google.com/privacy?hl=en).
 
-### 8. Legal bases for data processing
+### 7. Legal bases for data processing
 
-Your data is processed on the basis of Art. 6(1)(f) GDPR (legitimate interest) or Art. 6(1)(b) GDPR (performance of a contract) when it concerns processing enquiries or providing our services. We use Google Tag Manager and Google Analytics only with your consent (Art. 6(1)(a) GDPR, Section 25(1) TDDDG).
+Your data is processed on the basis of Art. 6(1)(f) GDPR (legitimate interest) or Art. 6(1)(b) GDPR (performance of a contract) when it concerns processing enquiries or providing our services. We use Google Analytics only with your consent (Art. 6(1)(a) GDPR, Section 25(1) TDDDG).
 
-### 9. Your rights
+### 8. Your rights
 
 You have the right at any time to:
 
@@ -83,11 +77,11 @@ You have the right at any time to:
 
 Please contact the controller named above for this purpose.
 
-### 10. Right to lodge a complaint with a supervisory authority
+### 9. Right to lodge a complaint with a supervisory authority
 
 In the event of data protection violations, you have the right to lodge a complaint with the competent supervisory authority. As a rule this is the state data protection commissioner of your federal state.
 
-### 11. Changes to this privacy policy
+### 10. Changes to this privacy policy
 
 We reserve the right to adapt this privacy policy so that it always complies with current legal requirements or to implement changes to our services. The new privacy policy then applies to your next visit.
 

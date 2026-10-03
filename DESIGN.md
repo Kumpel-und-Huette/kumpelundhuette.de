@@ -376,4 +376,4 @@ In-page jump links are oat pills (min 44px) that fill with ink on hover. Move-in
 - **Don't** set text in plain ochre; use ochre-ink or the pale lamp tint on dark grounds.
 - **Don't** cast shadows on flat content, or use hard offset drop shadows; paper surfaces get the 1px ring. The only zero-blur shadow is the inset door sill.
 - **Don't** use icon fonts or glyph icons; use the authored 2px line icons.
-- **Don't** load third-party scripts or fonts; both faces are self-hosted and the site ships one fingerprinted stylesheet. The one exception is Google Tag Manager, and only after a visitor agrees in the consent banner.
+- **Don't** load third-party scripts or fonts; both faces are self-hosted and the site ships one fingerprinted stylesheet. The one exception is Google Analytics, and only after a visitor agrees in the consent banner.

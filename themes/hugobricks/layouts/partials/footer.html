@@ -35,7 +35,7 @@
         {{- range $d.footer.menuitems }}
         <li><a href="{{ .link }}"{{ if eq $.RelPermalink .link }} aria-current="page"{{ end }}>{{ .title }}</a></li>
         {{- end }}
-        {{- if site.Params.googleTagManager }}
+        {{- if site.Params.googleAnalytics }}
         <li><button type="button" data-consent-open>{{ i18n "consent_settings" }}</button></li>
         {{- end }}
         {{- range .Translations }}

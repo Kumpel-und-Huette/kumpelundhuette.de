@@ -1,0 +1,14 @@
+{{- if site.Params.googleTagManager -}}
+{{- $privacy := site.GetPage "/datenschutz" -}}
+<section class="consent" id="consent" aria-labelledby="consent-title" hidden>
+  <div class="consent__inner">
+    <h2 class="consent__title" id="consent-title" tabindex="-1">{{ i18n "consent_title" }}</h2>
+    <p>{{ i18n "consent_text" }}{{ with $privacy }} <a href="{{ .RelPermalink }}">{{ i18n "consent_more" }}</a>.{{ end }}</p>
+    <p class="consent__state" data-consent-state data-accepted="{{ i18n "consent_state_on" }}" data-rejected="{{ i18n "consent_state_off" }}" hidden></p>
+    <div class="consent__actions">
+      <button class="button button--quiet" type="button" data-consent="accept">{{ i18n "consent_accept" }}</button>
+      <button class="button button--quiet" type="button" data-consent="reject">{{ i18n "consent_reject" }}</button>
+    </div>
+  </div>
+</section>
+{{- end -}}

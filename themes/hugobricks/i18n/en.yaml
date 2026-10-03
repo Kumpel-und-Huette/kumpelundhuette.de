@@ -82,3 +82,11 @@ photo_of: "Photo of {{ .name }}"
 og_image_alt: Bright kitchen of our senior shared home in Dortmund with a wooden worktop and glass-front cabinets
 price_range: "€{{ .total }} per month"
 care_service: Nursing care from our own team
+consent_title: Cookies and statistics
+consent_text: "With your consent we use Google Analytics to measure how our website is used. Google sets cookies for this and processes data, including in the USA. You can change your choice at any time under “Cookie settings” at the bottom of every page."
+consent_more: More in our privacy policy
+consent_accept: Accept
+consent_reject: Reject
+consent_settings: Cookie settings
+consent_state_on: So far you have accepted.
+consent_state_off: So far you have rejected.

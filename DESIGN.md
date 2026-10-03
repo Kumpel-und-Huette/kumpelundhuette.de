@@ -172,6 +172,11 @@ components:
     textColor: "{colors.ink}"
     rounded: "{rounded.md}"
     height: "3rem"
+  consent:
+    backgroundColor: "{colors.paper}"
+    textColor: "{colors.ink}"
+    rounded: "{rounded.md}"
+    padding: "1.5rem"
   footer:
     backgroundColor: "{colors.coal}"
     textColor: "#e8dfd2"
@@ -344,7 +349,10 @@ Paper items with the ring, built on native `details`/`summary`. The summary is 7
 Every page ends on a brick band with a display-size paper heading and three linen "ways" shaped as arches (12rem top radius): a brick line icon, a Vollkorn verb, the detail (number, email, address) in tabular 700, and a Soft Ink note. On hover a way lifts 4px and its oat sill turns ochre; the lift is dropped under reduced motion.
 
 ### Mobile Callbar
-A fixed paper bar on screens under 48em: the brick "Anrufen" button and an ink-outlined "Schreiben" button, both 48px tall, so phone and email are always one tap away. Hidden while the menu is open.
+A fixed paper bar on screens under 48em: the brick "Anrufen" button and an ink-outlined "Schreiben" button, both 48px tall, so phone and email are always one tap away. Hidden while the menu or the consent banner is open.
+
+### Consent Banner
+One plain question about statistics, asked once and never as a modal. Under 64em it is a paper sheet fixed to the foot of the screen with the callbar shadow; from 64em it becomes a paper card at the lower right with the dropdown shadow, clear of the home place-card. A Vollkorn title, the notice at caption size with a link to the privacy policy, and two quiet buttons of identical size and style ("Zustimmen", "Ablehnen"), because rejecting must be as easy as accepting. While it is open the footer grows by the banner's height so nothing ends up underneath it. "Cookie-Einstellungen" in the footer and in the privacy policy reopens it with the current choice stated.
 
 ### Jumplist Chips and Numbered Steps
 In-page jump links are oat pills (min 44px) that fill with ink on hover. Move-in steps are an ordered list with 2.3rem brick circles carrying the number in Vollkorn.
@@ -368,4 +376,4 @@ In-page jump links are oat pills (min 44px) that fill with ink on hover. Move-in
 - **Don't** set text in plain ochre; use ochre-ink or the pale lamp tint on dark grounds.
 - **Don't** cast shadows on flat content, or use hard offset drop shadows; paper surfaces get the 1px ring. The only zero-blur shadow is the inset door sill.
 - **Don't** use icon fonts or glyph icons; use the authored 2px line icons.
-- **Don't** load third-party scripts or fonts; both faces are self-hosted and the site ships one fingerprinted stylesheet.
+- **Don't** load third-party scripts or fonts; both faces are self-hosted and the site ships one fingerprinted stylesheet. The one exception is Google Tag Manager, and only after a visitor agrees in the consent banner.

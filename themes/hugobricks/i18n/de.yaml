@@ -82,3 +82,11 @@ photo_of: "Foto von {{ .name }}"
 og_image_alt: Helle Küche unserer Senioren-WG in Dortmund mit Holzarbeitsplatte und Glasvitrinen
 price_range: "{{ .total }} € im Monat"
 care_service: Pflege durch unser eigenes Team
+consent_title: Cookies und Statistik
+consent_text: "Mit Ihrer Zustimmung messen wir mit Google Analytics, wie unsere Website genutzt wird. Google setzt dafür Cookies und verarbeitet Daten, auch in den USA. Ihre Wahl können Sie jederzeit unten auf jeder Seite unter „Cookie-Einstellungen“ ändern."
+consent_more: Mehr dazu in der Datenschutzerklärung
+consent_accept: Zustimmen
+consent_reject: Ablehnen
+consent_settings: Cookie-Einstellungen
+consent_state_on: Sie haben bisher zugestimmt.
+consent_state_off: Sie haben bisher abgelehnt.

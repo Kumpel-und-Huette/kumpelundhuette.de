@@ -4,6 +4,7 @@
     {{- partial "head.html" . -}}
   </head>
   <body class="{{ if .IsHome }}is-home {{ end }}page-{{ with .File }}{{ .ContentBaseName | urlize }}{{ else }}{{ .Kind }}{{ end }}">
+    {{- partial "consent.html" . -}}
     <a class="skip-link" href="#main">{{ i18n "skip_to_content" }}</a>
     <div id="top-sentinel" aria-hidden="true"></div>
     {{- partial "header.html" . -}}

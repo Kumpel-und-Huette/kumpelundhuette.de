@@ -13,7 +13,7 @@ outputs:
 
 params:
   showImageCaptions: false
-  googleTagManager: GTM-KJ97RSLJ
+  googleTagManager: G-N2XJVQ6L2F
 
 module:
   mounts:

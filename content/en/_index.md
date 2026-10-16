@@ -2,13 +2,13 @@
 title: Home
 seo:
   title: "Senior Shared Living in Dortmund with Care | Kumpel & Hütte"
-  description: "Your own room, real company and nursing care from our own team: our senior shared home in Dortmund from care grade 2. €970 a month, personal share from €0."
+  description: "Your own room, real company and optional everyday support: senior shared living in Dortmund. Rent €570 all-inclusive, nursing care by arrangement."
 ---
 {{< brick_intro >}}
 
 # Not a care home. Not alone. Simply home!
 
-Senior shared living in Dortmund: your own room, real company and care from our own team.
+Senior shared living in Dortmund: your own room, real company, and optional everyday support and nursing care from our Kumpel.
 
 {{< button "Call: +49 160 90889269" "tel:+4916090889269" >}} {{< button2 "Arrange a visit" "/en/contact/" >}}
 
@@ -39,14 +39,15 @@ Real photos, not stock images: this is how we live in Dortmund.
 
 ![Round dining table in the shared living room of our home](/uploads/gallery/Runder Tisch.jpeg "Image from the presentation of our first shared home")
 
-At Kumpel und Hütte we create a home in a safe, caring community for people who want to keep living independently despite needing care. Our concept is for people with care grade 2 or higher who need support in daily life but do not want a traditional nursing home. A real alternative to a care home, right here in Dortmund.
+At Kumpel und Hütte we create a home in a safe, caring community for people who want to keep living independently despite limitations. Our concept is for people who need support in everyday life and/or feel lonely or isolated, for whom a traditional nursing home is not an option, and also for family carers looking for a genuine, warm alternative in and around Dortmund.
 
 # Our promise
 - Communal living in a warm atmosphere
-- Practical everyday support and individual help
+- Optional: practical everyday support and individual help
 - Encouraging self-determination, activity and joy of life
 - Sustainable and affordable housing
 - Trusting, empathetic support from our qualified team
+- Everything is possible, nothing is mandatory
 
 
 {{< /brick_image2 >}}
@@ -56,7 +57,7 @@ At Kumpel und Hütte we create a home in a safe, caring community for people who
 
 ![Two hands holding each other](/uploads/gallery/Hands.jpg "Illustrative image")
 
-At Kumpel und Hütte we want people who need care to live a fulfilling, self-determined life. Our values shape everyday life in our shared home and create an environment where people feel welcome and well looked after.
+At Kumpel und Hütte we want to make a fulfilled, self-determined life possible again for people who, for whatever reason, no longer have one. Our values shape everyday life in our shared home and create an environment where people may feel at ease and well looked after.
 
 - **Trust:** Residents and families can rely on us. We work transparently, responsibly and dependably.
 
@@ -66,7 +67,7 @@ At Kumpel und Hütte we want people who need care to live a fulfilling, self-det
 
 - **Dignity:** Every resident is treated with respect, self-determination and individual attention.
 
-- **Affordability:** Our model is fairly priced, eases the load on residents and relatives, and is comprehensively supported by care benefits.
+- **Affordability:** Our model is fairly priced, eases the load on residents and relatives, and can be comprehensively supported by care benefits.
 
 
 {{< /brick_image >}}
@@ -74,14 +75,14 @@ At Kumpel und Hütte we want people who need care to live a fulfilling, self-det
 
 ## Our senior shared home at a glance
 
-**Kumpel und Hütte** gives you everything that makes for a safe, self-determined and sheltered life despite needing care. Our house community is thoughtfully designed and combines comfort with genuine closeness, for people who do not want to be alone in everyday life.
+**Kumpel und Hütte** gives you everything that makes for a safe, self-determined and sheltered life, including when care is needed. Our house community is thoughtfully designed and combines comfort with genuine closeness, for people who do not want to be alone in everyday life.
 
 ---
 
 ### Spaces for meeting and retreat
 
 With us, privacy and community go hand in hand.
-Your own room gives you space for personal comfort, and there are rooms to come together: a living kitchen, a cosy living room, a games or reading corner and a green garden invite conversation. You can see how the house is set up on the page [Our house in Dortmund](/en/our-home/dortmund-lütgendortmund/).
+Your own room gives you space for personal comfort, and there are rooms to come together, for example a living kitchen, a cosy living room, a games or reading corner. A green garden invites conversation. You can see how the house is set up on the page [Our shared home “Glück auf” in Lütgendortmund](/en/our-home/dortmund-lütgendortmund/).
 
 
 
@@ -89,8 +90,8 @@ Your own room gives you space for personal comfort, and there are rooms to come 
 
 ### Safe and well-thought-out furnishings
 
-Our rooms are not fully barrier-free, but they are practical for everyday life and carefully fitted out.
-A floor-level shower, handrails and well-planned lighting support orientation, comfort and safety.
+Our rooms are not always fully barrier-free, depending on the shared home, but they are practical for everyday life and carefully fitted out.
+A floor-level shower, handrails and well-planned lighting support orientation, comfort and safety everywhere.
 So self-determined living remains possible, with furnishings that support without constraining.
 
 ---
@@ -108,9 +109,9 @@ Many solutions can be tailored individually, for more comfort in everyday life.
 
 ---
 
-### Nursing and everyday help from our team
+### Nursing and everyday help
 
-Our own team provides household help, accompaniment, support, and the nursing care.
+Our team provides household help, accompaniment, support and the nursing care itself, or together with our service partners.
 
 ---
 

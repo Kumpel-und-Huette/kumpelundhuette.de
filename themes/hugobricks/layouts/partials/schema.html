@@ -15,18 +15,15 @@
 {{- range $b.founders }}{{ $founders = $founders | append (dict "@type" "Person" "name" .) }}{{ end -}}
 {{- $bizImage := $root -}}
 {{- with resources.Get "plates/hero-people.jpg" }}{{ $bizImage = (.Fill "1200x900 jpg q80 Center").Permalink }}{{ end -}}
-{{- $offers := slice -}}
-{{- range slice (slice "price_rent" "price_rent_note" $pr.rent) (slice "price_house" "price_house_note" $pr.housekeeping) (slice "price_care" "price_care_note" $pr.support) -}}
-  {{- $offers = $offers | append (dict
-    "@type" "Offer"
-    "name" (i18n (index . 0))
-    "description" (i18n (index . 1))
-    "price" (index . 2)
-    "priceCurrency" "EUR"
-    "priceSpecification" (dict "@type" "UnitPriceSpecification" "price" (index . 2) "priceCurrency" "EUR" "unitCode" "MON" "unitText" (i18n "price_month"))
-  ) -}}
-{{- end -}}
-{{- $offers = $offers | append (dict "@type" "Offer" "itemOffered" (dict "@type" "Service" "name" (i18n "care_service"))) -}}
+{{- $offers := slice (dict
+  "@type" "Offer"
+  "name" (i18n "price_rent")
+  "description" (i18n "price_rent_note")
+  "price" $pr.rent
+  "priceCurrency" "EUR"
+  "priceSpecification" (dict "@type" "UnitPriceSpecification" "price" $pr.rent "priceCurrency" "EUR" "unitCode" "MON" "unitText" (i18n "price_month"))
+) -}}
+{{- $offers = $offers | append (dict "@type" "Offer" "itemOffered" (dict "@type" "Service" "name" (i18n "care_service") "description" (i18n "price_optional"))) -}}
 
 {{- $business := dict
   "@type" "LocalBusiness"
@@ -41,7 +38,7 @@
   "image" $bizImage
   "telephone" $b.phone
   "email" $b.email
-  "priceRange" (i18n "price_range" (dict "total" $pr.total))
+  "priceRange" (i18n "price_range" (dict "rent" $pr.rent))
   "address" (dict "@type" "PostalAddress" "streetAddress" $b.street "postalCode" $b.postal_code "addressLocality" $b.city "addressRegion" $b.region "addressCountry" $b.country)
   "geo" (dict "@type" "GeoCoordinates" "latitude" $b.latitude "longitude" $b.longitude)
   "hasMap" $b.maps

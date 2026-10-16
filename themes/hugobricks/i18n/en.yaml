@@ -37,27 +37,22 @@ Load more posts:
 Filter tags:
   other: Filter
 price_title: What a place with us costs
-price_intro: Rent, housekeeping and support in one amount. Depending on pension and care grade, your personal share can go down to 0 €.
+price_intro: You will find the price on the page for that accommodation.
 price_rent: Rent
-price_rent_note: Room, utilities, electricity, heating, internet, TV licence
-price_house: Housekeeping
-price_house_note: Weekly cleaning, shopping and laundry; breakfast and a warm meal every day
-price_care: Support
-price_care_note: Activating support, organisation, conversations, contact with relatives
-price_total: All together
+price_rent_note: The only mandatory amount, all-inclusive. Electricity, gas, cold utilities, internet, TV licence if applicable
 price_month: per month
-price_share: Your personal share
-price_share_note: depending on pension and care grade
-price_admission: For people with care grade 2 or higher, exceptions by arrangement.
+price_optional: Optional service contract for housekeeping and personal support. Prices depend on what you need, hourly billing is possible, and they follow state guidelines. More information at
+price_optional_care: With a care grade, billing through the care insurance is possible.
+price_admission: Housekeeping and personal support are optional.
 price_link: How moving in works
 house_facts: At a glance
 house_address: Address
 house_for: Who it is for
 house_for_value: People with care grade 2 or higher, exceptions by arrangement
 house_cost: Cost
-house_cost_value: 970 € per month, personal share from 0 € possible
+house_cost_value: €570 rent all-inclusive, service optional
 house_care: Care
-house_care_value: by our own team
+house_care_value: Our team or partners, by arrangement
 job_location: Location
 job_type: Type
 job_department: Area
@@ -80,8 +75,8 @@ carousel_cta: See the house in person
 carousel_pick: Choose a photo
 photo_of: "Photo of {{ .name }}"
 og_image_alt: Bright kitchen of our senior shared home in Dortmund with a wooden worktop and glass-front cabinets
-price_range: "€{{ .total }} per month"
-care_service: Nursing care from our own team
+price_range: "Rent €{{ .rent }} per month"
+care_service: Nursing care from our team or cooperation partners
 consent_title: Cookies and statistics
 consent_text: "With your consent we use Google Analytics to measure how our website is used. Google sets cookies for this. You can change your choice at any time under “Cookie settings”."
 consent_more: More in our privacy policy

@@ -1,17 +1,17 @@
 ---
-title: 'Unser Haus: Senioren-WG mit Pflege in Dortmund'
+title: 'Pilot-WG „Glück auf“ in Lütgendortmund'
 slug: dortmund-lütgendortmund
 image: /uploads/gallery/Werbebild Küche.png
 date: 2025-07-01 00:00:00
-summary: "In unserem Haus in Dortmund wohnen Menschen ab Pflegegrad 2 zusammen: mit eigenem Zimmer, echter Gesellschaft und Pflege von unserem eigenen Team."
+summary: "In unserer Pilot-WG „Glück auf“ in Lütgendortmund wohnen 3 Menschen auf 100 m²: eigenes Zimmer, echte Gesellschaft und optionale Unterstützung."
 tags:
   - dortmund
 seo:
-  title: "Pflege-WG in Dortmund: unser Haus | Kumpel & Hütte"
-  description: "Pflege-WG in Dortmund: helle Einzelzimmer, zwei Duschbäder, Garten und Pflege aus einem Team. Ab Pflegegrad 2, 970 € im Monat, Eigenanteil ab 0 €."
+  title: "WG „Glück auf“ in Dortmund | Kumpel & Hütte"
+  description: "Pilot-WG „Glück auf“ in Lütgendortmund, Dortmund: 3 Menschen auf 100 m², eigenes Zimmer und optionale Unterstützung. Miete 570 € all-inclusive."
 ---
 
-Wenn es allein zu Hause nicht mehr gut geht, soll der nächste Schritt kein Abschied von allem sein, was Ihnen wichtig ist. In unserem Haus in Dortmund wohnen Menschen ab Pflegegrad 2 zusammen: mit eigenem Zimmer, echter Gesellschaft und Pflege von unserem eigenen Team.
+In unserer Pilot-WG „Glück auf“ in Lütgendortmund wohnen 3 Menschen auf insgesamt 100 m² zusammen: mit eigenem Zimmer, echter Gesellschaft und optionaler, individuell anpassbarer Unterstützung durch unser Team.
 
 ## Ein Zuhause mit Struktur und Freiheit
 
@@ -25,15 +25,15 @@ Unsere Pflege-WG verbindet selbstbestimmtes Leben mit Unterstützung, die sich n
 - Wohnküche, Wohnzimmer und Garten für die Gemeinschaft
 - Bodengleiche Dusche, Handläufe und durchdachte Beleuchtung (vollständig barrierefrei ist das Haus nicht)
 - Freizeitangebote, bei denen jeder mitmachen kann und niemand muss
-- Pflege, Hauswirtschaft und Betreuung durch unser Team vor Ort
+- Pflege, Hauswirtschaft und Betreuung durch unser Team oder Kooperationspartner
 
 ## Was ein Platz kostet
 
-970 € im Monat für Miete, Hauswirtschaft und Betreuung. Je nach Rente und Pflegegrad sinkt Ihr Eigenanteil bis auf 0 €. Die Miete liegt im Rahmen der Grundsicherung in Dortmund, und für Hauswirtschaft und Betreuung kann ab Pflegegrad 2 die Pflegekasse aufkommen. Wie sich der Betrag zusammensetzt, lesen Sie unter [Kosten und Einzug](/einziehen-bei-uns/).
+Pflicht ist nur die Miete: 570 € all-inclusive für Strom, Gas, kalte Nebenkosten, Internet und ggf. die GEZ. Hauswirtschaft und Betreuung sind ein optionaler Servicevertrag. Die Miete liegt im Rahmen der Grundsicherung in Dortmund. Was die Pflegekasse und das Sozialamt übernehmen können, lesen Sie unter [Kosten und Einzug](/einziehen-bei-uns/).
 
 ## Paare, Haustiere und das erste Kennenlernen
 
-Paare sind willkommen, und auch ein Haustier ist nach Absprache möglich. Bevor Sie einziehen, lernen Sie die Menschen kennen, die schon hier wohnen. Denn wer zusammen lebt, sollte sich vorher einmal bei Kaffee und Kuchen begegnet sein.
+Paare sind willkommen, und auch ein Haustier ist nach Absprache möglich. Letztendlich entscheiden die Bewohner über neue Mitbewohner und über Haustiere. Bevor Sie einziehen, lernen Sie die Menschen kennen, die schon hier wohnen. Denn wer zusammen lebt, sollte sich vorher einmal bei Kaffee und Kuchen begegnet sein.
 
 ## Das Haus persönlich kennenlernen
 

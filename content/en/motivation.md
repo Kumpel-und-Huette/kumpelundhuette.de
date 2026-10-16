@@ -13,7 +13,7 @@ seo:
 
 ## Why Kumpel & Hütte?
 
-The world keeps moving faster, families live far apart, and in many neighbourhoods people hardly know each other anymore. For many older people that means one thing: they are alone more and more often. At **Kumpel & Hütte** we believe life in old age deserves more. More company, more safety, more dignity. That is why we created an alternative to the classic old-age home: a home that warms, connects and supports, without anyone having to give up who they are.
+The world keeps moving faster, families live far apart, and in many neighbourhoods people hardly know each other anymore. For many people, above all older people, that means one thing: they are alone more and more often. At **Kumpel & Hütte** we believe life deserves more. More company, more safety, more dignity. That is why we created an alternative, for example to the classic old-age home: a home that warms, connects and supports, without anyone having to give up who they are or give up their savings.
 
 ## The reality for many seniors
 
@@ -21,7 +21,7 @@ Many older people live alone, often in flats that were once meant for a whole fa
 
 On top of that come the questions of everyday life: Who helps with the shopping? Who is there if you fall? Who brings a little light back into the week?
 
-Relatives know the other side. They call every evening, drive over at the weekend and still worry. At some point the question comes up whether it really has to be a care home.
+Relatives know the other side. They call every evening, drive over at the weekend and still worry. At some point the question comes up whether it might still have to be a care home. Their strength is simply used up.
 
 That reality drove us to think differently. "Together instead of alone" should not stay a slogan, but become everyday life.
 
@@ -29,7 +29,7 @@ That reality drove us to think differently. "Together instead of alone" should n
 
 **Kumpel & Hütte** stands for a new way of living in old age: communal, affordable and human. In our senior shared home everyone has their own room to retreat to. But life also happens where community grows: in the living kitchen, the living, reading or games room, or over a cup of tea in the garden.
 
-We support everyday life where it is needed: with the nursing care we provide ourselves, with cooking or on visits to the doctor. At the same time, self-determination is preserved. Nobody is patronised. For us, support does not mean control, it means reliability. That creates a network of mutual support that gives safety without taking away independence. You can see what this looks like day to day in [our concept](/en/our-concept/).
+We support everyday life where it is needed: with care coordination, with cooking or on visits to the doctor. At the same time, self-determination is preserved. Nobody is patronised. For us, support does not mean control, it means reliability. That creates a network of mutual support that gives safety without taking away independence. You can see what this looks like day to day in [our concept](/en/our-concept/).
 
 ## Encounters create meaning
 

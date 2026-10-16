@@ -1,7 +1,3 @@
-# Published monthly amounts in euro. Keep in sync with content/*/einziehen-bei-uns.md.
+# Published monthly rent in euro. The only mandatory amount.
+# Housekeeping and support are optional and priced with the accommodation.
 rent: 570
-housekeeping: 200
-support: 200
-total: 970
-share_min: 0
-share_max: 970

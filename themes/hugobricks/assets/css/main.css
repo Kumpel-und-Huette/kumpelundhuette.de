@@ -148,6 +148,7 @@ mark { background: rgb(217 154 43 / 0.35); color: inherit; padding: 0 0.15em; bo
 .note__sum th span { display: block; font-weight: 400; color: var(--ink-soft); font-size: var(--step--1); line-height: 1.4; }
 .note__sum td { text-align: right; white-space: nowrap; padding: 0.55rem 0; vertical-align: top; font-size: var(--step-1); }
 .note__total th, .note__total td { padding-top: 1rem; border-top: 2px solid var(--ink); }
+.note__rent td strong,
 .note__total td strong {
   font-family: var(--serif);
   font-size: var(--step-3);
@@ -155,6 +156,7 @@ mark { background: rgb(217 154 43 / 0.35); color: inherit; padding: 0 0.15em; bo
   border-bottom: 5px double var(--brick);
   padding-bottom: 0.1em;
 }
+.note__share a { color: var(--brick); }
 .note__share {
   margin-top: 1.25rem;
   padding: 0.9rem 1rem;

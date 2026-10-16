@@ -11,9 +11,9 @@ seo:
 
 # Das Team hinter Kumpel & Hütte
 
-Hinter Kumpel & Hütte steht ein kleines Team aus Herzmenschen mit einer gemeinsamen Vision: das Leben im Alter schöner, sicherer und gemeinschaftlicher zu machen.
+Hinter Kumpel & Hütte steht ein kleines Team aus Herzmenschen mit einer gemeinsamen Vision: das Leben im Alter, bei Einsamkeit oder Isolation oder bei Pflegebedarf schöner, sicherer und gemeinschaftlicher zu machen.
 Wir kommen aus ganz unterschiedlichen Bereichen, aus Oper, Ballett, Management und Investment. Was uns verbindet, ist der Wunsch, ein Wohnkonzept mit echter Menschlichkeit zu schaffen.
-Mit Erfahrung, Offenheit und einem offenen Ohr für persönliche Bedürfnisse begleiten wir die Menschen in unserer Senioren-WG in Dortmund durch den Alltag. Nicht als Dienstleister, sondern als Kumpel und Stütze.
+Mit Erfahrung, Offenheit und einem offenen Ohr für persönliche Bedürfnisse begleiten wir die Menschen in unseren WGs in Dortmund durch den Alltag. Nicht als Dienstleister, sondern als Kumpel und Stütze.
 Warum wir das machen, erzählen wir in [unserer Motivation](/motivation/). Wie das Zusammenleben funktioniert, lesen Sie in [unserem Konzept](/unser-konzept/).
 
 {{< /brick_title2 >}}
@@ -24,7 +24,7 @@ Warum wir das machen, erzählen wir in [unserer Motivation](/motivation/). Wie d
 
 ## Sie möchten bei uns mitarbeiten?
 
-Sie möchten das Leben im Alter menschlicher und gemeinschaftlicher machen? Unser Team sucht immer engagierte, herzliche Menschen, die unsere Vision teilen. Ob aus der Pflege, der Hauswirtschaft, der Sozialarbeit oder einfach mit viel Herz: Bei uns finden Sie Ihren Platz. Wie es bei uns angefangen hat, lesen Sie in unseren [Neuigkeiten](/neuigkeiten/).
+Sie möchten das Leben menschlicher und gemeinschaftlicher machen? Unser Team sucht immer engagierte, herzliche Menschen, die unsere Vision teilen. Ob aus der Pflege, der Hauswirtschaft, der Sozialarbeit oder einfach mit viel Herz: Bei uns finden Sie Ihren Platz. Wie es bei uns angefangen hat, lesen Sie in unseren [Neuigkeiten](/neuigkeiten/).
 
 {{< button2 "Jobs bei Kumpel & Hütte ansehen" "/karrieren/" >}}
 

@@ -1,17 +1,17 @@
 ---
-title: 'Our house: a senior shared home with care in Dortmund'
+title: 'Pilot shared home “Glück auf” in Lütgendortmund'
 slug: dortmund-lütgendortmund
 image: /uploads/gallery/Werbebild Küche.png
 date: 2025-07-01 00:00:00
-summary: "In our house in Dortmund, people with care grade 2 or higher live together: with their own room, real company and nursing care from our own team."
+summary: "In our pilot shared home “Glück auf” in Lütgendortmund, 3 people live on 100 m²: their own room, real company and optional support."
 tags:
   - dortmund
 seo:
-  title: "Shared Home with Care in Dortmund | Kumpel & Hütte"
-  description: "Shared home with care in Dortmund: bright single rooms, two shower rooms, a garden and nursing care from one team. From care grade 2, €970 a month."
+  title: "“Glück auf” in Dortmund | Kumpel & Hütte"
+  description: "Pilot shared home “Glück auf” in Lütgendortmund, Dortmund: 3 people on 100 m², your own room and optional support. Rent €570 all-inclusive."
 ---
 
-When living alone at home is no longer working, the next step should not mean saying goodbye to everything that matters to you. In our house in Dortmund, people with care grade 2 or higher live together: with their own room, real company and nursing care from our own team.
+In our pilot senior shared home “Glück auf” in Lütgendortmund, 3 people live together on 100 m² in total: with their own room, real company and optional support from our team that can be adapted to each person.
 
 ## A home with structure and freedom
 
@@ -25,15 +25,15 @@ Our shared home with care combines a self-determined life with support that foll
 - Living kitchen, living room and garden for everyone
 - Floor-level shower, handrails and well-planned lighting (the house is not fully barrier-free)
 - Leisure activities where everyone can join in and nobody has to
-- Nursing care, housekeeping and personal support from our team on site
+- Nursing care, housekeeping and personal support from our team or cooperation partners
 
 ## What a place costs
 
-€970 a month for rent, housekeeping and personal support. Depending on your pension and care grade, your personal share goes down to as little as €0. The rent is within the limits for basic income support (Grundsicherung) in Dortmund, and from care grade 2 the care insurance can pay for housekeeping and personal support. You can see how the amount adds up under [costs and moving in](/en/moving-in/).
+The only mandatory amount is the rent: €570 all-inclusive for electricity, gas, cold utilities, internet and the TV licence if applicable. Housekeeping and personal support are an optional service contract. The rent is within the limits for basic income support (Grundsicherung) in Dortmund. What the care insurance and the social welfare office can cover is explained under [costs and moving in](/en/moving-in/).
 
 ## Couples, pets and meeting first
 
-Couples are welcome, and a pet is also possible by arrangement. Before you move in, you meet the people who already live here. Because people who are going to live together should have met over coffee and cake first.
+Couples are welcome, and a pet is also possible by arrangement. In the end, the residents decide on new housemates and on pets. Before you move in, you meet the people who already live here. Because people who are going to live together should have met over coffee and cake first.
 
 ## Come and see the house
 

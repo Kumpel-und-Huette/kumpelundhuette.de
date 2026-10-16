@@ -12,7 +12,7 @@ seo:
 
 ## Warum Kumpel & Hütte?
 
-Die Welt dreht sich immer schneller, Familien leben weit verstreut, und in vielen Nachbarschaften kennt man sich kaum noch. Für viele ältere Menschen bedeutet das: Sie sind immer öfter allein. Wir bei **Kumpel & Hütte** glauben, dass das Leben im Alter mehr verdient. Mehr Gemeinschaft, mehr Sicherheit, mehr Würde. Deshalb haben wir eine Alternative zum klassischen Altenheim geschaffen: ein Zuhause, das wärmt, verbindet und unterstützt, ohne dass jemand seine Eigenheiten ablegen muss.
+Die Welt dreht sich immer schneller, Familien leben weit verstreut, und in vielen Nachbarschaften kennt man sich kaum noch. Für viele, vor allem ältere Menschen bedeutet das: Sie sind immer öfter allein. Wir bei **Kumpel & Hütte** glauben, dass das Leben mehr verdient. Mehr Gemeinschaft, mehr Sicherheit, mehr Würde. Deshalb haben wir eine Alternative zum Beispiel zum klassischen Altenheim geschaffen: ein Zuhause, das wärmt, verbindet und unterstützt, ohne dass jemand seine Eigenheiten ablegen oder sein Vermögen abgeben muss.
 
 ## Die Realität vieler Senioren
 
@@ -20,7 +20,7 @@ Viele Seniorinnen und Senioren leben allein, oft in Wohnungen, die einmal für e
 
 Dazu kommen die Fragen des Alltags: Wer hilft beim Einkaufen? Wer ist da, wenn man stürzt? Wer bringt wieder etwas Licht in die Woche?
 
-Angehörige kennen die andere Seite. Sie rufen jeden Abend an, fahren am Wochenende vorbei und machen sich trotzdem Sorgen. Irgendwann steht die Frage im Raum, ob es wirklich ein Pflegeheim sein muss.
+Angehörige kennen die andere Seite. Sie rufen jeden Abend an, fahren am Wochenende vorbei und machen sich trotzdem Sorgen. Irgendwann steht die Frage im Raum, ob es vielleicht doch ein Pflegeheim sein muss. Die Kräfte sind einfach aufgebraucht.
 
 Diese Realität hat uns angetrieben, anders zu denken. „Gemeinsam statt einsam“ soll kein Spruch bleiben, sondern gelebter Alltag werden.
 
@@ -28,7 +28,7 @@ Diese Realität hat uns angetrieben, anders zu denken. „Gemeinsam statt einsam
 
 **Kumpel & Hütte** steht für eine neue Form des Wohnens im Alter: gemeinschaftlich, bezahlbar und menschlich. In unserer Senioren-WG hat jede und jeder ein eigenes Zimmer als Rückzugsort. Das Leben spielt sich aber auch dort ab, wo Gemeinschaft entsteht: in der Wohnküche, im Wohn-, Lese- oder Spielezimmer oder bei einer Tasse Tee im Garten.
 
-Wir unterstützen im Alltag, wo es gebraucht wird: bei der Pflege, die wir selbst leisten, beim Kochen oder bei Arztbesuchen. Gleichzeitig bleibt die Selbstbestimmung erhalten. Niemand wird bevormundet. Betreuung heißt bei uns nicht Kontrolle, sondern Verlässlichkeit. So entsteht ein Netz gegenseitiger Unterstützung, das Sicherheit gibt, ohne Eigenständigkeit zu nehmen. Wie das im Alltag aussieht, zeigt [unser Konzept](/unser-konzept/).
+Wir unterstützen im Alltag, wo es gebraucht wird: bei der Pflegekoordination, beim Kochen oder bei Arztbesuchen. Gleichzeitig bleibt die Selbstbestimmung erhalten. Niemand wird bevormundet. Betreuung heißt bei uns nicht Kontrolle, sondern Verlässlichkeit. So entsteht ein Netz gegenseitiger Unterstützung, das Sicherheit gibt, ohne Eigenständigkeit zu nehmen. Wie das im Alltag aussieht, zeigt [unser Konzept](/unser-konzept/).
 
 ## Begegnung schafft Sinn
 

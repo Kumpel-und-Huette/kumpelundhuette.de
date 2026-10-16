@@ -73,28 +73,28 @@ en = ["here", "more", "read more", "learn more", "click here", "this page", "lin
 
 [[style.forbidden]]
 term = "Lütgendortmund"
-allow = "Seniorenb[üu]ros? Lütgendortmund"
-reason = "The copy names the city only. The address is Im Heidewinkel 30, 44267 Dortmund (Holzen)."
+allow = "Seniorenb[üu]ros? Lütgendortmund|Glück auf.{0,40}Lütgendortmund"
+reason = "The street address is Im Heidewinkel 30, 44267 Dortmund. Lütgendortmund names the Glück-auf WG or the Seniorenbüro."
 
 # --------------------------------------------------------------------------- German pages
 
 [[pages]]
 path = "/"
 focus = ["Senioren-WG"]
-secondary = ["Wohngemeinschaft", "Pflegegrad 2", "Pflegeheim", "Alternative zum Pflegeheim", "Pflege", "Eigenanteil",
-             "970 €", "betreutes Wohnen|betreutem Wohnen", "Altenheim", "Pflegekasse", "Besichtigung|Besuch"]
+secondary = ["Wohngemeinschaft", "Pflegegrad 2", "Pflegeheim", "Alternative zum Pflegeheim", "Pflege", "570 €",
+             "Alltagsbegleitung", "betreutes Wohnen|betreutem Wohnen", "Altenheim", "Pflegekasse", "Besichtigung|Besuch"]
 schema = ["FAQPage"]
 
 [[pages]]
 path = "/einziehen-bei-uns/"
 focus = ["Senioren-WG", "Kosten|kostet"]
-secondary = ["Pflegekasse", "Eigenanteil", "Pflegegrad 2", "Sozialamt", "Grundsicherung", "Wohngruppenzuschlag",
+secondary = ["Pflegekasse", "570 €", "Pflegegrad 2", "Sozialamt", "Grundsicherung", "Wohngruppenzuschlag",
              "Entlastungsbetrag", "Besichtigung", "Unterlagen", "Anmeldebogen", "Dortmund"]
 
 [[pages]]
 path = "/unser-konzept/"
 focus = ["Alternative zum Pflegeheim"]
-secondary = ["Senioren-WG", "Pflegeheim", "Gemeinschaft", "Pflege", "eigenes Zimmer|eigenen Zimmer", "Eigenanteil",
+secondary = ["Senioren-WG", "Pflegeheim", "Gemeinschaft", "Pflege", "eigenes Zimmer|eigenen Zimmer", "Hausrecht",
              "Selbstbestimmung|selbst", "Dortmund"]
 
 [[pages]]
@@ -112,8 +112,8 @@ secondary = ["Senioren-WG", "Pflegegrad 2", "Pflegeheim", "Pflege", "Zimmer"]
 
 [[pages]]
 path = "/unser-zuhause/dortmund-lütgendortmund/"
-focus = ["Pflege-WG|Senioren-WG mit Pflege|WG mit Pflege"]
-secondary = ["Senioren-WG", "Pflegegrad 2", "Einzelzimmer", "Duschbäder|Duschbad", "Garten", "Wohnküche", "Eigenanteil",
+focus = ["Pflege-WG|Senioren-WG mit Pflege|WG mit Pflege|Pilot-WG|Glück auf"]
+secondary = ["Senioren-WG", "Pflegegrad 2", "Einzelzimmer", "Duschbäder|Duschbad", "Garten", "Wohnküche", "570 €",
              "Pflegekasse", "Grundsicherung", "Haustier", "Paare", "Besichtigung", "Dortmund"]
 
 [[pages]]
@@ -172,20 +172,20 @@ profile = "legal"
 [[pages]]
 path = "/en/"
 focus = ["senior shared"]
-secondary = ["care home", "care grade 2", "shared home", "nursing care", "personal share", "€970", "assisted living",
+secondary = ["care home", "care grade 2", "shared home", "nursing care", "€570", "optional", "assisted living",
              "old-age home|old age home", "care insurance", "alternative to a care home", "visit"]
 schema = ["FAQPage"]
 
 [[pages]]
 path = "/en/moving-in/"
 focus = ["senior shared|shared home", "cost"]
-secondary = ["care insurance", "Pflegekasse", "personal share", "care grade 2", "social welfare", "Grundsicherung",
+secondary = ["care insurance", "Pflegekasse", "€570", "care grade 2", "social welfare", "Grundsicherung",
              "§ 38a", "Wohngruppenzuschlag", "documents", "viewing|visit", "Dortmund"]
 
 [[pages]]
 path = "/en/our-concept/"
 focus = ["alternative to a care home"]
-secondary = ["senior shared home", "care home", "community", "nursing care", "own room", "personal share", "Dortmund",
+secondary = ["senior shared home", "care home", "community", "nursing care", "own room", "right of the house", "Dortmund",
              "self"]
 
 [[pages]]
@@ -203,9 +203,9 @@ secondary = ["care grade 2", "care home", "nursing care", "room", "Dortmund"]
 
 [[pages]]
 path = "/en/our-home/dortmund-lütgendortmund/"
-focus = ["shared home with care"]
+focus = ["shared home with care|Glück auf"]
 secondary = ["senior shared home", "care grade 2", "single rooms", "shower rooms", "garden", "living kitchen",
-             "personal share", "care insurance", "Grundsicherung", "pet", "couples", "visit", "Dortmund"]
+             "€570", "care insurance", "Grundsicherung", "pet", "couples", "visit", "Dortmund"]
 
 [[pages]]
 path = "/en/about-us/"

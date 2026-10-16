@@ -37,27 +37,22 @@ Load more posts:
 Filter tags:
   other: Filter
 price_title: Was ein Platz bei uns kostet
-price_intro: Miete, Hauswirtschaft und Betreuung in einem Betrag. Je nach Rente und Pflegegrad kann Ihr Eigenanteil bis auf 0 € sinken.
+price_intro: Den Preis finden Sie direkt bei der jeweiligen Unterkunft.
 price_rent: Miete
-price_rent_note: Zimmer, Nebenkosten, Strom, Heizung, Internet, GEZ
-price_house: Hauswirtschaft
-price_house_note: Wöchentlich Reinigung, Einkauf und Wäsche; täglich Frühstück und eine warme Mahlzeit
-price_care: Betreuung
-price_care_note: Aktivierende Betreuung, Organisation, Gespräche, Kontakt zu Angehörigen
-price_total: Alles zusammen
+price_rent_note: Einziger Pflichtanteil, all-inclusive. Strom, Gas, kalte Nebenkosten, Internet, ggf. GEZ
 price_month: im Monat
-price_share: Ihr Eigenanteil
-price_share_note: je nach Rente und Pflegegrad
-price_admission: Für Menschen ab Pflegegrad 2, Ausnahmen nach Absprache.
+price_optional: Optionaler Servicevertrag für Hauswirtschaft und Betreuung. Preise je nach Bedarf, stundenweise Abrechnung möglich, nach Landesvorgaben. Weitere Infos auf
+price_optional_care: Bei einem Pflegegrad ist die Abrechnung über die Pflegekasse möglich.
+price_admission: Hauswirtschaft und Betreuung sind freiwillig.
 price_link: So läuft der Einzug
 house_facts: Auf einen Blick
 house_address: Adresse
 house_for: Für wen
 house_for_value: Menschen ab Pflegegrad 2, Ausnahmen nach Absprache
 house_cost: Kosten
-house_cost_value: 970 € im Monat, Eigenanteil ab 0 € möglich
+house_cost_value: 570 € Miete all-inclusive, Service optional
 house_care: Pflege
-house_care_value: durch unser eigenes Team
+house_care_value: Team oder Partner, nach Absprache
 job_location: Standort
 job_type: Art
 job_department: Bereich
@@ -80,8 +75,8 @@ carousel_cta: Das Haus persönlich ansehen
 carousel_pick: Foto auswählen
 photo_of: "Foto von {{ .name }}"
 og_image_alt: Helle Küche unserer Senioren-WG in Dortmund mit Holzarbeitsplatte und Glasvitrinen
-price_range: "{{ .total }} € im Monat"
-care_service: Pflege durch unser eigenes Team
+price_range: "Miete {{ .rent }} € im Monat"
+care_service: Pflege durch unser Team oder Kooperationspartner
 consent_title: Cookies und Statistik
 consent_text: "Mit Ihrer Zustimmung messen wir mit Google Analytics, wie unsere Website genutzt wird. Google setzt dafür Cookies. Ihre Wahl können Sie jederzeit unter „Cookie-Einstellungen“ ändern."
 consent_more: Mehr dazu in der Datenschutzerklärung

@@ -2,13 +2,13 @@
 title: Home
 seo:
   title: "Senioren-WG in Dortmund mit Pflege | Kumpel & Hütte"
-  description: "Eigenes Zimmer, echte Gesellschaft und Pflege von unserem eigenen Team: unsere Senioren-WG in Dortmund ab Pflegegrad 2. 970 € im Monat, Eigenanteil ab 0 €."
+  description: "Eigenes Zimmer, echte Gesellschaft und optionale Alltagsbegleitung: Senioren-WG in Dortmund. Miete 570 € all-inclusive, Pflege nach Absprache."
 ---
 {{< brick_intro >}}
 
 # Nicht Heim. Nicht allein. Einfach Zuhause!
 
-Senioren-WG in Dortmund: eigenes Zimmer, echte Gesellschaft und Pflege von unserem eigenen Team.
+Senioren-WG in Dortmund: eigenes Zimmer, echte Gesellschaft und optionale Alltagsbegleitung und Pflege durch unsere Kumpel.
 
 {{< button "Anrufen: 0160 90889269" "tel:+4916090889269" >}} {{< button2 "Besuch vereinbaren" "/kontakt/" >}}
 
@@ -39,14 +39,15 @@ Echte Fotos, keine Symbolbilder: So wohnen und leben wir in Dortmund.
 
 ![Runder Esstisch im Gemeinschaftsraum unserer Wohngemeinschaft](/uploads/gallery/Runder Tisch.jpeg "Bild aus der Vorstellung unserer ersten Wohngemeinschaft")
 
-Bei Kumpel und Hütte schaffen wir ein Zuhause in sicherer, liebevoller Gemeinschaft für Menschen, die trotz Pflegegrad weiterhin selbstbestimmt leben möchten. Unser Konzept richtet sich an Menschen mit Pflegegrad 2 oder höher, die im Alltag Unterstützung brauchen, aber kein klassisches Pflegeheim wünschen. Eine echte Alternative zum Pflegeheim, hier in Dortmund.
+Bei Kumpel und Hütte schaffen wir ein Zuhause in sicherer, liebevoller Gemeinschaft für Menschen, die trotz Einschränkungen weiterhin selbstbestimmt leben möchten. Unser Konzept richtet sich an Menschen, die im Alltag entweder Unterstützung brauchen und/oder sich einsam oder isoliert fühlen, für die ein klassisches Pflegeheim nicht in Frage kommt, sowie auch an pflegende Angehörige, die eine echte und herzliche Alternative in Dortmund und Umgebung suchen.
 
 # Unser Versprechen
 - Gemeinschaftliches Wohnen in herzlicher Atmosphäre
-- Alltagsnahe Unterstützung und individuelle Hilfe
+- Optional: Alltagsnahe Unterstützung und individuelle Hilfe
 - Förderung von Selbstbestimmung, Aktivität und Lebensfreude
 - Nachhaltige und bezahlbare Wohnangebote
 - Vertrauensvolle, empathische Begleitung durch unser qualifiziertes Team
+- Alles kann, nichts muss
 
 
 {{< /brick_image2 >}}
@@ -56,7 +57,7 @@ Bei Kumpel und Hütte schaffen wir ein Zuhause in sicherer, liebevoller Gemeinsc
 
 ![Zwei Hände, die sich halten](/uploads/gallery/Hands.jpg "Symbolbild")
 
-Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und selbstbestimmtes Leben ermöglichen. Unsere Werte prägen den Alltag in unserer Wohngemeinschaft und schaffen ein Umfeld, in dem man sich wohl und gut aufgehoben fühlt.
+Bei Kumpel und Hütte möchten wir Menschen wieder ein erfülltes und selbstbestimmtes Leben ermöglichen, die es, aus welchen Gründen auch immer, nicht mehr haben. Unsere Werte prägen den Alltag in unserer Wohngemeinschaft und schaffen ein Umfeld, in dem man sich wohl und gut aufgehoben fühlen darf.
 
 - **Vertrauen:** Bewohner und Familien können sich auf uns verlassen. Wir arbeiten transparent, verantwortungsbewusst und zuverlässig.
 
@@ -66,7 +67,7 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 
 - **Würde:** Jeder Bewohner wird mit Respekt, Selbstbestimmung und individueller Zuwendung behandelt.
 
-- **Erschwinglichkeit:** Unser Modell ist fair kalkuliert, entlastet Bewohner und Angehörige und wird durch Pflegeleistungen umfassend unterstützt.
+- **Erschwinglichkeit:** Unser Modell ist fair kalkuliert, entlastet Bewohner und Angehörige und kann durch Pflegeleistungen umfassend unterstützt werden.
 
 
 {{< /brick_image >}}
@@ -74,14 +75,14 @@ Bei Kumpel und Hütte möchten wir Menschen mit Pflegebedarf ein erfülltes und 
 
 ## Unsere Senioren-WG auf einen Blick
 
-**Kumpel und Hütte** bietet Ihnen alles, was ein sicheres, selbstbestimmtes und geborgenes Leben trotz Pflegebedarf ausmacht. Unsere Hausgemeinschaft ist liebevoll gestaltet und verbindet Komfort mit echter Nähe, für Menschen, die im Alltag nicht allein sein wollen.
+**Kumpel und Hütte** bietet Ihnen alles, was ein sicheres, selbstbestimmtes und geborgenes Leben auch bei Pflegebedarf ausmacht. Unsere Hausgemeinschaft ist liebevoll gestaltet und verbindet Komfort mit echter Nähe, für Menschen, die im Alltag nicht allein sein wollen.
 
 ---
 
 ### Räume für Begegnung & Rückzug
 
 Bei uns treffen Rückzug und Gemeinschaft aufeinander.
-Ihr eigenes Zimmer bietet Platz für persönliche Geborgenheit, und dazu gibt es Räume zum Zusammensein: Wohnküche, gemütliches Wohnzimmer, Spiele- oder Leseecke und ein grüner Garten laden zum Austausch ein. Wie das Haus eingerichtet ist, sehen Sie auf der Seite [Unser Haus in Dortmund](/unser-zuhause/dortmund-lütgendortmund/).
+Ihr eigenes Zimmer bietet Platz für persönliche Geborgenheit, und dazu gibt es Räume zum Zusammensein, zum Beispiel Wohnküche, gemütliches Wohnzimmer, Spiele- oder Leseecke. Ein grüner Garten lädt zum Austausch ein. Wie das Haus eingerichtet ist, sehen Sie auf der Seite [Unsere WG „Glück auf“ in Lütgendortmund](/unser-zuhause/dortmund-lütgendortmund/).
 
 
 
@@ -89,8 +90,8 @@ Ihr eigenes Zimmer bietet Platz für persönliche Geborgenheit, und dazu gibt es
 
 ### Sichere und durchdachte Ausstattung
 
-Unsere Räume sind nicht vollständig barrierefrei, aber alltagstauglich und mit viel Sorgfalt eingerichtet.
-Bodengleiche Dusche, Handläufe und gut durchdachte Beleuchtung sorgen für Orientierung, Komfort und Sicherheit.
+Unsere Räume sind, je nach WG, nicht immer vollständig barrierefrei, aber alltagstauglich und mit viel Sorgfalt eingerichtet.
+Bodengleiche Dusche, Handläufe und gut durchdachte Beleuchtung sorgen überall für Orientierung, Komfort und Sicherheit.
 So bleibt ein selbstbestimmtes Leben möglich, mit einer Ausstattung, die unterstützt, ohne einzuengen.
 
 ---
@@ -108,9 +109,9 @@ Viele Lösungen sind individuell anpassbar, für mehr Komfort im Alltag.
 
 ---
 
-### Pflege und Alltagshilfe aus unserem Team
+### Pflege und Alltagshilfe
 
-Hauswirtschaft, Begleitung, Betreuung und die Pflege erbringt unser Team selbst.
+Hauswirtschaft, Begleitung, Betreuung und die Pflege erbringt unser Team selbst oder in Kooperation mit unseren Dienstleistungspartnern.
 
 ---
 

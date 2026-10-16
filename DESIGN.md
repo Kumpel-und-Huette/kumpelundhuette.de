@@ -259,7 +259,7 @@ A small household palette on warm paper: one colour to act, one to warm, one to 
 ### Named Rules
 **The Sentence Case Rule.** No uppercase labels, no tracked-out small caps, no kickers above headings. The only positive tracking in the system is 0.04em on the two-letter language switch ("EN").
 
-**The Honest Sum Rule.** Anywhere money appears, set tabular lining figures so the lines add up like a sum on paper (570 + 200 + 200 = 970).
+**The Honest Sum Rule.** Anywhere money appears, set tabular lining figures. The only mandatory amount is the rent of 570 €. Do not present housekeeping and support as a fixed sum added to that rent.
 
 ## Layout
 
